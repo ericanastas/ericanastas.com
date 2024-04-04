@@ -1,6 +1,8 @@
 import Link from "next/link";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
+import TagChipList from "./tag-chip-list";
+import type { Tag } from "@/interfaces/tag";
 
 type Props = {
   title: string;
@@ -8,6 +10,7 @@ type Props = {
   date: string;
   excerpt: string;
   slug: string;
+  tags: Tag[];
 };
 
 export function ProjectPreview({
@@ -16,13 +19,14 @@ export function ProjectPreview({
   date,
   excerpt,
   slug,
+  tags,
 }: Props) {
   return (
     <div>
-      <div className="mb-5">
+      <div className="mb-4">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-3xl mb-1 leading-snug">
         <Link
           as={`/projects/${slug}`}
           href="/projects/[slug]"
@@ -31,10 +35,15 @@ export function ProjectPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-md mb-2">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+
+      <div className="mb-4">
+        <TagChipList tags={tags} />
+      </div>
+
+      <p className="text-md leading-relaxed mb-4">{excerpt}</p>
     </div>
   );
 }

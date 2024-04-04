@@ -1,9 +1,9 @@
 ---
-title: Project 1
-excerpt: Project 1 excerpt
+title: Project 2
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
 coverImage: "/images/project2.jpg"
 date: "2024-04-03"
-draft: true
+draft: false
 tags: ["tag2","tag3"]
 
 ---

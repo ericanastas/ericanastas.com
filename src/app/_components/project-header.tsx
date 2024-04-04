@@ -1,26 +1,27 @@
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
-import { ProjectTitle } from "@/app/_components/project-title";
+import TagChipList from "./tag-chip-list";
+import type { Tag } from "@/interfaces/tag";
 
 type Props = {
   title: string;
   coverImage: string;
   date: string;
+  tags: Tag[];
 };
 
-export function ProjectHeader({ title, coverImage, date }: Props) {
+export function ProjectHeader({ title, date, tags }: Props) {
   return (
     <>
-      <ProjectTitle>{title}</ProjectTitle>
-      <div className="hidden md:block md:mb-12"></div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} src={coverImage} />
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">
+        {title}
+      </h1>
+
+      <div className="mb-4 text-center">
+        <DateFormatter dateString={date} />
       </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6"></div>
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
+      <div className="mb-4 flex justify-center">
+        <TagChipList tags={tags} />
       </div>
     </>
   );

@@ -8,7 +8,7 @@ type Props = {
 export function ProjectList({ projects }: Props) {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-8">
         {projects.map((project) => (
           <ProjectPreview
             key={project.slug}
@@ -17,6 +17,9 @@ export function ProjectList({ projects }: Props) {
             date={project.date}
             slug={project.slug}
             excerpt={project.excerpt}
+            tags={project.tags.map((t) => ({
+              tag: t,
+            }))}
           />
         ))}
       </div>

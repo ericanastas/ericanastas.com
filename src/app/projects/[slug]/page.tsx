@@ -8,6 +8,8 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { ProjectBody } from "@/app/_components/project-body";
 import { ProjectHeader } from "@/app/_components/project-header";
+import CoverImage from "@/app/_components/cover-image";
+import Image from "next/image";
 
 export default async function Project({ params }: Params) {
   const project = getProjectBySlug(params.slug);
@@ -21,17 +23,21 @@ export default async function Project({ params }: Params) {
   return (
     <main>
       {project.draft && <DraftAlert />}
-      <Container>
-        <Header />
-        <article className="mb-32">
-          <ProjectHeader
-            title={project.title}
-            coverImage={project.coverImage}
-            date={project.date}
-          />
-          <ProjectBody content={content} />
-        </article>
-      </Container>
+      <article className="mb-16 max-w-4xl mx-auto">
+        <ProjectHeader
+          title={project.title}
+          coverImage={project.coverImage}
+          date={project.date}
+          tags={project.tags.map((t) => ({
+            tag: t,
+          }))}
+        />
+
+        <div className="max-w-4xl mx-auto mb-8">
+          <img src={project.coverImage} alt="Cover Image" />
+        </div>
+        <ProjectBody content={content} />
+      </article>
     </main>
   );
 }

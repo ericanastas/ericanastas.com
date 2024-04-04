@@ -8,10 +8,7 @@ export default function Index() {
 
   return (
     <main>
-      <Container>
-        <Header />
-        {allProjects.length > 0 && <ProjectList projects={allProjects} />}
-      </Container>
+      {allProjects.length > 0 && <ProjectList projects={allProjects} />}
     </main>
   );
 }
