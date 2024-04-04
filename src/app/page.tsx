@@ -1,5 +1,5 @@
 import Container from "@/app/_components/container";
-import { Intro } from "@/app/_components/intro";
+import Header from "@/app/_components/header";
 import { ProjectList } from "@/app/_components/project-list";
 import { getAllProjects as getAllProjects } from "@/lib/api";
 
@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Intro />
+        <Header />
         {allProjects.length > 0 && <ProjectList projects={allProjects} />}
       </Container>
     </main>
