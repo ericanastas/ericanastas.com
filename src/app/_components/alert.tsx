@@ -3,20 +3,20 @@ import { EXAMPLE_PATH } from "@/lib/constants";
 import cn from "classnames";
 
 type Props = {
-  preview?: boolean;
+  draft?: boolean;
 };
 
-const Alert = ({ preview }: Props) => {
+const Alert = ({ draft }: Props) => {
   return (
     <div
       className={cn("border-b", {
-        "bg-neutral-800 border-neutral-800 text-white": preview,
-        "bg-neutral-50 border-neutral-200": !preview,
+        "bg-neutral-800 border-neutral-800 text-white": draft,
+        "bg-neutral-50 border-neutral-200": !draft,
       })}
     >
       <Container>
         <div className="py-2 text-center text-sm">
-          {preview ? (
+          {draft ? (
             <>
               This page is a preview.{" "}
               <a
