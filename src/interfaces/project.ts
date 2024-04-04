@@ -6,4 +6,5 @@ export type Project = {
   excerpt: string;
   content: string;
   draft?: boolean;
+  tags: string[];
 };
