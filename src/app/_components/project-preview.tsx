@@ -35,7 +35,7 @@ export function ProjectPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-md mb-2">
+      <div className="text-md mb-4">
         <DateFormatter dateString={date} />
       </div>
 
@@ -43,7 +43,7 @@ export function ProjectPreview({
         <TagChipList tags={tags} />
       </div>
 
-      <p className="text-md leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-md leading-relaxed mb-8">{excerpt}</p>
     </div>
   );
 }

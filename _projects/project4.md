@@ -4,7 +4,7 @@ excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 coverImage: "/images/project3.jpg"
 date: "2024-04-03"
 draft: false
-tags: ["tag1", "tag2", "tag3"]
+tags: ["Tag1",  "Tag3"]
 ---
 
 
