@@ -10,7 +10,7 @@ type Props = {
   slug: string;
 };
 
-export function HeroPost({ title, coverImage, date, excerpt, slug }: Props) {
+export function HeroProject({ title, coverImage, date, excerpt, slug }: Props) {
   return (
     <section>
       <div className="mb-8 md:mb-16">
