@@ -1,16 +1,17 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllProjects, getAllTags, getProjectBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
 
-import { ProjectBody } from "@/app/_components/project-body";
-import { ProjectHeader } from "@/app/_components/project-header";
-
-import { getProjectsByTag } from "@/lib/api";
+import { getProjectsByTag, getAllTags } from "@/lib/api";
 import { ProjectList } from "@/app/_components/project-list";
 
-export default async function Project({ params }: Params) {
-  const tag = params.tag;
+import slugify from "slugify";
+
+export default async function Project({ params }: Props) {
+  const tag = getAllTags().find(
+    (tag) => slugify(tag, { lower: true }) === params.tagSlug
+  );
+
+  if (!tag) notFound();
 
   let projects = getProjectsByTag(tag);
 
@@ -24,14 +25,18 @@ export default async function Project({ params }: Params) {
   );
 }
 
-type Params = {
+type Props = {
   params: {
-    tag: string;
+    tagSlug: string;
   };
 };
 
-export function generateMetadata({ params }: Params): Metadata {
-  const tag = params.tag;
+export function generateMetadata({ params }: Props): Metadata {
+  const tag = getAllTags().find(
+    (tag) => slugify(tag, { lower: true }) === params.tagSlug
+  );
+
+  if (!tag) notFound();
 
   const title = `Tag ${tag}`;
 
@@ -47,6 +52,6 @@ export async function generateStaticParams() {
   const allTags = getAllTags();
 
   return allTags.map((tag) => ({
-    tag: tag,
+    tagSlug: slugify(tag),
   }));
 }

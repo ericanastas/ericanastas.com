@@ -4,7 +4,6 @@ import TagChip from "../_components/tag-chip";
 
 export default async function Project() {
   let allTags = getAllTags();
-  //let allTags = ["tag1"];
 
   return (
     <main>

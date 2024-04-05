@@ -9,7 +9,7 @@ export default function TagChipList({ tags }: Props) {
   return (
     <div className="flex flex-wrap gap-2 mb-4">
       {tags.map((t) => (
-        <TagChip tag={t.tag} selected={t.selected} />
+        <TagChip key={t.tag} tag={t.tag} selected={t.selected} />
       ))}
     </div>
   );
