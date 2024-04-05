@@ -19,7 +19,7 @@ export function getProjectBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  let { title, date, coverImage, excerpt, draft, tags } = data;
+  let { title, date, coverImage, summary, draft, tags } = data;
 
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
@@ -31,7 +31,7 @@ export function getProjectBySlug(slug: string) {
     title,
     date,
     coverImage,
-    excerpt,
+    summary,
     draft,
     content,
     tags: tagObjArr,

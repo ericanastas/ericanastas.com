@@ -8,7 +8,7 @@ type Props = {
   title: string;
   coverImage: string;
   date: string;
-  excerpt: string;
+  summary: string;
   slug: string;
   tags: Tag[];
 };
@@ -17,7 +17,7 @@ export function ProjectPreview({
   title,
   coverImage,
   date,
-  excerpt,
+  summary,
   slug,
   tags,
 }: Props) {
@@ -43,7 +43,7 @@ export function ProjectPreview({
         <TagChipList tags={tags} />
       </div>
 
-      <p className="text-md leading-relaxed mb-8">{excerpt}</p>
+      <p className="text-md leading-relaxed mb-8">{summary}</p>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export type Project = {
   title: string;
   date: string;
   coverImage: string;
-  excerpt: string;
+  summary: string;
   content: string;
   draft?: boolean;
   tags: Tag[];

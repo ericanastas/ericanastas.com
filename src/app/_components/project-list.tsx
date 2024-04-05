@@ -17,7 +17,7 @@ export function ProjectList({ projects, selectedTagSlug }: Props) {
             coverImage={project.coverImage}
             date={project.date}
             slug={project.slug}
-            excerpt={project.excerpt}
+            summary={project.summary}
             tags={project.tags.map((t) => ({
               name: t.name,
               slug: t.slug,
