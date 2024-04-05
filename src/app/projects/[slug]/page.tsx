@@ -28,9 +28,7 @@ export default async function Project({ params }: Params) {
           title={project.title}
           coverImage={project.coverImage}
           date={project.date}
-          tags={project.tags.map((t) => ({
-            tag: t,
-          }))}
+          tags={project.tags}
         />
 
         <div className="max-w-4xl mx-auto mb-8">

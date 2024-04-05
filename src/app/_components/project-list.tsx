@@ -3,10 +3,10 @@ import { ProjectPreview } from "./project-preview";
 
 type Props = {
   projects: Project[];
-  selectedTag?: string;
+  selectedTagSlug?: string;
 };
 
-export function ProjectList({ projects, selectedTag }: Props) {
+export function ProjectList({ projects, selectedTagSlug }: Props) {
   return (
     <section>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-8">
@@ -19,8 +19,9 @@ export function ProjectList({ projects, selectedTag }: Props) {
             slug={project.slug}
             excerpt={project.excerpt}
             tags={project.tags.map((t) => ({
-              tag: t,
-              selected: selectedTag ? selectedTag == t : false,
+              name: t.name,
+              slug: t.slug,
+              selected: selectedTagSlug ? selectedTagSlug == t.slug : false,
             }))}
           />
         ))}

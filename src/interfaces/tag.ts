@@ -1,4 +1,5 @@
 export type Tag = {
-  tag: string;
+  name: string;
+  slug: string;
   selected?: boolean;
 };

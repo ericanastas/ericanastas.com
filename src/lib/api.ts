@@ -2,44 +2,65 @@ import { Project } from "@/interfaces/project";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import slugify from "slugify";
+import { Tag } from "@/interfaces/tag";
 
 const projectsDirectory = join(process.cwd(), "_projects");
+
+const slugifyOpt = { lower: true };
 
 export function getAllProjectSlugs() {
   return fs.readdirSync(projectsDirectory);
 }
 
 export function getProjectBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(projectsDirectory, `${realSlug}.md`);
+  const projectSlug = slug.replace(/\.md$/, "");
+  const fullPath = join(projectsDirectory, `${projectSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Project;
+  let { title, date, coverImage, excerpt, draft, tags } = data;
+
+  let tagObjArr: Tag[] = tags.map((t: string) => ({
+    name: t,
+    slug: slugify(t, slugifyOpt),
+  }));
+
+  return {
+    slug: projectSlug,
+    title,
+    date,
+    coverImage,
+    excerpt,
+    draft,
+    content,
+    tags: tagObjArr,
+  } as Project;
 }
 
-export function getAllTags(): string[] {
+export function getAllTags(): Tag[] {
   let allProjects = getAllProjects();
-
-  return getProjectsTags(allProjects);
+  return getProjectTags(allProjects);
 }
 
-export function getProjectsTags(projects: Project[]): string[] {
-  let tags: string[] = [];
+export function getProjectTags(projects: Project[]): Tag[] {
+  let tagSlugs: Tag[] = [];
 
   for (let proj of projects) {
-    for (let tag of proj.tags) {
-      if (tags.indexOf(tag) === -1) {
-        tags.push(tag);
+    for (let projTag of proj.tags) {
+      if (!tagSlugs.some((t) => t.slug === projTag.slug)) {
+        tagSlugs.push(projTag);
       }
     }
   }
 
-  return tags.sort((t1, t2) => (t1 < t2 ? -1 : 1));
+  return tagSlugs.sort((t1, t2) => (t1 < t2 ? -1 : 1));
 }
 
-export function getProjectsByTag(tag: string): Project[] {
-  return getAllProjects().filter((p) => p.tags.includes(tag));
+export function getProjectsByTagSlug(tagSlug: string): Project[] {
+  return getAllProjects().filter((p) =>
+    p.tags.map((t) => t.slug).includes(tagSlug)
+  );
 }
 
 export function getAllProjects(): Project[] {
