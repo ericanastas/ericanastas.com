@@ -1,6 +1,7 @@
 import { getAllTags } from "@/lib/api";
 
 import TagChip from "../_components/tag-chip";
+import TagChipList from "../_components/tag-chip-list";
 
 export default async function Project() {
   let allTags = getAllTags();
@@ -12,9 +13,7 @@ export default async function Project() {
           Tags
         </h1>
         <div className="flex flex-wrap gap-2 justify-center">
-          {allTags.map((tag) => (
-            <TagChip tag={tag} />
-          ))}
+          <TagChipList tags={allTags.map((tag) => ({ tag: tag }))} />
         </div>
       </article>
     </main>

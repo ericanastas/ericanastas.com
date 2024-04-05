@@ -20,7 +20,7 @@ export default async function Project({ params }: Props) {
       <h1 className="text-4xl md:text-6xl font-bold mb-10 text-center">
         {tag}
       </h1>
-      <ProjectList projects={projects} />
+      <ProjectList projects={projects} selectedTag={tag} />
     </main>
   );
 }
