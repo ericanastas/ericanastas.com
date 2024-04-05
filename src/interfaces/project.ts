@@ -1,3 +1,4 @@
+import { BlobOptions } from "buffer";
 import type { Tag } from "./tag";
 
 export type Project = {
@@ -9,4 +10,5 @@ export type Project = {
   content: string;
   draft?: boolean;
   tags: Tag[];
+  featured?: boolean;
 };

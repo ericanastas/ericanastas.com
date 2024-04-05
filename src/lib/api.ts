@@ -19,7 +19,7 @@ export function getProjectBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  let { title, date, coverImage, summary, draft, tags } = data;
+  let { title, date, coverImage, summary, draft, tags, featured } = data;
 
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
@@ -34,6 +34,7 @@ export function getProjectBySlug(slug: string) {
     summary,
     draft,
     content,
+    featured,
     tags: tagObjArr,
   } as Project;
 }
@@ -65,9 +66,19 @@ export function getProjectsByTagSlug(tagSlug: string): Project[] {
 
 export function getAllProjects(): Project[] {
   const slugs = getAllProjectSlugs();
-  const projects = slugs
-    .map((slug) => getProjectBySlug(slug))
-    // sort projects by date in descending order
-    .sort((project1, project2) => (project1.date > project2.date ? -1 : 1));
+
+  const allProjects = slugs.map((s) => getProjectBySlug(s));
+
+  const sortedFeaturedProjects = allProjects
+    .filter((p) => p.featured)
+    .sort(sortProjectDesc);
+  const sortedNonFeaturedProjects = allProjects
+    .filter((p) => !p.featured)
+    .sort(sortProjectDesc);
+  const projects = [...sortedFeaturedProjects, ...sortedNonFeaturedProjects];
   return projects;
+}
+
+function sortProjectDesc(project1: Project, project2: Project): number {
+  return project1.date > project2.date ? -1 : 1;
 }

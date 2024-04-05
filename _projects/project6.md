@@ -5,6 +5,7 @@ coverImage: "/images/project3.jpg"
 date: "2024-04-03"
 draft: false
 tags: ["Tag 3"]
+featured: true
 ---
 
 
