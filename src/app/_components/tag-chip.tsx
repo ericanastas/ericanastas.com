@@ -6,17 +6,14 @@ type Props = {
 };
 
 export default function TagChip({ tag }: Props) {
-  let className = `relative grid select-none items-center whitespace-nowrap rounded-lg py-1 px-2 text-xs`;
+  let className = `inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset`;
 
-  if (tag.selected)
-    className += " border border-gray-900 bg-gray-600 text-white";
-  else className += " border border-gray-300 bg-gray-50";
+  if (tag.selected) className += " bg-blue-50 text-blue-700 ring-blue-700/10";
+  else className += " bg-gray-50 text-gray-600 ring-gray-500/10";
 
   return (
     <Link href={`/tags/${tag.slug}`}>
-      <div className={className}>
-        <span className="">{tag.name}</span>
-      </div>
+      <span className={className}>{tag.name}</span>
     </Link>
   );
 }
