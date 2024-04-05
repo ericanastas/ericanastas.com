@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getProjectsByTagSlug, getAllTags } from "@/lib/api";
 import { ProjectList } from "@/app/_components/project-list";
 
+import PageTitle from "@/app/_components/page-title";
+
 export default async function Project({ params }: Props) {
   const tag = getAllTags().find((tag) => tag.slug === params.tagSlug);
 
@@ -12,9 +14,8 @@ export default async function Project({ params }: Props) {
 
   return (
     <main>
-      <h1 className="text-4xl md:text-6xl font-bold mb-10 text-center">
-        Tag: {tag.name}
-      </h1>
+      <PageTitle>Tag: {tag.name}</PageTitle>
+
       <ProjectList projects={projects} selectedTagSlug={tag.slug} />
     </main>
   );
