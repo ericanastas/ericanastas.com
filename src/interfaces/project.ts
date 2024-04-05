@@ -4,7 +4,7 @@ export type Project = {
   slug: string;
   title: string;
   date: string;
-  coverImage: string;
+  coverImage?: string;
   summary: string;
   content: string;
   draft?: boolean;

@@ -6,7 +6,7 @@ import type { Tag } from "@/interfaces/tag";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImage?: string;
   date: string;
   summary: string;
   slug: string;
@@ -24,8 +24,18 @@ export function ProjectPreview({
   return (
     <div>
       <div className="mb-4">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+        {coverImage && (
+          <CoverImage slug={slug} title={title} src={coverImage} />
+        )}
+        {!coverImage && (
+          <CoverImage
+            slug={slug}
+            title={title}
+            src={"/images/placeholder.png"}
+          />
+        )}
       </div>
+
       <h3 className="text-3xl mb-1 leading-snug">
         <Link
           as={`/projects/${slug}`}

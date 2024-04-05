@@ -6,7 +6,6 @@ import PageTitle from "./page-title";
 
 type Props = {
   title: string;
-  coverImage: string;
   date: string;
   tags: Tag[];
 };

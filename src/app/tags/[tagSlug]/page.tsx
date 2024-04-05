@@ -14,7 +14,7 @@ export default async function Project({ params }: Props) {
 
   return (
     <main>
-      <PageTitle>Tag: {tag.name}</PageTitle>
+      <PageTitle>{tag.name}</PageTitle>
 
       <ProjectList projects={projects} selectedTagSlug={tag.slug} />
     </main>

@@ -26,14 +26,16 @@ export default async function Project({ params }: Params) {
       <article className="mb-16 max-w-4xl mx-auto">
         <ProjectHeader
           title={project.title}
-          coverImage={project.coverImage}
           date={project.date}
           tags={project.tags}
         />
 
-        <div className="max-w-4xl mx-auto mb-8">
-          <img src={project.coverImage} alt="Cover Image" />
-        </div>
+        {project.coverImage && (
+          <div className="max-w-4xl mx-auto mb-8">
+            <img src={project.coverImage} alt="Cover Image" />
+          </div>
+        )}
+
         <ProjectBody content={content} />
       </article>
     </main>
