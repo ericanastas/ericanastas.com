@@ -7,8 +7,9 @@ export default function Projects() {
 
   return (
     <main>
-      <PageTitle>Projects</PageTitle>
-      <div className="mb-12"></div>
+      <div className="mb-12">
+        <PageTitle>Projects</PageTitle>
+      </div>
       {allProjects.length > 0 && <ProjectList projects={allProjects} />}
     </main>
   );

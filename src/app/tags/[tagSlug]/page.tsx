@@ -14,7 +14,9 @@ export default async function Project({ params }: Props) {
 
   return (
     <main>
-      <PageTitle>{tag.name}</PageTitle>
+      <div className="mb-12">
+        <PageTitle>{tag.name} Projects</PageTitle>
+      </div>
 
       <ProjectList projects={projects} selectedTagSlug={tag.slug} />
     </main>
@@ -32,7 +34,7 @@ export function generateMetadata({ params }: Props): Metadata {
 
   if (!tag) notFound();
 
-  const title = `Tag ${tag.name}`;
+  const title = `Tag: ${tag.name}`;
 
   return {
     title,

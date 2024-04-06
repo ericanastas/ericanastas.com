@@ -9,7 +9,9 @@ export default async function Project() {
   return (
     <main>
       <article className="mb-16 max-w-4xl mx-auto">
-        <PageTitle>Tags</PageTitle>
+        <div className="mb-12">
+          <PageTitle>Tags</PageTitle>
+        </div>
 
         <div className="flex flex-wrap gap-2 justify-center">
           <TagChipList tags={allTags} />

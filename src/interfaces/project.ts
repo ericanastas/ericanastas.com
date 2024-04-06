@@ -1,5 +1,5 @@
-import { BlobOptions } from "buffer";
 import type { Tag } from "./tag";
+import { Category } from "./category";
 
 export type Project = {
   slug: string;
@@ -11,4 +11,6 @@ export type Project = {
   draft?: boolean;
   tags: Tag[];
   featured?: boolean;
+  url: string;
+  category: Category;
 };

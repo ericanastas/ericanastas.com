@@ -1,18 +1,14 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllProjects, getProjectBySlug } from "@/lib/api";
+import { getAllProjects, getProject } from "@/lib/api";
 import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import DraftAlert from "@/app/_components/draft-alert";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
 import { ProjectBody } from "@/app/_components/project-body";
 import { ProjectHeader } from "@/app/_components/project-header";
-import CoverImage from "@/app/_components/cover-image";
-import Image from "next/image";
 
 export default async function Project({ params }: Params) {
-  const project = getProjectBySlug(params.slug);
+  const project = getProject(params.categorySlug, params.projectSlug);
 
   if (!project) {
     return notFound();
@@ -44,12 +40,13 @@ export default async function Project({ params }: Params) {
 
 type Params = {
   params: {
-    slug: string;
+    projectSlug: string;
+    categorySlug: string;
   };
 };
 
 export function generateMetadata({ params }: Params): Metadata {
-  const project = getProjectBySlug(params.slug);
+  const project = getProject(params.categorySlug, params.projectSlug);
 
   if (!project) {
     return notFound();
