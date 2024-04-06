@@ -37,7 +37,7 @@ export function ProjectPreview({
         )}
       </div>
 
-      <h3 className="text-3xl mb-1 leading-snug">
+      <h3 className="text-2xl mb-1 leading-snug">
         <Link href={url} className="hover:underline">
           {title}
         </Link>
