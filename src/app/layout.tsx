@@ -44,9 +44,8 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-
         <meta name="theme-color" content="#000" />
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <meta name="robots" content="noindex, nofollow" />
       </head>
       <body className={inter.className}>
         <Container>
