@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllProjects, getProject } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import DraftAlert from "@/app/_components/draft-alert";
 import { ProjectBody } from "@/app/_components/project-body";
@@ -59,7 +58,7 @@ export function generateMetadata({ params }: Params): Metadata {
     return notFound();
   }
 
-  const title = `${project.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${project.title}`;
 
   return {
     title,

@@ -1,19 +1,24 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Container from "./_components/container";
-import Header from "./_components/header";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
-  openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+  metadataBase: new URL("https://ericanastas.com"),
+  title: { template: "ericanastas.com - %s", absolute: "ericanastas.com" },
+  description: `Personal portfolio website of Eric Anastas`,
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
   },
 };
 
@@ -44,8 +49,6 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="theme-color" content="#000" />
-        <meta name="robots" content="noindex, nofollow" />
       </head>
       <body className={inter.className}>
         <Container>{children}</Container>

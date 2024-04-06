@@ -3,6 +3,7 @@ import { getAllProjects as getAllProjects } from "@/lib/api";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
+import { Metadata } from "next";
 
 export default function Projects() {
   const allProjects = getAllProjects();
@@ -20,3 +21,7 @@ export default function Projects() {
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Projects",
+};

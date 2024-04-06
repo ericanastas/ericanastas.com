@@ -36,16 +36,12 @@ type Props = {
 
 export function generateMetadata({ params }: Props): Metadata {
   const tag = getAllTags().find((ts) => ts.slug === params.tagSlug);
-
   if (!tag) notFound();
 
-  const title = `Tag: ${tag.name}`;
+  const title = `${tag.name} Projects`;
 
   return {
     title,
-    openGraph: {
-      title,
-    },
   };
 }
 

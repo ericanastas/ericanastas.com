@@ -44,13 +44,10 @@ export function generateMetadata({ params }: Props): Metadata {
 
   if (!category) notFound();
 
-  const title = `Category: ${category.name}`;
+  const title = `${category.name} Projects`;
 
   return {
     title,
-    openGraph: {
-      title,
-    },
   };
 }
 

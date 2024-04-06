@@ -4,8 +4,9 @@ import TagChipList from "../_components/tag-chip-list";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
+import { Metadata } from "next";
 
-export default async function Project() {
+export default async function Tags() {
   let allTags = getAllTags();
 
   return (
@@ -26,3 +27,7 @@ export default async function Project() {
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Tags",
+};
