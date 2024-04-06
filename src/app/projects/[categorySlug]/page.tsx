@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllProjectCategories, getProjectsByCategorySlug } from "@/lib/api";
 import { ProjectList } from "@/app/_components/project-list";
+import Header from "@/app/_components/header";
+import Footer from "@/app/_components/footer";
 
 import PageTitle from "@/app/_components/page-title";
 
@@ -15,13 +17,17 @@ export default async function Category({ params }: Props) {
   let projects = getProjectsByCategorySlug(category.slug);
 
   return (
-    <main>
-      <div className="mb-12">
-        <PageTitle>{category.name} Projects</PageTitle>
-      </div>
+    <>
+      <Header />
+      <main>
+        <div className="mb-12">
+          <PageTitle>{category.name} Projects</PageTitle>
+        </div>
 
-      <ProjectList projects={projects} />
-    </main>
+        <ProjectList projects={projects} />
+      </main>
+      <Footer />
+    </>
   );
 }
 

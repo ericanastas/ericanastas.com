@@ -6,6 +6,8 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import DraftAlert from "@/app/_components/draft-alert";
 import { ProjectBody } from "@/app/_components/project-body";
 import { ProjectHeader } from "@/app/_components/project-header";
+import Header from "@/app/_components/header";
+import Footer from "@/app/_components/footer";
 
 export default async function Project({ params }: Params) {
   const project = getProject(params.categorySlug, params.projectSlug);
@@ -17,24 +19,28 @@ export default async function Project({ params }: Params) {
   const content = await markdownToHtml(project.content || "");
 
   return (
-    <main>
-      {project.draft && <DraftAlert />}
-      <article className="mb-16 max-w-4xl mx-auto">
-        <ProjectHeader
-          title={project.title}
-          date={project.date}
-          tags={project.tags}
-        />
+    <>
+      <Header />
+      <main>
+        {project.draft && <DraftAlert />}
+        <article className="mb-16 max-w-4xl mx-auto">
+          <ProjectHeader
+            title={project.title}
+            date={project.date}
+            tags={project.tags}
+          />
 
-        {project.coverImage && (
-          <div className="max-w-4xl mx-auto mb-8">
-            <img src={project.coverImage} alt="Cover Image" />
-          </div>
-        )}
+          {project.coverImage && (
+            <div className="max-w-4xl mx-auto mb-8">
+              <img src={project.coverImage} alt="Cover Image" />
+            </div>
+          )}
 
-        <ProjectBody content={content} />
-      </article>
-    </main>
+          <ProjectBody content={content} />
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }
 

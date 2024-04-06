@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProjectsByTagSlug, getAllTags } from "@/lib/api";
 import { ProjectList } from "@/app/_components/project-list";
-
 import PageTitle from "@/app/_components/page-title";
+import Header from "@/app/_components/header";
+import Footer from "@/app/_components/footer";
 
 export default async function Project({ params }: Props) {
   const tag = getAllTags().find((tag) => tag.slug === params.tagSlug);
@@ -13,13 +14,17 @@ export default async function Project({ params }: Props) {
   let projects = getProjectsByTagSlug(tag.slug);
 
   return (
-    <main>
-      <div className="mb-12">
-        <PageTitle>{tag.name} Projects</PageTitle>
-      </div>
+    <>
+      <Header />
+      <main>
+        <div className="mb-12">
+          <PageTitle>{tag.name} Projects</PageTitle>
+        </div>
 
-      <ProjectList projects={projects} selectedTagSlug={tag.slug} />
-    </main>
+        <ProjectList projects={projects} selectedTagSlug={tag.slug} />
+      </main>
+      <Footer />
+    </>
   );
 }
 

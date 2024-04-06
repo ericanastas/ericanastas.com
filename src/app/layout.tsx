@@ -48,11 +48,7 @@ export default function RootLayout({
         <meta name="robots" content="noindex, nofollow" />
       </head>
       <body className={inter.className}>
-        <Container>
-          <Header />
-          {children}
-          <Footer />
-        </Container>
+        <Container>{children}</Container>
       </body>
     </html>
   );
