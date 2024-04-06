@@ -14,7 +14,7 @@ export default async function Category({ params }: Props) {
 
   if (!category) notFound();
 
-  let projects = getProjectsByCategorySlug(category.slug);
+  let projects = await getProjectsByCategorySlug(category.slug);
 
   return (
     <>

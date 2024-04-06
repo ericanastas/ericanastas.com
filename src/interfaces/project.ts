@@ -13,4 +13,5 @@ export type Project = {
   featured?: boolean;
   url: string;
   category: Category;
+  html: string;
 };

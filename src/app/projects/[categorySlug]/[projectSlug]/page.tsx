@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllProjects, getProject } from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
 import DraftAlert from "@/app/_components/draft-alert";
 import { ProjectBody } from "@/app/_components/project-body";
 import { ProjectHeader } from "@/app/_components/project-header";
@@ -9,13 +8,11 @@ import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 
 export default async function Project({ params }: Params) {
-  const project = getProject(params.categorySlug, params.projectSlug);
+  const project = await getProject(params.categorySlug, params.projectSlug);
 
   if (!project) {
     return notFound();
   }
-
-  const content = await markdownToHtml(project.content || "");
 
   return (
     <>
@@ -36,7 +33,7 @@ export default async function Project({ params }: Params) {
             </div>
           )}
 
-          <ProjectBody content={content} />
+          <ProjectBody content={project.html} />
         </article>
       </main>
       <Footer />
@@ -51,8 +48,8 @@ type Params = {
   };
 };
 
-export function generateMetadata({ params }: Params): Metadata {
-  const project = getProject(params.categorySlug, params.projectSlug);
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const project = await getProject(params.categorySlug, params.projectSlug);
 
   if (!project) {
     return notFound();
@@ -69,7 +66,7 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 export async function generateStaticParams() {
-  const projects = getAllProjects();
+  const projects = await getAllProjects();
 
   return projects.map((project) => ({
     slug: project.slug,

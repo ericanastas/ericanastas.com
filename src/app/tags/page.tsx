@@ -7,7 +7,7 @@ import Footer from "../_components/footer";
 import { Metadata } from "next";
 
 export default async function Tags() {
-  let allTags = getAllTags();
+  let allTags = await getAllTags();
 
   return (
     <>

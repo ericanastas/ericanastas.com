@@ -7,11 +7,11 @@ import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 
 export default async function Project({ params }: Props) {
-  const tag = getAllTags().find((tag) => tag.slug === params.tagSlug);
+  const tag = (await getAllTags()).find((tag) => tag.slug === params.tagSlug);
 
   if (!tag) notFound();
 
-  let projects = getProjectsByTagSlug(tag.slug);
+  let projects = await getProjectsByTagSlug(tag.slug);
 
   return (
     <>
@@ -34,8 +34,8 @@ type Props = {
   };
 };
 
-export function generateMetadata({ params }: Props): Metadata {
-  const tag = getAllTags().find((ts) => ts.slug === params.tagSlug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const tag = (await getAllTags()).find((ts) => ts.slug === params.tagSlug);
   if (!tag) notFound();
 
   const title = `${tag.name} Projects`;
@@ -46,7 +46,7 @@ export function generateMetadata({ params }: Props): Metadata {
 }
 
 export async function generateStaticParams() {
-  const allTags = getAllTags();
+  const allTags = await getAllTags();
 
   return allTags.map((tag) => ({
     tagSlug: tag.slug,

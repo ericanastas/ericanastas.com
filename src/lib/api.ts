@@ -6,11 +6,15 @@ import slugify from "slugify";
 import { Tag } from "@/interfaces/tag";
 import path from "path";
 import { Category } from "@/interfaces/category";
+import markdownToHtml from "./markdownToHtml";
 
 const projectsDirectory = join(process.cwd(), "_projects");
 const slugifyOpt = { lower: true };
 
-function readProjectFile(category: Category, projectMdPath: string): Project {
+async function readProjectFile(
+  category: Category,
+  projectMdPath: string
+): Promise<Project> {
   let projectMdFileName = path.basename(projectMdPath);
 
   const projectSlug = removeFileExtension(projectMdFileName);
@@ -26,6 +30,8 @@ function readProjectFile(category: Category, projectMdPath: string): Project {
 
   const fileContents = fs.readFileSync(projectMdPath, "utf8");
   const { data, content } = matter(fileContents);
+
+  const html = await markdownToHtml(content || "");
 
   let { title, date, coverImage, summary, draft, tags, featured } = data;
 
@@ -49,13 +55,14 @@ function readProjectFile(category: Category, projectMdPath: string): Project {
     tags: tagObjArr,
     url,
     category,
+    html,
   } as Project;
 }
 
-export function getProject(
+export async function getProject(
   categorySlug: string,
   projectSlug: string
-): Project | null {
+): Promise<Project | null> {
   let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
 
   let categoryFolderName = categoryFolderNames.find(
@@ -75,7 +82,7 @@ export function getProject(
     projectMdFileName
   );
 
-  let project = readProjectFile(category, projectMdFilePath);
+  let project = await readProjectFile(category, projectMdFilePath);
 
   return project;
 }
@@ -99,7 +106,7 @@ export function getAllProjectCategories(): Category[] {
   return categories;
 }
 
-export function getAllProjects(): Project[] {
+export async function getAllProjects(): Promise<Project[]> {
   const projects: Project[] = [];
 
   let categories = getAllProjectCategories();
@@ -111,7 +118,7 @@ export function getAllProjects(): Project[] {
 
     for (let projectMdFileName of projectMdFileNames) {
       let projectMdFilePath = path.join(categoryFolder, projectMdFileName);
-      let project = readProjectFile(category, projectMdFilePath);
+      let project = await readProjectFile(category, projectMdFilePath);
       projects.push(project);
     }
   }
@@ -130,12 +137,12 @@ export function getAllProjects(): Project[] {
   return sortedProjects;
 }
 
-export function getAllTags(): Tag[] {
-  let allProjects = getAllProjects();
+export async function getAllTags(): Promise<Tag[]> {
+  let allProjects = await getAllProjects();
   return getProjectTags(allProjects);
 }
 
-export function getProjectTags(projects: Project[]): Tag[] {
+function getProjectTags(projects: Project[]): Tag[] {
   let tags: Tag[] = [];
 
   for (let proj of projects) {
@@ -153,12 +160,18 @@ function sortProjectDesc(project1: Project, project2: Project): number {
   return project1.date > project2.date ? -1 : 1;
 }
 
-export function getProjectsByCategorySlug(categorySlug: string): Project[] {
-  return getAllProjects().filter((p) => p.category.slug === categorySlug);
+export async function getProjectsByCategorySlug(
+  categorySlug: string
+): Promise<Project[]> {
+  return (await getAllProjects()).filter(
+    (p) => p.category.slug === categorySlug
+  );
 }
 
-export function getProjectsByTagSlug(tagSlug: string): Project[] {
-  return getAllProjects().filter((p) =>
+export async function getProjectsByTagSlug(
+  tagSlug: string
+): Promise<Project[]> {
+  return (await getAllProjects()).filter((p) =>
     p.tags.map((t) => t.slug).includes(tagSlug)
   );
 }
