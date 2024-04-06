@@ -14,7 +14,7 @@ const CoverImage = ({ title, src, url }: Props) => {
         <Image
           src={src}
           alt={`Cover Image for ${title}`}
-          className="shadow-sm w-full hover:shadow-lg transition-shadow duration-200"
+          className="shadow-sm w-full hover:shadow-lg transition-shadow duration-200 aspect-[4/3] object-cover"
           width={1300}
           height={630}
         />
