@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getProjectsByTagSlug, getAllTags } from "@/lib/api";
+import { getProjectsByTagSlug, getAllTags } from "@/lib/projectsApi";
 import { ProjectList } from "@/app/_components/project-list";
 import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";

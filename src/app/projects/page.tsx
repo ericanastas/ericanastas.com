@@ -1,5 +1,5 @@
 import { ProjectList } from "@/app/_components/project-list";
-import { getAllProjects } from "@/lib/api";
+import { getAllProjects } from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllProjects, getProject } from "@/lib/api";
+import { getAllProjects, getProject } from "@/lib/projectsApi";
 import DraftAlert from "@/app/_components/draft-alert";
 import { Content } from "@/app/_components/content";
 import { ProjectHeader } from "@/app/_components/project-header";

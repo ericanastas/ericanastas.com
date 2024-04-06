@@ -1,18 +1,14 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-import slugify from "slugify";
 import path from "path";
-import markdownToHtml from "./markdownToHtml";
+import { markdownToHtml, removeFileExtension, convertToSlug } from "./util";
 
 import type { Project } from "@/interfaces/project";
-import type { Page } from "@/interfaces/page";
 import type { Category } from "@/interfaces/category";
 import type { Tag } from "@/interfaces/tag";
 
 const projectsDirectory = join(process.cwd(), "_projects");
-const pagesDirectory = join(process.cwd(), "_pages");
-const slugifyOpt = { lower: true };
 
 async function readProjectFile(
   category: Category,
@@ -22,11 +18,10 @@ async function readProjectFile(
 
   const projectSlug = removeFileExtension(projectMdFileName);
 
-  if (projectSlug != slugify(projectSlug, slugifyOpt)) {
+  if (projectSlug != convertToSlug(projectSlug)) {
     throw Error(
-      `Project file name "${projectMdFileName}" does not match slugified version "${slugify(
-        projectSlug,
-        slugifyOpt
+      `Project file name "${projectMdFileName}" does not match slugified version "${convertToSlug(
+        projectSlug
       )}"`
     );
   }
@@ -40,8 +35,8 @@ async function readProjectFile(
 
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
-    slug: slugify(t, slugifyOpt),
-    url: `/tags/${slugify(t, slugifyOpt)}`,
+    slug: convertToSlug(t),
+    url: `/tags/${convertToSlug(t)}`,
   }));
 
   let url = `/projects/${category.slug}/${projectSlug}`;
@@ -69,7 +64,7 @@ export async function getProject(
   let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
 
   let categoryFolderName = categoryFolderNames.find(
-    (c) => slugify(c, slugifyOpt) === categorySlug
+    (c) => convertToSlug(c) === categorySlug
   );
   if (!categoryFolderName) return null;
 
@@ -90,15 +85,11 @@ export async function getProject(
   return project;
 }
 
-function removeFileExtension(fileName: string): string {
-  return fileName.substring(0, fileName.length - path.extname(fileName).length);
-}
-
 export function getAllProjectCategories(): Category[] {
   let categories: Category[] = [];
   let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
   for (let categoryName of categoryFolderNames) {
-    let categorySlug = slugify(categoryName, slugifyOpt);
+    let categorySlug = convertToSlug(categoryName);
     categories.push({
       name: categoryName,
       slug: categorySlug,
@@ -181,54 +172,4 @@ export async function getProjectsByTagSlug(
 
 export function getAllProjectSlugs() {
   return fs.readdirSync(projectsDirectory);
-}
-
-async function readPageFile(pageMdPath: string): Promise<Page> {
-  let pageMdFileName = path.basename(pageMdPath);
-
-  const pageSlug = removeFileExtension(pageMdFileName);
-
-  if (pageSlug != slugify(pageSlug, slugifyOpt)) {
-    throw Error(
-      `Page file name "${pageMdFileName}" does not match slugified version "${slugify(
-        pageSlug,
-        slugifyOpt
-      )}"`
-    );
-  }
-
-  const fileContents = fs.readFileSync(pageMdPath, "utf8");
-  const { data, content } = matter(fileContents);
-  const html = await markdownToHtml(content || "");
-
-  let { title, draft } = data;
-
-  let url = `/${pageSlug}`;
-
-  let page: Page = { content, html, slug: pageSlug, title, url, draft };
-
-  return page;
-}
-
-export async function getPage(pageSlug: string): Promise<Page | null> {
-  const pageMdFileName = pageSlug + ".md";
-  const projectMdFilePath = path.join(pagesDirectory, pageMdFileName);
-
-  let project = await readPageFile(projectMdFilePath);
-
-  return project;
-}
-
-export async function getAllPages(): Promise<Page[]> {
-  const pages: Page[] = [];
-
-  let pageMdFileNames: string[] = fs.readdirSync(pagesDirectory);
-
-  for (let pageMdFileName of pageMdFileNames) {
-    let pageMdFilePath = path.join(pagesDirectory, pageMdFileName);
-    let page = await readPageFile(pageMdFilePath);
-    pages.push(page);
-  }
-
-  return pages;
 }
