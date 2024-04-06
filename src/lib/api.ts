@@ -1,14 +1,17 @@
-import { Project } from "@/interfaces/project";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 import slugify from "slugify";
-import { Tag } from "@/interfaces/tag";
 import path from "path";
-import { Category } from "@/interfaces/category";
 import markdownToHtml from "./markdownToHtml";
 
+import type { Project } from "@/interfaces/project";
+import type { Page } from "@/interfaces/page";
+import type { Category } from "@/interfaces/category";
+import type { Tag } from "@/interfaces/tag";
+
 const projectsDirectory = join(process.cwd(), "_projects");
+const pagesDirectory = join(process.cwd(), "_pages");
 const slugifyOpt = { lower: true };
 
 async function readProjectFile(
@@ -178,4 +181,54 @@ export async function getProjectsByTagSlug(
 
 export function getAllProjectSlugs() {
   return fs.readdirSync(projectsDirectory);
+}
+
+async function readPageFile(pageMdPath: string): Promise<Page> {
+  let pageMdFileName = path.basename(pageMdPath);
+
+  const pageSlug = removeFileExtension(pageMdFileName);
+
+  if (pageSlug != slugify(pageSlug, slugifyOpt)) {
+    throw Error(
+      `Page file name "${pageMdFileName}" does not match slugified version "${slugify(
+        pageSlug,
+        slugifyOpt
+      )}"`
+    );
+  }
+
+  const fileContents = fs.readFileSync(pageMdPath, "utf8");
+  const { data, content } = matter(fileContents);
+  const html = await markdownToHtml(content || "");
+
+  let { title, draft } = data;
+
+  let url = `/${pageSlug}`;
+
+  let page: Page = { content, html, slug: pageSlug, title, url, draft };
+
+  return page;
+}
+
+export async function getPage(pageSlug: string): Promise<Page | null> {
+  const pageMdFileName = pageSlug + ".md";
+  const projectMdFilePath = path.join(pagesDirectory, pageMdFileName);
+
+  let project = await readPageFile(projectMdFilePath);
+
+  return project;
+}
+
+export async function getAllPages(): Promise<Page[]> {
+  const pages: Page[] = [];
+
+  let pageMdFileNames: string[] = fs.readdirSync(pagesDirectory);
+
+  for (let pageMdFileName of pageMdFileNames) {
+    let pageMdFilePath = path.join(pagesDirectory, pageMdFileName);
+    let page = await readPageFile(pageMdFilePath);
+    pages.push(page);
+  }
+
+  return pages;
 }

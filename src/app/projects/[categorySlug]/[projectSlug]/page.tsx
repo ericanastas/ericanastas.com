@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllProjects, getProject } from "@/lib/api";
 import DraftAlert from "@/app/_components/draft-alert";
-import { ProjectBody } from "@/app/_components/project-body";
+import { Content } from "@/app/_components/content";
 import { ProjectHeader } from "@/app/_components/project-header";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
@@ -18,8 +18,9 @@ export default async function Project({ params }: Params) {
     <>
       <Header />
       <main>
-        {project.draft && <DraftAlert />}
         <article className="mb-16 max-w-4xl mx-auto">
+          {project.draft && <DraftAlert />}
+
           <ProjectHeader
             title={project.title}
             date={project.date}
@@ -33,7 +34,7 @@ export default async function Project({ params }: Params) {
             </div>
           )}
 
-          <ProjectBody content={project.html} />
+          <Content html={project.html} />
         </article>
       </main>
       <Footer />
