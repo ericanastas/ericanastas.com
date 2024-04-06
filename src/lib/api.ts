@@ -32,6 +32,7 @@ function readProjectFile(category: Category, projectMdPath: string): Project {
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
     slug: slugify(t, slugifyOpt),
+    url: `/tags/${slugify(t, slugifyOpt)}`,
   }));
 
   let url = `/projects/${category.slug}/${projectSlug}`;
@@ -62,7 +63,11 @@ export function getProject(
   );
   if (!categoryFolderName) return null;
 
-  let category: Category = { name: categoryFolderName, slug: categorySlug };
+  let category: Category = {
+    name: categoryFolderName,
+    slug: categorySlug,
+    url: `/projects/${categorySlug}`,
+  };
   const projectMdFileName = projectSlug + ".md";
   const projectMdFilePath = path.join(
     projectsDirectory,
@@ -84,7 +89,11 @@ export function getAllProjectCategories(): Category[] {
   let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
   for (let categoryName of categoryFolderNames) {
     let categorySlug = slugify(categoryName, slugifyOpt);
-    categories.push({ name: categoryName, slug: categorySlug });
+    categories.push({
+      name: categoryName,
+      slug: categorySlug,
+      url: `/projects/${categorySlug}`,
+    });
   }
 
   return categories;
@@ -127,17 +136,17 @@ export function getAllTags(): Tag[] {
 }
 
 export function getProjectTags(projects: Project[]): Tag[] {
-  let tagSlugs: Tag[] = [];
+  let tags: Tag[] = [];
 
   for (let proj of projects) {
     for (let projTag of proj.tags) {
-      if (!tagSlugs.some((t) => t.slug === projTag.slug)) {
-        tagSlugs.push(projTag);
+      if (!tags.some((t) => t.slug === projTag.slug)) {
+        tags.push(projTag);
       }
     }
   }
 
-  return tagSlugs.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
+  return tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
 }
 
 function sortProjectDesc(project1: Project, project2: Project): number {

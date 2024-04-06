@@ -30,27 +30,26 @@ export function ProjectPreview({
   return (
     <div>
       <p></p>
-      <div className="mb-4">
+      <div className="mb-2">
         {coverImage && <CoverImage url={url} title={title} src={coverImage} />}
         {!coverImage && (
           <CoverImage url={url} title={title} src={"/images/placeholder.png"} />
         )}
       </div>
 
-      <Link
-        className="hover:underline text-sm mb-4"
-        href={`/projects/${category.slug}`}
-      >
-        {category.name}
-      </Link>
       <h3 className="text-3xl mb-1 leading-snug">
         <Link href={url} className="hover:underline">
           {title}
         </Link>
       </h3>
 
-      <div className="text-md mb-2">
-        <DateFormatter dateString={date} />
+      <div className="flex justify-between text-md mb-2">
+        <Link className="hover:underline" href={category.url}>
+          {category.name}
+        </Link>
+        <div>
+          <DateFormatter dateString={date} />
+        </div>
       </div>
 
       <div className="mb-4">

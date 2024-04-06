@@ -21,8 +21,7 @@ export function ProjectList({ projects, selectedTagSlug }: Props) {
             summary={project.summary}
             url={project.url}
             tags={project.tags.map((t) => ({
-              name: t.name,
-              slug: t.slug,
+              ...t,
               selected: selectedTagSlug ? selectedTagSlug == t.slug : false,
             }))}
           />

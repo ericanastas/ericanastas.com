@@ -12,7 +12,7 @@ export default function TagChip({ tag }: Props) {
   else className += " bg-gray-50 text-gray-600 ring-gray-500/10";
 
   return (
-    <Link href={`/tags/${tag.slug}`}>
+    <Link href={tag.url}>
       <span className={className}>{tag.name}</span>
     </Link>
   );
