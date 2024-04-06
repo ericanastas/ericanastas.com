@@ -18,8 +18,8 @@ export default function Index() {
                 </h1>
                 <p className="mb-8">
                   I'm a software engineer in San Francisco with nearly twenty
-                  years experience driving technological progress in the AEC
-                  industry.
+                  years experience driving the advancement of technology in the
+                  AEC industry.
                 </p>
               </div>
               <div className="shrink-0 flex justify-center align-start">
