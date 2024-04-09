@@ -1,0 +1,12 @@
+---
+title: Seating Layout
+tags:
+  - Grasshopper
+id: "416"
+categories:
+  - - som
+    - Christ Our Savior Cathedral
+date: 2010-07-16 18:59:27
+---
+
+A simple Grasshopper definition that is use to plan seating layouts. It takes a series of curves that represents rows of seats, and a minimum seat spacing. It then draws circles to represent each seat along each row, provides a total seat count, a seat count per row, and the actual spacing of each row.
