@@ -17,8 +17,8 @@ The names of computers to check are then added. These can be entered directly in
 
 Next the check is run, and the existence and version of the specified file is verified on all the computers. Computers that are not found, files that are missing, or files that do not match the expected values are identified.
 
-[![Network File Checker](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker-636x483.png)](Network-File-Checker.png)
+[![Network File Checker](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker.jpg)](Network-File-Checker.png)
 
 The results of the check can then be exported to an Excel file.
 
-[![ExportExcel](http://www.ericanastas.com/wp-content/uploads/2014/09/ExportExcel-636x662.png)](ExportExcel.png)
+[![ExportExcel](http://www.ericanastas.com/wp-content/uploads/2014/09/ExportExcel.jpg)](ExportExcel.png)

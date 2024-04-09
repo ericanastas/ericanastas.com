@@ -9,4 +9,4 @@ The View Profiler add-in is used to test and evaluate the performance of views i
 
 [![Profile View Warning](Profile-View-Warning.png)](http://www.ericanastas.com/wp-content/uploads/2014/06/Profile-View-Warning.png)
 
-[![Profile View Report](http://www.ericanastas.com/wp-content/uploads/2014/06/Profile-View-Report-636x527.png)](Profile-View-Report.png)
+[![Profile View Report](http://www.ericanastas.com/wp-content/uploads/2014/06/Profile-View-Report.jpg)](Profile-View-Report.png)

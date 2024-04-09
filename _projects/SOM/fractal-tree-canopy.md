@@ -15,6 +15,6 @@ Here's a video showing only the endpoints of the fractal pattern.
 
 Next I applied the pattern to a curved surface to generate the full 3D canopy model. The videos below show the results of varying the branch length and branch angle.
 
-[![](http://www.ericanastas.com/wp-content/uploads/2011/02/tree-canopy-636x421.jpg "tree canopy")](tree-canopy.jpg)
+[![](http://www.ericanastas.com/wp-content/uploads/2011/02/tree-canopy.jpg "tree canopy")](tree-canopy.jpg)
 
-[![](http://www.ericanastas.com/wp-content/uploads/2011/02/Tree-Structure-Samples-636x425.png "Tree Structure Samples")](Tree-Structure-Samples.png)
+[![](http://www.ericanastas.com/wp-content/uploads/2011/02/Tree-Structure-Samples.jpg "Tree Structure Samples")](Tree-Structure-Samples.png)

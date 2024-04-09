@@ -11,4 +11,4 @@ Compare Object Styles is a Revit add-in which can compare the object style setti
 
 An example of one of the reports is shown below. Discrepancies between the models are highlighted in red. This includes both differences in the line weights, as well as subcategories that exist in one model but not another.
 
-[![Compare Obj Styles Report](http://www.ericanastas.com/wp-content/uploads/2014/06/Compare-Obj-Styles-Report-636x450.png)](Compare-Obj-Styles-Report.png)
+[![Compare Obj Styles Report](http://www.ericanastas.com/wp-content/uploads/2014/06/Compare-Obj-Styles-Report.jpg)](Compare-Obj-Styles-Report.png)

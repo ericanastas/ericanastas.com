@@ -11,25 +11,25 @@ The project was still in design development, so soon after completing the enclos
 
 I started by extracting the work-point coordinates from the Rhino massing model.
 
-\[caption id="attachment_830" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image046-636x453.png "Work Point Coordinates")](slide0020_image046.png) Work Point Coordinates\[/caption\]
+\[caption id="attachment_830" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image046.jpg "Work Point Coordinates")](slide0020_image046.png) Work Point Coordinates\[/caption\]
 
-\[caption id="attachment_831" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image048-636x439.png "Work Points")](slide0020_image048.png) Work Points\[/caption\]
+\[caption id="attachment_831" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image048.jpg "Work Points")](slide0020_image048.png) Work Points\[/caption\]
 
 The script then used these work-point coordinates to create native Revit surfaces.
 
-\[caption id="attachment_832" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image059-636x422.png "Surfaces")](slide0031_image059.png) Surfaces\[/caption\]
+\[caption id="attachment_832" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image059.jpg "Surfaces")](slide0031_image059.png) Surfaces\[/caption\]
 
 These surfaces were then automatically divided by reference planes created by the script.
 
-\[caption id="attachment_833" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image061-636x422.png "Divided Surfaces")](slide0031_image061.png) Divided Surfaces\[/caption\]
+\[caption id="attachment_833" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image061.jpg "Divided Surfaces")](slide0031_image061.png) Divided Surfaces\[/caption\]
 
 Finally the script populated the divided surfaces with specific adaptive component curtain panels.
 
-\[caption id="attachment_834" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image063-636x422.png "slide0031_image063")](slide0031_image063.png) Adaptive Component Panels\[/caption\]
+\[caption id="attachment_834" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image063.jpg "slide0031_image063")](slide0031_image063.png) Adaptive Component Panels\[/caption\]
 
 The image below shows the model populated with colored placeholder panels showing how many different types of panels were required.
 
-\[caption id="attachment_836" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0033_image067-636x533.png "Colored Placeholder Panels")](slide0033_image067.png) Colored Placeholder Panels\[/caption\]
+\[caption id="attachment_836" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0033_image067.jpg "Colored Placeholder Panels")](slide0033_image067.png) Colored Placeholder Panels\[/caption\]
 
 In addition, part of my goal with this script was to create a code base that could be reused on future projects. I started out by creating a set of generic "surface" classes in .Net, which I could use to define three and four sided surfaces. These classes also included functionality to divide the resulting surface, and populate it with adaptive component panels.
 
@@ -41,6 +41,6 @@ I then used instances of these generic surface classes to generate a C# class mo
 
 The final generated enclosure model was also used to generated the project renderings. A few samples are shown below;
 
-\[caption id="attachment_841" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0035_image001-636x795.jpg "Final Rendering")](slide0035_image001.jpg) Final Rendering\[/caption\]
+\[caption id="attachment_841" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0035_image001.jpg "Final Rendering")](slide0035_image001.jpg) Final Rendering\[/caption\]
 
-\[caption id="attachment_838" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0036_image003-636x795.jpg "Final Rendering")](slide0036_image003.jpg) Final Rendering\[/caption\]
+\[caption id="attachment_838" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0036_image003.jpg "Final Rendering")](slide0036_image003.jpg) Final Rendering\[/caption\]
