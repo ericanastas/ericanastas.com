@@ -1,6 +1,7 @@
 ---
 title: Twisting Faceted Tower
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Poly Dawangjing Complex"]
 date: "2011-01-24"
 ---

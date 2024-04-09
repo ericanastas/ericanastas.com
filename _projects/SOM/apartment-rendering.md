@@ -1,6 +1,7 @@
 ---
 title: Apartment Renderings
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Modeling", "Visualization"]
 date: "2010-01-27"
 ---

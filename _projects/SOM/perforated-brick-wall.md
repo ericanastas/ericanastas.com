@@ -1,6 +1,7 @@
 ---
 title: Perforated Brick Wall
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Poly Dawangjing Complex"]
 date: "2012-03-26"
 ---

@@ -1,6 +1,7 @@
 ---
 title: Gradient Spandrels
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", 
 "First and Mission"]
 date: "2010-10-11"

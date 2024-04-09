@@ -1,6 +1,7 @@
 ---
 title: Del Mar House
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Modeling", "Revit Support"]
 date: "2010-06-10"
 ---

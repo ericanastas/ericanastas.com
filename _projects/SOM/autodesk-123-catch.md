@@ -1,6 +1,7 @@
 ---
 title: Autodesk 123 Catch
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Visualization"]
 date: "2010-08-20"
 ---

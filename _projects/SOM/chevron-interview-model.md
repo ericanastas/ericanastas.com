@@ -1,6 +1,7 @@
 ---
 title: Chevron Interview Model
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Business Development", "Ecotect", "Revit", "Revit Modeling"]
 date: "2010-01-19"
 ---

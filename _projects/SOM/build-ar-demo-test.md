@@ -1,6 +1,7 @@
 ---
 title: Build AR
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Augmented Reality", "Visualization"]
 date: "2010-09-09"
 ---

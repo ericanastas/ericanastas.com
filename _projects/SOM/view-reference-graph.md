@@ -1,6 +1,7 @@
 ---
 title: View Reference Graph
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Graphviz", "Revit", "Revit API", "Visualization"]
 date: "2013-10-16"
 ---

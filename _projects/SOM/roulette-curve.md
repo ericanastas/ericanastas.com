@@ -1,6 +1,7 @@
 ---
 title: Roulette Curve
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-08-05"
 ---

@@ -1,6 +1,7 @@
 ---
 title: Louver Facade
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Chongqing Rural Commercial Bank Financial Building"]
 date: "2010-06-03"
 ---

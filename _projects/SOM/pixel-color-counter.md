@@ -1,6 +1,7 @@
 ---
 title: Pixel Color Counter
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "WinForms"]
 date: "2010-06-20"
 ---

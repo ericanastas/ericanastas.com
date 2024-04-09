@@ -1,6 +1,7 @@
 ---
 title: Rhino to Revizto
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revizto", "Rhino", "Rhino API", "Visualization"]
 date: "2015-04-04"
 ---

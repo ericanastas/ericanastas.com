@@ -1,6 +1,7 @@
 ---
 title: Revit QA Tool
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API", "WinForms"]
 date: "2011-03-04"
 ---

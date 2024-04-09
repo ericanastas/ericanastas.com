@@ -1,6 +1,7 @@
 ---
 title: Faceted Surface
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Beijing Tiangqiao Performing arts Center"]
 date: "2011-02-22"
 ---

@@ -1,6 +1,7 @@
 ---
 title: Slotted Surface
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Unknown Project"]
 date: "2011-12-16"
 ---

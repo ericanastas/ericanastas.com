@@ -1,6 +1,7 @@
 ---
 title: Navisworks Power Tools
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["3D Coordination", "C#.Net", "Navisworks", "NavisWorks API"]
 date: "2013-05-02"
 ---

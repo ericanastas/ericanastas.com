@@ -1,6 +1,7 @@
 ---
 title: Sichuan Aviation Plaza Vertical Mullion Family
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Sichuan Aviation Plaza"]
 date: "2011-10-20"
 ---

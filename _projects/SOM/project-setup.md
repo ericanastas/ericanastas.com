@@ -1,6 +1,7 @@
 ---
 title: Project Setup
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-04-25"
 ---

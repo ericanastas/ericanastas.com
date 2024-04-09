@@ -1,6 +1,7 @@
 ---
 title: Revit Server Hotfix Check
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Amazon Web Services", "C#.Net", "Revit", "Revit API"]
 date: "2014-06-18"
 ---

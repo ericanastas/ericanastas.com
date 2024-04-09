@@ -1,6 +1,7 @@
 ---
 title: MapStitch
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Google Earth", "WinForms"]
 date: "2010-06-28"
 ---

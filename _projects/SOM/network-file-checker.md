@@ -1,6 +1,7 @@
 ---
 title: Network File Checker
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "WPF"]
 date: "2014-10-07"
 ---

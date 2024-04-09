@@ -1,6 +1,7 @@
 ---
 title: San Diego Courthouse Cornice Family
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Modeling"]
 date: "2015-07-07"
 ---

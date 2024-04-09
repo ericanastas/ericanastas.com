@@ -1,6 +1,7 @@
 ---
 title: Wii Whiteboard
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["User Interface"]
 date: "2011-10-05"
 ---

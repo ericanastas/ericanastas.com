@@ -1,6 +1,7 @@
 ---
 title: Revit Batch Family Upgrader
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2010-10-29"
 ---

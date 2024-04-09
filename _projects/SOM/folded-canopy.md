@@ -1,6 +1,7 @@
 ---
 title: Folded Canopy
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Beijing Tiangqiao Performing arts Center"]
 date: "2011-01-11"
 ---

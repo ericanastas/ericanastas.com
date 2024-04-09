@@ -1,6 +1,7 @@
 ---
 title: Bank of America Branch Revit Model
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Business Development", "Revit", "Revit Modeling"]
 date: "2010-05-22"
 ---

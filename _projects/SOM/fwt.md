@@ -1,6 +1,7 @@
 ---
 title: Fuzhou Worldwide Tower
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Modeling", "Revit Support", "Fuzhou Worldwide Tower"]
 date: "2012-06-01"
 ---

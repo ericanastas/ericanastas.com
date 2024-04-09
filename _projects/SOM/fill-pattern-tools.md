@@ -1,6 +1,7 @@
 ---
 title: Fill Pattern Tools
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-04-29"
 ---

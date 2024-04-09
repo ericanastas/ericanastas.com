@@ -1,6 +1,7 @@
 ---
 title: Kangaroo Test
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Kangaroo"]
 date: "2010-05-12"
 ---

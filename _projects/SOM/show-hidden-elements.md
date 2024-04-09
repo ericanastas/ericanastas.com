@@ -1,6 +1,7 @@
 ---
 title: Show Hidden Elements
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-11-06"
 ---

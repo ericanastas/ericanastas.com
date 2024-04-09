@@ -1,6 +1,7 @@
 ---
 title: Balanced Stack
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-09-20"
 ---

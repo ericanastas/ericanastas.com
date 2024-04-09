@@ -1,6 +1,7 @@
 ---
 title: Chengu Dayuan Massing
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "Rhino", "Chengdu Poly International Plaza"]
 date: "2013-01-10"
 ---

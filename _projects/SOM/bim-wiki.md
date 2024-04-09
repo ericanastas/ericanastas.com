@@ -1,6 +1,7 @@
 ---
 title: BIM Wiki
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Collaboration", "CSS", "REST"]
 date: "2015-05-06"
 ---

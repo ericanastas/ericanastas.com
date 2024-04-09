@@ -1,6 +1,7 @@
 ---
 title: Solar Position Grasshopper Component
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
 date: "2011-05-31"
 ---

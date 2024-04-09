@@ -1,6 +1,7 @@
 ---
 title: Sync Areas to Rooms
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-05-01"
 ---

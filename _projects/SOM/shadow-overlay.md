@@ -1,6 +1,7 @@
 ---
 title: Shadow Overlay
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["JavaScript", "Photoshop"]
 date: "2013-11-25"
 ---

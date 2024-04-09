@@ -1,6 +1,7 @@
 ---
 title: 50 Fremont Model
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Business Development", "Revit", "Revit Modeling"]
 date: "2010-12-30"
 ---

@@ -1,6 +1,7 @@
 ---
 title: BFS Scoops
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper"]
 date: "2013-06-11"
 ---

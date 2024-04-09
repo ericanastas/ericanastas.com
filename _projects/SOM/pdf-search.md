@@ -1,6 +1,7 @@
 ---
 title: PDF Search
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "WinForms"]
 date: "2010-05-03"
 ---

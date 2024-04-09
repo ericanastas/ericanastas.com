@@ -1,6 +1,7 @@
 ---
 title: Activity Log
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "SQL"]
 date: "2013-10-15"
 ---

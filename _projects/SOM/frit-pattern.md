@@ -1,6 +1,7 @@
 ---
 title: Frit Pattern
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Grasshopper", "8 Washington St"]
 date: "2011-10-03"
 ---

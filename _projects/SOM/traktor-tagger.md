@@ -1,6 +1,7 @@
 ---
 title: Traktor Tagger
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["C#.Net", "Web API", "WPF", "XML"]
 date: "2013-01-15"
 ---

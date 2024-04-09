@@ -1,6 +1,7 @@
 ---
 title: Parkmerced Block 22 Geometry
 summary: placeholder summary
+coverImage: /images/placeholder.png
 tags: ["Galapagos", "Grasshopper", "Parkmerced"]
 date: "2015-04-10"
 ---
