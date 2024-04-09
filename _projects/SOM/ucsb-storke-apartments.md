@@ -6,7 +6,7 @@ tags:
   - Revit Support
 
 categories:
-  - - som
+    - som
     - UCSB Storke Apartments
 date: "2020-10-26"
 ---

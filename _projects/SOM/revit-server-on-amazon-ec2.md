@@ -8,7 +8,7 @@ tags:
   - Revit Server
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2012-03-01"
 ---

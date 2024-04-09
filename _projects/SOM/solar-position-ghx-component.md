@@ -6,7 +6,7 @@ tags:
   - Grasshopper
   - Grasshopper API
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2011-05-31"
 ---

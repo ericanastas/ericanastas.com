@@ -9,7 +9,7 @@ tags:
   - Rhino API
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2010-03-15"
 ---

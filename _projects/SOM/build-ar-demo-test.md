@@ -6,7 +6,7 @@ tags:
   - Visualization
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2010-09-09"
 ---

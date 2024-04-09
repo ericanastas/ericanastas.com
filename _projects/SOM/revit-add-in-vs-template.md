@@ -8,7 +8,7 @@ tags:
   - Visual Studio
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2014-11-11"
 ---

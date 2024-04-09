@@ -10,7 +10,7 @@ tags:
   - WinForms
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2012-03-07"
 ---

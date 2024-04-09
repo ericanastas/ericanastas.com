@@ -8,7 +8,7 @@ tags:
   - SQL
   - WinForms
 categories:
-  - - som
+    - som
     - Denver VA Medical Center
 date: "2011-10-26"
 ---

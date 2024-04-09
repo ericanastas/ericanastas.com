@@ -5,7 +5,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - Chongqing Rural Commercial Bank Financial Building
 date: "2010-06-03"
 ---

@@ -4,7 +4,7 @@ summary: placeholder summary
 tags:
   - Grasshopper
 categories:
-  - - som
+    - som
     - Christ Our Savior Cathedral
 date: "2010-07-16"
 ---

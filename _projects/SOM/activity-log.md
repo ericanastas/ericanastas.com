@@ -6,7 +6,7 @@ tags:
   - Revit API
   - SQL
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2013-10-15"
 ---

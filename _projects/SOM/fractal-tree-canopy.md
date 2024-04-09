@@ -6,7 +6,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - Beijing Tiangqiao Performing arts Center
 date: "2011-02-16"
 ---

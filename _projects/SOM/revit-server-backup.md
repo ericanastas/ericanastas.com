@@ -9,7 +9,7 @@ tags:
   - Revit Server
   - Revit Server API
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2013-09-09"
 ---

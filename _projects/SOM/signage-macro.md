@@ -7,7 +7,7 @@ tags:
   - Revit API
 
 categories:
-  - - som
+    - som
     - Denver VA Medical Center
 date: "2011-02-17"
 ---

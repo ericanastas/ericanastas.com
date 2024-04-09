@@ -4,7 +4,7 @@ summary: placeholder summary
 tags:
   - Grasshopper
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2013-06-11"
 ---

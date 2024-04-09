@@ -6,7 +6,7 @@ tags:
   - Unity 3D
   - Visualization
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2011-12-15"
 ---

@@ -5,7 +5,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - Century Avenue 2-3
 date: "2010-05-19"
 ---

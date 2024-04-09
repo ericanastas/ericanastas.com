@@ -8,7 +8,7 @@ tags:
   - XML
 
 categories:
-  - - Portfolio
+    - Portfolio
 date: "2013-01-15"
 ---
 

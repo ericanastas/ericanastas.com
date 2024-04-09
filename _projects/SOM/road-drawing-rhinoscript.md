@@ -6,7 +6,7 @@ tags:
   - Rhino Script
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2010-12-28"
 ---

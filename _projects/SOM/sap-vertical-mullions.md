@@ -8,7 +8,7 @@ tags:
   - Revit Conceptual Massing
 
 categories:
-  - - som
+    - som
     - Sichuan Aviation Plaza
 date: "2011-10-20"
 ---

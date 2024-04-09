@@ -6,7 +6,7 @@ tags:
   - Navisworks
   - NavisWorks Clash Detective
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2013-03-29"
 ---

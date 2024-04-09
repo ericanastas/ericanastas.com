@@ -5,7 +5,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - Christ Our Savior Cathedral
 date: "2010-09-20"
 ---

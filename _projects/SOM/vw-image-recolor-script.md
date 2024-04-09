@@ -6,7 +6,7 @@ tags:
   - Python
 
 categories:
-  - - som
+    - som
     - Park Merced Master Plan
     - Treasure Island Master Plan
 date: "2011-08-10"

@@ -7,7 +7,7 @@ tags:
   - Visualization
 
 categories:
-  - - Portfolio
+    - Portfolio
 date: "2010-01-27"
 ---
 

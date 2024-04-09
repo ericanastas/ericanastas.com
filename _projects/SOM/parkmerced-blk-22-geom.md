@@ -6,7 +6,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - Parkmerced
 date: "2015-04-10"
 ---

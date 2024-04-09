@@ -7,7 +7,7 @@ tags:
   - Rhino
 
 categories:
-  - - som
+    - som
     - Poly Dawangjing Complex
 date: "2012-07-23"
 ---

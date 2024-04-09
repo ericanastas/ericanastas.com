@@ -4,7 +4,7 @@ summary: placeholder summary
 tags:
   - Grasshopper
 categories:
-  - - som
+    - som
     - Fuzhou Worldwide Tower
 date: "2011-04-15"
 ---

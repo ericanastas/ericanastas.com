@@ -8,7 +8,7 @@ tags:
   - Revit API
   - Visualization
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2013-10-16"
 ---

@@ -5,7 +5,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - First and Mission
 date: "2010-10-11"
 ---

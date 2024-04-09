@@ -6,7 +6,7 @@ tags:
   - Rhino
 
 categories:
-  - - som
+    - som
     - Chengdu Poly International Plaza
 date: "2013-03-06"
 ---

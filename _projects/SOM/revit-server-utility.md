@@ -4,7 +4,7 @@ summary: placeholder summary
 tags:
 
 categories:
-  - - uncategorized
+    - uncategorized
 date: "2020-10-26"
 ---
 

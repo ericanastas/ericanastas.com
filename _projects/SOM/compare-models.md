@@ -8,7 +8,7 @@ tags:
   - WPF
 
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2015-07-13"
 ---

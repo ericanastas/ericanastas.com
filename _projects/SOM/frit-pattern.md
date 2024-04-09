@@ -5,7 +5,7 @@ tags:
   - Grasshopper
 
 categories:
-  - - som
+    - som
     - 8 Washington St
 date: "2011-10-03"
 ---

@@ -6,7 +6,7 @@ tags:
   - CSS
   - REST
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2015-05-06"
 ---

@@ -6,7 +6,7 @@ tags:
   - Google Earth
   - WinForms
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2010-06-28"
 ---

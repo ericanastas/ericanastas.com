@@ -4,7 +4,7 @@ summary: placeholder summary
 tags:
   - User Interface
 categories:
-  - - portfolio
+    - portfolio
     - Skidmore, Owings &amp; Merrill
 date: "2011-10-05"
 ---
