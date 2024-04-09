@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/informa-revit/Informa-Revit-Massing.jpg
 tags: ["Access", "C#.Net","Informa","Master Planning", "Revit", "Revit API","SQL"]
 date: "2009-02-19"
+draft: true
 ---
 
 Informa is a suite of tools which I created for using Revit as a master planning tool. A diagram of the overall workflow is shown below. A Revit model is creating using conceptual masses and mass floors representing many buildings. The data of this model is then exported to an Access database using the built in ODBC export in Revit. Next a number of custom queries in Access process the raw exported information into any number of desired printed reports.

@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/shadow-overlay/MISSING_COVER
 tags: ["JavaScript", "Photoshop"]
 date: "2013-11-25"
+draft: true
 ---
 
 The shadow overlay script is a script for Photoshop which can be used to identify and visualize new shadows created by a proposed project. The script takes images of existing shadows and projected shadows and highlights the areas where new shadows will be created by the proposed building(s).

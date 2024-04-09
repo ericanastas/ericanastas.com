@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/amt/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-05-13"
+draft: true
 img_src: /advanced-modeling-tools/AMT-Excel.png
 ---
 

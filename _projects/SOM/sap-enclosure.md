@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/sap-enclosure/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Sichuan Aviation Plaza"]
 date: "2011-10-20"
+draft: true
 ---
 
 The enclosure of the Sichuan Aviation Plaza project consisted of a complex pleated form with many vertical folds over the surface. Initially a colleague of mine and I created the enclosure manually using surfaces imported from Rhino. These surfaces where then divided, and populated with custom adaptive component curtain panel families. This process worked, but was extremely time consuming. It took us weeks to create the entire model

@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/sdcc-cornice-family/MISSING_COVER
 tags: ["Revit", "Revit Modeling"]
 date: "2015-07-07"
+draft: true
 ---
 
 ![center](center.png)

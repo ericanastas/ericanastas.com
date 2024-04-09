@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/bfs-scoops/MISSING_COVER
 tags: ["Grasshopper"]
 date: "2013-06-11"
+draft: true
 ---
 
 A simple grasshopper definition that creates a canopy structure by populating a surface with triangular scoops.

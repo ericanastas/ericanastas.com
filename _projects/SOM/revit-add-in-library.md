@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/revit-add-in-library/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML"]
 date: "2014-01-27"
+draft: true
 ---
 
 Revit Add-In Library is a suite of tools I developed that can be used to package, version, and distribute Revit add-ins to users. In concept it is similar to the Autodesk App Exchange, or the Apple App Store. It consists of two applications an installer tool used by users to install add-ins from a central library, and a library manager used by developers to manage and add content to a library of add-ins.

@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/compare-object-styles/MISSING_COVER
 tags: ["C#.Net", "Excel", "Revit", "Revit API"]
 date: "2013-11-01"
+draft: true
 ---
 
 Compare Object Styles is a Revit add-in which can compare the object style settings between multiple Revit models or templates. The tool first prompts the user to select the files to compare. It then opens each file, extracts the object style information, and generates an excel report of all the settings.

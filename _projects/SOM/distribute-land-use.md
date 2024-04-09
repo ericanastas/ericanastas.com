@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/distribute-land-use/MISSING_COVER
 tags: ["C#.Net", "Master Planning", "Rhino", "Rhino API"]
 date: "2015-04-21"
+draft: true
 ---
 
 I created this Rhino add-in for the SOM Planning department as a way to quickly generate diagrams of different distributions of land use. The tool randomly distributes blocks into specific land use types, based on a desired ratio of land uses per each zone of a project. First a site plan is created with all the blocks assigned to zone layers.

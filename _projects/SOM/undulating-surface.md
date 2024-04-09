@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/undulating-surface/articulated-surface.png
 tags: ["Grasshopper"]
 date: "2009-04-16"
+draft: true
 ---
 
 Grasshopper definition that creates a wavy undulating surface using two SIN wave functions. Created for the Anaheim Regional Transit Intermodal Center project.

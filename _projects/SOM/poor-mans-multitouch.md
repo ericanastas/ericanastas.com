@@ -3,6 +3,7 @@ title: Poor Man's Multitouch
 summary: placeholder summary
 coverImage: /images/som/poor-mans-multitouch/2012-03-14_205330.png
 date: "2008-05-14"
+draft: true
 tags: ["User Interface","Multitouch"]
 ---
 

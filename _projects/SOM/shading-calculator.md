@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/shading-calculator/MISSING_COVER
 tags: ["Analysis", "C#.Net", "Grasshopper", "Rhino", "Rhino API"]
 date: "2010-03-15"
+draft: true
 ---
 
 I developed this custom Rhino command to perform shading studies for a number of Chinese projects. There are specific building codes in areas of China which restrict how new construction can shade existing residential buildings. All residential units must be allowed to receive at least 2 hours of sunlight every year on Jan 21st.

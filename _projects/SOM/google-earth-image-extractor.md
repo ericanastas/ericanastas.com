@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/google-earth-image-extractor/tile-Ge-image-extractor.png
 tags: ["AutoHotKey","Google Earth","HTML","JavaScript"]
 date: "2009-05-18"
+draft: true
 ---
 
 This tool generates high resolution aerial images from Google Earth. It was implemented using an HTML webpage which uses JavaScript to manipulates an embedded Google Earth control. The script automatically moves the viewpoint of the control between a grid of seamless positions. A screen shot of each position is taken, and later combined in PhotoShop into one large high resolution image.

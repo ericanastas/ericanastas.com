@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/revit-add-in-vs-template/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "Visual Studio"]
 date: "2014-11-11"
+draft: true
 ---
 
 To facilitate the rapid development of new Revit add-ins I created this custom project template for Visual Studio.

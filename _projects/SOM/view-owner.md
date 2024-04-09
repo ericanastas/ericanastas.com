@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/view-owner/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-10-04"
+draft: true
 ---
 
 The View Owner Revit add-in automates the organization of the views in a Revit model by the users who created them. When enabled the add-in adds a custom "View Owner" shared parameter to the views of a model. As users create new views , this parameter is automatically populated with the name of the current user. This works both when creating new views, and duplicating existing views.

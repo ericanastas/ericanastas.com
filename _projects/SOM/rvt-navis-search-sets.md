@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/rvt-navis-search-sets/MISSING_COVER
 tags: ["3D Coordination", "Navisworks", "NavisWorks Clash Detective"]
 date: "2013-03-29"
+draft: true
 ---
 
 When using Navisworks to coordinate a building design, search sets can be used to subdivide the model into separate parts. Search sets are based off the properties of the model elements, and as a result are often unique per each project. In order to eliminate this extra work, I developed a set of standard search sets that will work with any Revit model. These were designed to be both comprehensive, and only based of properties intrinsic of all Revit models. This means they can be used with any Revit model regardless of the specific parameters or type names used.

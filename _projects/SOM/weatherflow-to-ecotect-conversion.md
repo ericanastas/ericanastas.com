@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/weatherflow-to-ecotect-conversion/2012-04-11_225457.png
 tags: ["Access","Ecotect"]
 date: "2009-03-03"
+draft: true
 ---
 
 A colleague of mine was using Ecotect to do wind study analysis of a master planing project for Treasure Island. However, the only historical wind data available for Ecotect was from a weather station at San Franciso International Airport, which is completely on the other side of the bay from Treasure Island. San Francisco is notorious for having very diverse micro-climates so this data was not of much use.
