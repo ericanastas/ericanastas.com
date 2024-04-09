@@ -2,7 +2,6 @@
 title: Wii Whiteboard
 tags:
   - User Interface
-id: "232"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

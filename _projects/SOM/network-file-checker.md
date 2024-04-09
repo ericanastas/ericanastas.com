@@ -3,7 +3,6 @@ title: Network File Checker
 tags:
   - C#.Net
   - WPF
-id: "2745"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

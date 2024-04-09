@@ -4,7 +4,6 @@ tags:
   - Revit
   - Revit API
   - SQL
-id: "2678"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

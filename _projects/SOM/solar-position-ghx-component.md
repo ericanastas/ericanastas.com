@@ -4,7 +4,6 @@ tags:
   - C#.Net
   - Grasshopper
   - Grasshopper API
-id: "512"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

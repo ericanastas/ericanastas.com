@@ -3,7 +3,6 @@ title: Faceted Eliptical Tower
 tags:
   - C#.Net
   - Grasshopper
-id: "650"
 categories:
   - - som
     - Poly Dawangjing Complex

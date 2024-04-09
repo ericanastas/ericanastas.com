@@ -6,7 +6,6 @@ tags:
   - Rhino
   - Rhino API
   - Visualization
-id: "2734"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

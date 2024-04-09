@@ -2,7 +2,6 @@
 title: Floor Area Calculator
 tags:
   - Grasshopper
-id: "370"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

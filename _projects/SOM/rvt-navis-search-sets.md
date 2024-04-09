@@ -4,7 +4,6 @@ tags:
   - 3D Coordination
   - Navisworks
   - NavisWorks Clash Detective
-id: "2484"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

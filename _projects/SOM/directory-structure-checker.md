@@ -3,7 +3,6 @@ title: Directory Structure Checker
 tags:
   - C#.Net
   - WPF
-id: "2682"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

@@ -5,7 +5,6 @@ tags:
   - Revit
   - Revit API
   - Revit Conceptual Massing
-id: "707"
 categories:
   - - som
     - Sichuan Aviation Plaza

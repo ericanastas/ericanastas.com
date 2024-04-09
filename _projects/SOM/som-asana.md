@@ -2,7 +2,6 @@
 title: SOM Asana Site
 tags:
   - Collaboration
-id: "2805"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

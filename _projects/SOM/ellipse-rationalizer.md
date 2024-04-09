@@ -3,7 +3,6 @@ title: Ellipse Rationalizer
 tags:
   - Galapagos
   - Grasshopper
-id: "406"
 categories:
   - - som
     - 350 Mission St

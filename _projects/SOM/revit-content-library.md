@@ -6,7 +6,6 @@ tags:
   - Revit API
   - SQL
   - WinForms
-id: "224"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

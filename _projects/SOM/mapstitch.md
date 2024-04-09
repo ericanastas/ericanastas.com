@@ -4,7 +4,6 @@ tags:
   - C#.Net
   - Google Earth
   - WinForms
-id: "205"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

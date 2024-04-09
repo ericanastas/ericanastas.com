@@ -2,7 +2,6 @@
 title: BFS Scoops
 tags:
   - Grasshopper
-id: "2624"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

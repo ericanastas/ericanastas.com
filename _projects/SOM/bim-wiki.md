@@ -4,7 +4,6 @@ tags:
   - Collaboration
   - CSS
   - REST
-id: "2819"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

@@ -6,7 +6,6 @@ tags:
   - Revit API
   - SQL
   - WinForms
-id: "387"
 categories:
   - - som
     - Denver VA Medical Center

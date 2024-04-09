@@ -2,7 +2,6 @@
 title: Seating Layout
 tags:
   - Grasshopper
-id: "416"
 categories:
   - - som
     - Christ Our Savior Cathedral

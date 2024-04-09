@@ -2,7 +2,6 @@
 title: Fuzhou Worldwide Tower Massing Study 2
 tags:
   - Grasshopper
-id: "713"
 categories:
   - - som
     - Fuzhou Worldwide Tower

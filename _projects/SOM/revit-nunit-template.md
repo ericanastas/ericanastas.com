@@ -6,7 +6,6 @@ tags:
   - Revit API
   - Unit Testing
   - Visual Studio
-id: "2762"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

@@ -6,7 +6,6 @@ tags:
   - Revit
   - Revit API
   - Visualization
-id: "2646"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

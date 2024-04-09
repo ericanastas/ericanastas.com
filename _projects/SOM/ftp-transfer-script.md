@@ -3,7 +3,6 @@ title: FTP Transfer Script
 tags:
   - FTP
   - Python
-id: "351"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill

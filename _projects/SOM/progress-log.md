@@ -5,7 +5,6 @@ tags:
   - Revit
   - Revit API
   - WPF
-id: "2662"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
