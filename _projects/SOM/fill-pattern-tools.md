@@ -1,10 +1,7 @@
 ---
 title: Fill Pattern Tools
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-04-29"
 ---
 

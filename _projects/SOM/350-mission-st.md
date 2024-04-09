@@ -1,11 +1,7 @@
 ---
 title: 350 Mission St
 summary: placeholder summary
-tags:
-    - Navisworks
-    - Revit
-    - Revit Support
-    - 350 Mission St
+tags: ["Navisworks", "Revit", "Revit Support", "350 Mission St"]
 date: "2011-06-01"
 ---
 

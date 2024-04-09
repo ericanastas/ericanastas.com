@@ -1,9 +1,7 @@
 ---
 title: Z Panel Block Wall
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Christ Our Savior Cathedral
+tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-11-09"
 ---
 

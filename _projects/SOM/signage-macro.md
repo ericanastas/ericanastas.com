@@ -1,11 +1,7 @@
 ---
 title: Signage Room Assignment Macro
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - Denver VA Medical Center
+tags: ["C#.Net", "Revit", "Revit API", "Denver VA Medical Center"]
 date: "2011-02-17"
 ---
 

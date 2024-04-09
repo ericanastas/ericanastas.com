@@ -1,10 +1,7 @@
 ---
 title: Building Floors
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Grasshopper
-    - Grasshopper API
+tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
 date: "2011-02-28"
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: Extract Families Macro
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Revit", "Revit API"]
 date: "2011-02-02"
 ---
 

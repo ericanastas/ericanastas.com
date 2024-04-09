@@ -1,9 +1,7 @@
 ---
 title: Road Drawing RhinoScript
 summary: placeholder summary
-tags:
-    - Rhino
-    - Rhino Script
+tags: ["Rhino", "Rhino Script"]
 date: "2010-12-28"
 ---
 

@@ -1,12 +1,7 @@
 ---
 title: Revit Add-In Library
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - WPF
-    - XML
+tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML"]
 date: "2014-01-27"
 ---
 

@@ -1,12 +1,7 @@
 ---
 title: Sichuan Aviation Plaza Enclosure
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - Revit Conceptual Massing
-    - Sichuan Aviation Plaza
+tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Sichuan Aviation Plaza"]
 date: "2011-10-20"
 ---
 

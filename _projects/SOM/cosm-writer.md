@@ -1,10 +1,7 @@
 ---
 title: COSM Writer
 summary: placeholder summary
-tags:
-    - Arduino
-    - C#.Net
-    - Web API
+tags: ["Arduino", "C#.Net", "Web API"]
 date: "2013-02-19"
 ---
 

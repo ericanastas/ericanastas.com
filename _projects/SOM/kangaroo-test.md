@@ -1,9 +1,7 @@
 ---
 title: Kangaroo Test
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Kangaroo
+tags: ["Grasshopper", "Kangaroo"]
 date: "2010-05-12"
 ---
 

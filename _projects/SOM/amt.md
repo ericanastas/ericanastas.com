@@ -1,10 +1,7 @@
 ---
 title: Advanced Modeling Tools
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-05-13"
 img_src: /advanced-modeling-tools/AMT-Excel.png
 ---

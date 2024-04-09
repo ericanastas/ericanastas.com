@@ -1,10 +1,7 @@
 ---
 title: Fractal Tree Canopy
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Grasshopper
-    - Beijing Tiangqiao Performing arts Center
+tags: ["C#.Net", "Grasshopper", "Beijing Tiangqiao Performing arts Center"]
 date: "2011-02-16"
 ---
 

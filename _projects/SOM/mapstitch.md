@@ -1,10 +1,7 @@
 ---
 title: MapStitch
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Google Earth
-    - WinForms
+tags: ["C#.Net", "Google Earth", "WinForms"]
 date: "2010-06-28"
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: Active Users
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-09-04"
 ---
 

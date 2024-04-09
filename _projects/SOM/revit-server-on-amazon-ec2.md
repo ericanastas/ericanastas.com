@@ -1,11 +1,7 @@
 ---
 title: Revit Server on Amazon EC2
 summary: placeholder summary
-tags:
-    - Amazon Web Services
-    - Cloud
-    - Revit
-    - Revit Server
+tags: ["Amazon Web Services", "Cloud", "Revit", "Revit Server"]
 date: "2012-03-01"
 ---
 

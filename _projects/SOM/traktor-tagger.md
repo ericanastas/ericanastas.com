@@ -1,11 +1,7 @@
 ---
 title: Traktor Tagger
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Web API
-    - WPF
-    - XML
+tags: ["C#.Net", "Web API", "WPF", "XML"]
 date: "2013-01-15"
 ---
 

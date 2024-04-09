@@ -1,9 +1,7 @@
 ---
 title: Shadow Overlay
 summary: placeholder summary
-tags:
-    - JavaScript
-    - Photoshop
+tags: ["JavaScript", "Photoshop"]
 date: "2013-11-25"
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: SOM Asana Site
 summary: placeholder summary
-tags:
-    - Collaboration
+tags: ["Collaboration"]
 date: "2014-03-21"
 ---
 

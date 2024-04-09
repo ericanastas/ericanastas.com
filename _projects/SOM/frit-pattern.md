@@ -1,9 +1,7 @@
 ---
 title: Frit Pattern
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - 8 Washington St
+tags: ["Grasshopper", "8 Washington St"]
 date: "2011-10-03"
 ---
 

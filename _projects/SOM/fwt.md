@@ -1,11 +1,7 @@
 ---
 title: Fuzhou Worldwide Tower
 summary: placeholder summary
-tags:
-    - Revit
-    - Revit Modeling
-    - Revit Support
-    - Fuzhou Worldwide Tower
+tags: ["Revit", "Revit Modeling", "Revit Support", "Fuzhou Worldwide Tower"]
 date: "2012-06-01"
 ---
 

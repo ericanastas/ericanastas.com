@@ -1,9 +1,7 @@
 ---
 title: Gradient Paving Pattern
 summary: placeholder summary
-tags:
-    - Rhino Script
-    - Unknown Project
+tags: ["Rhino Script", "Unknown Project"]
 date: "2010-09-07"
 ---
 

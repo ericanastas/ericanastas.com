@@ -1,10 +1,8 @@
 ---
 title: Gradient Spandrels
 summary: placeholder summary
-tags:
-    - Grasshopper
-
-    - First and Mission
+tags: ["Grasshopper", 
+"First and Mission"]
 date: "2010-10-11"
 ---
 

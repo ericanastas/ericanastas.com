@@ -1,9 +1,7 @@
 ---
 title: PDF Search
 summary: placeholder summary
-tags:
-    - C#.Net
-    - WinForms
+tags: ["C#.Net", "WinForms"]
 date: "2010-05-03"
 ---
 

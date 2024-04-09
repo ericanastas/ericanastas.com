@@ -1,11 +1,7 @@
 ---
 title: Random Curved Paving Pattern
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Grasshopper
-    - Rhino
-    - Poly Dawangjing Complex
+tags: ["C#.Net", "Grasshopper", "Rhino", "Poly Dawangjing Complex"]
 date: "2012-07-23"
 ---
 

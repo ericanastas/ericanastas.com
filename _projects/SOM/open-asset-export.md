@@ -1,11 +1,7 @@
 ---
 title: Open Asset BIM Data Export
 summary: placeholder summary
-tags:
-    - C#.Net
-    - REST
-    - Revit
-    - Revit API
+tags: ["C#.Net", "REST", "Revit", "Revit API"]
 date: "2014-08-08"
 ---
 

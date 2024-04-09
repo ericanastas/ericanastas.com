@@ -1,9 +1,7 @@
 ---
 title: Build AR
 summary: placeholder summary
-tags:
-    - Augmented Reality
-    - Visualization
+tags: ["Augmented Reality", "Visualization"]
 date: "2010-09-09"
 ---
 

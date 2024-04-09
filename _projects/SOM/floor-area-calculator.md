@@ -1,8 +1,7 @@
 ---
 title: Floor Area Calculator
 summary: placeholder summary
-tags:
-    - Grasshopper
+tags: ["Grasshopper"]
 date: "2010-04-23"
 ---
 

@@ -1,13 +1,7 @@
 ---
 title: Fuzhou Worldwide Tower Enclosure Model
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - Revit Conceptual Massing
-    - Revit Modeling
-    - Fuzhou Worldwide Tower
+tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Revit Modeling", "Fuzhou Worldwide Tower"]
 date: "2012-03-13"
 ---
 

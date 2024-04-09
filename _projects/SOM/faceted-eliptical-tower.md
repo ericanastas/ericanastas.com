@@ -1,10 +1,7 @@
 ---
 title: Faceted Eliptical Tower
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Grasshopper
-    - Poly Dawangjing Complex
+tags: ["C#.Net", "Grasshopper", "Poly Dawangjing Complex"]
 date: "2010-07-26"
 ---
 

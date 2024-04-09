@@ -1,10 +1,7 @@
 ---
 title: Revit to Unity 3D
 summary: placeholder summary
-tags:
-    - Revit
-    - Unity 3D
-    - Visualization
+tags: ["Revit", "Unity 3D", "Visualization"]
 date: "2011-12-15"
 ---
 

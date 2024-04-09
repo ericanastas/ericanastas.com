@@ -1,9 +1,7 @@
 ---
 title: Perforated Brick Wall
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Poly Dawangjing Complex
+tags: ["Grasshopper", "Poly Dawangjing Complex"]
 date: "2012-03-26"
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: View Profiler
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-10-06"
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Distribute Land Use
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Master Planning
-    - Rhino
-    - Rhino API
+tags: ["C#.Net", "Master Planning", "Rhino", "Rhino API"]
 date: "2015-04-21"
 ---
 

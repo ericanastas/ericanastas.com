@@ -1,11 +1,7 @@
 ---
 title: Delete Viewport Types
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - WPF
+tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-08-20"
 ---
 

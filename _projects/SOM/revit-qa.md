@@ -1,11 +1,7 @@
 ---
 title: Revit QA Tool
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - WinForms
+tags: ["C#.Net", "Revit", "Revit API", "WinForms"]
 date: "2011-03-04"
 ---
 

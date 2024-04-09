@@ -1,8 +1,7 @@
 ---
 title: Revit Server Utility
 summary: placeholder summary
-tags:
-    - uncategorized
+tags: ["uncategorized"]
 date: "2020-10-26"
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Network File Checker
 summary: placeholder summary
-tags:
-    - C#.Net
-    - WPF
+tags: ["C#.Net", "WPF"]
 date: "2014-10-07"
 ---
 

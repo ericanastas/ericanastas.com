@@ -1,9 +1,7 @@
 ---
 title: Check Family Names
 summary: placeholder summary
-tags:
-    - Revit
-    - Revit API
+tags: ["Revit", "Revit API"]
 date: "2013-12-06"
 ---
 

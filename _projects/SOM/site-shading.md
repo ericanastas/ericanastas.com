@@ -1,10 +1,7 @@
 ---
 title: Site Shading
 summary: placeholder summary
-tags:
-    - Analysis
-    - Grasshopper
-    - Rhino
+tags: ["Analysis", "Grasshopper", "Rhino"]
 date: "2013-11-15"
 ---
 

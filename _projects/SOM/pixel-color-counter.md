@@ -1,9 +1,7 @@
 ---
 title: Pixel Color Counter
 summary: placeholder summary
-tags:
-    - C#.Net
-    - WinForms
+tags: ["C#.Net", "WinForms"]
 date: "2010-06-20"
 ---
 

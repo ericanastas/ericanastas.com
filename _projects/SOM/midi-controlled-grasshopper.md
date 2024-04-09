@@ -1,12 +1,7 @@
 ---
 title: MIDI Controlled Grasshopper
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Grasshopper
-    - Grasshopper API
-    - User Interface
-    - WinForms
+tags: ["C#.Net", "Grasshopper", "Grasshopper API", "User Interface", "WinForms"]
 date: "2011-02-25"
 ---
 

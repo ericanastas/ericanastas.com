@@ -1,8 +1,7 @@
 ---
 title: BFS Scoops
 summary: placeholder summary
-tags:
-    - Grasshopper
+tags: ["Grasshopper"]
 date: "2013-06-11"
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Performance Advisor
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - WPF
+tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2013-11-04"
 ---
 

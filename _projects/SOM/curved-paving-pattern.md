@@ -1,9 +1,7 @@
 ---
 title: Curved Paving Pattern
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Poly Dawangjing Complex
+tags: ["Grasshopper", "Poly Dawangjing Complex"]
 date: "2012-02-02"
 ---
 

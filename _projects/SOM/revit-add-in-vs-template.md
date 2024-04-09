@@ -1,11 +1,7 @@
 ---
 title: Revit Add-In Visual Studio Template
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - Visual Studio
+tags: ["C#.Net", "Revit", "Revit API", "Visual Studio"]
 date: "2014-11-11"
 ---
 

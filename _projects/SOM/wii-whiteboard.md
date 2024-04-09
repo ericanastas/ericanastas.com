@@ -1,8 +1,7 @@
 ---
 title: Wii Whiteboard
 summary: placeholder summary
-tags:
-    - User Interface
+tags: ["User Interface"]
 date: "2011-10-05"
 ---
 

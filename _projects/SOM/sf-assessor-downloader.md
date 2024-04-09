@@ -1,10 +1,7 @@
 ---
 title: SF Assessor Downloader
 summary: placeholder summary
-tags:
-    - C#.Net
-    - HTML
-    - WinForms
+tags: ["C#.Net", "HTML", "WinForms"]
 date: "2010-11-11"
 ---
 

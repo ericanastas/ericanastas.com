@@ -1,8 +1,7 @@
 ---
 title: Autodesk 123 Catch
 summary: placeholder summary
-tags:
-    - Visualization
+tags: ["Visualization"]
 date: "2010-08-20"
 ---
 

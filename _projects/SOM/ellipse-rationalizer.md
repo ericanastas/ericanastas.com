@@ -1,11 +1,7 @@
 ---
 title: Ellipse Rationalizer
 summary: placeholder summary
-tags:
-    - Galapagos
-    - Grasshopper
-    - 350 Mission St
-    - Poly Dawangjing Complex
+tags: ["Galapagos", "Grasshopper", "350 Mission St", "Poly Dawangjing Complex"]
 date: "2011-08-25"
 ---
 

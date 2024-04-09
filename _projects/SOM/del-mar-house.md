@@ -1,10 +1,7 @@
 ---
 title: Del Mar House
 summary: placeholder summary
-tags:
-    - Revit
-    - Revit Modeling
-    - Revit Support
+tags: ["Revit", "Revit Modeling", "Revit Support"]
 date: "2010-06-10"
 ---
 

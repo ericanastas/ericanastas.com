@@ -1,10 +1,7 @@
 ---
 title: BIM Wiki
 summary: placeholder summary
-tags:
-    - Collaboration
-    - CSS
-    - REST
+tags: ["Collaboration", "CSS", "REST"]
 date: "2015-05-06"
 ---
 

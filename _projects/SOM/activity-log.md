@@ -1,10 +1,7 @@
 ---
 title: Activity Log
 summary: placeholder summary
-tags:
-    - Revit
-    - Revit API
-    - SQL
+tags: ["Revit", "Revit API", "SQL"]
 date: "2013-10-15"
 ---
 

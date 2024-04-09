@@ -1,9 +1,7 @@
 ---
 title: Slotted Surface
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Unknown Project
+tags: ["Grasshopper", "Unknown Project"]
 date: "2011-12-16"
 ---
 

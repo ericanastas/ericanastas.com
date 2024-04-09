@@ -1,12 +1,7 @@
 ---
 title: Shading Calculator
 summary: placeholder summary
-tags:
-    - Analysis
-    - C#.Net
-    - Grasshopper
-    - Rhino
-    - Rhino API
+tags: ["Analysis", "C#.Net", "Grasshopper", "Rhino", "Rhino API"]
 date: "2010-03-15"
 ---
 

@@ -1,11 +1,7 @@
 ---
 title: Compare Object Styles
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Excel
-    - Revit
-    - Revit API
+tags: ["C#.Net", "Excel", "Revit", "Revit API"]
 date: "2013-11-01"
 ---
 

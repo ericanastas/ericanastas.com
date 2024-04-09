@@ -1,12 +1,7 @@
 ---
 title: Rhino to Revizto
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revizto
-    - Rhino
-    - Rhino API
-    - Visualization
+tags: ["C#.Net", "Revizto", "Rhino", "Rhino API", "Visualization"]
 date: "2015-04-04"
 ---
 

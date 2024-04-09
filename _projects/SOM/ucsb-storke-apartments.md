@@ -1,9 +1,6 @@
 ---
 title: UCSB Storke Apartments
 summary: placeholder summary
-tags:
-    - Revit
-    - Revit Support
-    - UCSB Storke Apartments
+tags: ["Revit", "Revit Support", "UCSB Storke Apartments"]
 date: "2020-10-26"
 ---

@@ -1,9 +1,7 @@
 ---
 title: Kunming Tower Grasshopper
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Unknown Project
+tags: ["Grasshopper", "Unknown Project"]
 date: "2014-05-28"
 ---
 

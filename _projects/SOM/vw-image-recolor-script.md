@@ -1,11 +1,7 @@
 ---
 title: Virtual Wind Image Recoloring Script
 summary: placeholder summary
-tags:
-    - Analysis
-    - Python
-    - Park Merced Master Plan
-    - Treasure Island Master Plan
+tags: ["Analysis", "Python", "Park Merced Master Plan", "Treasure Island Master Plan"]
 date: "2011-08-10"
 ---
 

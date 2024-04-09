@@ -1,9 +1,7 @@
 ---
 title: Glazing Projection
 summary: placeholder summary
-tags:
-    - Grasshopper
-    - Century Avenue 2-3
+tags: ["Grasshopper", "Century Avenue 2-3"]
 date: "2010-05-19"
 ---
 

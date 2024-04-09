@@ -1,11 +1,7 @@
 ---
 title: Batch Open
 summary: placeholder summary
-tags:
-    - C#.Net
-    - Revit
-    - Revit API
-    - WPF
+tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-07-24"
 ---
 

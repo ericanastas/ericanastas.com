@@ -1,9 +1,7 @@
 ---
 title: FTP Transfer Script
 summary: placeholder summary
-tags:
-    - FTP
-    - Python
+tags: ["FTP", "Python"]
 date: "2011-08-04"
 ---
 
