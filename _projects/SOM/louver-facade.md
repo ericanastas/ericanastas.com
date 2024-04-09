@@ -3,9 +3,6 @@ title: Louver Facade
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Chongqing Rural Commercial Bank Financial Building
 date: "2010-06-03"
 ---

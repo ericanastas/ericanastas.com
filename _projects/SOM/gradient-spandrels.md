@@ -4,8 +4,6 @@ summary: placeholder summary
 tags:
     - Grasshopper
 
-categories:
-    - som
     - First and Mission
 date: "2010-10-11"
 ---

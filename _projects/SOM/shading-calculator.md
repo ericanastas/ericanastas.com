@@ -7,10 +7,6 @@ tags:
     - Grasshopper
     - Rhino
     - Rhino API
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-03-15"
 ---
 

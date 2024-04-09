@@ -5,9 +5,6 @@ tags:
     - Revit
     - Revit Modeling
     - Revit Support
-
-categories:
-    - Portfolio
 date: "2010-06-10"
 ---
 

@@ -5,10 +5,6 @@ tags:
     - Analysis
     - Grasshopper
     - Rhino
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-11-15"
 ---
 

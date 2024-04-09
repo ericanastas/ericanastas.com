@@ -8,9 +8,5 @@ tags:
     - Rhino API
     - Visual Studio
     - WinForms
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2012-03-07"
 ---

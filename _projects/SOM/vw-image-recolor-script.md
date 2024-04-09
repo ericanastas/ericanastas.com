@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - Analysis
     - Python
-
-categories:
-    - som
     - Park Merced Master Plan
     - Treasure Island Master Plan
 date: "2011-08-10"

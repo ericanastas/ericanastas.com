@@ -3,10 +3,6 @@ title: Proximity Frame
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-04-20"
 ---
 

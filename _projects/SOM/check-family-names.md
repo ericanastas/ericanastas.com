@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - Revit
     - Revit API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-12-06"
 ---
 

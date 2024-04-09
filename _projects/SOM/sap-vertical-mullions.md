@@ -6,9 +6,6 @@ tags:
     - Revit
     - Revit API
     - Revit Conceptual Massing
-
-categories:
-    - som
     - Sichuan Aviation Plaza
 date: "2011-10-20"
 ---

@@ -3,9 +3,6 @@ title: Twisting Faceted Tower
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Poly Dawangjing Complex
 date: "2011-01-24"
 ---

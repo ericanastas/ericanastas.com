@@ -3,9 +3,6 @@ title: Balanced Stack
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Christ Our Savior Cathedral
 date: "2010-09-20"
 ---

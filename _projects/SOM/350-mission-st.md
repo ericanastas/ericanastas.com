@@ -5,9 +5,6 @@ tags:
     - Navisworks
     - Revit
     - Revit Support
-
-categories:
-    - som
     - 350 Mission St
 date: "2011-06-01"
 ---

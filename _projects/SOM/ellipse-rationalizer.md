@@ -4,12 +4,8 @@ summary: placeholder summary
 tags:
     - Galapagos
     - Grasshopper
-categories:
-    - som
     - 350 Mission St
     - Poly Dawangjing Complex
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2011-08-25"
 ---
 

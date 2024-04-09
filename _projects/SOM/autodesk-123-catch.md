@@ -3,10 +3,6 @@ title: Autodesk 123 Catch
 summary: placeholder summary
 tags:
     - Visualization
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-08-20"
 ---
 

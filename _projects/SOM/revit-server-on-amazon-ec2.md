@@ -6,10 +6,6 @@ tags:
     - Cloud
     - Revit
     - Revit Server
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2012-03-01"
 ---
 

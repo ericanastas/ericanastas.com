@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - C#.Net
     - WPF
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-10-07"
 ---
 

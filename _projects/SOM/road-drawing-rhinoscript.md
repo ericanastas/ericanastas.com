@@ -4,10 +4,6 @@ summary: placeholder summary
 tags:
     - Rhino
     - Rhino Script
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-12-28"
 ---
 

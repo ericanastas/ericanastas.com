@@ -4,10 +4,6 @@ summary: placeholder summary
 tags:
     - C#.Net
     - WinForms
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-05-03"
 ---
 

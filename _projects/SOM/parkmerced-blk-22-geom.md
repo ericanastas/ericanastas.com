@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - Galapagos
     - Grasshopper
-
-categories:
-    - som
     - Parkmerced
 date: "2015-04-10"
 ---

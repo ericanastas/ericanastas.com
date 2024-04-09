@@ -5,9 +5,6 @@ tags:
     - C#.Net
     - Revit
     - Revit API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2015-05-13"
 img_src: /advanced-modeling-tools/AMT-Excel.png
 ---

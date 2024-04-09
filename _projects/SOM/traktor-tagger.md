@@ -6,9 +6,6 @@ tags:
     - Web API
     - WPF
     - XML
-
-categories:
-    - Portfolio
 date: "2013-01-15"
 ---
 

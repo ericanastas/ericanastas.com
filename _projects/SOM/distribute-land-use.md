@@ -6,10 +6,6 @@ tags:
     - Master Planning
     - Rhino
     - Rhino API
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2015-04-21"
 ---
 

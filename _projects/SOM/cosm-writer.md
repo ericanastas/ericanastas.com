@@ -5,10 +5,6 @@ tags:
     - Arduino
     - C#.Net
     - Web API
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-02-19"
 ---
 

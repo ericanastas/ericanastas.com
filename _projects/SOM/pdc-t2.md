@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - Grasshopper
     - Rhino
-
-categories:
-    - som
     - Chengdu Poly International Plaza
 date: "2013-03-06"
 ---

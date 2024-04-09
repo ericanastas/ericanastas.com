@@ -3,9 +3,6 @@ title: Folded Canopy
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Beijing Tiangqiao Performing arts Center
 date: "2011-01-11"
 ---

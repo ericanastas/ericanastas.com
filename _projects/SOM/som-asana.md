@@ -3,9 +3,6 @@ title: SOM Asana Site
 summary: placeholder summary
 tags:
     - Collaboration
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-03-21"
 ---
 

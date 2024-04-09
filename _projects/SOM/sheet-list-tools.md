@@ -5,9 +5,6 @@ tags:
     - C#.Net
     - Revit
     - Revit API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-10-04"
 ---
 

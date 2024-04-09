@@ -5,9 +5,6 @@ tags:
     - Revit
     - Revit Modeling
     - Revit Support
-
-categories:
-    - som
     - Fuzhou Worldwide Tower
 date: "2012-06-01"
 ---

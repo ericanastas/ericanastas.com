@@ -5,9 +5,6 @@ tags:
     - Revit
     - Revit Modeling
     - Revit Support
-
-categories:
-    - som
     - 8 Washington St
 date: "2012-05-01"
 ---

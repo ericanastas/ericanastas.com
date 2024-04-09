@@ -7,10 +7,6 @@ tags:
     - Grasshopper API
     - User Interface
     - WinForms
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2011-02-25"
 ---
 

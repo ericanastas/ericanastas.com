@@ -5,9 +5,6 @@ tags:
     - Revit
     - Unity 3D
     - Visualization
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2011-12-15"
 ---
 

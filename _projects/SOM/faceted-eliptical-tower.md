@@ -4,8 +4,6 @@ summary: placeholder summary
 tags:
     - C#.Net
     - Grasshopper
-categories:
-    - som
     - Poly Dawangjing Complex
 date: "2010-07-26"
 ---

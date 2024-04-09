@@ -3,9 +3,6 @@ title: Gradient Paving Pattern
 summary: placeholder summary
 tags:
     - Rhino Script
-
-categories:
-    - som
     - Unknown Project
 date: "2010-09-07"
 ---

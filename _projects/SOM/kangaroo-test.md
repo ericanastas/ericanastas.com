@@ -4,10 +4,6 @@ summary: placeholder summary
 tags:
     - Grasshopper
     - Kangaroo
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-05-12"
 ---
 

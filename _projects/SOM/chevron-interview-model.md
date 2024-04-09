@@ -6,10 +6,6 @@ tags:
     - Ecotect
     - Revit
     - Revit Modeling
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-01-19"
 ---
 

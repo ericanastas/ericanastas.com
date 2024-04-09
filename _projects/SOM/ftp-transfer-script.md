@@ -4,9 +4,6 @@ summary: placeholder summary
 tags:
     - FTP
     - Python
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2011-08-04"
 ---
 

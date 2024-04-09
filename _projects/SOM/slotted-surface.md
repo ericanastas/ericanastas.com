@@ -3,9 +3,6 @@ title: Slotted Surface
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Unknown Project
 date: "2011-12-16"
 ---

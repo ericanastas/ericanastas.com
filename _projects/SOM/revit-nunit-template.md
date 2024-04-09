@@ -7,9 +7,6 @@ tags:
     - Revit API
     - Unit Testing
     - Visual Studio
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-12-10"
 ---
 

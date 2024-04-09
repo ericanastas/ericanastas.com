@@ -7,9 +7,6 @@ tags:
     - Revit API
     - WPF
     - XML
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-01-27"
 ---
 

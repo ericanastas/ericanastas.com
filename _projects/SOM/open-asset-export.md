@@ -6,9 +6,6 @@ tags:
     - REST
     - Revit
     - Revit API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-08-08"
 ---
 

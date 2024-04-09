@@ -6,10 +6,6 @@ tags:
     - Revit
     - Revit API
     - Visual Studio
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2014-11-11"
 ---
 

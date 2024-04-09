@@ -6,9 +6,6 @@ tags:
     - C#.Net
     - Navisworks
     - NavisWorks API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-05-02"
 ---
 

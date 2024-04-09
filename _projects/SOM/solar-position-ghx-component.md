@@ -5,9 +5,6 @@ tags:
     - C#.Net
     - Grasshopper
     - Grasshopper API
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2011-05-31"
 ---
 

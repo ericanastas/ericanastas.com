@@ -3,8 +3,6 @@ title: Fuzhou Worldwide Tower Massing Study 2
 summary: placeholder summary
 tags:
     - Grasshopper
-categories:
-    - som
     - Fuzhou Worldwide Tower
 date: "2011-04-15"
 ---

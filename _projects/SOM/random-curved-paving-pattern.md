@@ -5,9 +5,6 @@ tags:
     - C#.Net
     - Grasshopper
     - Rhino
-
-categories:
-    - som
     - Poly Dawangjing Complex
 date: "2012-07-23"
 ---

@@ -3,9 +3,6 @@ title: Kunming Tower Grasshopper
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Unknown Project
 date: "2014-05-28"
 ---

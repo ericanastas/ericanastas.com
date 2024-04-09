@@ -5,9 +5,6 @@ tags:
     - Revit
     - Revit Modeling
     - Revit Support
-
-categories:
-    - som
     - Sichuan Aviation Plaza
 date: "2011-10-10"
 ---

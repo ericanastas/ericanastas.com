@@ -6,9 +6,6 @@ tags:
     - Revit
     - Revit Modeling
     - Revit Support
-
-categories:
-    - som
     - UCSF Neurosciences Building
 date: "2010-04-01"
 ---

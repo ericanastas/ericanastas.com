@@ -7,9 +7,6 @@ tags:
     - Revit API
     - Revit Conceptual Massing
     - Revit Modeling
-
-categories:
-    - som
     - Fuzhou Worldwide Tower
 date: "2012-03-13"
 ---

@@ -3,9 +3,6 @@ title: Roulette Curve
 summary: placeholder summary
 tags:
     - Grasshopper
-
-categories:
-    - som
     - Christ Our Savior Cathedral
 date: "2010-08-05"
 ---

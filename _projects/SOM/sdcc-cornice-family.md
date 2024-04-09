@@ -4,10 +4,6 @@ summary: placeholder summary
 tags:
     - Revit
     - Revit Modeling
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2015-07-07"
 ---
 

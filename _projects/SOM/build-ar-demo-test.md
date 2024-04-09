@@ -4,10 +4,6 @@ summary: placeholder summary
 tags:
     - Augmented Reality
     - Visualization
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2010-09-09"
 ---
 

@@ -5,9 +5,6 @@ tags:
     - C#.Net
     - Revit
     - Revit API
-
-categories:
-    - som
     - Denver VA Medical Center
 date: "2011-02-17"
 ---

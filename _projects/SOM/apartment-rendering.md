@@ -5,9 +5,6 @@ tags:
     - Revit
     - Revit Modeling
     - Visualization
-
-categories:
-    - Portfolio
 date: "2010-01-27"
 ---
 

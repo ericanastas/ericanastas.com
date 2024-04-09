@@ -6,10 +6,6 @@ tags:
     - Excel
     - Revit
     - Revit API
-
-categories:
-    - portfolio
-    - Skidmore, Owings &amp; Merrill
 date: "2013-11-01"
 ---
 
