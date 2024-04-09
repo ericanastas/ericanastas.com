@@ -1,7 +1,7 @@
 ---
 title: 50 Fremont Model
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/50-fremont-model/MISSING_COVER
 tags: ["Business Development", "Revit", "Revit Modeling"]
 date: "2010-12-30"
 ---

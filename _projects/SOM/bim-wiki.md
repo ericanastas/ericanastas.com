@@ -1,7 +1,7 @@
 ---
 title: BIM Wiki
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/bim-wiki/MISSING_COVER
 tags: ["Collaboration", "CSS", "REST"]
 date: "2015-05-06"
 ---

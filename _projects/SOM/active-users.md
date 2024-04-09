@@ -1,7 +1,7 @@
 ---
 title: Active Users
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/active-users/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-09-04"
 ---

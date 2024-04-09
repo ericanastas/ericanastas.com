@@ -1,7 +1,7 @@
 ---
 title: Advanced Modeling Tools
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/amt/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-05-13"
 img_src: /advanced-modeling-tools/AMT-Excel.png

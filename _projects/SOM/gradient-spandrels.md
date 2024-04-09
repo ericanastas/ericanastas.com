@@ -1,7 +1,7 @@
 ---
 title: Gradient Spandrels
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/gradient-spandrels/MISSING_COVER
 tags: ["Grasshopper", 
 "First and Mission"]
 date: "2010-10-11"

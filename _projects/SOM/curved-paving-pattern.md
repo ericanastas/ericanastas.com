@@ -1,7 +1,7 @@
 ---
 title: Curved Paving Pattern
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/curved-paving-pattern/MISSING_COVER
 tags: ["Grasshopper", "Poly Dawangjing Complex"]
 date: "2012-02-02"
 ---

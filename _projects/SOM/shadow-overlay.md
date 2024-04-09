@@ -1,7 +1,7 @@
 ---
 title: Shadow Overlay
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/shadow-overlay/MISSING_COVER
 tags: ["JavaScript", "Photoshop"]
 date: "2013-11-25"
 ---

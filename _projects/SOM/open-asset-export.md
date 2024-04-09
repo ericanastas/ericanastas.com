@@ -1,7 +1,7 @@
 ---
 title: Open Asset BIM Data Export
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/open-asset-export/MISSING_COVER
 tags: ["C#.Net", "REST", "Revit", "Revit API"]
 date: "2014-08-08"
 ---

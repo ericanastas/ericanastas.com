@@ -1,7 +1,7 @@
 ---
 title: Sichuan Aviation Plaza
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/sap/MISSING_COVER
 tags: ["Revit", "Revit Modeling", "Revit Support", "Sichuan Aviation Plaza"]
 date: "2011-10-10"
 ---

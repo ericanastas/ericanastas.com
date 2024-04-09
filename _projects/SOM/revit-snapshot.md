@@ -1,7 +1,7 @@
 ---
 title: Revit Snapshot
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-snapshot/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-02-18"
 ---

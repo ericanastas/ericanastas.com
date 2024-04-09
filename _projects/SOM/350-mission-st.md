@@ -1,7 +1,7 @@
 ---
 title: 350 Mission St
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/350-mission-st/MISSING_COVER
 tags: ["Navisworks", "Revit", "Revit Support", "350 Mission St"]
 date: "2011-06-01"
 ---

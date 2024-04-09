@@ -1,7 +1,7 @@
 ---
 title: Autodesk 123 Catch
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/autodesk-123-catch/MISSING_COVER
 tags: ["Visualization"]
 date: "2010-08-20"
 ---

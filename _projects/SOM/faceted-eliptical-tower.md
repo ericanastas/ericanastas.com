@@ -1,7 +1,7 @@
 ---
 title: Faceted Eliptical Tower
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/faceted-eliptical-tower/MISSING_COVER
 tags: ["C#.Net", "Grasshopper", "Poly Dawangjing Complex"]
 date: "2010-07-26"
 ---

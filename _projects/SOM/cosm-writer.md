@@ -1,7 +1,7 @@
 ---
 title: COSM Writer
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/cosm-writer/MISSING_COVER
 tags: ["Arduino", "C#.Net", "Web API"]
 date: "2013-02-19"
 ---

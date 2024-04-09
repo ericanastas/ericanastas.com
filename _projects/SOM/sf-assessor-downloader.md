@@ -1,7 +1,7 @@
 ---
 title: SF Assessor Downloader
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/sf-assessor-downloader/MISSING_COVER
 tags: ["C#.Net", "HTML", "WinForms"]
 date: "2010-11-11"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Revit Server on Amazon EC2
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-server-on-amazon-ec2/MISSING_COVER
 tags: ["Amazon Web Services", "Cloud", "Revit", "Revit Server"]
 date: "2012-03-01"
 ---

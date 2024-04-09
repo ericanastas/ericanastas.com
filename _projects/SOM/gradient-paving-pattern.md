@@ -1,7 +1,7 @@
 ---
 title: Gradient Paving Pattern
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/gradient-paving-pattern/MISSING_COVER
 tags: ["Rhino Script", "Unknown Project"]
 date: "2010-09-07"
 ---

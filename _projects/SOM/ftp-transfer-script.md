@@ -1,7 +1,7 @@
 ---
 title: FTP Transfer Script
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/ftp-transfer-script/MISSING_COVER
 tags: ["FTP", "Python"]
 date: "2011-08-04"
 ---

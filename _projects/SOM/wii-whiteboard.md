@@ -1,7 +1,7 @@
 ---
 title: Wii Whiteboard
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/wii-whiteboard/MISSING_COVER
 tags: ["User Interface"]
 date: "2011-10-05"
 ---

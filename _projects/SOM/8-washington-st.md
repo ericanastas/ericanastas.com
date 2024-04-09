@@ -1,7 +1,7 @@
 ---
 title: 8 Washington St
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/8-washington-st/MISSING_COVER
 tags: ["Revit", "Revit Modeling", "Revit Support", "8 Washington St"]
 date: "2012-05-01"
 ---

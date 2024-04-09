@@ -1,7 +1,7 @@
 ---
 title: Revit Server Backup
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-server-backup/MISSING_COVER
 tags: ["C#.Net", "REST", "Revit", "Revit API", "Revit Server", "Revit Server API"]
 date: "2013-09-09"
 ---

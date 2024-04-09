@@ -1,7 +1,7 @@
 ---
 title: Distribute Land Use
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/distribute-land-use/MISSING_COVER
 tags: ["C#.Net", "Master Planning", "Rhino", "Rhino API"]
 date: "2015-04-21"
 ---

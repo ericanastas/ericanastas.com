@@ -1,7 +1,7 @@
 ---
 title: Revit Server Utility
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-server-utility/MISSING_COVER
 tags: ["uncategorized"]
 date: "2020-10-26"
 ---

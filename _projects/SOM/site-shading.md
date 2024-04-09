@@ -1,7 +1,7 @@
 ---
 title: Site Shading
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/site-shading/MISSING_COVER
 tags: ["Analysis", "Grasshopper", "Rhino"]
 date: "2013-11-15"
 ---

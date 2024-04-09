@@ -1,7 +1,7 @@
 ---
 title: Z Panel Block Wall
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/z-panels/MISSING_COVER
 tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-11-09"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Performance Advisor
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/performance-advisor/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2013-11-04"
 ---

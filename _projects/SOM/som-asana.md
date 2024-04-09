@@ -1,7 +1,7 @@
 ---
 title: SOM Asana Site
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/som-asana/MISSING_COVER
 tags: ["Collaboration"]
 date: "2014-03-21"
 ---

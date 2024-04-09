@@ -1,7 +1,7 @@
 ---
 title: Sheet Revisions
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/sheet-revisions/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-11-21"
 ---

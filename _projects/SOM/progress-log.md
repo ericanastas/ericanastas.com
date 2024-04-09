@@ -1,7 +1,7 @@
 ---
 title: Progress Log
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/progress-log/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2013-11-01"
 ---

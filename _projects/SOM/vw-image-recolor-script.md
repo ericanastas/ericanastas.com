@@ -1,7 +1,7 @@
 ---
 title: Virtual Wind Image Recoloring Script
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/vw-image-recolor-script/MISSING_COVER
 tags: ["Analysis", "Python", "Park Merced Master Plan", "Treasure Island Master Plan"]
 date: "2011-08-10"
 ---

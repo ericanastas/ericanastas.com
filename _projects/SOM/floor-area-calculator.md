@@ -1,7 +1,7 @@
 ---
 title: Floor Area Calculator
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/floor-area-calculator/MISSING_COVER
 tags: ["Grasshopper"]
 date: "2010-04-23"
 ---

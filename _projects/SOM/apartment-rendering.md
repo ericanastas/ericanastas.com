@@ -1,7 +1,7 @@
 ---
 title: Apartment Renderings
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/apartment-rendering/MISSING_COVER
 tags: ["Revit", "Revit Modeling", "Visualization"]
 date: "2010-01-27"
 ---

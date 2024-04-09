@@ -1,7 +1,7 @@
 ---
 title: Shading Calculator
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/shading-calculator/MISSING_COVER
 tags: ["Analysis", "C#.Net", "Grasshopper", "Rhino", "Rhino API"]
 date: "2010-03-15"
 ---

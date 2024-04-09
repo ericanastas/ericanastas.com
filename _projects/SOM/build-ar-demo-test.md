@@ -1,7 +1,7 @@
 ---
 title: Build AR
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/build-ar-demo-test/MISSING_COVER
 tags: ["Augmented Reality", "Visualization"]
 date: "2010-09-09"
 ---

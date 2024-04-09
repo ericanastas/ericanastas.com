@@ -1,7 +1,7 @@
 ---
 title: Fractal Tree Canopy
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/fractal-tree-canopy/MISSING_COVER
 tags: ["C#.Net", "Grasshopper", "Beijing Tiangqiao Performing arts Center"]
 date: "2011-02-16"
 ---

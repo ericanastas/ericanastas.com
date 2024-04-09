@@ -1,7 +1,7 @@
 ---
 title: Seating Layout
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/seating-layout/MISSING_COVER
 tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-07-16"
 ---

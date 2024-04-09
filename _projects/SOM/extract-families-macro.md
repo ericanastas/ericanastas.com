@@ -1,7 +1,7 @@
 ---
 title: Extract Families Macro
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/extract-families-macro/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2011-02-02"
 ---

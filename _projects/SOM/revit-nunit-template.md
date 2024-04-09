@@ -1,7 +1,7 @@
 ---
 title: Revit Unit Tests Visual Studio Template
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-nunit-template/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "Unit Testing", "Visual Studio"]
 date: "2014-12-10"
 ---

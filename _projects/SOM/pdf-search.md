@@ -1,7 +1,7 @@
 ---
 title: PDF Search
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/pdf-search/MISSING_COVER
 tags: ["C#.Net", "WinForms"]
 date: "2010-05-03"
 ---

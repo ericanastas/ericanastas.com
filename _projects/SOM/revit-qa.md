@@ -1,7 +1,7 @@
 ---
 title: Revit QA Tool
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-qa/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WinForms"]
 date: "2011-03-04"
 ---

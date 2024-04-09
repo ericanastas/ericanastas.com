@@ -1,7 +1,7 @@
 ---
 title: Pixel Color Counter
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/pixel-color-counter/MISSING_COVER
 tags: ["C#.Net", "WinForms"]
 date: "2010-06-20"
 ---

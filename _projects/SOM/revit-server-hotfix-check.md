@@ -1,7 +1,7 @@
 ---
 title: Revit Server Hotfix Check
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-server-hotfix-check/MISSING_COVER
 tags: ["Amazon Web Services", "C#.Net", "Revit", "Revit API"]
 date: "2014-06-18"
 ---

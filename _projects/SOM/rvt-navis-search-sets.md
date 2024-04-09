@@ -1,7 +1,7 @@
 ---
 title: Revit Model Navisworks Search Sets
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/rvt-navis-search-sets/MISSING_COVER
 tags: ["3D Coordination", "Navisworks", "NavisWorks Clash Detective"]
 date: "2013-03-29"
 ---

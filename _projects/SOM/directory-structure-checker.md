@@ -1,7 +1,7 @@
 ---
 title: Directory Structure Checker
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/directory-structure-checker/MISSING_COVER
 tags: ["C#.Net", "WPF"]
 date: "2014-09-23"
 ---

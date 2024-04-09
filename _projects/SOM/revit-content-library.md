@@ -1,7 +1,7 @@
 ---
 title: Revit Content Library
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-content-library/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "SQL", "WinForms"]
 date: "2010-08-06"
 ---

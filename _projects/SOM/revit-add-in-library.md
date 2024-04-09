@@ -1,7 +1,7 @@
 ---
 title: Revit Add-In Library
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-add-in-library/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML"]
 date: "2014-01-27"
 ---

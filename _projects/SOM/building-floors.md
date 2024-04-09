@@ -1,7 +1,7 @@
 ---
 title: Building Floors
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/building-floors/MISSING_COVER
 tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
 date: "2011-02-28"
 ---

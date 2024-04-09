@@ -1,7 +1,7 @@
 ---
 title: Stacked Block Wall
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/stacked-block-wall/MISSING_COVER
 tags: ["Grasshopper", "Christ Our Savior Cathedral"]
 date: "2010-09-21"
 ---

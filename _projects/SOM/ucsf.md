@@ -1,7 +1,7 @@
 ---
 title: UCSF Neurosciences Building
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/ucsf/MISSING_COVER
 tags: ["Navisworks", "Revit", "Revit Modeling", "Revit Support", "UCSF Neurosciences Building"]
 date: "2010-04-01"
 ---

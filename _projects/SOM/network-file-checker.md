@@ -1,7 +1,7 @@
 ---
 title: Network File Checker
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/network-file-checker/MISSING_COVER
 tags: ["C#.Net", "WPF"]
 date: "2014-10-07"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Element Coordinates
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/element-coordinates/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-11-20"
 ---

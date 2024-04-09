@@ -1,7 +1,7 @@
 ---
 title: Glazing Projection
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/glazing-projection/MISSING_COVER
 tags: ["Grasshopper", "Century Avenue 2-3"]
 date: "2010-05-19"
 ---

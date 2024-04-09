@@ -1,7 +1,7 @@
 ---
 title: Revizto
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revizto/MISSING_COVER
 tags: ["Revizto", "Visualization"]
 date: "2014-11-17"
 ---

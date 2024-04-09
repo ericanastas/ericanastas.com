@@ -1,7 +1,7 @@
 ---
 title: Fuzhou Worldwide Tower Massing Study 1
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/fwt-massing-1/MISSING_COVER
 tags: ["Grasshopper", "Fuzhou Worldwide Tower"]
 date: "2011-04-14"
 ---

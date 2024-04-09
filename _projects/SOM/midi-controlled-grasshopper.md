@@ -1,7 +1,7 @@
 ---
 title: MIDI Controlled Grasshopper
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/midi-controlled-grasshopper/MISSING_COVER
 tags: ["C#.Net", "Grasshopper", "Grasshopper API", "User Interface", "WinForms"]
 date: "2011-02-25"
 ---

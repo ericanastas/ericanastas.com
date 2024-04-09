@@ -1,7 +1,7 @@
 ---
 title: View Profiler
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/view-profiler/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-10-06"
 ---

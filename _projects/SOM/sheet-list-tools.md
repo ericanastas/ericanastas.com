@@ -1,7 +1,7 @@
 ---
 title: Sheet List Tools
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/sheet-list-tools/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-10-04"
 ---

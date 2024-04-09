@@ -1,7 +1,7 @@
 ---
 title: Ellipse Rationalizer
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/ellipse-rationalizer/MISSING_COVER
 tags: ["Galapagos", "Grasshopper", "350 Mission St", "Poly Dawangjing Complex"]
 date: "2011-08-25"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Revit Batch Family Upgrader
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-batch-family-upgrader/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2010-10-29"
 ---

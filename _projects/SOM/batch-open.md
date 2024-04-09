@@ -1,7 +1,7 @@
 ---
 title: Batch Open
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/batch-open/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-07-24"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Signage Room Assignment Macro
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/signage-macro/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "Denver VA Medical Center"]
 date: "2011-02-17"
 ---

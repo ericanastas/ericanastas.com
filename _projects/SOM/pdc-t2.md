@@ -1,7 +1,7 @@
 ---
 title: Chengdu Dayuan Tower 2 Massing
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/pdc-t2/MISSING_COVER
 tags: ["Grasshopper", "Rhino", "Chengdu Poly International Plaza"]
 date: "2013-03-06"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Proximity Frame
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/proximity-frame/MISSING_COVER
 tags: ["Grasshopper"]
 date: "2010-04-20"
 ---

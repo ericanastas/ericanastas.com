@@ -1,7 +1,7 @@
 ---
 title: Revit Add-In Visual Studio Template
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/revit-add-in-vs-template/MISSING_COVER
 tags: ["C#.Net", "Revit", "Revit API", "Visual Studio"]
 date: "2014-11-11"
 ---

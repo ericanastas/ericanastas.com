@@ -1,7 +1,7 @@
 ---
 title: Check Family Names
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage: /images/som/check-family-names/MISSING_COVER
 tags: ["Revit", "Revit API"]
 date: "2013-12-06"
 ---
