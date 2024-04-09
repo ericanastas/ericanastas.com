@@ -7,7 +7,7 @@ id: "2745"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2014-10-07 11:35:42
+date: "2014-10-07"
 ---
 
 Network File Checker is a utility which I developed that can be used to verify the existence and version of a file on many remote computers on the network. This can be be used to batch verify the installation of software, add-ins, or updates on many computers at once.

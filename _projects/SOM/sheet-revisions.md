@@ -8,7 +8,7 @@ id: "2642"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-11-21 22:16:06
+date: "2013-11-21"
 ---
 
 Sheet Revisions is a Revit add-in which exposes the sheet revisions in drawing lists. Each sheet in a Revit model may be assigned to any number of revisions. This assignment may be done explicitly by a user, or implicitly by adding a revision cloud to a sheet.

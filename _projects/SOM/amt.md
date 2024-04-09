@@ -8,7 +8,7 @@ id: "2695"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2015-05-13 11:03:30
+date: "2015-05-13"
 img_src: /advanced-modeling-tools/AMT-Excel.png
 ---
 

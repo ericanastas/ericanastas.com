@@ -8,7 +8,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2010-12-30 22:15:39
+date: "2010-12-30"
 ---
 
 I created this Revit model of the plaza and lobby space at 50 Fremont in San Francisco. The model was used to generate drawings and renderings of potential remodel design options.

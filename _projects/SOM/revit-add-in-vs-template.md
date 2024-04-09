@@ -9,7 +9,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2014-11-11 20:47:47
+date: "2014-11-11"
 ---
 
 To facilitate the rapid development of new Revit add-ins I created this custom project template for Visual Studio.

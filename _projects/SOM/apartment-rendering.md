@@ -7,7 +7,7 @@ tags:
 
 categories:
   - - Portfolio
-date: 2010-01-27 23:01:44
+date: "2010-01-27"
 ---
 
 Renderings and animated walkthroughs that I created of my San Francisco apartment in Autodesk Revit.

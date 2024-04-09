@@ -8,5 +8,5 @@ tags:
 categories:
   - - som
     - 1979 Mission St
-date: 2014-06-04 20:18:43
+date: "2014-06-04"
 ---

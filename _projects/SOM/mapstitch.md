@@ -8,7 +8,7 @@ id: "205"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2010-06-28 17:00:57
+date: "2010-06-28"
 ---
 
 I created this windows application that generates high resolution satellite images by stitching together image tiles downloaded from [Google Maps](http://maps.google.com). There is no inherent limit on the size of images that can be generated, only the avaible system memory limits what size image is possible.

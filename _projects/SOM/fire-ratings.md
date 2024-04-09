@@ -8,5 +8,5 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2020-10-26 04:29:57
+date: "2020-10-26"
 ---

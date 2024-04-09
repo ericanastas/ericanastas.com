@@ -8,7 +8,7 @@ id: "2819"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2015-05-06 18:19:56
+date: "2015-05-06"
 ---
 
 I have been a major contributor and supporter of the SOM BIM Wiki site. The BIM Wiki is an internal intranet site used to document the standards and best practices used by the firm in implementing the use of Revit and BIM.

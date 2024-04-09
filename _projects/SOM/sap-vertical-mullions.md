@@ -9,7 +9,7 @@ tags:
 categories:
   - - som
     - Sichuan Aviation Plaza
-date: 2011-10-20 00:00:50
+date: "2011-10-20"
 ---
 
 The massing for the [Sichuan Aviation Plaza](http://www.ericanastas.com/category/portfolio/som/projects-som/aviation-plaza/) project consisted many of vertical pleats, of which the fold angle varied over the height of the building. This changing fold angle meant that the profiles of the mullions between pleats also needed to vary, and could not be built as a simple extrusions inside the panel families.

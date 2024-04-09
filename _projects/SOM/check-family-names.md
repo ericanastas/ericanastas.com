@@ -7,7 +7,7 @@ id: "2605"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-12-06 18:54:16
+date: "2013-12-06"
 ---
 
 This Revit add-in validates the names of families in a Revit project based on a predefined naming standard . The standard is defined as an an Excel file, where each row represents a naming standard for a specific Revit category. When a model is checked the selected standards file is compared against all the families in the active Revit document, and the results of the check are exported as an Excel report. Families with at least one matching standard are show as passing, while any family no matching standards show as failed.

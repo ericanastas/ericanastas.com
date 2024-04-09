@@ -8,7 +8,7 @@ id: "2484"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-03-29 19:06:58
+date: "2013-03-29"
 ---
 
 When using Navisworks to coordinate a building design, search sets can be used to subdivide the model into separate parts. Search sets are based off the properties of the model elements, and as a result are often unique per each project. In order to eliminate this extra work, I developed a set of standard search sets that will work with any Revit model. These were designed to be both comprehensive, and only based of properties intrinsic of all Revit models. This means they can be used with any Revit model regardless of the specific parameters or type names used.

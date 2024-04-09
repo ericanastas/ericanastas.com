@@ -8,5 +8,5 @@ tags:
 categories:
   - - som
     - Sunset La Cienega
-date: 2014-06-04 20:17:22
+date: "2014-06-04"
 ---

@@ -9,7 +9,7 @@ id: "2715"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-11-04 11:14:43
+date: "2013-11-04"
 ---
 
 The Revit 2014 API added a PerformanceAdviser class which can be used to check a Revit model for various issues can can hinder the performance of the model. This functionality, however, was not exposed through the UI and could only be accessed through the API and custom add-ins.

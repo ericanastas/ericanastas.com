@@ -6,7 +6,7 @@ tags:
 categories:
   - - som
     - Unknown Project
-date: 2010-09-07 11:57:57
+date: "2010-09-07"
 ---
 
 This RhinoScript generates a repeating paving pattern of dark, medium, and light colored blocks. Contour lines provided by the user determine which areas of the overall pattern should be lighter or darker.

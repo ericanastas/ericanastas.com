@@ -8,7 +8,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-02-19 08:24:44
+date: "2013-02-19"
 ---
 
 COSM Writer is a small C# console application I created which reads data from Arduino based sensors and sends the results to one or more [cosm.com](http://www.cosm.com) (now [xively.com](https://xively.com)) datastreams. The image below show an Arunio UNO setup with temperature and light sensors.

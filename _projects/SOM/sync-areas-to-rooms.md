@@ -9,7 +9,7 @@ id: "2697"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2014-05-01 11:05:00
+date: "2014-05-01"
 ---
 
 This Revit Add-in synchronizes the parameters of rooms in a Revit model to corresponding areas. This includes both built in parameters such as name and number as well as custom project parameters.

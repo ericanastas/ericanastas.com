@@ -9,7 +9,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2015-04-21 18:28:27
+date: "2015-04-21"
 ---
 
 I created this Rhino add-in for the SOM Planning department as a way to quickly generate diagrams of different distributions of land use. The tool randomly distributes blocks into specific land use types, based on a desired ratio of land uses per each zone of a project. First a site plan is created with all the blocks assigned to zone layers.

@@ -7,7 +7,7 @@ tags:
 categories:
   - - som
     - Chengdu Poly International Plaza
-date: 2013-03-06 17:00:46
+date: "2013-03-06"
 ---
 
 I developed the following Grasshopper definition while assisting the design team working on the second tower of the Chengdu Dayuan project.

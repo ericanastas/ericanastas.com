@@ -6,7 +6,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2010-08-20 21:10:46
+date: "2010-08-20"
 ---
 
 Here are a few models I created from photos while testing [Autodesk Photofly/123 Catch Beta](http://www.123dapp.com/catch).

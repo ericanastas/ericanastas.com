@@ -10,7 +10,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2010-03-15 14:58:20
+date: "2010-03-15"
 ---
 
 I developed this custom Rhino command to perform shading studies for a number of Chinese projects. There are specific building codes in areas of China which restrict how new construction can shade existing residential buildings. All residential units must be allowed to receive at least 2 hours of sunlight every year on Jan 21st.

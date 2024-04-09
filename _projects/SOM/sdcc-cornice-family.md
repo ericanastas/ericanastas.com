@@ -7,7 +7,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2015-07-07 12:40:24
+date: "2015-07-07"
 ---
 
 [![center](http://www.ericanastas.com/wp-content/uploads/2015/07/center-636x310.png)](center.png)

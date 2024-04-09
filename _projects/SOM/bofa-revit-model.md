@@ -8,7 +8,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2010-05-22 17:15:27
+date: "2010-05-22"
 ---
 
 I created this Revit model of a Bank of America branch to generate drawings and renderings that were used as part of an interview presentation.

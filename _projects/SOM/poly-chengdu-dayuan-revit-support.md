@@ -7,5 +7,5 @@ tags:
 categories:
   - - som
     - Chengdu Poly International Plaza
-date: 2020-10-26 04:29:34
+date: "2020-10-26"
 ---

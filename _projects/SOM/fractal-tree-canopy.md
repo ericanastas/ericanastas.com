@@ -7,7 +7,7 @@ tags:
 categories:
   - - som
     - Beijing Tiangqiao Performing arts Center
-date: 2011-02-16 11:12:30
+date: "2011-02-16"
 ---
 
 This grasshopper definition generates a canopy structure through a recursive fractal pattern script.

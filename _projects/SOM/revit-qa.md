@@ -9,7 +9,7 @@ id: "226"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2011-03-04 14:31:03
+date: "2011-03-04"
 ---
 
 Revit QA is a Revit add-in that I develop which can be used to setup automated quality checks of a Revit model. These checks can validate a model against company and project standards.

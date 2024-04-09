@@ -8,7 +8,7 @@ id: "2678"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2013-10-15 11:02:43
+date: "2013-10-15"
 ---
 
 The Revit Activity Log add-in records user's Revit activity to a central SQL database. This includes when Revit is being used, files are opened, and local files are synchronization to central. The resulting data collected from this tool is used to identify problem in specific models, as well as provide a broad overview of how Revit is being used in firm.

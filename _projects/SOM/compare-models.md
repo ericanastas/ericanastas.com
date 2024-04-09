@@ -9,5 +9,5 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2015-07-13 22:16:40
+date: "2015-07-13"
 ---

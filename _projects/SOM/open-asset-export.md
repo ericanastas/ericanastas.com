@@ -9,7 +9,7 @@ id: "2713"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2014-08-08 11:12:25
+date: "2014-08-08"
 ---
 
 This Revit add-in connects to the API of an Open Asset BIM library and extracts all the family information into a single large excel file.

@@ -7,7 +7,7 @@ tags:
 categories:
   - - som
     - Parkmerced
-date: 2015-04-10 18:48:18
+date: "2015-04-10"
 ---
 
 I created the following grasshopper definition for a design team trying to rationalize the geometry of their building down to only two curved panel types. The Galapagos evolutionary solver was used to find the best distribution of and geometry of the two panel types.

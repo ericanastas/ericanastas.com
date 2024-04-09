@@ -9,7 +9,7 @@ id: "2720"
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2014-04-25 11:17:55
+date: "2014-04-25"
 ---
 
 Project Setup is a Revit add-in that I developed for setting up Revit project files. Each setup is associated with a specific Revit template file, and consists of one or more setup tasks. The setup editor is shown in the image below.

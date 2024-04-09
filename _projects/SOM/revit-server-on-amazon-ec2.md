@@ -9,7 +9,7 @@ tags:
 categories:
   - - portfolio
     - Skidmore, Owings &amp; Merrill
-date: 2012-03-01 12:37:21
+date: "2012-03-01"
 ---
 
 Revit server allows multiple people to collaborate on a single Revit model, but unlike standard file based worksharing Revit server runs over TCP on a real web server. One major potential befit of running on a web server is people accessing Revit server do not have to be on the same network, at the same office, or even work at the same company. If a publicly accessible instance of Revit server is setup then people at different companies working on the same project may all connect to the server directly rather then sharing files separately over FTP.
