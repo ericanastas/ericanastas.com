@@ -1,5 +1,6 @@
 ---
 title: PDF Search
+summary: placeholder summary
 tags:
   - C#.Net
   - WinForms

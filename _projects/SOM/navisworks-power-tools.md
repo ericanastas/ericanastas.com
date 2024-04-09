@@ -1,5 +1,6 @@
 ---
 title: Navisworks Power Tools
+summary: placeholder summary
 tags:
   - 3D Coordination
   - C#.Net

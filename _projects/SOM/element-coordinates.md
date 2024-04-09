@@ -1,5 +1,6 @@
 ---
 title: Element Coordinates
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

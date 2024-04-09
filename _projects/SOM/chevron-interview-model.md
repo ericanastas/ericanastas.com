@@ -1,5 +1,6 @@
 ---
 title: Chevron Interview Model
+summary: placeholder summary
 tags:
   - Business Development
   - Ecotect

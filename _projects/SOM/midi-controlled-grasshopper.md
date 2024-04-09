@@ -1,5 +1,6 @@
 ---
 title: MIDI Controlled Grasshopper
+summary: placeholder summary
 tags:
   - C#.Net
   - Grasshopper

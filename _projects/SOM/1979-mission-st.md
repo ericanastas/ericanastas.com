@@ -1,5 +1,6 @@
 ---
 title: 1979 Mission St
+summary: placeholder summary
 tags:
   - REDRAFT
   - Revit

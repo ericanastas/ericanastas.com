@@ -1,5 +1,6 @@
 ---
 title: 8 Washington St
+summary: placeholder summary
 tags:
   - Revit
   - Revit Modeling

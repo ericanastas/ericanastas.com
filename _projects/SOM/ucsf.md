@@ -1,5 +1,6 @@
 ---
 title: UCSF Neurosciences Building
+summary: placeholder summary
 tags:
   - Navisworks
   - Revit

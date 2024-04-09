@@ -1,5 +1,6 @@
 ---
 title: Revit Server on Amazon EC2
+summary: placeholder summary
 tags:
   - Amazon Web Services
   - Cloud

@@ -1,5 +1,6 @@
 ---
 title: Performance Advisor
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

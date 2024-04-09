@@ -1,5 +1,6 @@
 ---
 title: 50 Fremont Model
+summary: placeholder summary
 tags:
   - Business Development
   - Revit

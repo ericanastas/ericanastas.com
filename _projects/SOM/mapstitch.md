@@ -1,5 +1,6 @@
 ---
 title: MapStitch
+summary: placeholder summary
 tags:
   - C#.Net
   - Google Earth

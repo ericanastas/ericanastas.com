@@ -1,5 +1,6 @@
 ---
 title: Floor Area Calculator
+summary: placeholder summary
 tags:
   - Grasshopper
 categories:

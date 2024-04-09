@@ -1,5 +1,6 @@
 ---
 title: Revit Unit Tests Visual Studio Template
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

@@ -1,5 +1,6 @@
 ---
 title: Wii Whiteboard
+summary: placeholder summary
 tags:
   - User Interface
 categories:

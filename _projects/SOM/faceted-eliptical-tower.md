@@ -1,5 +1,6 @@
 ---
 title: Faceted Eliptical Tower
+summary: placeholder summary
 tags:
   - C#.Net
   - Grasshopper

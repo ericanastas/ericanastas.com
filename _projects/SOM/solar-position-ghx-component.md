@@ -1,5 +1,6 @@
 ---
 title: Solar Position Grasshopper Component
+summary: placeholder summary
 tags:
   - C#.Net
   - Grasshopper

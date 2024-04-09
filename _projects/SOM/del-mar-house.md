@@ -1,5 +1,6 @@
 ---
 title: Del Mar House
+summary: placeholder summary
 tags:
   - Revit
   - Revit Modeling

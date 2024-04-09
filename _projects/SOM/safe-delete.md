@@ -1,5 +1,6 @@
 ---
 title: Safe Delete
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

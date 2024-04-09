@@ -1,5 +1,6 @@
 ---
 title: 350 Mission St
+summary: placeholder summary
 tags:
   - Navisworks
   - Revit

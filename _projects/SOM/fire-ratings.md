@@ -1,5 +1,6 @@
 ---
 title: Fire Ratings
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

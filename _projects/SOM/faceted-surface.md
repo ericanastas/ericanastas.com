@@ -1,5 +1,6 @@
 ---
 title: Faceted Surface
+summary: placeholder summary
 tags:
   - Grasshopper
 

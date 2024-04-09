@@ -1,5 +1,6 @@
 ---
 title: Apartment Renderings
+summary: placeholder summary
 tags:
   - Revit
   - Revit Modeling

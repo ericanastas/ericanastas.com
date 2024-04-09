@@ -1,5 +1,6 @@
 ---
 title: UCSB Storke Apartments
+summary: placeholder summary
 tags:
   - Revit
   - Revit Support

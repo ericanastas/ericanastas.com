@@ -1,5 +1,6 @@
 ---
 title: COSM Writer
+summary: placeholder summary
 tags:
   - Arduino
   - C#.Net

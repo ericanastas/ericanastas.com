@@ -1,5 +1,6 @@
 ---
 title: Kunming Tower Grasshopper
+summary: placeholder summary
 tags:
   - Grasshopper
 

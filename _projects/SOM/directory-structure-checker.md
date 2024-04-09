@@ -1,5 +1,6 @@
 ---
 title: Directory Structure Checker
+summary: placeholder summary
 tags:
   - C#.Net
   - WPF

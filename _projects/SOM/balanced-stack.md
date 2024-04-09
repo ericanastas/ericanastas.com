@@ -1,5 +1,6 @@
 ---
 title: Balanced Stack
+summary: placeholder summary
 tags:
   - Grasshopper
 

@@ -1,5 +1,6 @@
 ---
 title: Revit Model Navisworks Search Sets
+summary: placeholder summary
 tags:
   - 3D Coordination
   - Navisworks

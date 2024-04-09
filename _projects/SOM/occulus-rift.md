@@ -1,5 +1,6 @@
 ---
 title: Occulus Rift
+summary: placeholder summary
 tags:
   - User Interface
   - Visualization

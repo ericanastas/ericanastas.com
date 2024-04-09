@@ -1,5 +1,6 @@
 ---
 title: Project Setup
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

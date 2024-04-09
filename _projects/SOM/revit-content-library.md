@@ -1,5 +1,6 @@
 ---
 title: Revit Content Library
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

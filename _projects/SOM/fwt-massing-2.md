@@ -1,5 +1,6 @@
 ---
 title: Fuzhou Worldwide Tower Massing Study 2
+summary: placeholder summary
 tags:
   - Grasshopper
 categories:

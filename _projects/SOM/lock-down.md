@@ -1,5 +1,6 @@
 ---
 title: Lock Down
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

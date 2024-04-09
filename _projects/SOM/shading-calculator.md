@@ -1,5 +1,6 @@
 ---
 title: Shading Calculator
+summary: placeholder summary
 tags:
   - Analysis
   - C#.Net

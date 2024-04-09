@@ -1,5 +1,6 @@
 ---
 title: Sunset La Cienega
+summary: placeholder summary
 tags:
   - Revit
   - Revit Modeling

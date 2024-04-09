@@ -1,5 +1,6 @@
 ---
 title: Z Panel Block Wall
+summary: placeholder summary
 tags:
   - Grasshopper
 

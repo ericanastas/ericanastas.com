@@ -1,5 +1,6 @@
 ---
 title: Delete Viewport Types
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

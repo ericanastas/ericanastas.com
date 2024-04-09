@@ -1,5 +1,6 @@
 ---
 title: Informa Master Planning Rhino Plug-in
+summary: placeholder summary
 tags:
   - Access
   - C#.Net

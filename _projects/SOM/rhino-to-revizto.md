@@ -1,5 +1,6 @@
 ---
 title: Rhino to Revizto
+summary: placeholder summary
 tags:
   - C#.Net
   - Revizto

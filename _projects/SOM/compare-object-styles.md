@@ -1,5 +1,6 @@
 ---
 title: Compare Object Styles
+summary: placeholder summary
 tags:
   - C#.Net
   - Excel

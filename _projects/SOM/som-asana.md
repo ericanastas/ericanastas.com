@@ -1,5 +1,6 @@
 ---
 title: SOM Asana Site
+summary: placeholder summary
 tags:
   - Collaboration
 categories:

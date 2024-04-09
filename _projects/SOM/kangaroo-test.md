@@ -1,5 +1,6 @@
 ---
 title: Kangaroo Test
+summary: placeholder summary
 tags:
   - Grasshopper
   - Kangaroo

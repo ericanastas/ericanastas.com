@@ -1,5 +1,6 @@
 ---
 title: BIM Wiki
+summary: placeholder summary
 tags:
   - Collaboration
   - CSS

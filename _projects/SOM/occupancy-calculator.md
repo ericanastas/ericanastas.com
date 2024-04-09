@@ -1,5 +1,6 @@
 ---
 title: Occupancy Calculator
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

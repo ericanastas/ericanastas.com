@@ -1,5 +1,6 @@
 ---
 title: Activity Log
+summary: placeholder summary
 tags:
   - Revit
   - Revit API

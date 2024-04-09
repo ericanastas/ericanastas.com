@@ -1,5 +1,6 @@
 ---
 title: Seating Layout
+summary: placeholder summary
 tags:
   - Grasshopper
 categories:

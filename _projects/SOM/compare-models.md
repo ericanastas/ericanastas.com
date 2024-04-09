@@ -1,5 +1,6 @@
 ---
 title: Compare Models
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

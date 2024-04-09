@@ -1,5 +1,6 @@
 ---
 title: Show Hidden Elements
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit

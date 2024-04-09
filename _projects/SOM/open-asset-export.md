@@ -1,5 +1,6 @@
 ---
 title: Open Asset BIM Data Export
+summary: placeholder summary
 tags:
   - C#.Net
   - REST

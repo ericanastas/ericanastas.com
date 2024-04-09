@@ -1,5 +1,6 @@
 ---
 title: BFS Scoops
+summary: placeholder summary
 tags:
   - Grasshopper
 categories:

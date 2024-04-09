@@ -1,5 +1,6 @@
 ---
 title: Revizto
+summary: placeholder summary
 tags:
   - Revizto
   - Visualization

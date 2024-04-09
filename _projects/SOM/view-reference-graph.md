@@ -1,5 +1,6 @@
 ---
 title: View Reference Graph
+summary: placeholder summary
 tags:
   - C#.Net
   - Graphviz

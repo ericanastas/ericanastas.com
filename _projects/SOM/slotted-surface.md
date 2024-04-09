@@ -1,5 +1,6 @@
 ---
 title: Slotted Surface
+summary: placeholder summary
 tags:
   - Grasshopper
 

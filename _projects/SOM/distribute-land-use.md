@@ -1,5 +1,6 @@
 ---
 title: Distribute Land Use
+summary: placeholder summary
 tags:
   - C#.Net
   - Master Planning

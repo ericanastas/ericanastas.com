@@ -1,5 +1,6 @@
 ---
 title: Perforated Brick Wall
+summary: placeholder summary
 tags:
   - Grasshopper
 

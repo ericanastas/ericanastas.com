@@ -1,5 +1,6 @@
 ---
 title: Batch Open
+summary: placeholder summary
 tags:
   - C#.Net
   - Revit
