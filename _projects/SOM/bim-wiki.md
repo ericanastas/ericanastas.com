@@ -9,8 +9,8 @@ I have been a major contributor and supporter of the SOM BIM Wiki site. The BIM 
 
 In addition to providing content, I have also developed scripts for the site to automate the organization and generation of said content. This included a script which displayed Revit families from the firm's BIM library on pages of the site.
 
-[![SOM BIM Wiki Open Asset](http://www.ericanastas.com/wp-content/uploads/2015/07/SOM-BIM-Wiki-Open-Asset.jpg)](SOM-BIM-Wiki-Open-Asset.png)
+![SOM BIM Wiki Open Asset](SOM-BIM-Wiki-Open-Asset.png)
 
 I also developed scripts and a custom CSS stylesheet that generated a curated PDF version of the site. This PDF could be printed and distributed to people both internal to and external to the firm.
 
-[![SOM LA BIM Guide](http://www.ericanastas.com/wp-content/uploads/2015/07/SOM-LA-BIM-Guide.jpg)](SOM-LA-BIM-Guide.png)
+![SOM LA BIM Guide](SOM-LA-BIM-Guide.png)

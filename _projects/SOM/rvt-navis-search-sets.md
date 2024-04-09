@@ -81,6 +81,6 @@ Navisworks also includes a tool called the Appearance Profiler, which can automa
 
 The images below show an example of a model before and after the appearance profiler definition is applied.
 
-\[caption id="attachment_2486" align="alignnone" width="550"\][![Default Colors](Default-Colors.png)](http://www.ericanastas.com/wp-content/uploads/2013/06/Default-Colors.png) Before appearance profiler\[/caption\]
+![Default Colors](http://www.ericanastas.com/wp-content/uploads/2013/06/Default-Colors.png)
 
-\[caption id="attachment_2487" align="alignnone" width="550"\][![Profiler Colors](Profiler-Colors.png)](http://www.ericanastas.com/wp-content/uploads/2013/06/Profiler-Colors.png) After appearance profiler\[/caption\]
+![Profiler Colors](http://www.ericanastas.com/wp-content/uploads/2013/06/Profiler-Colors.png)

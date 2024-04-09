@@ -9,6 +9,6 @@ Often unneeded and unwanted viewport types will be created in a Revit model. The
 
 This add-in enables the deletion of these extra viewport types. One or more of the unwanted types to delete can be selected from a list. Any existing viewports of the types being deleted will be switched to another type that is selected by the user.
 
-[![Purge Viewport Types](http://www.ericanastas.com/wp-content/uploads/2014/08/Purge-Viewport-Types.jpg)](Purge-Viewport-Types.png)
+![Purge Viewport Types](Purge-Viewport-Types.png)
 
 ![Purge Viewport Types 3](Purge-Viewport-Types-3.png)

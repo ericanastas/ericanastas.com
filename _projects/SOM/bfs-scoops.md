@@ -7,4 +7,4 @@ date: "2013-06-11"
 
 A simple grasshopper definition that creates a canopy structure by populating a surface with triangular scoops.
 
-[![scoops3](http://www.ericanastas.com/wp-content/uploads/2014/06/scoops3.jpg)](scoops3.png)
+![scoops3](scoops3.png)

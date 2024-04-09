@@ -11,8 +11,8 @@ I first ported the code from the [NOAA Solar Position Calculator](http://www.esr
 
 I later ported this tool into a custom [grasshopper component](http://www.ericanastas.com/solar-position-ghx-component/ "Solar Position Grasshopper Component").
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/2012-04-11_220400.jpg "2012-04-11_220400")](2012-04-11_220400.png)
+![](2012-04-11_220400.png)
 
-[![China Shading 1](http://www.ericanastas.com/wp-content/uploads/2010/03/China-Shading-1.jpg)](China-Shading-1.png)
+![China Shading 1](China-Shading-1.png)
 
-[![China Shading 2](China-Shading-2.png)](http://www.ericanastas.com/wp-content/uploads/2010/03/China-Shading-2.png)
+![China Shading 2](http://www.ericanastas.com/wp-content/uploads/2010/03/China-Shading-2.png)

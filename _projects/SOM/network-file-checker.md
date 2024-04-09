@@ -9,7 +9,7 @@ Network File Checker is a utility which I developed that can be used to verify t
 
 The share and path of the file to check are specified as well as the expected file size, version, and MD5 hash of the file if it is found.
 
-[![Network File Checker Settings](Network-File-Checker-Settings.png)](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker-Settings.png)
+![Network File Checker Settings](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker-Settings.png)
 
 The names of computers to check are then added. These can be entered directly into the tool, or imported from a text file.
 
@@ -17,8 +17,8 @@ The names of computers to check are then added. These can be entered directly in
 
 Next the check is run, and the existence and version of the specified file is verified on all the computers. Computers that are not found, files that are missing, or files that do not match the expected values are identified.
 
-[![Network File Checker](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker.jpg)](Network-File-Checker.png)
+![Network File Checker](Network-File-Checker.png)
 
 The results of the check can then be exported to an Excel file.
 
-[![ExportExcel](http://www.ericanastas.com/wp-content/uploads/2014/09/ExportExcel.jpg)](ExportExcel.png)
+![ExportExcel](ExportExcel.png)

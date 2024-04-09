@@ -11,6 +11,4 @@ This add-in exposes these checks to regular users through a simple user interfac
 
 ![Perf Warning](Perf-Warning.png)
 
-[![Perf Report](http://www.ericanastas.com/wp-content/uploads/2014/11/Perf-Report.jpg)](Perf-Report.png)
-
-// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>// <!\[CDATA\[</p> <p> // \]\]>
+![Perf Report](Perf-Report.png)

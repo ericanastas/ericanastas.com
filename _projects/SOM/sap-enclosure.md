@@ -11,36 +11,36 @@ The project was still in design development, so soon after completing the enclos
 
 I started by extracting the work-point coordinates from the Rhino massing model.
 
-\[caption id="attachment_830" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image046.jpg "Work Point Coordinates")](slide0020_image046.png) Work Point Coordinates\[/caption\]
+![](slide0020_image046.png)
 
-\[caption id="attachment_831" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0020_image048.jpg "Work Points")](slide0020_image048.png) Work Points\[/caption\]
+![](slide0020_image048.png)
 
 The script then used these work-point coordinates to create native Revit surfaces.
 
-\[caption id="attachment_832" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image059.jpg "Surfaces")](slide0031_image059.png) Surfaces\[/caption\]
+![](slide0031_image059.png)
 
 These surfaces were then automatically divided by reference planes created by the script.
 
-\[caption id="attachment_833" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image061.jpg "Divided Surfaces")](slide0031_image061.png) Divided Surfaces\[/caption\]
+![](slide0031_image061.png)
 
 Finally the script populated the divided surfaces with specific adaptive component curtain panels.
 
-\[caption id="attachment_834" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0031_image063.jpg "slide0031_image063")](slide0031_image063.png) Adaptive Component Panels\[/caption\]
+![](slide0031_image063.png)
 
 The image below shows the model populated with colored placeholder panels showing how many different types of panels were required.
 
-\[caption id="attachment_836" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0033_image067.jpg "Colored Placeholder Panels")](slide0033_image067.png) Colored Placeholder Panels\[/caption\]
+![](slide0033_image067.png)
 
 In addition, part of my goal with this script was to create a code base that could be reused on future projects. I started out by creating a set of generic "surface" classes in .Net, which I could use to define three and four sided surfaces. These classes also included functionality to divide the resulting surface, and populate it with adaptive component panels.
 
-\[caption id="" align="alignnone" width="564"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0014_image057.png "Geometry Generation C# Classes")](slide0014_image057.png) Geometry Generation C# Classes\[/caption\]
+![](slide0014_image057.png)
 
 I then used instances of these generic surface classes to generate a C# class model of the actual project. The properties of this project class contained the various geometric elements of the design including the work points coordinates, level elevations, and the resulting surfaces. I could then easily make changes to the generated building model by making changes to this .NET class.
 
-\[caption id="" align="alignnone" width="442"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0034_image065.png "Sichan Aviation Plaza C# Building Model Class")](slide0034_image065.png) Sichan Aviation Plaza C# Building Model Class\[/caption\]
+![](slide0034_image065.png)
 
 The final generated enclosure model was also used to generated the project renderings. A few samples are shown below;
 
-\[caption id="attachment_841" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0035_image001.jpg "Final Rendering")](slide0035_image001.jpg) Final Rendering\[/caption\]
+![](slide0035_image001.jpg)
 
-\[caption id="attachment_838" align="alignnone" width="636"\][![](http://www.ericanastas.com/wp-content/uploads/2011/10/slide0036_image003.jpg "Final Rendering")](slide0036_image003.jpg) Final Rendering\[/caption\]
+![](slide0036_image003.jpg)

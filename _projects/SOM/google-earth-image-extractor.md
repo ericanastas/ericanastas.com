@@ -12,4 +12,4 @@ I later replaced this tool with [MapStich](/projects/som/mapstitch/), which is f
 
 Here's an image created of the UCSD campus using this tool. Click the image to expand it, then right click and save as to save to full resolution version.
 
-[![](/images/som/google-earth-image-extractor/UCSD-Google-Earth.jpg)](/images/som/google-earth-image-extractor/UCSD-Google-Earth.jpg)
+![](/images/som/google-earth-image-extractor/UCSD-Google-Earth.jpg)

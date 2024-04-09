@@ -7,12 +7,12 @@ date: "2010-05-22"
 
 I created this Revit model of a Bank of America branch to generate drawings and renderings that were used as part of an interview presentation.
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/Entry.jpg "Entry")](Entry.jpg)
+![](Entry.jpg)
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/Front.jpg "Front")](Front.jpg)
+![](Front.jpg)
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/Canopy.jpg "Canopy")](Canopy.jpg)
+![](Canopy.jpg)
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/Floor-Plan-Section.jpg "Floor Plan Section")](Floor-Plan-Section.jpg)
+![](Floor-Plan-Section.jpg)
 
-[![](http://www.ericanastas.com/wp-content/uploads/2012/04/Interior.jpg "Interior")](Interior.jpg)
+![](Interior.jpg)
