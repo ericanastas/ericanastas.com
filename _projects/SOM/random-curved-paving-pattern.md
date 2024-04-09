@@ -2,9 +2,9 @@
 title: Random Curved Paving Pattern
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Grasshopper
-  - Rhino
+    - C#.Net
+    - Grasshopper
+    - Rhino
 
 categories:
     - som

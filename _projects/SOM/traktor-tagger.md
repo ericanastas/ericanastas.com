@@ -2,10 +2,10 @@
 title: Traktor Tagger
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Web API
-  - WPF
-  - XML
+    - C#.Net
+    - Web API
+    - WPF
+    - XML
 
 categories:
     - Portfolio

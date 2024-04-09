@@ -2,9 +2,9 @@
 title: MapStitch
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Google Earth
-  - WinForms
+    - C#.Net
+    - Google Earth
+    - WinForms
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

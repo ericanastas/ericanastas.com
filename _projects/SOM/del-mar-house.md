@@ -2,9 +2,9 @@
 title: Del Mar House
 summary: placeholder summary
 tags:
-  - Revit
-  - Revit Modeling
-  - Revit Support
+    - Revit
+    - Revit Modeling
+    - Revit Support
 
 categories:
     - Portfolio

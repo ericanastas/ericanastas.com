@@ -2,11 +2,11 @@
 title: Denver VA Medical Center Revit Plug-in
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Revit
-  - Revit API
-  - SQL
-  - WinForms
+    - C#.Net
+    - Revit
+    - Revit API
+    - SQL
+    - WinForms
 categories:
     - som
     - Denver VA Medical Center

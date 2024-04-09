@@ -2,9 +2,9 @@
 title: Solar Position Grasshopper Component
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Grasshopper
-  - Grasshopper API
+    - C#.Net
+    - Grasshopper
+    - Grasshopper API
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

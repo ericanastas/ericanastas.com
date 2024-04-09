@@ -2,8 +2,8 @@
 title: Virtual Wind Image Recoloring Script
 summary: placeholder summary
 tags:
-  - Analysis
-  - Python
+    - Analysis
+    - Python
 
 categories:
     - som

@@ -2,7 +2,7 @@
 title: Floor Area Calculator
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

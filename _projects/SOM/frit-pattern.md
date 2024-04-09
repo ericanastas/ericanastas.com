@@ -2,7 +2,7 @@
 title: Frit Pattern
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 
 categories:
     - som

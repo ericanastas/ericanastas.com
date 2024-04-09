@@ -2,8 +2,8 @@
 title: Revizto
 summary: placeholder summary
 tags:
-  - Revizto
-  - Visualization
+    - Revizto
+    - Visualization
 
 categories:
     - portfolio

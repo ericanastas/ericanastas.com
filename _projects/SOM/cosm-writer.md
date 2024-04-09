@@ -2,9 +2,9 @@
 title: COSM Writer
 summary: placeholder summary
 tags:
-  - Arduino
-  - C#.Net
-  - Web API
+    - Arduino
+    - C#.Net
+    - Web API
 
 categories:
     - portfolio

@@ -2,7 +2,7 @@
 title: Gradient Spandrels
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 
 categories:
     - som

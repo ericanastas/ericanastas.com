@@ -2,8 +2,8 @@
 title: FTP Transfer Script
 summary: placeholder summary
 tags:
-  - FTP
-  - Python
+    - FTP
+    - Python
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

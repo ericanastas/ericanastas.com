@@ -2,7 +2,7 @@
 title: Seating Layout
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 categories:
     - som
     - Christ Our Savior Cathedral

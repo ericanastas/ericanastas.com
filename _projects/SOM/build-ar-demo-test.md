@@ -2,8 +2,8 @@
 title: Build AR
 summary: placeholder summary
 tags:
-  - Augmented Reality
-  - Visualization
+    - Augmented Reality
+    - Visualization
 
 categories:
     - portfolio

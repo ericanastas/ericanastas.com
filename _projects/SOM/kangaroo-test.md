@@ -2,8 +2,8 @@
 title: Kangaroo Test
 summary: placeholder summary
 tags:
-  - Grasshopper
-  - Kangaroo
+    - Grasshopper
+    - Kangaroo
 
 categories:
     - portfolio

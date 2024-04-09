@@ -2,9 +2,9 @@
 title: Activity Log
 summary: placeholder summary
 tags:
-  - Revit
-  - Revit API
-  - SQL
+    - Revit
+    - Revit API
+    - SQL
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

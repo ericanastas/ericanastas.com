@@ -2,10 +2,10 @@
 title: Compare Object Styles
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Excel
-  - Revit
-  - Revit API
+    - C#.Net
+    - Excel
+    - Revit
+    - Revit API
 
 categories:
     - portfolio

@@ -2,10 +2,10 @@
 title: Revit Add-In Visual Studio Template
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Revit
-  - Revit API
-  - Visual Studio
+    - C#.Net
+    - Revit
+    - Revit API
+    - Visual Studio
 
 categories:
     - portfolio

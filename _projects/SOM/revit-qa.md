@@ -2,10 +2,10 @@
 title: Revit QA Tool
 summary: placeholder summary
 tags:
-  - C#.Net
-  - Revit
-  - Revit API
-  - WinForms
+    - C#.Net
+    - Revit
+    - Revit API
+    - WinForms
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

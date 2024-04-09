@@ -2,9 +2,9 @@
 title: BIM Wiki
 summary: placeholder summary
 tags:
-  - Collaboration
-  - CSS
-  - REST
+    - Collaboration
+    - CSS
+    - REST
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

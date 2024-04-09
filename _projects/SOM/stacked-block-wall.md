@@ -2,7 +2,7 @@
 title: Stacked Block Wall
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 
 categories:
     - som

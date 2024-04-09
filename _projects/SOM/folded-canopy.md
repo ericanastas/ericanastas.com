@@ -2,7 +2,7 @@
 title: Folded Canopy
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 
 categories:
     - som

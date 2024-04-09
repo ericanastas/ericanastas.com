@@ -2,7 +2,7 @@
 title: Proximity Frame
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 
 categories:
     - portfolio

@@ -2,8 +2,8 @@
 title: Shadow Overlay
 summary: placeholder summary
 tags:
-  - JavaScript
-  - Photoshop
+    - JavaScript
+    - Photoshop
 
 categories:
     - portfolio

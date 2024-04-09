@@ -2,10 +2,10 @@
 title: UCSF Neurosciences Building
 summary: placeholder summary
 tags:
-  - Navisworks
-  - Revit
-  - Revit Modeling
-  - Revit Support
+    - Navisworks
+    - Revit
+    - Revit Modeling
+    - Revit Support
 
 categories:
     - som

@@ -2,9 +2,9 @@
 title: Sichuan Aviation Plaza
 summary: placeholder summary
 tags:
-  - Revit
-  - Revit Modeling
-  - Revit Support
+    - Revit
+    - Revit Modeling
+    - Revit Support
 
 categories:
     - som

@@ -2,7 +2,7 @@
 title: Wii Whiteboard
 summary: placeholder summary
 tags:
-  - User Interface
+    - User Interface
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

@@ -2,8 +2,8 @@
 title: Occulus Rift
 summary: placeholder summary
 tags:
-  - User Interface
-  - Visualization
+    - User Interface
+    - Visualization
 
 categories:
     - portfolio

@@ -2,10 +2,10 @@
 title: Chevron Interview Model
 summary: placeholder summary
 tags:
-  - Business Development
-  - Ecotect
-  - Revit
-  - Revit Modeling
+    - Business Development
+    - Ecotect
+    - Revit
+    - Revit Modeling
 
 categories:
     - portfolio

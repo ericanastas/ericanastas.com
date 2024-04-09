@@ -2,9 +2,9 @@
 title: Site Shading
 summary: placeholder summary
 tags:
-  - Analysis
-  - Grasshopper
-  - Rhino
+    - Analysis
+    - Grasshopper
+    - Rhino
 
 categories:
     - portfolio

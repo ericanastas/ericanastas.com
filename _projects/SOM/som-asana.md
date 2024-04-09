@@ -2,7 +2,7 @@
 title: SOM Asana Site
 summary: placeholder summary
 tags:
-  - Collaboration
+    - Collaboration
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

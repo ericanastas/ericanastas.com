@@ -2,8 +2,8 @@
 title: Parkmerced Block 22 Geometry
 summary: placeholder summary
 tags:
-  - Galapagos
-  - Grasshopper
+    - Galapagos
+    - Grasshopper
 
 categories:
     - som

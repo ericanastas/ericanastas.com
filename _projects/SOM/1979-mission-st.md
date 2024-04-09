@@ -2,9 +2,9 @@
 title: 1979 Mission St
 summary: placeholder summary
 tags:
-  - REDRAFT
-  - Revit
-  - Revit Support
+    - REDRAFT
+    - Revit
+    - Revit Support
 
 categories:
     - som

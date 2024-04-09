@@ -2,8 +2,8 @@
 title: Network File Checker
 summary: placeholder summary
 tags:
-  - C#.Net
-  - WPF
+    - C#.Net
+    - WPF
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

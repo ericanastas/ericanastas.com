@@ -2,8 +2,8 @@
 title: San Diego Courthouse Cornice Family
 summary: placeholder summary
 tags:
-  - Revit
-  - Revit Modeling
+    - Revit
+    - Revit Modeling
 
 categories:
     - portfolio

@@ -2,7 +2,7 @@
 title: BFS Scoops
 summary: placeholder summary
 tags:
-  - Grasshopper
+    - Grasshopper
 categories:
     - portfolio
     - Skidmore, Owings &amp; Merrill

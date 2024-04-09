@@ -2,9 +2,9 @@
 title: 50 Fremont Model
 summary: placeholder summary
 tags:
-  - Business Development
-  - Revit
-  - Revit Modeling
+    - Business Development
+    - Revit
+    - Revit Modeling
 
 categories:
     - portfolio
