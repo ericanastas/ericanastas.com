@@ -9,7 +9,6 @@ draft: true
 
 This grasshopper definition generates a canopy structure through a recursive fractal pattern script.
 
-<!-- more -->
 
 First I generated a 2D fractal pattern using a recursive C# script component shown the the video below.
 
