@@ -79,7 +79,7 @@ Furthermore, by using the generate clash tests feature of my [Navisworks Power T
 
 Navisworks also includes a tool called the Appearance Profiler, which can automatically color a model by search sets. Thus I was also able to create a standard appearance profiler definition which could be used to color any Revit model in Navisworks by the search sets above.
 
-![Apperance profielr](Apperance-profielr.png)
+![Apperance profielr](/images/som/rvt-navis-search-sets/Apperance-profielr.png)
 
 The images below show an example of a model before and after the appearance profiler definition is applied.
 

@@ -11,6 +11,6 @@ The shadow overlay script is a script for Photoshop which can be used to identif
 
 For example the following existing and projected shadow images combine to create the image above. New shadows created by the proposed building are highlighted in red.
 
-![existing](existing.png)
+![existing](/images/som/shadow-overlay/existing.png)
 
-![Projected Shadow](projected.png)
+![Projected Shadow](/images/som/shadow-overlay/projected.png)

@@ -9,8 +9,8 @@ draft: true
 
 I provided the initial Revit training for the team working on the design of this 27 story office tower to be built in downtown San Francisco. In addition, throughout the project I was the primary support contact for the team and provided one on one support when needed. I was also responsible for creating the more advanced Revit families required by the project, and assisted some team members in using Autodesk Navisworks to visualize and coordinate the model.
 
-![Exterior](350-Mission-Exterior.jpg)
+![Exterior](/images/som/350-mission-st/350-Mission-Exterior.jpg)
 
-![Lobby](350-Mission-Lobby.jpg)
+![Lobby](/images/som/350-mission-st/350-Mission-Lobby.jpg)
 
-![Building Section](building-section.jpg)
+![Building Section](/images/som/350-mission-st/building-section.jpg)

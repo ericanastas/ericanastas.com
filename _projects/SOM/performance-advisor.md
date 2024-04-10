@@ -11,6 +11,6 @@ The Revit 2014 API added a PerformanceAdviser class which can be used to check a
 
 This add-in exposes these checks to regular users through a simple user interface. The results of the performance checks are displayed through the default warnings dialog, and can also be exported to a report file.
 
-![Perf Warning](Perf-Warning.png)
+![Perf Warning](/images/som/performance-advisor/Perf-Warning.png)
 
-![Perf Report](Perf-Report.png)
+![Perf Report](/images/som/performance-advisor/Perf-Report.png)

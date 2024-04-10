@@ -11,4 +11,4 @@ As part of an effort to find a more efficient way for people to create and share
 
 Required Equipment:
 
-![](IMG_20111004_213541.jpg)
+![](/images/som/wii-whiteboard/IMG_20111004_213541.jpg)

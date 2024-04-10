@@ -9,6 +9,6 @@ draft: true
 
 Renderings and animated walkthroughs that I created of my San Francisco apartment in Autodesk Revit.
 
-![](Living-Room-2.jpg)
+![](/images/som/apartment-rendering/Living-Room-2.jpg)
 
-![](Living-Room-1.jpg)
+![](/images/som/apartment-rendering/Living-Room-1.jpg)

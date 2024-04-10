@@ -9,6 +9,6 @@ draft: true
 
 I provided training and on the job Revit support to the team working on the design of this 55 story office tower. I also created some of the more complex custom families used on the project. In addition, I was the primary person responsible for creating the [enclosure model](http://www.ericanastas.com/fwt-enclosure/ "Timeline") using the new adaptive curtain panels.
 
-![](Fuzhou-Whole-Building.jpg)
+![](/images/som/fwt/Fuzhou-Whole-Building.jpg)
 
-![](Fuzhou-3d-Section.jpg)
+![](/images/som/fwt/Fuzhou-3d-Section.jpg)

@@ -13,8 +13,8 @@ To remedy this problem I created a Python script to recolor images exported from
 
 For example here is an original source image generated with virtual wind.
 
-![](recolor.jpg)
+![](/images/som/vw-image-recolor-script/recolor.jpg)
 
 And here is the result of the script set to a threshold windspeed of 4 m/s.
 
-![](recolor_recolored.png)
+![](/images/som/vw-image-recolor-script/recolor_recolored.png)

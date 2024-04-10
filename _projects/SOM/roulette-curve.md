@@ -11,4 +11,4 @@ I created this grasshopper definition, which generates a [roulette](http://en.wi
 
 I also tried using a series of curves created from this definition to create a 3D form. The results are shown below.
 
-![](loft.jpg)
+![](/images/som/roulette-curve/loft.jpg)

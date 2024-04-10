@@ -9,10 +9,10 @@ draft: true
 
 I created this Grasshopper definition while assisting the design of a new cathedral in Santa Ana California. The definition creates a wall of stacked blocks across a input surface. Various dimensions of the blocks are provided as lists of values that are repeated across the surface. This allowed the designers to try many different iterations of patterns without requiring any modifications the the original grasshopper definition.
 
-![](stacked-blocks.png)
+![](/images/som/stacked-block-wall/stacked-blocks.png)
 
-![](block-definiiton.png)
+![](/images/som/stacked-block-wall/block-definiiton.png)
 
-![](blocks-4.jpg)
+![](/images/som/stacked-block-wall/blocks-4.jpg)
 
-![](1839.jpg)
+![](/images/som/stacked-block-wall/1839.jpg)

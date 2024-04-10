@@ -11,4 +11,4 @@ Sheet Revisions is a Revit add-in which exposes the sheet revisions in drawing l
 
 However, Revit does not provide a way to displayed the assigned revisions in a sheet schedule. This add-in thus reads the currently assigned revisions for each sheet and adds custom parameters which can be displayed as columns in a sheet schedule. Dots are added to the revision parameters based on the revision(s) each sheet is assigned to. These parameters can be added as columns of a sheet schedule to generate a project drawing index.
 
-![Sheet Revisions](Sheet-Revisions.png)
+![Sheet Revisions](/images/som/sheet-revisions/Sheet-Revisions.png)

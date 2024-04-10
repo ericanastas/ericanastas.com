@@ -11,6 +11,6 @@ This Grasshopper definition generates a faceted elliptical building form. The tr
 
 The video below shows how the final geometry generated from the script was also used to calculate the gross floor areas in real time.
 
-![](facet-tower.jpg)
+![](/images/som/faceted-eliptical-tower/facet-tower.jpg)
 
-![](1753.jpg)
+![](/images/som/faceted-eliptical-tower/1753.jpg)

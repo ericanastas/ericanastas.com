@@ -13,17 +13,17 @@ The project was still in design development, so soon after completing the enclos
 
 I started by extracting the work-point coordinates from the Rhino massing model.
 
-![](slide0020_image046.png)
+![](/images/som/sap-enclosure/slide0020_image046.png)
 
-![](slide0020_image048.png)
+![](/images/som/sap-enclosure/slide0020_image048.png)
 
 The script then used these work-point coordinates to create native Revit surfaces.
 
-![](slide0031_image059.png)
+![](/images/som/sap-enclosure/slide0031_image059.png)
 
 These surfaces were then automatically divided by reference planes created by the script.
 
-![](slide0031_image061.png)
+![](/images/som/sap-enclosure/slide0031_image061.png)
 
 Finally the script populated the divided surfaces with specific adaptive component curtain panels.
 

@@ -11,4 +11,4 @@ Navisworks Power Tools is a suite of tools I am developing which automate the pr
 
 The clash tolerance to use for the generated clash tests can also be specified when the command is run.
 
-![generate clash tests 3](generate-clash-tests-3.png)
+![generate clash tests 3](/images/som/navisworks-power-tools/generate-clash-tests-3.png)

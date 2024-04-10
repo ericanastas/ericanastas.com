@@ -11,18 +11,18 @@ The massing for the [Sichuan Aviation Plaza](http://www.ericanastas.com/category
 
 I was able to create a working vertical mullion family using a six point adaptive component. Three adaptive points at the top and bottom of the family specify the position, angle, and rotation of the mullion profile.
 
-![](slide0021_image044.png)
+![](/images/som/sap-vertical-mullions/slide0021_image044.png)
 
 Creating a Revit family that is this flexible and complex required a lot of math. The image below shows all the formulas I used to create the family.
 
-![](slide0021_image040.png)
+![](/images/som/sap-vertical-mullions/slide0021_image040.png)
 
 Here is a video showing the profile of the vertical mullion family being adjusted by moving the adaptive points.
 
 Below is an image of the vertical mullion model. The mullions were placed automatically using the [enclosure generation script](http://www.ericanastas.com/sap-enclosure/) I developed using the Revit API.
 
-![](slide0029_image053.png)
+![](/images/som/sap-vertical-mullions/slide0029_image053.png)
 
-![](slide0019_image032.png)
+![](/images/som/sap-vertical-mullions/slide0019_image032.png)
 
-![](slide0019_image034.png)
+![](/images/som/sap-vertical-mullions/slide0019_image034.png)

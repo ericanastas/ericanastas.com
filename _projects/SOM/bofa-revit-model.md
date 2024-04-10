@@ -9,12 +9,12 @@ draft: true
 
 I created this Revit model of a Bank of America branch to generate drawings and renderings that were used as part of an interview presentation.
 
-![](Entry.jpg)
+![](/images/som/bofa-revit-model/Entry.jpg)
 
-![](Front.jpg)
+![](/images/som/bofa-revit-model/Front.jpg)
 
-![](Canopy.jpg)
+![](/images/som/bofa-revit-model/Canopy.jpg)
 
-![](Floor-Plan-Section.jpg)
+![](/images/som/bofa-revit-model/Floor-Plan-Section.jpg)
 
 ![](Interior.jpg)

@@ -9,12 +9,12 @@ draft: true
 
 As part of preparation for a project interview presentation with Chevron, I developed this Revit model of one of their offices to showcase how SOM's use of BIM could benefit their project. I used the model to generate sample renderings and plan drawings, as well as schedules of program area and furniture quantities. A PDF of these drawings and schedules can be downloaded [here](http://www.ericanastas.com/wp-content/uploads/2012/04/Cheveron-Interview-Mock-Up-sr3.pdf).
 
-![](rendering.jpg)
+![](/images/som/chevron-interview-model/rendering.jpg)
 
-![](cheveron-rendering.jpg)
+![](/images/som/chevron-interview-model/cheveron-rendering.jpg)
 
 I also exported this model to Ecotect to show how the it could be used for lighting and daylight analysis.
 
-![](solar-1.jpg)
+![](/images/som/chevron-interview-model/solar-1.jpg)
 
-![](lighting-1.jpg)
+![](/images/som/chevron-interview-model/lighting-1.jpg)

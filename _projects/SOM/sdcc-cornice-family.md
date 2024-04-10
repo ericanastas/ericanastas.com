@@ -7,13 +7,13 @@ date: "2015-07-07"
 draft: true
 ---
 
-![center](center.png)
+![center](/images/som/sdcc-cornice-family/center.png)
 
-![cornice](cornice.png)
+![cornice](/images/som/sdcc-cornice-family/cornice.png)
 
-![lower obtuse](lower-obtuse.png)
+![lower obtuse](/images/som/sdcc-cornice-family/lower-obtuse.png)
 
-![plates](plates.png)
+![plates](/images/som/sdcc-cornice-family/plates.png)
 
 ![point connection4](point-connection4.png)
 

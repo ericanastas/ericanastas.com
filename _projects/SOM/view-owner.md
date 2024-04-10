@@ -13,10 +13,10 @@ The View Owner Revit add-in automates the organization of the views in a Revit m
 
 Organizing the project browser by the "View Owner" parameter effectively creates personalized view folders that each user can work in. Everyone in the model can create new working views with out sorting through the views of other users. Views "owned" by a user are always considered working views.
 
-![View Owner](View-Owner.png)
+![View Owner](/images/som/view-owner/View-Owner.png)
 
 When a view is added to a sheet its owner is automatically set as `SHEET`, which segregates the project browser into working user views and printed `SHEET` views. This makes it apparent to users working in the model when they are in a working view that can be changed, and a view on a sheet that may be printed with a document set.
 
-![movetosheet1](movetosheet1.png)
+![movetosheet1](/images/som/view-owner/movetosheet1.png)
 
-![movetosheet2](movetosheet2.png)
+![movetosheet2](/images/som/view-owner/movetosheet2.png)
