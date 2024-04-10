@@ -4,7 +4,6 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 coverImage: "/images/project3.jpg"
 date: "2024-04-03"
 draft: true
-draft: false
 tags: ["Tag 3"]
 featured: true
 ---
