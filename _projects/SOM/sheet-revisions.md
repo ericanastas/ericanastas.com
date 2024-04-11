@@ -1,10 +1,9 @@
 ---
 title: Sheet Revisions
 summary: placeholder summary
-coverImage: /images/som/sheet-revisions/MISSING_COVER
+coverImage: /images/som/sheet-revisions/Sheet-Revisions-List.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-11-21"
-draft: true
 ---
 
 Sheet Revisions is a Revit add-in which exposes the sheet revisions in drawing lists. Each sheet in a Revit model may be assigned to any number of revisions. This assignment may be done explicitly by a user, or implicitly by adding a revision cloud to a sheet.

@@ -1,13 +1,16 @@
 ---
 title: San Diego Courthouse Cornice Family
 summary: placeholder summary
-coverImage: /images/som/sdcc-cornice-family/MISSING_COVER
+coverImage: /images/som/sdcc-cornice-family/plates.png
 tags: ["Revit", "Revit Modeling"]
 date: "2015-07-07"
-draft: true
 ---
 
+![center](/images/som/sdcc-cornice-family/bottom.png)
+
 ![center](/images/som/sdcc-cornice-family/center.png)
+
+![center](/images/som/sdcc-cornice-family/Center-plate.png)
 
 ![cornice](/images/som/sdcc-cornice-family/cornice.png)
 
@@ -15,10 +18,7 @@ draft: true
 
 ![plates](/images/som/sdcc-cornice-family/plates.png)
 
-![point connection4](point-connection4.png)
+![point connection4](/images/som/sdcc-cornice-family/point-connection2.png)
 
-![point](point.png)
+![point](/images/som/sdcc-cornice-family/point.png)
 
-![SDCC_Arch_Enclosure_LOCAL](SDCC_Arch_Enclosure_LOCAL.png)
-
-![Center plate 2](Center-plate-2.png)

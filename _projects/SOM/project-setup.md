@@ -1,10 +1,9 @@
 ---
 title: Project Setup
 summary: placeholder summary
-coverImage: /images/som/project-setup/MISSING_COVER
+coverImage: /images/som/project-setup/Project-Setup-Editor.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-04-25"
-draft: true
 ---
 
 Project Setup is a Revit add-in that I developed for setting up Revit project files. Each setup is associated with a specific Revit template file, and consists of one or more setup tasks. The setup editor is shown in the image below.
@@ -13,7 +12,7 @@ Project Setup is a Revit add-in that I developed for setting up Revit project fi
 
 The image below shows the available tasks that can be added to a setup.
 
-![Project Setup Tasks](http://www.ericanastas.com/wp-content/uploads/2014/07/Project-Setup-Tasks.png)
+![Project Setup Tasks](/images/som/project-setup/Project-Setup-Tasks.png)
 
 When a new Revit model is created with a template that has one or more associated project setups a dialog is displayed that prompts the user to select a setup to run.
 

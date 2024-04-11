@@ -1,10 +1,9 @@
 ---
 title: Revit Model Navisworks Search Sets
 summary: placeholder summary
-coverImage: /images/som/rvt-navis-search-sets/MISSING_COVER
+coverImage: /images/som/rvt-navis-search-sets/Profiler-Colors.png
 tags: ["3D Coordination", "Navisworks", "NavisWorks Clash Detective"]
 date: "2013-03-29"
-draft: true
 ---
 
 When using Navisworks to coordinate a building design, search sets can be used to subdivide the model into separate parts. Search sets are based off the properties of the model elements, and as a result are often unique per each project. In order to eliminate this extra work, I developed a set of standard search sets that will work with any Revit model. These were designed to be both comprehensive, and only based of properties intrinsic of all Revit models. This means they can be used with any Revit model regardless of the specific parameters or type names used.
@@ -83,6 +82,6 @@ Navisworks also includes a tool called the Appearance Profiler, which can automa
 
 The images below show an example of a model before and after the appearance profiler definition is applied.
 
-![Default Colors](http://www.ericanastas.com/wp-content/uploads/2013/06/Default-Colors.png)
+![Default Colors](/images/som/rvt-navis-search-sets/Default-Colors.png)
 
-![Profiler Colors](http://www.ericanastas.com/wp-content/uploads/2013/06/Profiler-Colors.png)
+![Profiler Colors](/images/som/rvt-navis-search-sets/Profiler-Colors.png)

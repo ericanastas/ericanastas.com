@@ -1,10 +1,9 @@
 ---
 title: Denver VA Medical Center Revit Plug-in
 summary: placeholder summary
-coverImage: /images/som/dvamc-plug-in/MISSING_COVER
+coverImage: /images/som/dvamc-plug-in/dvamc-0.4_2_2.jpg
 tags: ["C#.Net", "Revit", "Revit API", "SQL", "WinForms", "Denver VA Medical Center"]
 date: "2011-10-26"
-draft: true
 ---
 
 The Denver VA Medical Center project is a very large medical campus designed by the SOM Chicago office. The VA had very strict program requirements for the project that needed to be tracked and compared to the actual design models. I helped develop a custom system for tracking and verifying the program requirements with the design model. The system was centered around a Microsoft SQL database, which stored all the program information as well as actual design values exported from the Revit model. A colleague of mine created an MS Access based front end to the SQL database, which allowed users to manipulate the project program, and generate various reports. On the Revit model side I created a custom Revit plug-in which synchronized room, door, and equipment data with the central database.

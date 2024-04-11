@@ -1,10 +1,9 @@
 ---
 title: Network File Checker
 summary: placeholder summary
-coverImage: /images/som/network-file-checker/MISSING_COVER
+coverImage: /images/som/network-file-checker/Network-File-Checker.png
 tags: ["C#.Net", "WPF"]
 date: "2014-10-07"
-draft: true
 ---
 
 Network File Checker is a utility which I developed that can be used to verify the existence and version of a file on many remote computers on the network. This can be be used to batch verify the installation of software, add-ins, or updates on many computers at once.

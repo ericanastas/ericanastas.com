@@ -1,10 +1,9 @@
 ---
 title: BIM Wiki
 summary: placeholder summary
-coverImage: /images/som/bim-wiki/MISSING_COVER
-tags: ["Collaboration", "CSS", "REST"]
+coverImage: /images/som/bim-wiki/SOM-BIM-Wiki.png
+tags: ["Collaboration", "CSS", "REST","Training"]
 date: "2015-05-06"
-draft: true
 ---
 
 I have been a major contributor and supporter of the SOM BIM Wiki site. The BIM Wiki is an internal intranet site used to document the standards and best practices used by the firm in implementing the use of Revit and BIM.

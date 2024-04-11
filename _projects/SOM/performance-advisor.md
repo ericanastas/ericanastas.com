@@ -1,10 +1,9 @@
 ---
 title: Performance Advisor
 summary: placeholder summary
-coverImage: /images/som/performance-advisor/MISSING_COVER
+coverImage: /images/som/performance-advisor/Perf-Advisor.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2013-11-04"
-draft: true
 ---
 
 The Revit 2014 API added a PerformanceAdviser class which can be used to check a Revit model for various issues can can hinder the performance of the model. This functionality, however, was not exposed through the UI and could only be accessed through the API and custom add-ins.

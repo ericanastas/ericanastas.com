@@ -1,10 +1,9 @@
 ---
 title: Fractal Tree Canopy
 summary: placeholder summary
-coverImage: /images/som/fractal-tree-canopy/MISSING_COVER
+coverImage: /images/som/fractal-tree-canopy/tree-canopy.png
 tags: ["C#.Net", "Grasshopper", "Beijing Tiangqiao Performing arts Center"]
 date: "2011-02-16"
-draft: true
 ---
 
 This grasshopper definition generates a canopy structure through a recursive fractal pattern script.

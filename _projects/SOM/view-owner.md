@@ -1,15 +1,14 @@
 ---
 title: View Owner
 summary: placeholder summary
-coverImage: /images/som/view-owner/MISSING_COVER
+coverImage: /images/som/view-owner/view-owner2.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-10-04"
-draft: true
 ---
 
 The View Owner Revit add-in automates the organization of the views in a Revit model by the users who created them. When enabled the add-in adds a custom "View Owner" shared parameter to the views of a model. As users create new views , this parameter is automatically populated with the name of the current user. This works both when creating new views, and duplicating existing views.
 
-![viewowner_parameter](http://www.ericanastas.com/wp-content/uploads/2014/06/viewowner_parameter.png)
+![viewowner_parameter](/images/som/view-owner/viewowner_parameter.png)
 
 Organizing the project browser by the "View Owner" parameter effectively creates personalized view folders that each user can work in. Everyone in the model can create new working views with out sorting through the views of other users. Views "owned" by a user are always considered working views.
 
@@ -20,3 +19,9 @@ When a view is added to a sheet its owner is automatically set as `SHEET`, which
 ![movetosheet1](/images/som/view-owner/movetosheet1.png)
 
 ![movetosheet2](/images/som/view-owner/movetosheet2.png)
+
+![movetosheet2](/images/som/view-owner/pbrowser5.png)
+
+![movetosheet2](/images/som/view-owner/view-owner2.png)
+
+![movetosheet2](/images/som/view-owner/enable_viewowner.png)
