@@ -26,7 +26,7 @@ Given the size of the project, there were a very large number of rooms to deal w
 
 ![](/images/som/dvamc-plug-in/dvamc-filters.jpg)
 
-Once rooms in the SQL database and Revit models were linked to one another their properties could then be synchronized. Different properties were synchronized in different directions. Sometimes the Revit model was the source, as with actual room areas. With other properties, such as the room names, the program database took precedence. [This pdf](http://www.ericanastas.com/?attachment_id=856) shows all the parameters and how they were synchronized.
+Once rooms in the SQL database and Revit models were linked to one another their properties could then be synchronized. Different properties were synchronized in different directions. Sometimes the Revit model was the source, as with actual room areas. With other properties, such as the room names, the program database took precedence. [This pdf](/images/som/dvamc-plug-in/DVAMC-Parameters.pdf) shows all the parameters and how they were synchronized.
 
 ![](/images/som/dvamc-plug-in/dvamc-sync.png)
 
