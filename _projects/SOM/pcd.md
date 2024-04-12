@@ -1,7 +1,7 @@
 ---
 title: Chengu Dayuan Massing
 summary: placeholder summary
-coverImage: /images/som/pcd/Poly-Dayuan-Tower-1.PNG
+coverImage: /images/som/pcd/Poly-Dayuan-Tower-1.png
 tags: ["Grasshopper", "Rhino", "Chengdu Poly International Plaza"]
 date: "2013-01-10"
 ---
