@@ -3,7 +3,7 @@ import { join } from "path";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-
+import process from "process";
 import { markdownToHtml } from "./util";
 
 import { removeFileExtension, convertToSlug } from "./util";
@@ -46,7 +46,7 @@ export async function getPage(pageSlug: string): Promise<Page | null> {
 }
 
 export async function getAllPages(): Promise<Page[]> {
-  const pages: Page[] = [];
+  let pages: Page[] = [];
 
   let pageMdFileNames: string[] = fs.readdirSync(pagesDirectory);
 
@@ -54,6 +54,10 @@ export async function getAllPages(): Promise<Page[]> {
     let pageMdFilePath = path.join(pagesDirectory, pageMdFileName);
     let page = await readPageFile(pageMdFilePath);
     pages.push(page);
+  }
+
+  if (process.env.NODE_ENV === "production") {
+    pages = pages.filter((p) => !p.draft);
   }
 
   return pages;

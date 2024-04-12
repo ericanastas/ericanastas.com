@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import { join } from "path";
 import path from "path";
 import { markdownToHtml, removeFileExtension, convertToSlug } from "./util";
+import process from "process";
 
 import type { Project } from "@/interfaces/project";
 import type { Category } from "@/interfaces/category";
@@ -119,6 +120,10 @@ export async function getAllProjects(): Promise<Project[]> {
   }
 
   projects = projects.filter((p) => !p.hide);
+
+  if (process.env.NODE_ENV === "production") {
+    projects = projects.filter((p) => !p.draft);
+  }
 
   const sortedFeaturedProjects = projects
     .filter((p) => p.featured)
