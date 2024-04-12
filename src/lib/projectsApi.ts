@@ -31,7 +31,7 @@ async function readProjectFile(
 
   const html = await markdownToHtml(content || "");
 
-  let { title, date, coverImage, summary, draft, tags, featured } = data;
+  let { title, date, coverImage, summary, draft, tags, featured, hide } = data;
 
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
@@ -54,6 +54,7 @@ async function readProjectFile(
     url,
     category,
     html,
+    hide,
   } as Project;
 }
 
@@ -101,7 +102,7 @@ export function getAllProjectCategories(): Category[] {
 }
 
 export async function getAllProjects(): Promise<Project[]> {
-  const projects: Project[] = [];
+  let projects: Project[] = [];
 
   let categories = getAllProjectCategories();
 
@@ -116,6 +117,8 @@ export async function getAllProjects(): Promise<Project[]> {
       projects.push(project);
     }
   }
+
+  projects = projects.filter((p) => !p.hide);
 
   const sortedFeaturedProjects = projects
     .filter((p) => p.featured)

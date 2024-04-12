@@ -9,4 +9,5 @@ export interface Project extends Page {
   tags: Tag[];
   featured?: boolean;
   category: Category;
+  hide?: boolean;
 }
