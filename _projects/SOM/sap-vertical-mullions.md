@@ -6,7 +6,7 @@ tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Sichuan Avia
 date: "2011-10-20"
 ---
 
-The massing for the [Sichuan Aviation Plaza](http://www.ericanastas.com/category/portfolio/som/projects-som/aviation-plaza/) project consisted many of vertical pleats, of which the fold angle varied over the height of the building. This changing fold angle meant that the profiles of the mullions between pleats also needed to vary, and could not be built as a simple extrusions inside the panel families.
+The massing for the Sichuan Aviation Plaza project consisted many of vertical pleats, of which the fold angle varied over the height of the building. This changing fold angle meant that the profiles of the mullions between pleats also needed to vary, and could not be built as a simple extrusions inside the panel families.
 
 I was able to create a working vertical mullion family using a six point adaptive component. Three adaptive points at the top and bottom of the family specify the position, angle, and rotation of the mullion profile.
 
@@ -18,7 +18,7 @@ Creating a Revit family that is this flexible and complex required a lot of math
 
 Here is a video showing the profile of the vertical mullion family being adjusted by moving the adaptive points.
 
-Below is an image of the vertical mullion model. The mullions were placed automatically using the [enclosure generation script](http://www.ericanastas.com/sap-enclosure/) I developed using the Revit API.
+Below is an image of the vertical mullion model. The mullions were placed automatically using the [enclosure generation script](/projects/som/sap-enclosure) I developed using the Revit API.
 
 ![](/images/som/sap-vertical-mullions/slide0029_image053.png)
 

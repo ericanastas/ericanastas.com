@@ -10,7 +10,7 @@ Network File Checker is a utility which I developed that can be used to verify t
 
 The share and path of the file to check are specified as well as the expected file size, version, and MD5 hash of the file if it is found.
 
-![Network File Checker Settings](http://www.ericanastas.com/wp-content/uploads/2014/09/Network-File-Checker-Settings.png)
+![Network File Checker Settings](/images/som/network-file-checker/Network-File-Checker-Settings.png)
 
 The names of computers to check are then added. These can be entered directly into the tool, or imported from a text file.
 
