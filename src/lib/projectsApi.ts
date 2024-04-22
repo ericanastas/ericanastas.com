@@ -32,7 +32,8 @@ async function readProjectFile(
 
   const html = await markdownToHtml(content || "");
 
-  let { title, date, coverImage, summary, draft, tags, featured, hide } = data;
+  let { title, date, coverImage, summary, draft, tags, featured, hide, repo } =
+    data;
 
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
@@ -56,6 +57,7 @@ async function readProjectFile(
     category,
     html,
     hide,
+    repo,
   } as Project;
 }
 
