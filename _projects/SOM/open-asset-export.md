@@ -1,5 +1,5 @@
 ---
-title: Open Asset BIM Data Export
+title: Open Asset Data Export
 summary: placeholder summary
 coverImage: /images/som/open-asset-export/Open-Asset-Tools-Menu.png
 tags: ["C#.Net", "REST", "Revit", "Revit API"]

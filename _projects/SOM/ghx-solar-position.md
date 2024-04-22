@@ -1,7 +1,7 @@
 ---
 title: Solar Position Grasshopper Component
 summary: placeholder summary
-coverImage: /images/som/solar-position-ghx-component/solar-ghx.png
+coverImage: /images/som/ghx-solar-position/solar-ghx.png
 tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
 date: "2011-05-31"
 ---
@@ -10,5 +10,4 @@ I developed this custom Grasshopper component that is able to calculate the posi
 
 The videos below show another example of the component being used to analyze the shading of existing buildings.
 
-
-![](/images/som/solar-position-ghx-component/solar-calc-sample.png)
+![](/images/som/ghx-solar-position/solar-calc-sample.png)

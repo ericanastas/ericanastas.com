@@ -1,7 +1,7 @@
 ---
 title: Advanced Modeling Tools
 summary: placeholder summary
-coverImage: /images/som/amt/AMT-GHX.png
+coverImage: /images/som/advanced-modeling-tools/AMT-GHX.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-05-13"
 ---

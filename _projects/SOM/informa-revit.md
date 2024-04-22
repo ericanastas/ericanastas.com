@@ -1,8 +1,17 @@
 ---
-title: Informa Master Planning in Revit
+title: Informa Master Planning Revit Plug-in
 summary: placeholder summary
 coverImage: /images/som/informa-revit/Informa-Revit-Massing.jpg
-tags: ["Access", "C#.Net","Informa","Master Planning", "Revit", "Revit API","SQL"]
+tags:
+  [
+    "Access",
+    "C#.Net",
+    "Informa",
+    "Master Planning",
+    "Revit",
+    "Revit API",
+    "SQL",
+  ]
 date: "2009-02-19"
 ---
 
@@ -23,4 +32,3 @@ The flow chart below shows the queries used to process the raw data from the mod
 Here is a sample of one of the generated reports.
 
 ![](/images/som/informa-revit/Informa-Sample-Report.png)
-
