@@ -1,5 +1,7 @@
 # ericanastas.com
 
+[![Deploy Production Site](https://github.com/ericanastas/ericanastas.com/actions/workflows/main.yml/badge.svg)](https://github.com/ericanastas/ericanastas.com/actions/workflows/main.yml)
+
 My personal portfolio site built with [Next.js](https://nextjs.org/).
 
 ## Deployment
@@ -14,9 +16,8 @@ Install dependencies
 
 ### Production Deployment
 
-Build site: 
+Build site:
 `npm run build`
 
-Start site: 
+Start site:
 `npm start`
-
