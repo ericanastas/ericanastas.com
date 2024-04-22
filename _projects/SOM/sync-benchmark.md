@@ -2,8 +2,9 @@
 title: Sync Benchmark
 summary: placeholder summary
 coverImage: /images/som/sync-benchmark/Sync-Benchmark-UI.png
-tags: ["C#.Net", "Revit", "Revit API","WPF"]
+tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-07-21"
+repo: https://github.com/ericanastas/sync-benchmark
 ---
 
 The Sync Benchmark Revit add-in generates metrics for how long it takes to save a new central file, create a new local copy, and synchronize to a selected location. This can be directed at either a standard file based central file, or models on a Revit server. The results are returned as an Excel file.

@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/revit-server-hotfix-check/Revit-Server-Hotfix-Check.png
 tags: ["Amazon Web Services", "C#.Net", "Revit", "Revit API"]
 date: "2014-06-18"
+repo: https://github.com/ericanastas/revit-server-hot-fix-check
 ---
 
 The original release of Revit 2014 had a critical issue where syncing to a model on Revit server would randomly lock up. This not only resulted in the user syncing loosing their work, but also prevented anyone else from working in the model. Forcing Revit to close through the windows task manager would also orphan the user's lock on the model, and would require someone with direct access to the server to clear it.

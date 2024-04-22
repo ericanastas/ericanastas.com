@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/open-asset-export/Open-Asset-Tools-Menu.png
 tags: ["C#.Net", "REST", "Revit", "Revit API"]
 date: "2014-08-08"
+repo: https://github.com/ericanastas/open-asset-export
 ---
 
 This Revit add-in connects to the API of an Open Asset BIM library and extracts all the family information into a single large excel file.

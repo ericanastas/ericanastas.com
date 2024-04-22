@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/revit-add-in-vs-template/Revit-VS-Template.png
 tags: ["C#.Net", "Revit", "Revit API", "Visual Studio"]
 date: "2014-11-11"
+repo: https://github.com/ericanastas/revit-add-in-vs-template
 ---
 
 To facilitate the rapid development of new Revit add-ins I created this custom project template for Visual Studio.
