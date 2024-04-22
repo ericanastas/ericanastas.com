@@ -9,9 +9,6 @@ export default async function Repos() {
   const allProjects = await getAllProjects();
   const repoProjects = allProjects.filter((p) => p.repo);
 
-  console.log(`allProjects: ${JSON.stringify(allProjects)}`);
-  console.log(`repoProjects: ${repoProjects}`);
-
   return (
     <>
       <Header />
