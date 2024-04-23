@@ -37,7 +37,9 @@ export default async function Repos() {
               </div>
               <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                 <p className="text-sm leading-6 text-gray-900">
-                  {project.category.name}
+                  <Link className="hover:underline" href={project.category.url}>
+                    {project.category.name} Projects
+                  </Link>
                 </p>
                 <p className="mt-1 text-xs leading-5 text-gray-500">
                   <time dateTime={project.date}>{project.date}</time>
