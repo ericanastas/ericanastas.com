@@ -3,7 +3,7 @@ title: Revit Server CLI
 summary: placeholder summary
 coverImage: /images/som/revit-server-cli/RevitServerUtil.png
 tags: ["REST", "Revit", "C#.Net"]
-date: "2020-10-26"
+date: "2016-11-01"
 repo: https://github.com/ericanastas/revit-server-cli
 ---
 
