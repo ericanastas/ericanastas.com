@@ -21,7 +21,7 @@ export function ProjectHeader({ title, date, tags, category }: Props) {
 
       <div className="mb-4 text-center">
         <Link className="hover:underline" href={category.url}>
-          {category.name}
+          {category.name} Projects
         </Link>
         {" - "}
         <DateFormatter dateString={date} />
