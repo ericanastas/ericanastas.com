@@ -24,4 +24,4 @@ jobs:
         run: npm run build
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./out/ s3://ericanastas.com --delete --size-only
+        run: aws s3 sync ./out/ s3://ericanastas.com --delete
