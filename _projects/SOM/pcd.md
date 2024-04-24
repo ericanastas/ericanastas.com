@@ -1,5 +1,5 @@
 ---
-title: Chengu Dayuan Massing
+title: Poly Chengdu Dayuan Massing
 summary: placeholder summary
 coverImage: /images/som/pcd/Poly-Dayuan-Tower-1.png
 tags: ["Grasshopper", "Rhino"]

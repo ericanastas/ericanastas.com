@@ -1,5 +1,5 @@
 ---
-title: Poly Chengdu Dayuan Revit Support
+title: Poly Chengdu Dayuan
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Support"]

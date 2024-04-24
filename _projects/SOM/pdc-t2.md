@@ -1,5 +1,5 @@
 ---
-title: Chengdu Dayuan Tower 2 Massing
+title: Poly Chengdu Dayuan Tower 2 Massing
 summary: placeholder summary
 coverImage: /images/som/pdc-t2/Chengdu-Tower-2.png
 tags: ["Grasshopper", "Rhino"]
