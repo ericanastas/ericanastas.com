@@ -1,8 +1,8 @@
 ---
 title: Integrated Work Plan Standard
-summary: placeholder summary
+summary: Standard training manual for producing integrated work plans.
 coverImage: /images/mortenson/iwp-standard/slide0039_image017.png
-tags: ["Integrated Work Plans"]
+tags: ["Integrated Work Plans", "BIM in Field", "Training"]
 date: "2007-07-11"
 ---
 

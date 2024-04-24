@@ -1,5 +1,5 @@
 ---
-title: Gdrive Shortcut Bookmarklet
+title: GDrive Shortcut Bookmarklet
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["JavaScript"]

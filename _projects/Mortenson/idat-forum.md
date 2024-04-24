@@ -1,6 +1,6 @@
 ---
 title: IDAT Discussion Forum
-summary: placeholder summary
+summary: Internal company discussion forum.
 coverImage: /images/mortenson/idat-forum/slide0043_image037.png
 date: "2006-11-06"
 tags: ["Collaboration"]

@@ -2,7 +2,7 @@
 title: Denver VA Medical Center Revit Plug-in
 summary: placeholder summary
 coverImage: /images/som/dvamc-db-sync/dvamc-0.4_2_2.jpg
-tags: ["C#.Net", "Revit", "Revit API", "SQL", "WinForms"]
+tags: ["C#.Net", "Revit", "Revit API", "SQL", "WinForms", "MS SQL"]
 date: "2011-10-26"
 repo: https://github.com/ericanastas/dvamc-db-sync
 project: Denver VA Medical Center

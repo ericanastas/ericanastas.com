@@ -1,6 +1,6 @@
 ---
-title: Bellevue Community College Structural Model
-summary: placeholder summary
+title: BCC Structural Model
+summary: Revit structural model of the Bellevue Community College project
 coverImage: /images/mortenson/bcc-structural/slide0026_image137.jpg
 date: "2008-01-08"
 tags: ["3D Modeling", "Revit", "Revit Modeling"]

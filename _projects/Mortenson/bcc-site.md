@@ -1,6 +1,6 @@
 ---
-title: Bellevue Community College Site Logistics Model
-summary: placeholder summary
+title: BCC Site Logistics Model
+summary: Business development site logistic model for the Bellevue Community College project
 coverImage: /images/mortenson/bcc-site/slide0024_image135.png
 date: "2007-06-21"
 tags:

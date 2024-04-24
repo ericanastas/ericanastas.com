@@ -1,6 +1,6 @@
 ---
 title: Shoreline City Hall Business Development Model
-summary: placeholder summary
+summary: Business development model for the Shoreline City Hall project
 coverImage: /images/mortenson/shoreline-bd/slide0021_image127.jpg
 date: "2007-06-04"
 tags: ["Business Development", "3D Modeling", "Revit", "Revit Modeling"]

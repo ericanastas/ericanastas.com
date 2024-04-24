@@ -1,5 +1,5 @@
 ---
-title: Gdrive Upload Form
+title: GDrive Upload Form
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["JavaScript", "Google API", "Google Apps Script"]

@@ -2,7 +2,7 @@
 title: Traktor Tagger
 summary: placeholder summary
 coverImage: /images/personal/traktor-tagger/traktor-tagger.png
-tags: ["C#.Net", "REST", "WPF", "XML"]
+tags: ["C#.Net", "REST", "WPF", "XML", "DJing"]
 date: "2013-01-15"
 repo: https://github.com/ericanastas/traktor-tagger
 ---

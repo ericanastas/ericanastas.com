@@ -2,7 +2,7 @@
 title: Sichuan Aviation Plaza Enclosure
 summary: placeholder summary
 coverImage: /images/som/sap-enclosure/slide0031_image063.png
-tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing"]
+tags: ["C#.Net", "Revit", "Revit API", "Revit Modeling"]
 date: "2011-10-20"
 project: Sichuan Aviation Plaza
 ---

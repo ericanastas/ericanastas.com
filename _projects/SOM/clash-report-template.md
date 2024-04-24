@@ -1,8 +1,8 @@
 ---
 title: NavisWorks Clash Report Template
-summary: placeholder summary
+summary: Custom XLST template for navisworks clash reports
 coverImage: /images/som/clash-report-template/group-detail.jpg
-tags: ["CSS","Navisworks","XLST","XML"]
+tags: ["CSS", "Navisworks", "XLST", "XML"]
 date: "2009-10-20"
 ---
 

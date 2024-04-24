@@ -1,8 +1,9 @@
 ---
 title: MEP Coordination Manual
-summary: placeholder summary
+summary: Training manual for executing 3D MEP coordination using Navisworks Clash Detective.
 coverImage: /images/mortenson/mep-manual/slide0041_image025.png
-tags: ["3D Coordination", "Navisworks", "NavisWorks Clash Detective"]
+tags:
+  ["3D Coordination", "Navisworks", "NavisWorks Clash Detective", "Training"]
 date: "2007-10-02"
 ---
 

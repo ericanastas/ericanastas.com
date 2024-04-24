@@ -1,6 +1,6 @@
 ---
 title: Curved Paving Pattern
-summary: placeholder summary
+summary: Grasshopper definition that generates a curved stone paving pattern
 coverImage: /images/som/curved-paving-pattern/curved-paving-pattern.png
 tags: ["Grasshopper"]
 date: "2012-02-02"

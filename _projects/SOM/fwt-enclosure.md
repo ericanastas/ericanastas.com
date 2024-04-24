@@ -2,8 +2,7 @@
 title: Fuzhou Worldwide Tower Enclosure Model
 summary: placeholder summary
 coverImage: /images/som/fwt-enclosure/3D_View_2_2012-Mar-22-033024UTC.png
-tags:
-  ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Revit Modeling"]
+tags: ["C#.Net", "Revit", "Revit API", "Revit Modeling"]
 date: "2012-03-13"
 project: Fuzhou Worldwide Tower
 ---

@@ -1,6 +1,6 @@
 ---
 title: Project Websites
-summary: placeholder summary
+summary: Collaboration sites setup for each project to share resources and lessons learned.
 coverImage: /images/mortenson/project-websites/slide0042_image029.png
 date: "2007-01-25"
 tags: ["BIM in Field", "Collaboration"]

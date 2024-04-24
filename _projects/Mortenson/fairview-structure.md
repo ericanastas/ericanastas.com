@@ -1,6 +1,6 @@
 ---
 title: Fairview Research Center Business Development Structural Model
-summary: placeholder summary
+summary: Structural model of the Research Research Center project
 coverImage: /images/mortenson/fairview-structure/slide0020_image105.png
 date: "2006-06-16"
 tags: ["AutoCad", "Business Development", "3D Modeling"]

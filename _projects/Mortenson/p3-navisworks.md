@@ -1,6 +1,6 @@
 ---
 title: Primavera P3 & NavisWorks TimeLiner Linking
-summary: placeholder summary
+summary: Automatic linking of a Primavera P3 schedule and Navisworks Timeliner 4D model
 coverImage: /images/mortenson/p3-navisworks/slide0035_image023.png
 date: "2006-03-03"
 tags: ["4D Simulation", "Navisworks", "NavisWorks TimeLiner"]

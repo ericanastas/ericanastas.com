@@ -1,5 +1,5 @@
 ---
-title: Clarity Gdrive Access Form
+title: Clarity GDrive Access Request Form
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags:
