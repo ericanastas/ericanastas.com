@@ -1,4 +1,4 @@
-export type Page = {
+export interface Page {
   /**Url slog */
   slug: string;
 
@@ -16,4 +16,4 @@ export type Page = {
 
   /**Url of the content */
   url: string;
-};
+}
