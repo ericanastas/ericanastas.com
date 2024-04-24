@@ -15,6 +15,6 @@ For example here is an original source image generated with virtual wind.
 
 ![](/images/som/vw-image-recolor-script/recolor.jpg)
 
-And here is the result of the script set to a threshold windspeed of 4 m/s.
+And here is the result of the script set to a threshold wind speed of 4 m/s.
 
 ![](/images/som/vw-image-recolor-script/recolor_recolored.png)

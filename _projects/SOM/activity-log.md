@@ -13,4 +13,4 @@ The Revit Activity Log add-in records user's Revit activity to a central SQL dat
 
 ![Revit Activity Log 2](/images/som/activity-log/Revit-Activity-Log-2.png)
 
-Initially this system logged data to a MS SQL database which was visualized with Tabelau. Later this was ported to Elasticsearch and Kibana.
+Initially this system logged data to a MS SQL database which was visualized with Tableau. Later this was ported to Elasticsearch and Kibana.

@@ -1,6 +1,6 @@
 ---
 title: UWRT Automated Layout
-summary: Automated construction layout from the BIM model on the UW Reasearch and Technology project
+summary: Automated construction layout from the BIM model on the UW Research and Technology project
 coverImage: /images/mortenson/uwrt-layout/slide0052_image019.jpg
 date: "2005-10-03"
 tags: ["BIM in Field"]

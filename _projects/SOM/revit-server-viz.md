@@ -1,5 +1,5 @@
 ---
-title: Revit Server Activiy Visualization
+title: Revit Server Activity Visualization
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "C#.Net", "Revit Server"]

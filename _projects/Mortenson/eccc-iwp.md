@@ -1,6 +1,6 @@
 ---
 title: ECCC Integrated Work Plans
-summary: Integrated workplans for the Everett Community Cancer Care Center project
+summary: Integrated work plans for the Everett Community Cancer Care Center project
 coverImage: /images/mortenson/eccc-iwp/slide0012_image091.jpg
 date: "2006-05-16"
 tags: ["Integrated Work Plans", "BIM in Field"]

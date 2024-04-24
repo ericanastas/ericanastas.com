@@ -2,7 +2,7 @@
 title: SOM Sync
 summary: placeholder summary
 coverImage: /images/som/som-sync/som-sync-screenshot.jpg
-tags: ["C#.Net", "FTP", "Navisworks", "Winforms"]
+tags: ["C#.Net", "FTP", "Navisworks", "WinForms"]
 date: "2009-11-25"
 repo: https://github.com/ericanastas/som-sync
 ---

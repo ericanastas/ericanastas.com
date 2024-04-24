@@ -1,6 +1,6 @@
 ---
 title: EVCC Integrated Work Plans
-summary: Produced integrated workplans on the Everett Community College project
+summary: Produced integrated work plans on the Everett Community College project
 coverImage: /images/mortenson/evcc-iwp/slide0030_image153.jpg
 date: "2008-01-02"
 tags: ["Integrated Work Plans", "Revit", "Revit Modeling", "BIM in Field"]
