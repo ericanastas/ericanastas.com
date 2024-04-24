@@ -45,7 +45,7 @@ export function ProjectPreview({
 
       <div className="flex justify-between text-md mb-2">
         <Link className="hover:underline" href={category.url}>
-          {category.name}
+          {category.name} Projects
         </Link>
         <div>
           <DateFormatter dateString={date} />
