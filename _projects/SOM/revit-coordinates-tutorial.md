@@ -1,7 +1,7 @@
 ---
 title: Revit Coordinate Systems Tutorial Site
 summary: placeholder summary
-coverImage: /images/som/rvt-coordinates/MISSING_COVER
+coverImage: /images/placeholder.png
 tags: ["Revit", "HTML", "Revit Support"]
 date: "2016-07-26"
 draft: true

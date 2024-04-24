@@ -1,9 +1,8 @@
 ---
-title: Transform Project
+title: Basic File Info
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
-date: "2015-01-09"
-draft: true
-repo: https://github.com/ericanastas/transform-project
+date: "2016-09-22"
+repo: https://github.com/ericanastas/basic-file-info
 ---

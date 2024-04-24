@@ -1,9 +1,8 @@
 ---
-title: Transform Project
+title: Failure UI
 summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
-date: "2015-01-09"
-draft: true
-repo: https://github.com/ericanastas/transform-project
+date: "2015-10-20"
+repo: https://github.com/ericanastas/failure-ui
 ---
