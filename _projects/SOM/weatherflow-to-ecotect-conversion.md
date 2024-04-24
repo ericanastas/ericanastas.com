@@ -2,7 +2,7 @@
 title: Weatherflow to Ecotect Conversion
 summary: placeholder summary
 coverImage: /images/som/weatherflow-to-ecotect-conversion/2012-04-11_225457.png
-tags: ["Access","Ecotect"]
+tags: ["MS Access", "Ecotect"]
 date: "2009-03-03"
 ---
 
@@ -13,5 +13,3 @@ Another historical weather data collection site, [weatherflow.com](http://weathe
 I also used this tool to translate the weatherflow data from all the weather stations located around the bay area for use by potential future projects in my office. The map below shows the locations of these stations.
 
 ![](/images/som/weatherflow-to-ecotect-conversion/2012-04-11_225313.png)
-
-

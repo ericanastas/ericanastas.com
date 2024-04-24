@@ -2,8 +2,9 @@
 title: Virtual Wind Image Recoloring Script
 summary: placeholder summary
 coverImage: /images/som/vw-image-recolor-script/vw-script.png
-tags: ["Analysis", "Python", "Park Merced Master Plan", "Treasure Island Master Plan"]
+tags: ["Design Analysis", "Python"]
 date: "2011-08-10"
+project: ["Park Merced Master Plan", "Treasure Island Master Plan"]
 ---
 
 Virtual Wind, a wind analysis software, is able to export images with color coded arrows which designate the wind speed. However, the actual range of wind speeds that the arrow colors represent are dependent on the range of wind speeds visible in each image. Thus the color scales from two images from different view points of the same model will not necessarily correspond with one another.

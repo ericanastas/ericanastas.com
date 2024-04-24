@@ -2,7 +2,7 @@
 title: Integrated Work Plan Standard
 summary: placeholder summary
 coverImage: /images/mortenson/iwp-standard/slide0039_image017.png
-tags: ["IDAT","Integrated Work Plans"]
+tags: ["Integrated Work Plans"]
 date: "2007-07-11"
 ---
 

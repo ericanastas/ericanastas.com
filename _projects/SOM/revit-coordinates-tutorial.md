@@ -4,7 +4,6 @@ summary: placeholder summary
 coverImage: /images/placeholder.png
 tags: ["Revit", "HTML", "Revit Support"]
 date: "2016-07-26"
-draft: true
 repo: https://github.com/ericanastas/revit-coordinates-tutorial
 ---
 

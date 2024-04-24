@@ -2,9 +2,8 @@
 title: Informa Master Planning Rhino Plug-in
 summary: placeholder summary
 coverImage: /images/som/informa-rhino/Informa.jpg
-tags: ["Access", "C#.Net", "Rhino", "Rhino API", "Visual Studio", "WinForms"]
+tags: ["MS Access", "C#.Net", "Rhino", "Rhino API", "Visual Studio", "WinForms"]
 date: "2012-03-07"
-draft: true
 repo: https://github.com/ericanastas/informa-rhino
 ---
 

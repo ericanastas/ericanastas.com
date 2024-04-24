@@ -2,7 +2,7 @@
 title: Pixel Color Counter
 summary: placeholder summary
 coverImage: /images/som/pixel-color-counter/Pixel-Color-Counter.png
-tags: ["C#.Net", "WinForms"]
+tags: ["C#.Net", "WinForms", "Design Analysis"]
 date: "2010-06-20"
 ---
 

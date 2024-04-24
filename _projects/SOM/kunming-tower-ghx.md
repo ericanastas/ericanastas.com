@@ -2,7 +2,7 @@
 title: Kunming Tower Grasshopper
 summary: placeholder summary
 coverImage: /images/som/kunming-tower-ghx/Kunming-Tower.png
-tags: ["Grasshopper", "Unknown Project"]
+tags: ["Grasshopper"]
 date: "2014-05-28"
 ---
 

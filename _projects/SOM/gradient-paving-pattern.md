@@ -2,7 +2,7 @@
 title: Gradient Paving Pattern
 summary: placeholder summary
 coverImage: /images/som/gradient-paving-pattern/results.jpg
-tags: ["Rhino Script", "Unknown Project"]
+tags: ["Rhino Script"]
 date: "2010-09-07"
 ---
 

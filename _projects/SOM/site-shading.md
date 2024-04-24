@@ -2,7 +2,7 @@
 title: Site Shading
 summary: placeholder summary
 coverImage: /images/som/site-shading/ProjShadow.png
-tags: ["Analysis", "Grasshopper", "Rhino"]
+tags: ["Design Analysis", "Grasshopper", "Rhino"]
 date: "2013-11-15"
 ---
 

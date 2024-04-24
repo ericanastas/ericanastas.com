@@ -2,7 +2,7 @@
 title: COSM Writer
 summary: placeholder summary
 coverImage: /images/som/cosm-writer/cosm-writer.png
-tags: ["Arduino", "C#.Net", "Web API"]
+tags: ["Arduino", "C#.Net", "REST"]
 date: "2013-02-19"
 ---
 

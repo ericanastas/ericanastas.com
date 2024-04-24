@@ -2,7 +2,7 @@
 title: Sunline Ningbo
 summary: placeholder summary
 coverImage: /images/placeholder.png
-tags: ["Revit", "Revit Support", "Sunline Ningbo"]
+tags: ["Revit", "Revit Support"]
 date: "2020-10-26"
-draft: true
+project: Sunline Ningbo
 ---

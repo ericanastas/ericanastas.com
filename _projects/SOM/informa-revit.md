@@ -2,16 +2,7 @@
 title: Informa Master Planning Revit Plug-in
 summary: placeholder summary
 coverImage: /images/som/informa-revit/Informa-Revit-Massing.jpg
-tags:
-  [
-    "Access",
-    "C#.Net",
-    "Informa",
-    "Master Planning",
-    "Revit",
-    "Revit API",
-    "SQL",
-  ]
+tags: ["MS Access", "C#.Net", "Master Planning", "Revit", "Revit API", "SQL"]
 date: "2009-02-19"
 ---
 

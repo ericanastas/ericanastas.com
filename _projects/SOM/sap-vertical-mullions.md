@@ -2,8 +2,9 @@
 title: Sichuan Aviation Plaza Vertical Mullion Family
 summary: placeholder summary
 coverImage: /images/som/sap-vertical-mullions/slide0021_image044.png
-tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing", "Sichuan Aviation Plaza"]
+tags: ["C#.Net", "Revit", "Revit API", "Revit Conceptual Massing"]
 date: "2011-10-20"
+project: Sichuan Aviation Plaza
 ---
 
 The massing for the Sichuan Aviation Plaza project consisted many of vertical pleats, of which the fold angle varied over the height of the building. This changing fold angle meant that the profiles of the mullions between pleats also needed to vary, and could not be built as a simple extrusions inside the panel families.

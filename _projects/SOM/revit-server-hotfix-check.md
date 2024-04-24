@@ -2,7 +2,7 @@
 title: Revit Server Hotfix Check
 summary: placeholder summary
 coverImage: /images/som/revit-server-hotfix-check/Revit-Server-Hotfix-Check.png
-tags: ["Amazon Web Services", "C#.Net", "Revit", "Revit API"]
+tags: ["AWS", "C#.Net", "Revit", "Revit API"]
 date: "2014-06-18"
 repo: https://github.com/ericanastas/revit-server-hot-fix-check
 ---

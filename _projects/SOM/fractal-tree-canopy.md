@@ -2,12 +2,12 @@
 title: Fractal Tree Canopy
 summary: placeholder summary
 coverImage: /images/som/fractal-tree-canopy/tree-canopy.png
-tags: ["C#.Net", "Grasshopper", "Beijing Tiangqiao Performing arts Center"]
+tags: ["C#.Net", "Grasshopper"]
 date: "2011-02-16"
+project: Beijing Tiangqiao Performing arts Center
 ---
 
 This grasshopper definition generates a canopy structure through a recursive fractal pattern script.
-
 
 First I generated a 2D fractal pattern using a recursive C# script component shown the the video below.
 
