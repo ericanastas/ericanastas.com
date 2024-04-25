@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Container from "./_components/container";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import process from "process";
 
 import "./globals.css";
 
@@ -33,7 +34,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Container>{children}</Container>
       </body>
-      <GoogleAnalytics gaId="G-50TMH7J6M9" />
+
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-50TMH7J6M9" />
+      )}
     </html>
   );
 }
