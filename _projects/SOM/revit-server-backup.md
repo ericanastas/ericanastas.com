@@ -2,8 +2,7 @@
 title: Revit Server Backup
 summary: placeholder summary
 coverImage: /images/som/revit-server-backup/Revit-Server-Backup-Tool.png
-tags:
-  ["C#.Net", "REST", "Revit", "Revit API", "Revit Server", "Revit Server API"]
+tags: ["C#.Net", "REST", "Revit", "Revit API", "Revit Server"]
 date: "2013-09-09"
 repo: https://github.com/ericanastas/revit-server-backup
 ---
