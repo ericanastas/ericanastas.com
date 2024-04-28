@@ -29,7 +29,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
 
   //Force even number of years
   if ((endYear - startYear) % 2 === 0) {
-    endYear += 1;
+    startYear -= 1;
   }
 
   let years: number[] = [];
