@@ -5,6 +5,8 @@ import { ProjectList } from "@/app/_components/project-list";
 import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
+import { ProjectTimeLine } from "@/app/_components/project-timeline";
+import { getYearRange } from "@/lib/projectsApi";
 
 export default async function Project({ params }: Props) {
   const tag = (await getAllTags()).find((tag) => tag.slug === params.tagSlug);
@@ -12,6 +14,7 @@ export default async function Project({ params }: Props) {
   if (!tag) notFound();
 
   let projects = await getProjectsByTagSlug(tag.slug);
+  const yearRange = await getYearRange();
 
   return (
     <>
@@ -19,6 +22,14 @@ export default async function Project({ params }: Props) {
       <main>
         <div className="mb-12">
           <PageTitle>{tag.name} Projects</PageTitle>
+        </div>
+
+        <div className="mb-6">
+          <ProjectTimeLine
+            projects={projects}
+            minYear={yearRange.minYear}
+            maxYear={yearRange.maxYear}
+          />
         </div>
 
         <ProjectList projects={projects} selectedTagSlug={tag.slug} />

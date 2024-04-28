@@ -33,24 +33,33 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
     years.push(year);
   }
 
-  console.log(`startYear:${startYear}, endYear:${endYear}`);
-  console.log(years);
-  //0.5rem
+  let minTime = new Date(startYear, 0, 1).getTime();
+  let maxTime = new Date(endYear + 1, 0, 1).getTime();
 
   return (
-    <div className="flex flex-row flex-nowrap flex-auto h-8">
-      {years.map((year) => (
-        <div className="grow relative">
-          <div className="border-l absolute inset-0 -z-10" />
-          <div className="text-xs mx-1 text-gray-z600 absolute bottom-0">
-            {year}
+    <div className="h-5 relative">
+      <div className="absolute border-t inset-x-0 top-0 border-gray-300" />
+      <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
+        {years.map((year) => (
+          <div className="grow relative border-l border-gray-300">
+            <div className="text-xs ml-1 text-gray-z600 absolute bottom-0">
+              {year}
+            </div>
           </div>
+        ))}
+      </div>
+
+      {projects.map((project) => (
+        <div className="absolute inset-0">
           <div
-            className="absolute bg-red-300 w-0 inset-y-0"
-            style={{ left: "0%" }}
-          >
-            <div className="bg-gray-600 w-2 h-2 rounded-full absolute top-1 ml-[-0.25rem]" />
-          </div>
+            className="bg-gray-500 w-[0.4rem] h-[0.4rem] rounded-full absolute top-0 mt-[-0.2rem] ml-[-0.2rem]"
+            style={{
+              left: `${
+                ((Date.parse(project.date) - minTime) * 100) /
+                (maxTime - minTime)
+              }%`,
+            }}
+          />
         </div>
       ))}
     </div>

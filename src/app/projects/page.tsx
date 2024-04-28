@@ -1,5 +1,5 @@
 import { ProjectList } from "@/app/_components/project-list";
-import { getAllProjects } from "@/lib/projectsApi";
+import { getAllProjects, getYearRange } from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
@@ -10,6 +10,8 @@ import { ProjectTimeLine } from "../_components/project-timeline";
 export default async function Projects() {
   const allProjects = await getAllProjects();
 
+  const yearRange = await getYearRange();
+
   return (
     <>
       <Header />
@@ -19,7 +21,11 @@ export default async function Projects() {
         </div>
 
         <div className="mb-6">
-          <ProjectTimeLine projects={allProjects} />
+          <ProjectTimeLine
+            projects={allProjects}
+            minYear={yearRange.minYear}
+            maxYear={yearRange.maxYear}
+          />
         </div>
         {allProjects.length > 0 && <ProjectList projects={allProjects} />}
       </main>

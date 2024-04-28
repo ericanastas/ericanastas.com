@@ -103,6 +103,22 @@ export function getAllProjectCategories(): Category[] {
 
   return categories;
 }
+export async function getYearRange(): Promise<{
+  minYear: number;
+  maxYear: number;
+}> {
+  let allProjects = await getAllProjects();
+
+  let minProjectsYear: number = Math.min(
+    ...allProjects.map((p) => new Date(p.date).getFullYear())
+  );
+
+  let maxProjectsYear: number = Math.max(
+    ...allProjects.map((p) => new Date(p.date).getFullYear())
+  );
+
+  return { minYear: minProjectsYear, maxYear: maxProjectsYear };
+}
 
 export async function getAllProjects(): Promise<Project[]> {
   let projects: Project[] = [];
