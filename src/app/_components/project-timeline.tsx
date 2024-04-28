@@ -42,7 +42,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
   let maxTime = new Date(endYear + 1, 0, 1).getTime();
 
   return (
-    <div className="h-5 relative">
+    <div className="h-5 relative hidden md:block">
       <div className="absolute border-t inset-x-0 top-0 border-gray-300" />
       <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
         {years.map((year) => (
