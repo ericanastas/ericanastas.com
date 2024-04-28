@@ -16,12 +16,7 @@ export default async function Tags() {
   let allTags = await getAllTags();
   let yearRange = await getYearRange();
 
-  let tagList: { tag: Tag; projects: Project[] }[] = [];
-
-  for (let tag of allTags) {
-    let projects = await getProjectsByTagSlug(tag.slug);
-    tagList.push({ tag: tag, projects: projects });
-  }
+  let tagList = await getAllTags();
 
   return (
     <>
@@ -33,7 +28,7 @@ export default async function Tags() {
           </div>
 
           <div className="flex flex-wrap gap-2 justify-center">
-            <TagChipList tags={allTags} />
+            <TagChipList tags={allTags.map((t) => t.tag)} />
           </div>
 
           <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">

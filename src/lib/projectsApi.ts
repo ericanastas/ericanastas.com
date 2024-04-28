@@ -157,20 +157,27 @@ export async function getAllProjects(): Promise<Project[]> {
   return sortedProjects;
 }
 
-export async function getAllTags(): Promise<Tag[]> {
+export async function getAllTags(): Promise<
+  { tag: Tag; projects: Project[] }[]
+> {
   let allProjects = await getAllProjects();
 
-  let tags: Tag[] = [];
+  let tags: { tag: Tag; projects: Project[] }[] = [];
 
   for (let proj of allProjects) {
     for (let projTag of proj.tags) {
-      if (!tags.some((t) => t.slug === projTag.slug)) {
-        tags.push(projTag);
+      let tagObj = tags.find((t) => t.tag.slug === projTag.slug);
+
+      if (!tagObj) {
+        tagObj = { tag: projTag, projects: [] };
+        tags.push(tagObj);
       }
+
+      tagObj.projects.push(proj);
     }
   }
 
-  return tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
+  return tags.sort((t1, t2) => (t1.tag.name < t2.tag.name ? -1 : 1));
 }
 
 function sortProjectDesc(project1: Project, project2: Project): number {

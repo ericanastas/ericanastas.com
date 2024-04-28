@@ -21,7 +21,7 @@ export default async function Tags() {
           <ul>
             {allTags.map((tag) => (
               <li>
-                <Link href={tag.url}>{tag.name}</Link>
+                <Link href={tag.tag.url}>{tag.tag.name}</Link>
               </li>
             ))}
           </ul>
