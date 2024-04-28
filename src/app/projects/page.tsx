@@ -5,6 +5,8 @@ import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 
+import { ProjectTimeLine } from "../_components/project-timeline";
+
 export default async function Projects() {
   const allProjects = await getAllProjects();
 
@@ -14,6 +16,10 @@ export default async function Projects() {
       <main>
         <div className="mb-12">
           <PageTitle>Projects</PageTitle>
+        </div>
+
+        <div className="mb-6">
+          <ProjectTimeLine projects={allProjects} />
         </div>
         {allProjects.length > 0 && <ProjectList projects={allProjects} />}
       </main>

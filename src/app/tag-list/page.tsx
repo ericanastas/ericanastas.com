@@ -1,5 +1,4 @@
 import { getAllTags } from "@/lib/projectsApi";
-import TagChipList from "../_components/tag-chip-list";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
