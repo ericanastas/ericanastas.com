@@ -6,7 +6,7 @@ type Props = {
 };
 
 export default function TagChip({ tag }: Props) {
-  let className = `inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset`;
+  let className = `inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset text-nowrap`;
 
   if (tag.selected) className += " bg-blue-50 text-blue-700 ring-blue-700/10";
   else className += " bg-gray-50 text-gray-600 ring-gray-500/10";
