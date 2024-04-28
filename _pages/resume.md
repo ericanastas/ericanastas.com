@@ -7,9 +7,7 @@ draft: true
 
 ### Software Engineer
 
-
 Accomplished software engineer with over 19 years of experience driving technological progress within AEC. Proficient building on third-party APIs, as well as standalone full-stack applications. Adept at understanding user requirements, finding innovative technical solutions, and independently learning new technologies as required. Effectively conveys ideas and concepts through clear documentation and diagrams. Produces robust and scalable applications by applying proven design patterns and object-oriented programming principles.
-
 
 ### Work Experience
 
@@ -44,16 +42,11 @@ Accomplished software engineer with over 19 years of experience driving technolo
 - Achievement
 - Achievement
 
-
 ### Education
 
 #### University of Washington | Jan 1999 - Dec 2005
 
 **BS in Civil Engineering**
-
-
-
-
 
 ### Projects
 
@@ -68,7 +61,6 @@ Material Data Hub is an in-house catalog of architectural materials that serves 
 #### Collaboration Resource Manager
 
 This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as project Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction to ensure the tool's versatility across various business contexts and resource types.
-
 
 ### Skills
 
@@ -85,7 +77,7 @@ This application is a general-purpose system to automate the setup and maintenan
 - Google Apps Script
 - Grasshopper API
 - HTML
-- Javascript
+- JavaScript
 - Material Design
 - NgRx
 - Node.js
@@ -137,5 +129,3 @@ This application is a general-purpose system to automate the setup and maintenan
 - Home Automation
 - Photography
 - Skiing
- 
-

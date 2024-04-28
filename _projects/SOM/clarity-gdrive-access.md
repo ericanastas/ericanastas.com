@@ -4,7 +4,7 @@ summary: placeholder summary
 coverImage: /images/placeholder.png
 tags:
   [
-    "Javascript",
+    "JavaScript",
     "Google API",
     "Google Apps Script",
     "HTML",

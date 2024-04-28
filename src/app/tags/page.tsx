@@ -1,4 +1,4 @@
-import { getAllTags, getProjectsByTagSlug } from "@/lib/projectsApi";
+import { getAllTags } from "@/lib/projectsApi";
 import TagChipList from "../_components/tag-chip-list";
 
 import PageTitle from "../_components/page-title";
@@ -9,8 +9,6 @@ import { Metadata } from "next";
 import TagChip from "../_components/tag-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
 import { getYearRange } from "@/lib/projectsApi";
-import { Tag } from "@/interfaces/tag";
-import { Project } from "@/interfaces/project";
 
 export default async function Tags() {
   let allTags = await getAllTags();

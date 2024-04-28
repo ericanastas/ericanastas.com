@@ -27,6 +27,11 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
     endYear = Math.max(maxProjectsYear, maxYear);
   } else endYear = maxProjectsYear;
 
+  //Force even number of years
+  if ((endYear - startYear) % 2 === 0) {
+    endYear += 1;
+  }
+
   let years: number[] = [];
 
   for (let year = startYear; year <= endYear; year++) {
@@ -41,7 +46,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
       <div className="absolute border-t inset-x-0 top-0 border-gray-300" />
       <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
         {years.map((year) => (
-          <div className="grow relative border-l border-gray-300">
+          <div className="grow relative border-l border-gray-300 even:hidden xl:even:block">
             <div className="text-xs ml-1 text-gray-z600 absolute bottom-0">
               {year}
             </div>
