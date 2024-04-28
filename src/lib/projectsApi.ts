@@ -159,13 +159,10 @@ export async function getAllProjects(): Promise<Project[]> {
 
 export async function getAllTags(): Promise<Tag[]> {
   let allProjects = await getAllProjects();
-  return getProjectTags(allProjects);
-}
 
-function getProjectTags(projects: Project[]): Tag[] {
   let tags: Tag[] = [];
 
-  for (let proj of projects) {
+  for (let proj of allProjects) {
     for (let projTag of proj.tags) {
       if (!tags.some((t) => t.slug === projTag.slug)) {
         tags.push(projTag);
