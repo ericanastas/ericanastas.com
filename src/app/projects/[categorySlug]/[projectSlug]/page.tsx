@@ -6,6 +6,7 @@ import { Content } from "@/app/_components/content";
 import { ProjectHeader } from "@/app/_components/project-header";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
+import Image from "next/image";
 
 export default async function Project({ params }: Params) {
   const project = await getProject(params.categorySlug, params.projectSlug);
@@ -29,8 +30,13 @@ export default async function Project({ params }: Params) {
           />
 
           {project.coverImage && (
-            <div className="max-w-4xl mx-auto mb-8">
-              <img src={project.coverImage} alt="Cover Image" />
+            <div className="max-w-4xl mx-auto justify-center mb-8">
+              <Image
+                width={900}
+                height={675}
+                src={project.coverImage}
+                alt="Cover Image"
+              />
             </div>
           )}
 
