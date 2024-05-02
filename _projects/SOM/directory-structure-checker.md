@@ -2,7 +2,7 @@
 title: Directory Structure Checker
 summary: placeholder summary
 coverImage: /images/som/directory-structure-checker/directory_structure_checker.png
-tags: ["C#.Net", "WPF"]
+tags: ["C#.Net", "WPF", "UX Design"]
 date: "2014-09-23"
 repo: https://github.com/ericanastas/directory-structure-checker
 ---

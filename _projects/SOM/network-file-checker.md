@@ -2,7 +2,7 @@
 title: Network File Checker
 summary: placeholder summary
 coverImage: /images/som/network-file-checker/Network-File-Checker.png
-tags: ["C#.Net", "WPF"]
+tags: ["C#.Net", "WPF", "UX Design"]
 date: "2014-10-07"
 repo: https://github.com/ericanastas/network-file-checker
 ---

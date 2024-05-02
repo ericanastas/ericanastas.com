@@ -2,7 +2,7 @@
 title: Revit Add-In Library
 summary: placeholder summary
 coverImage: /images/som/revit-add-in-library/Revit-Add-In-Installer.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML"]
+tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML", "UX Design"]
 date: "2014-01-27"
 repo: https://github.com/ericanastas/revit-add-in-library
 ---

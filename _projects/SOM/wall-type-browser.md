@@ -2,7 +2,7 @@
 title: Wall Type Browser
 summary: placeholder summary
 coverImage: /images/som/wall-type-browser/Wall-Type-Browser.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF"]
+tags: ["C#.Net", "Revit", "Revit API", "WPF", "UX Design"]
 date: "2014-08-02"
 repo: https://github.com/ericanastas/wall-types-browser
 ---

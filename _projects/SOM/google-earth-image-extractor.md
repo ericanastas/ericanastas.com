@@ -2,7 +2,7 @@
 title: Google Earth Image Extractor
 summary: placeholder summary
 coverImage: /images/som/google-earth-image-extractor/tile-Ge-image-extractor.png
-tags: ["AutoHotKey","Google Earth","HTML","JavaScript"]
+tags: ["AutoHotKey", "Google Earth", "HTML", "JavaScript", "UX Design"]
 date: "2009-05-18"
 ---
 

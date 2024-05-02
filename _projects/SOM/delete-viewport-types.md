@@ -2,7 +2,7 @@
 title: Delete Viewport Types
 summary: placeholder summary
 coverImage: /images/som/delete-viewport-types/Purge-Viewport-Types-2.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF"]
+tags: ["C#.Net", "Revit", "Revit API", "WPF", "UX Design"]
 date: "2014-08-20"
 repo: https://github.com/ericanastas/delete-viewport-types
 ---

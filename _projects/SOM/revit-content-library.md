@@ -2,7 +2,7 @@
 title: Revit Content Library
 summary: placeholder summary
 coverImage: /images/som/revit-content-library/Revit-Content-Library.jpg
-tags: ["C#.Net", "Revit", "Revit API", "WinForms"]
+tags: ["C#.Net", "Revit", "Revit API", "WinForms", "UX Design"]
 date: "2010-08-06"
 repo: https://github.com/ericanastas/revit-content-library
 ---
