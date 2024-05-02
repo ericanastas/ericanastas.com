@@ -1,8 +1,8 @@
 ---
-title: Activity Log
+title: Activity Log (MS SQL)
 summary: placeholder summary
-coverImage: /images/som/activity-log/Revit-Activity-Log-3.png
-tags: ["Revit", "Revit API", "SQL", "Elasticsearch", "Kibana", "MS SQL"]
+coverImage: /images/som/activity-log-mssql/Revit-Activity-Log-3.png
+tags: ["Revit", "Revit API", "SQL", "MS SQL", "Tableau"]
 date: "2013-10-15"
 repo: https://github.com/ericanastas/activity-log
 ---
