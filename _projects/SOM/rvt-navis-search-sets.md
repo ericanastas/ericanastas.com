@@ -2,7 +2,7 @@
 title: Revit Model Navisworks Search Sets
 summary: placeholder summary
 coverImage: /images/som/rvt-navis-search-sets/Profiler-Colors.png
-tags: ["3D Coordination", "Navisworks", "NavisWorks Clash Detective"]
+tags: ["3D Coordination", "Navisworks"]
 date: "2013-03-29"
 ---
 
