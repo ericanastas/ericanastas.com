@@ -5,12 +5,11 @@ coverImage: /images/placeholder.png
 tags:
   [
     "Bootstrap",
-    "HTML",
+    "HTML & CSS",
     "JavaScript",
     "Google API",
     "Google Apps Script",
     "UX Design",
-    "CSS",
   ]
 date: "2021-05-24"
 repo: https://github.com/ericanastas/gdrive-batch-tool/

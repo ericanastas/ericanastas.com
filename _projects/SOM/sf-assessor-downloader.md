@@ -2,7 +2,7 @@
 title: SF Assessor Downloader
 summary: placeholder summary
 coverImage: /images/som/sf-assessor-downloader/sf-record-downloader.png
-tags: ["C#.Net", "HTML", "WinForms", "UX Design"]
+tags: ["C#.Net", "HTML & CSS", "WinForms", "UX Design"]
 date: "2010-11-11"
 repo: https://github.com/ericanastas/sf-assessor-downloader
 ---

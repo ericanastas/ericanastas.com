@@ -7,7 +7,7 @@ tags:
     "JavaScript",
     "Google API",
     "Google Apps Script",
-    "HTML",
+    "HTML & CSS",
     "Material Design",
     "IMAGINiT Clarity",
   ]

@@ -6,11 +6,8 @@ tags:
   [
     "React",
     "Tailwind",
-    "HTML",
-    "CSS",
+    "HTML & CSS",
     "NextJS",
-    "HTML",
-    "CSS",
     "JavaScript",
     "TypeScript",
     "UX Design",

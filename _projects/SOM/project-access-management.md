@@ -4,8 +4,7 @@ summary: placeholder summary
 coverImage: /images/placeholder.png
 tags:
   [
-    "HTML",
-    "CSS",
+    "HTML & CSS",
     "JavaScript",
     "Bootstrap",
     "Google Apps Script",

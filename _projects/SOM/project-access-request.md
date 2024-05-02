@@ -9,8 +9,7 @@ tags:
     "Bootstrap",
     "Google API",
     "UX Design",
-    "HTML",
-    CSS",
+    "HTML & CSS",
   ]
 date: "2022-11-15"
 repo: https://github.com/ericanastas/project-access-request

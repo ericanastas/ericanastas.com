@@ -8,8 +8,7 @@ tags:
     "JavaScript",
     "Google API",
     "Google Apps Script",
-    "HTML",
-    "CSS",
+    "HTML & CSS",
     "Bootstrap",
     "UX Design",
   ]

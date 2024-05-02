@@ -2,7 +2,7 @@
 title: BIM Wiki
 summary: placeholder summary
 coverImage: /images/som/bim-wiki/SOM-BIM-Wiki.png
-tags: ["Collaboration", "CSS", "REST","Training"]
+tags: ["Collaboration", "HTML & CSS", "REST", "Training"]
 date: "2015-05-06"
 ---
 
