@@ -56,7 +56,7 @@ export function ProjectPreview({
         <TagChipList tags={tags} />
       </div>
 
-      <p className="text-md leading-relaxed">{summary}</p>
+      <p className="text-sm leading-relaxed">{summary}</p>
     </div>
   );
 }
