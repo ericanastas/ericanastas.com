@@ -37,13 +37,13 @@ export function ProjectPreview({
         )}
       </div>
 
-      <h3 className="text-2xl mb-1 leading-snug">
+      <h3 className="text-xl my-2 leading-snug">
         <Link href={url} className="hover:underline">
           {title}
         </Link>
       </h3>
 
-      <div className="flex justify-between text-md mb-2">
+      <div className="flex justify-between mb-2">
         <Link className="hover:underline" href={category.url}>
           {category.name} Projects
         </Link>
@@ -56,7 +56,7 @@ export function ProjectPreview({
         <TagChipList tags={tags} />
       </div>
 
-      <p className="text-md leading-relaxed mb-8">{summary}</p>
+      <p className="text-md leading-relaxed">{summary}</p>
     </div>
   );
 }
