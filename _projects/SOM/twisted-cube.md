@@ -2,7 +2,7 @@
 title: Twisted Cube
 summary: placeholder summary
 coverImage: /images/som/twisted-cube/twisted-cube.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2009-04-30"
 hide: true
 ---

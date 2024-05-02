@@ -2,7 +2,7 @@
 title: Seating Layout
 summary: placeholder summary
 coverImage: /images/som/seating-layout/seating-curve.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-07-16"
 project: Christ Our Savior Cathedral
 ---

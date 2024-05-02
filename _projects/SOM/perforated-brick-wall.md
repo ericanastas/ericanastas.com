@@ -2,7 +2,7 @@
 title: Perforated Brick Wall
 summary: placeholder summary
 coverImage: /images/som/perforated-brick-wall/transparent-brick-wall.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2012-03-26"
 project: Poly Dawangjing Complex
 ---

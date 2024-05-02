@@ -2,7 +2,7 @@
 title: Faceted Eliptical Tower
 summary: placeholder summary
 coverImage: /images/som/faceted-eliptical-tower/facet-tower.jpg
-tags: ["C#.Net", "Grasshopper"]
+tags: ["C#.Net", "Grasshopper", "Rhino"]
 date: "2010-07-26"
 project: Poly Dawangjing Complex
 ---

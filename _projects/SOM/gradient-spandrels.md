@@ -2,7 +2,7 @@
 title: Gradient Spandrels
 summary: placeholder summary
 coverImage: /images/som/gradient-spandrels/Image-Map-Bands-2.jpg
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-10-11"
 project: First and Mission
 ---

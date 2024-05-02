@@ -2,7 +2,7 @@
 title: Proximity Frame
 summary: placeholder summary
 coverImage: /images/som/proximity-frame/prox-frame.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-04-20"
 ---
 

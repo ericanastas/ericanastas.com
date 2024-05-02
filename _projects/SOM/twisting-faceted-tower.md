@@ -2,7 +2,7 @@
 title: Twisting Faceted Tower
 summary: placeholder summary
 coverImage: /images/som/twisting-faceted-tower/twisting-faceted-tower.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2011-01-24"
 project: Poly Dawangjing Complex
 ---

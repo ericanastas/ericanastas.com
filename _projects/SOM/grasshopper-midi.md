@@ -2,7 +2,7 @@
 title: MIDI Controlled Grasshopper
 summary: placeholder summary
 coverImage: /images/som/ghx-midi/ghx-midi.png
-tags: ["C#.Net", "Grasshopper", "Grasshopper API", "WinForms"]
+tags: ["C#.Net", "Grasshopper", "Grasshopper API", "WinForms", "Rhino"]
 date: "2011-02-25"
 repo: https://github.com/ericanastas/grasshopper-midi
 ---

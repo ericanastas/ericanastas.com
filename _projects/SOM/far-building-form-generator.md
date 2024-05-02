@@ -2,7 +2,7 @@
 title: Floor Area Ratio Building Form Generator
 summary: placeholder summary
 coverImage: /images/som/far-building-form-generator/FAR-screen-shot.jpg
-tags: ["Grasshopper","Master Planning"]
+tags: ["Grasshopper", "Master Planning", "Rhino"]
 date: "2009-05-29"
 ---
 

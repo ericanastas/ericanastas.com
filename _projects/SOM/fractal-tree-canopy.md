@@ -2,7 +2,7 @@
 title: Fractal Tree Canopy
 summary: placeholder summary
 coverImage: /images/som/fractal-tree-canopy/tree-canopy.png
-tags: ["C#.Net", "Grasshopper"]
+tags: ["C#.Net", "Grasshopper", "Rhino"]
 date: "2011-02-16"
 project: Beijing Tiangqiao Performing arts Center
 ---

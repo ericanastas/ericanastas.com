@@ -2,7 +2,7 @@
 title: Balanced Stack
 summary: placeholder summary
 coverImage: /images/som/balanced-stack/balanced-stack.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-09-20"
 project: Christ Our Savior Cathedral
 ---

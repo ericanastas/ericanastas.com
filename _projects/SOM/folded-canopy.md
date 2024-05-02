@@ -2,7 +2,7 @@
 title: Folded Canopy
 summary: placeholder summary
 coverImage: /images/som/folded-canopy/folded-canopy.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2011-01-11"
 project: Beijing Tiangqiao Performing arts Center
 ---

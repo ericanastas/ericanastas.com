@@ -2,7 +2,7 @@
 title: Louver Facade
 summary: placeholder summary
 coverImage: /images/som/louver-facade/louver.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-06-03"
 project: Chongqing Rural Commercial Bank Financial Building
 ---

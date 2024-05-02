@@ -2,7 +2,7 @@
 title: Roulette Curve
 summary: placeholder summary
 coverImage: /images/som/roulette-curve/Trochoid.jpg
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-08-05"
 project: Christ Our Savior Cathedral
 ---

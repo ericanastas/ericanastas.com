@@ -2,7 +2,7 @@
 title: Solar Position Grasshopper Component
 summary: placeholder summary
 coverImage: /images/som/ghx-solar-position/solar-ghx.png
-tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
+tags: ["C#.Net", "Grasshopper", "Grasshopper API", "Rhino"]
 date: "2011-05-31"
 repo: https://github.com/ericanastas/ghx-solar-position
 ---

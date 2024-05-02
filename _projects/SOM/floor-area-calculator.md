@@ -2,7 +2,7 @@
 title: Floor Area Calculator
 summary: placeholder summary
 coverImage: /images/som/floor-area-calculator/slide0022_image077.jpg
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-04-23"
 ---
 

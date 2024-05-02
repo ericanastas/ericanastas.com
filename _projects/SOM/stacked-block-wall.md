@@ -2,7 +2,7 @@
 title: Stacked Block Wall
 summary: placeholder summary
 coverImage: /images/som/stacked-block-wall/blocks-2.jpg
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-09-21"
 project: Christ Our Savior Cathedral
 ---

@@ -2,7 +2,7 @@
 title: Z Panel Block Wall
 summary: placeholder summary
 coverImage: /images/som/z-panels/zpanels.png
-tags: ["Grasshopper"]
+tags: ["Grasshopper", "Rhino"]
 date: "2010-11-09"
 project: Christ Our Savior Cathedral
 ---

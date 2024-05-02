@@ -2,7 +2,7 @@
 title: Building Floors
 summary: placeholder summary
 coverImage: /images/som/building-floors/Building-Floors.jpg
-tags: ["C#.Net", "Grasshopper", "Grasshopper API"]
+tags: ["C#.Net", "Grasshopper", "Grasshopper API", "Rhino"]
 date: "2011-02-28"
 repo: https://github.com/ericanastas/building-floors
 ---

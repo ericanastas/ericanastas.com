@@ -2,7 +2,7 @@
 title: Ellipse Rationalizer
 summary: placeholder summary
 coverImage: /images/som/ellipse-rationalizer/elipse-rationalizer.png
-tags: ["Galapagos", "Grasshopper"]
+tags: ["Galapagos", "Grasshopper", "Rhino"]
 date: "2011-08-25"
 project: ["350 Mission St", "Poly Dawangjing Complex"]
 ---
