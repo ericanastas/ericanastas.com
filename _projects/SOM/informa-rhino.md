@@ -11,6 +11,7 @@ tags:
     "Visual Studio",
     "WinForms",
     "SQL",
+    "Master Planning",
   ]
 date: "2012-03-07"
 repo: https://github.com/ericanastas/informa-rhino
