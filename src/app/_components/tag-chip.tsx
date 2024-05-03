@@ -6,10 +6,10 @@ type Props = {
 };
 
 export default function TagChip({ tag }: Props) {
-  let className = `inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset text-nowrap`;
+  let className = `inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-nowrap ring-1 ring-inset`;
 
-  if (tag.selected) className += " bg-blue-50 text-blue-700 ring-blue-700/10";
-  else className += " bg-gray-50 text-gray-600 ring-gray-500/10";
+  if (tag.selected) className += " bg-gray-400 text-white ring-gray-500";
+  else className += " bg-gray-50 text-gray-600 ring-gray-200";
 
   return (
     <Link href={tag.url}>
