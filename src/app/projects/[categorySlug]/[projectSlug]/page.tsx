@@ -37,6 +37,7 @@ export default async function Project({ params }: Params) {
                 height={675}
                 src={project.coverImage}
                 alt="Cover Image"
+                className="shadow-sm"
               />
             </div>
           )}
