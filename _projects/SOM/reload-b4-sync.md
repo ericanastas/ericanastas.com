@@ -1,7 +1,7 @@
 ---
 title: ReloadB4Sync
 summary: Prompts users to reload all linked models before syncing the current model
-coverImage: /images/placeholder.png
+coverImage:
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2016-10-20"
 repo: https://github.com/ericanastas/reload-b4-sync

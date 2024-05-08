@@ -1,7 +1,7 @@
 ---
 title: Collaboration Resource Manager
 summary: Application which automates the setup and maintenance of SaaS collaboration resources, such as project Google Drives and Groups
-coverImage: /images/placeholder.png
+coverImage:
 tags:
   [
     "Google Apps Script",

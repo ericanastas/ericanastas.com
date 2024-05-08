@@ -1,7 +1,7 @@
 ---
 title: Is Placed Updater
 summary: Updates a parameter on rooms and areas that indicate if they are actually placed in the model
-coverImage: /images/placeholder.png
+coverImage:
 tags: ["Revit", "Revit API", "C#.Net"]
 date: "2016-06-23"
 repo: https://github.com/ericanastas/is-placed-updater

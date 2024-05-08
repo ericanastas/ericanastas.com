@@ -1,7 +1,7 @@
 ---
 title: ericanastas.com
 summary: Personal portfolio site
-coverImage: /images/placeholder.png
+coverImage:
 tags:
   [
     "React",

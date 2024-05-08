@@ -1,7 +1,7 @@
 ---
 title: Raycom Hefei
 summary: placeholder summary
-coverImage: /images/placeholder.png
+coverImage:
 tags: ["Revit", "Revit Support"]
 date: "2015-01-01"
 project: Raycom Hefei

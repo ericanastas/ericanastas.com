@@ -35,6 +35,8 @@ async function readProjectFile(
   let { title, date, coverImage, summary, draft, tags, featured, hide, repo } =
     data;
 
+  if (!coverImage) coverImage = "/images/placeholder.png";
+
   let tagObjArr: Tag[] = tags.map((t: string) => ({
     name: t,
     slug: convertToSlug(t),
