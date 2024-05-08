@@ -32,15 +32,6 @@ for (let mdFileName of mdFiles) {
 }
 
 
-//coverImage: /images/placeholder.png
-//coverImages: /images/som/slug/MISSING_COVER
-
-//![Check Family Names 2](Check-Family-Names-2.png)
-
-// let searchPattern = /!\[(.*)\]\(([^/]*)\)/g;
-// let replaceText = `![$1](/images/som/${slug}/$2)`
-
-
 contents = contents.replaceAll(searchPattern, replaceText);
 
 
