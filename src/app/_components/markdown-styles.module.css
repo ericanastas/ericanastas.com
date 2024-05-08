@@ -42,3 +42,8 @@
 .markdown img {
     @apply shadow-sm
  }
+
+ .markdown a {
+    color: rgb(14,165,233);
+    @apply hover:underline;
+ }
