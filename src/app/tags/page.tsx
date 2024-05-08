@@ -25,9 +25,9 @@ export default async function Tags() {
             <PageTitle>Tags</PageTitle>
           </div>
 
-          <div className="flex flex-wrap gap-2 justify-center">
+          {/* <div className="flex flex-wrap gap-2 justify-center">
             <TagChipList tags={allTags.map((t) => t.tag)} />
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">
             {tagList.map((tag) => (
@@ -35,7 +35,7 @@ export default async function Tags() {
                 <div className="flex justify-end">
                   <TagChip tag={tag.tag} />
                 </div>
-                <div className="text-xs inline-flex items-center">
+                <div className="text-xs inline-flex items-center font-bold">
                   {tag.projects.length}
                 </div>
 
