@@ -1,8 +1,16 @@
 ---
-title: Shading Calculator
-summary: placeholder summary
-coverImage: /images/som/shading-calculator/2012-04-11_220202.png
-tags: ["Design Analysis", "C#.Net", "Grasshopper", "Rhino", "Rhino API"]
+title: China Shading Calculator
+summary: Rhino command that calculates the shading of existing residential units by new construction
+coverImage: /images/som/shading-calculator/China-Shading-1.png
+tags:
+  [
+    "Design Analysis",
+    "C#.Net",
+    "Grasshopper",
+    "Rhino",
+    "Rhino API",
+    "Design Analysis",
+  ]
 date: "2010-03-15"
 ---
 
@@ -10,10 +18,10 @@ I developed this custom Rhino command to perform shading studies for a number of
 
 I first ported the code from the [NOAA Solar Position Calculator](http://www.esrl.noaa.gov/gmd/grad/solcalc/azel.html) into a .NET Library, which I then used to create the custom Rhino command. The command calculates the exposure on a collection of windows, which are provided as Rhino surfaces. Shading masses are also provided as BRep objects. Each window is then colored depending on whether it meets the exposure required by the building code.
 
-I later ported this tool into a custom [grasshopper component](/projets/som/solar-position-ghx-component/).
+I later ported this tool into a custom [grasshopper component](/projects/som/ghx-solar-position).
 
 ![](/images/som/shading-calculator/2012-04-11_220400.png)
 
-![China Shading 1](/images/som/shading-calculator/China-Shading-1.png)
+![](/images/som/shading-calculator/2012-04-11_220202.png)
 
-![China Shading 2](/images/som/shading-calculator/China-Shading-2.png)
+![](/images/som/shading-calculator/China-Shading-2.png)

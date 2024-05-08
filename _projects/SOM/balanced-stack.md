@@ -1,6 +1,6 @@
 ---
 title: Balanced Stack
-summary: placeholder summary
+summary: Grasshopper definition that creates a balanced stack of blocks that follows a provided input curve
 coverImage: /images/som/balanced-stack/balanced-stack.png
 tags: ["Grasshopper", "Rhino"]
 date: "2010-09-20"

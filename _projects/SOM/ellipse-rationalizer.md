@@ -1,6 +1,6 @@
 ---
 title: Ellipse Rationalizer
-summary: placeholder summary
+summary: Grasshopper definition that rationalizes an ellipse as a number of arcs for constructability
 coverImage: /images/som/ellipse-rationalizer/elipse-rationalizer.png
 tags: ["Galapagos", "Grasshopper", "Rhino"]
 date: "2011-08-25"

@@ -1,6 +1,6 @@
 ---
 title: Delete Viewport Types
-summary: placeholder summary
+summary: Revit add-in used to purge non standard viewport types from a model
 coverImage: /images/som/delete-viewport-types/Purge-Viewport-Types-2.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF", "UX Design"]
 date: "2014-08-20"

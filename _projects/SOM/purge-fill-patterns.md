@@ -1,6 +1,6 @@
 ---
 title: Purge Fill Patterns
-summary: placeholder summary
+summary: Revit add-in that deletes non-standard fill patterns
 coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2017-01-13"

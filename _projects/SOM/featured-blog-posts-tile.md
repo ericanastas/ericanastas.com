@@ -1,6 +1,6 @@
 ---
 title: Jive Featured Blog Posts Tile
-summary: placeholder summary
+summary: Custom Jive tile which displays a carousel showing the latest featured blog posts
 coverImage: /images/placeholder.png
 tags: ["HTML & CSS", "Jive"]
 date: "2019-05-01"

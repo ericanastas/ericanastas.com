@@ -1,6 +1,6 @@
 ---
 title: View Profiler
-summary: placeholder summary
+summary: Revit add-in that evaluates the performance of views in a Revit model
 coverImage: /images/som/view-profiler/Profile-View1.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-10-06"

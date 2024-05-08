@@ -1,6 +1,6 @@
 ---
 title: List Loaded Assmblies
-summary: placeholder summary
+summary: Revit add-in that lists all .NET assemblies loaded into the current AppDomain of Revit used to diagnose conflicts between library versions
 coverImage: /images/placeholder.png
 tags: ["Revit", "C#.Net", "Revit API"]
 date: "2018-06-12"

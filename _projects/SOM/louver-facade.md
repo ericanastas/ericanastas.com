@@ -1,6 +1,6 @@
 ---
 title: Louver Facade
-summary: placeholder summary
+summary: Grasshopper definition that generates a louver style facade from an input curve
 coverImage: /images/som/louver-facade/louver.png
 tags: ["Grasshopper", "Rhino"]
 date: "2010-06-03"

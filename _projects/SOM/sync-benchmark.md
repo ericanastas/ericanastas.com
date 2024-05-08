@@ -1,6 +1,6 @@
 ---
 title: Sync Benchmark
-summary: placeholder summary
+summary: Revit add-in that benchmarks the time it takes to sync to central
 coverImage: /images/som/sync-benchmark/Sync-Benchmark-UI.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-07-21"

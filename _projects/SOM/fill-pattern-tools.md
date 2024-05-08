@@ -1,6 +1,6 @@
 ---
 title: Fill Pattern Tools
-summary: placeholder summary
+summary: Revit add-in utility for working with fill patterns
 coverImage: /images/som/fill-pattern-tools/fill-pattern-tools.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-04-29"

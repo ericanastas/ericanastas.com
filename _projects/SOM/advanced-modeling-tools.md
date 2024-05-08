@@ -1,6 +1,6 @@
 ---
 title: Advanced Modeling Tools
-summary: placeholder summary
+summary: Revit add-in that generates complex geometry by placing component families or adaptive components
 coverImage: /images/som/advanced-modeling-tools/AMT-GHX.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2015-05-13"

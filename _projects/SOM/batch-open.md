@@ -1,6 +1,6 @@
 ---
 title: Batch Open
-summary: placeholder summary
+summary: Revit add-in that allows users to queue up multiple models to open at once.
 coverImage: /images/som/batch-open/Batch-Open.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-07-24"

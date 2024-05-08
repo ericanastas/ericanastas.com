@@ -1,6 +1,6 @@
 ---
 title: UW 2004 Steel Bridge Team
-summary: Member of the 2004 University of Washington Steel Bridge team
+summary: 2004 University of Washington AISC Steel Bridge team
 coverImage: "/images/uw/steel-bridge-team/2004-04-06-Steel-Bridge-Competition-001.jpg"
 date: "2004-04-06"
 tags: ["AutoCad", "SAP", "3D Modeling"]

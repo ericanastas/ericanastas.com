@@ -1,8 +1,8 @@
 ---
 title: Building Floors
-summary: placeholder summary
+summary: Custom grasshopper components that simplify common tasks related to creating an analyzing building forms
 coverImage: /images/som/building-floors/Building-Floors.jpg
-tags: ["C#.Net", "Grasshopper", "Grasshopper API", "Rhino"]
+tags: ["C#.Net", "Grasshopper", "Grasshopper API", "Rhino", "Design Analysis"]
 date: "2011-02-28"
 repo: https://github.com/ericanastas/building-floors
 ---

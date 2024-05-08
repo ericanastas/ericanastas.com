@@ -1,6 +1,6 @@
 ---
 title: Sunset La Cienega
-summary: placeholder summary
+summary: Revit support for a residential project in Los Angeles, CA
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Modeling", "Revit Support"]
 date: "2014-06-04"

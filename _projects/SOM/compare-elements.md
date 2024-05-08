@@ -1,6 +1,6 @@
 ---
 title: Compare Elements
-summary: placeholder summary
+summary: Revit add-in that generates a report comparing the changes between two versions of a Revit model
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "C#.Net"]
 date: "2015-03-30"

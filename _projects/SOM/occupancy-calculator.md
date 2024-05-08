@@ -1,6 +1,6 @@
 ---
 title: Occupancy Calculator
-summary: placeholder summary
+summary: Revit add-in that calculates the maximum occupants for areas in a Revit model
 coverImage: /images/som/occupancy-calculator/Occupancy-Calculator-2.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-10-16"

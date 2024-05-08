@@ -1,6 +1,6 @@
 ---
 title: Show Hidden Elements
-summary: placeholder summary
+summary: Revit add-in to show all manually hidden elements in a view
 coverImage: /images/som/show-hidden-elements/Show-Hidden-Prompt1.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2013-11-06"

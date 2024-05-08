@@ -1,6 +1,6 @@
 ---
 title: UCSF Neurosciences Building
-summary: placeholder summary
+summary: Research lab building in San Francisco
 coverImage: /images/som/ucsf/UCSF-Overal-3d.jpg
 tags: ["Navisworks", "Revit", "Revit Modeling", "Revit Support"]
 date: "2010-04-01"

@@ -1,6 +1,6 @@
 ---
 title: ReloadB4Sync
-summary: placeholder summary
+summary: Prompts users to reload all linked models before syncing the current model
 coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2016-10-20"

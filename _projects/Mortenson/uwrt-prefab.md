@@ -1,6 +1,6 @@
 ---
 title: UWRT Prefabrication
-summary: Prefabrication R&D project on the  UW Research and Technology Building project
+summary: R&D prefabrication  project on the  UW Research and Technology project
 coverImage: /images/mortenson/uwrt-prefab/slide0005_image057.jpg
 date: "2005-09-20"
 tags: ["Prefabrication", "Sketchup"]

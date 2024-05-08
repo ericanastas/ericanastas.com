@@ -1,6 +1,6 @@
 ---
 title: Poly Chengdu Dayuan Tower 2 Massing
-summary: placeholder summary
+summary: Building mass Grashopper definition for Poly Chengdu Dayuan tower 2
 coverImage: /images/som/pdc-t2/Chengdu-Tower-2.png
 tags: ["Grasshopper", "Rhino"]
 date: "2013-03-06"

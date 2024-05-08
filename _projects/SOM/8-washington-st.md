@@ -1,6 +1,6 @@
 ---
 title: 8 Washington St
-summary: placeholder summary
+summary: Revit support for a residential project in San Francisco, CA
 coverImage: /images/som/8-washington-st/8-wash.jpg
 tags: ["Revit", "Revit Modeling", "Revit Support"]
 date: "2012-05-01"

@@ -1,6 +1,6 @@
 ---
-title: San Diego Courthouse Cornice Family
-summary: placeholder summary
+title: SDCC Cornice Family
+summary: Complex Revit adaptive component family
 coverImage: /images/som/sdcc-cornice-family/plates.png
 tags: ["Revit", "Revit Modeling"]
 date: "2015-07-07"
@@ -21,4 +21,3 @@ date: "2015-07-07"
 ![point connection4](/images/som/sdcc-cornice-family/point-connection2.png)
 
 ![point](/images/som/sdcc-cornice-family/point.png)
-

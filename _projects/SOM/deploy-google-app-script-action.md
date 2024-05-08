@@ -1,8 +1,10 @@
 ---
 title: Google Apps Script CI/CD
-summary: placeholder summary
-coverImage: /images/placeholder.png
+summary: Automatic CI/CD process for Google Apps Script using GitHub Actions
+coverImage: /images/som/deploy-google-app-script-action/deploy-google-app-script-action.png
 tags: ["CI/CD", "Google Apps Script", "Github Actions"]
 date: "2021-10-25"
 repo: https://github.com/ericanastas/deploy-google-app-script-action
 ---
+
+[https://github.com/ericanastas/deploy-google-app-script-action](https://github.com/ericanastas/deploy-google-app-script-action)

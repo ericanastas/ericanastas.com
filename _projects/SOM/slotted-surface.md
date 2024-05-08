@@ -1,6 +1,6 @@
 ---
 title: Slotted Surface
-summary: placeholder summary
+summary: Pedestrian bridge Grasshopper definition
 coverImage: /images/som/slotted-surface/slotted-surface.png
 tags: ["Grasshopper", "Rhino"]
 date: "2011-12-16"

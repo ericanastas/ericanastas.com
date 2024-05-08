@@ -1,6 +1,6 @@
 ---
 title: Roulette Curve
-summary: placeholder summary
+summary: Grasshopper definition, that generates a roulette or spirograph type curve
 coverImage: /images/som/roulette-curve/Trochoid.jpg
 tags: ["Grasshopper", "Rhino"]
 date: "2010-08-05"

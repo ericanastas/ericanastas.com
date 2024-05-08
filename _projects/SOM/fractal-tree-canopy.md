@@ -1,6 +1,6 @@
 ---
 title: Fractal Tree Canopy
-summary: placeholder summary
+summary: Grasshopper definition that creates a recursive fractal tree canopy structure
 coverImage: /images/som/fractal-tree-canopy/tree-canopy.png
 tags: ["C#.Net", "Grasshopper", "Rhino"]
 date: "2011-02-16"

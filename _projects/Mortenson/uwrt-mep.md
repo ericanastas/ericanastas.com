@@ -1,6 +1,6 @@
 ---
 title: UWRT MEP Coordination
-summary: 3D MEP coordination of the UW Research and Technology Building
+summary: 3D MEP coordination of the UW Research and Technology project
 coverImage: /images/mortenson/uwrt-mep/slide0002_image049.jpg
 date: "2005-09-09"
 tags: ["3D Coordination", "Navisworks"]

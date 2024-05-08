@@ -1,6 +1,6 @@
 ---
 title: Batch Print PDF
-summary: placeholder summary
+summary: Revit add-in that batch prints PDFs
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "C#.Net", "WPF"]
 date: "2013-11-23"

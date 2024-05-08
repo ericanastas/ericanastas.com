@@ -1,6 +1,6 @@
 ---
 title: Revit Snapshot
-summary: placeholder summary
+summary: Revit add-in that simplifies creating and sharing views in a Revit model
 coverImage: /images/som/revit-snapshot/Revit-Snap-Shot.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-02-18"

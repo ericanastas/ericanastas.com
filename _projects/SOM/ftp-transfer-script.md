@@ -1,6 +1,6 @@
 ---
 title: FTP Transfer Script
-summary: placeholder summary
+summary: Automatic scheduled FTP transfer script
 coverImage: /images/som/ftp-transfer-script/ftp-transfer-script.png
 tags: ["FTP", "Python"]
 date: "2011-08-04"

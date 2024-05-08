@@ -1,6 +1,6 @@
 ---
 title: Frit Pattern
-summary: placeholder summary
+summary: Grasshopper definition for creating class frit patterns
 coverImage: /images/som/frit-pattern/frit-pattern.png
 tags: ["Grasshopper", "Rhino"]
 date: "2011-10-03"

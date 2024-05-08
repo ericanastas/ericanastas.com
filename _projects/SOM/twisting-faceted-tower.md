@@ -1,6 +1,6 @@
 ---
 title: Twisting Faceted Tower
-summary: placeholder summary
+summary: Grasshopper definition that creates a twisted faceted facade model
 coverImage: /images/som/twisting-faceted-tower/twisting-faceted-tower.png
 tags: ["Grasshopper", "Rhino"]
 date: "2011-01-24"

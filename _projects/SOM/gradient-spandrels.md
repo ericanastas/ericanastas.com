@@ -1,6 +1,6 @@
 ---
 title: Gradient Spandrels
-summary: placeholder summary
+summary: Grasshopper definition that creates a building facade where the height of the spandrels follow a provided gradient image
 coverImage: /images/som/gradient-spandrels/Image-Map-Bands-2.jpg
 tags: ["Grasshopper", "Rhino"]
 date: "2010-10-11"

@@ -1,6 +1,6 @@
 ---
 title: Extract Families Macro
-summary: placeholder summary
+summary: Revit macro which exports all families in a Revit model
 coverImage: /images/som/extract-families-macro/extract-families.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2011-02-02"

@@ -1,10 +1,9 @@
 ---
 title: DIY Solar Generator
-summary: placeholder summary
+summary: Custom solar powered battery box
 coverImage: /images/personal/diy-solar-generator/310569607_10112767549859638_2199013847268107894_n.jpg
 tags: ["Burning Man", "Electronics"]
 date: "2022-07-22"
-repo:
 ---
 
 ![](/images/personal/diy-solar-generator/310453490_10112767550338678_6989280264394062707_n.jpg)

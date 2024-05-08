@@ -1,6 +1,6 @@
 ---
 title: Tulalip Casino Hotel Structural Model
-summary: Structural Revit model of the Tulalip Casino Hotel project.
+summary: Structural Revit model of the Tulalip Casino Hotel project
 coverImage: /images/mortenson/tulalip-structure/slide0015_image111.jpg
 date: "2007-03-29"
 tags: ["3D Modeling", "Revit", "Revit Modeling"]

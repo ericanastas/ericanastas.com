@@ -1,6 +1,6 @@
 ---
 title: Z Panel Block Wall
-summary: placeholder summary
+summary: Grasshopper definition that creates a wall from stacked Z shaped blocks
 coverImage: /images/som/z-panels/zpanels.png
 tags: ["Grasshopper", "Rhino"]
 date: "2010-11-09"

@@ -1,6 +1,6 @@
 ---
 title: Revit View Types & Templates
-summary: placeholder summary
+summary: A system of standard view types, view templates, and view filters
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit Support"]
 date: "2015-11-17"

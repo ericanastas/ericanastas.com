@@ -1,7 +1,7 @@
 ---
 title: GDrive Transmittal Form
-summary: placeholder summary
-coverImage: /images/placeholder.png
+summary: Form to send transmittals via Google Shared Drive
+coverImage: /images/som/gdrive-transmittals/transmittal-form.png
 tags:
   [
     "TypeScript",
@@ -15,3 +15,5 @@ tags:
 date: "2023-03-09"
 repo: https://github.com/ericanastas/gdrive-transmittals
 ---
+
+[sample-transmittal.pdf](/images/som/gdrive-transmittals/sample-transmittal.pdf)

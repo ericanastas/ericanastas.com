@@ -1,6 +1,6 @@
 ---
 title: Seating Layout
-summary: placeholder summary
+summary: Grasshopper definition used to plan optimum auditorium seating layouts
 coverImage: /images/som/seating-layout/seating-curve.png
 tags: ["Grasshopper", "Rhino"]
 date: "2010-07-16"

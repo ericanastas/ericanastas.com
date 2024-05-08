@@ -1,7 +1,7 @@
 ---
 title: Project Access Management
-summary: placeholder summary
-coverImage: /images/placeholder.png
+summary: Custom interface for managing project access through Google Groups
+coverImage: /images/som/project-access-management/project-access-management.png
 tags:
   [
     "HTML & CSS",

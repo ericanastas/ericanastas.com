@@ -1,6 +1,6 @@
 ---
 title: Sync Areas to Rooms
-summary: placeholder summary
+summary: Revit add-in that synchronizes parameter values between associated areas and rooms
 coverImage: /images/som/areas-room-sync/Sync-Areas-to-Rooms.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF"]
 date: "2014-05-01"

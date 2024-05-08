@@ -1,6 +1,6 @@
 ---
 title: Open Asset Data Export
-summary: placeholder summary
+summary: Revit add-in that generates an excel report of Revit families in an Open Asset library
 coverImage: /images/som/open-asset-export/Open-Asset-Tools-Menu.png
 tags: ["C#.Net", "REST", "Revit", "Revit API"]
 date: "2014-08-08"

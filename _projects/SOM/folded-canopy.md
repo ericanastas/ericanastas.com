@@ -1,6 +1,6 @@
 ---
 title: Folded Canopy
-summary: placeholder summary
+summary: Canopy structure grasshopper definition
 coverImage: /images/som/folded-canopy/folded-canopy.png
 tags: ["Grasshopper", "Rhino"]
 date: "2011-01-11"

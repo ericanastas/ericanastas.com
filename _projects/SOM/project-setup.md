@@ -1,6 +1,6 @@
 ---
 title: Project Setup
-summary: placeholder summary
+summary: Revit add-in that automates the setup of new project models
 coverImage: /images/som/project-setup/Project-Setup-Editor.png
 tags: ["C#.Net", "Revit", "Revit API", "WPF", "UX Design"]
 date: "2014-04-25"

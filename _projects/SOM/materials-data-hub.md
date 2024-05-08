@@ -1,6 +1,6 @@
 ---
 title: Materials Data Hub
-summary: placeholder summary
+summary: Searchable catalog of architectural materials extracted from multiple 3rd party sites
 coverImage: /images/placeholder.png
 tags:
   ["React", "HTML & CSS", "Material Design", "MUI", "UX Design", "JavaScript"]

@@ -1,6 +1,6 @@
 ---
 title: Informa Master Planning Rhino Plug-in
-summary: placeholder summary
+summary: Master planning plug-in for Rhino
 coverImage: /images/som/informa-rhino/Informa.jpg
 tags:
   [
@@ -12,6 +12,7 @@ tags:
     "WinForms",
     "SQL",
     "Master Planning",
+    "Design Analysis",
   ]
 date: "2012-03-07"
 repo: https://github.com/ericanastas/informa-rhino

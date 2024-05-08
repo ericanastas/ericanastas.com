@@ -1,6 +1,6 @@
 ---
 title: Basic File Info
-summary: placeholder summary
+summary: Displays information on a selected Revit file using the BasicFileInfo feature of the Revit API
 coverImage: /images/placeholder.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2016-09-22"

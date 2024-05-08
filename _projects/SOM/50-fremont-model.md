@@ -4,6 +4,7 @@ summary: placeholder summary
 coverImage: /images/som/50-fremont/50-fremont-rendering.jpg
 tags: ["Business Development", "Revit", "Revit Modeling"]
 date: "2010-12-30"
+hide: true
 ---
 
 I created this Revit model of the plaza and lobby space at 50 Fremont in San Francisco. The model was used to generate drawings and renderings of potential remodel design options.

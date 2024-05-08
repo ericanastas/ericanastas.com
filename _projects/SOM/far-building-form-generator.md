@@ -1,8 +1,8 @@
 ---
 title: Floor Area Ratio Building Form Generator
-summary: placeholder summary
+summary: Grasshopper definition that generates building forms based on desired FAR
 coverImage: /images/som/far-building-form-generator/FAR-screen-shot.jpg
-tags: ["Grasshopper", "Master Planning", "Rhino"]
+tags: ["Grasshopper", "Master Planning", "Rhino", "Design Analysis"]
 date: "2009-05-29"
 ---
 

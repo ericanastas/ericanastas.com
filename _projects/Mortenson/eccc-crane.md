@@ -1,6 +1,6 @@
 ---
 title: ECCC Tower Crane Erection
-summary: Assisted the team on site in planning the placement of
+summary: Assisted the team on site in planning the placement of tower cranes and mobile crane
 coverImage: /images/mortenson/eccc-crane/slide0011_image085.png
 date: "2006-06-26"
 tags: ["AutoCad", "BIM in Field", "Integrated Work Plans"]

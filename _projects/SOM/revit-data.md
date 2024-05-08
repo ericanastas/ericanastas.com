@@ -1,6 +1,6 @@
 ---
 title: Revit JSON Data
-summary: placeholder summary
+summary: A C# library and Revit Add-In for exporting the data in a Revit model to and from JSON
 coverImage: /images/placeholder.png
 tags: ["REST", "Revit", "Revit API", "Mongo", "C#.NET"]
 date: "2016-08-19"

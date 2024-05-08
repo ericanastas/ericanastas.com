@@ -1,6 +1,6 @@
 ---
 title: Fuzhou Worldwide Tower Massing
-summary: placeholder summary
+summary: Grasshopper definition for the Fuzhou Worldwide Tower project
 coverImage: /images/som/fwt-massing/2012-04-11_213833.png
 tags: ["Grasshopper", "Rhino"]
 date: "2011-04-14"

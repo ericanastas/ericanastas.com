@@ -1,6 +1,6 @@
 ---
 title: Del Mar House
-summary: placeholder summary
+summary: Revit support consulting project
 coverImage: /images/som/del-mar-house/6.jpg
 tags: ["Revit", "Revit Modeling", "Revit Support"]
 date: "2010-06-10"

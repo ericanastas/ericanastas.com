@@ -1,6 +1,6 @@
 ---
 title: Merge Shared Parameter Files
-summary: placeholder summary
+summary: Console application to that merges multiple shared parameter files into a single file
 coverImage: /images/placeholder.png
 tags: ["Revit", "C#.Net"]
 date: "2018-07-18"

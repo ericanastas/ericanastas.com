@@ -1,6 +1,6 @@
 ---
 title: Model Check
-summary: placeholder summary
+summary: QAQC utility for Revit
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "WPF", "C#.NET", "UX Design"]
 date: "2016-05-27"

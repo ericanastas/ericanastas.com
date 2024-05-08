@@ -1,8 +1,8 @@
 ---
 title: Gradient Paving Pattern
-summary: placeholder summary
+summary: RhinoScript that creates a randomized gradient paving pattern
 coverImage: /images/som/gradient-paving-pattern/results.jpg
-tags: ["Rhino Script"]
+tags: ["RhinoScript", "Rhino"]
 date: "2010-09-07"
 ---
 

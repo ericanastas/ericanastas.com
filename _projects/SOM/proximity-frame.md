@@ -1,6 +1,6 @@
 ---
 title: Proximity Frame
-summary: placeholder summary
+summary: Grasshopper definition to create panels with variable sized frames
 coverImage: /images/som/proximity-frame/prox-frame.png
 tags: ["Grasshopper", "Rhino"]
 date: "2010-04-20"

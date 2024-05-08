@@ -1,6 +1,6 @@
 ---
 title: Stacked Block Wall
-summary: placeholder summary
+summary: Grasshopper definition that creates a wall of stacked block window frames
 coverImage: /images/som/stacked-block-wall/blocks-2.jpg
 tags: ["Grasshopper", "Rhino"]
 date: "2010-09-21"

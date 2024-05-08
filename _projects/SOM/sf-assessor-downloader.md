@@ -1,6 +1,6 @@
 ---
 title: SF Assessor Downloader
-summary: placeholder summary
+summary: Data mining utility that extracts block and parcel data from the SF Assessor website
 coverImage: /images/som/sf-assessor-downloader/sf-record-downloader.png
 tags: ["C#.Net", "HTML & CSS", "WinForms", "UX Design"]
 date: "2010-11-11"

@@ -1,8 +1,10 @@
 ---
-title: Activity Log (ELK)
-summary: placeholder summary
-coverImage: /images/placeholder.png
-tags: ["Revit", "Revit API", "Elasticsearch", "Kibana", "MS SQL"]
-date: "2024-04-28"
+title: Revit Activity Log (Elasticsearch)
+summary: Tracking and visualizing user activity in Revit with Elasticsearch and Kibana
+coverImage: /images/som/activity-log-elk/dashboard.png
+tags: ["Revit", "Revit API", "Elasticsearch", "Kibana"]
+date: "2017-12-29"
 repo: https://github.com/ericanastas/activity-log
 ---
+
+![](/images/som/activity-log-elk/sync-dashboard.png)

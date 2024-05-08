@@ -1,6 +1,6 @@
 ---
 title: Signage Room Assignment
-summary: placeholder summary
+summary: Revit macro that assigns signage to associated rooms.
 coverImage: /images/som/signage-macro/dvamc-signage-macro.jpg
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2011-02-17"

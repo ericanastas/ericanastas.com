@@ -1,6 +1,6 @@
 ---
 title: Active Users
-summary: placeholder summary
+summary: Revit add-in that shows the current users that have borrowed elements and potentially changes that have not been synced to the central model
 coverImage: /images/som/active-users/active-users.png
 tags: ["C#.Net", "Revit", "Revit API"]
 date: "2014-09-04"

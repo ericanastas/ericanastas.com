@@ -1,8 +1,17 @@
 ---
 title: Informa Master Planning Revit Plug-in
-summary: placeholder summary
+summary: Revit add-in that allow Revit to be used as a master planning and reporting tool
 coverImage: /images/som/informa-revit/Informa-Revit-Massing.jpg
-tags: ["MS Access", "C#.Net", "Master Planning", "Revit", "Revit API", "SQL"]
+tags:
+  [
+    "MS Access",
+    "C#.Net",
+    "Master Planning",
+    "Revit",
+    "Revit API",
+    "SQL",
+    "Design Analysis",
+  ]
 date: "2009-02-19"
 ---
 

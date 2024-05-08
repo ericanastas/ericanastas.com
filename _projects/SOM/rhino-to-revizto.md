@@ -1,6 +1,6 @@
 ---
 title: Rhino to Revizto
-summary: placeholder summary
+summary: Plug-in for Rhino which simplifies opening a model in Revizto
 coverImage: /images/som/rhino-to-revizto/Export-to-Revizto-0.png
 tags: ["C#.Net", "Revizto", "Rhino", "Rhino API", "Visualization"]
 date: "2015-04-04"

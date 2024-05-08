@@ -1,6 +1,6 @@
 ---
 title: Check Family Names
-summary: placeholder summary
+summary: Revit add-in that validates family names in a model against company standards
 coverImage: /images/som/check-family-names/check-family-names.png
 tags: ["Revit", "Revit API"]
 date: "2013-12-06"

@@ -1,6 +1,6 @@
 ---
 title: Random Curved Paving Pattern
-summary: placeholder summary
+summary: Grasshopper definition which generates a random paving patten that follows an input curve
 coverImage: /images/som/random-curved-paving-pattern/random-curved-paving-pattern.png
 tags: ["C#.Net", "Grasshopper", "Rhino"]
 date: "2012-07-23"

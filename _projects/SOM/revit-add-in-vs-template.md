@@ -1,6 +1,6 @@
 ---
 title: Revit Add-In Visual Studio Template
-summary: placeholder summary
+summary: Visual studio project template for developing Revit add-ins
 coverImage: /images/som/revit-add-in-vs-template/Revit-VS-Template.png
 tags: ["C#.Net", "Revit", "Revit API", "Visual Studio"]
 date: "2014-11-11"

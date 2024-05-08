@@ -1,6 +1,6 @@
 ---
 title: Sichuan Aviation Plaza Vertical Mullion Family
-summary: placeholder summary
+summary: Complex adaptive component family
 coverImage: /images/som/sap-vertical-mullions/slide0021_image044.png
 tags: ["C#.Net", "Revit", "Revit API", "Revit Modeling"]
 date: "2011-10-20"

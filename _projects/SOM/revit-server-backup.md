@@ -1,6 +1,6 @@
 ---
 title: Revit Server Backup
-summary: placeholder summary
+summary: Console application used to setup automatic schedule backups of models on Revit Server
 coverImage: /images/som/revit-server-backup/Revit-Server-Backup-Tool.png
 tags: ["C#.Net", "REST", "Revit", "Revit API", "Revit Server"]
 date: "2013-09-09"

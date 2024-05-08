@@ -1,6 +1,6 @@
 ---
 title: Compare Object Styles
-summary: placeholder summary
+summary: Revit add-in that compares the object styles in multiple Revit models
 coverImage: /images/som/compare-object-styles/Compare-Obj-Styles-Report.png
 tags: ["C#.Net", "Excel", "Revit", "Revit API"]
 date: "2013-11-01"

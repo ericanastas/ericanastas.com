@@ -1,6 +1,6 @@
 ---
 title: Revit Add-In Visual Studio Extension
-summary: placeholder summary
+summary: A Visual Studio extension that facilitates developing Revit add-ins
 coverImage: /images/placeholder.png
 tags: ["Revit", "Revit API", "C#.Net", "VSIX", "Visual Studio"]
 date: "2018-05-18"

@@ -1,6 +1,6 @@
 ---
 title: SOM Sync
-summary: placeholder summary
+summary: FTP transfer tool for Navisworks models
 coverImage: /images/som/som-sync/som-sync-screenshot.jpg
 tags: ["C#.Net", "FTP", "Navisworks", "WinForms", "UX Design"]
 date: "2009-11-25"

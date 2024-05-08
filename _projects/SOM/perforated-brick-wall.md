@@ -1,6 +1,6 @@
 ---
 title: Perforated Brick Wall
-summary: placeholder summary
+summary: Grasshopper definition that generates perforated brick wall based on a provided grey scale image
 coverImage: /images/som/perforated-brick-wall/transparent-brick-wall.png
 tags: ["Grasshopper", "Rhino"]
 date: "2012-03-26"

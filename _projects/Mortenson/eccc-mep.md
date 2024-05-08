@@ -1,6 +1,6 @@
 ---
 title: ECCC MEP Coordination
-summary: Led the 3D MEP coordination for the Everett Community Cancer Center project
+summary: 3D MEP coordination for the Everett Community Cancer Center project
 coverImage: /images/mortenson/eccc-mep/slide0008_image077.jpg
 date: "2006-09-05"
 tags: ["3D Coordination", "AutoCad", "Navisworks"]

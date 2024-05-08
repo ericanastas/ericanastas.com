@@ -1,6 +1,6 @@
 ---
 title: BIM Wiki
-summary: placeholder summary
+summary: Internal company intranet site used to document standards and best practices
 coverImage: /images/som/bim-wiki/SOM-BIM-Wiki.png
 tags: ["Collaboration", "HTML & CSS", "REST", "Training"]
 date: "2015-05-06"

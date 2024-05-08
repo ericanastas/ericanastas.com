@@ -1,6 +1,6 @@
 ---
 title: PDF Search
-summary: placeholder summary
+summary: Software to search through multiple PDF files for keywords or regular expressions
 coverImage: /images/som/pdf-search/pdfsearch.jpg
 tags: ["C#.Net", "WinForms", "UX Design"]
 date: "2010-05-03"
