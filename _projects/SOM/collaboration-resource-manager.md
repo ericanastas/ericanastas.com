@@ -19,6 +19,7 @@ tags:
   ]
 date: "2023-04-27"
 repo: https://github.com/ericanastas/collaboration-resource-manager
+featured: true
 ---
 
 ![](/images/som/collaboration-resource-manager/project-details.png)
