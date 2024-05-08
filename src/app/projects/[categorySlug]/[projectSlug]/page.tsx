@@ -27,6 +27,7 @@ export default async function Project({ params }: Params) {
             date={project.date}
             tags={project.tags}
             category={project.category}
+            summary={project.summary}
           />
 
           {project.coverImage && (

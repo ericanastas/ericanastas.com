@@ -12,9 +12,10 @@ type Props = {
   date: string;
   tags: Tag[];
   category: Category;
+  summary: string;
 };
 
-export function ProjectHeader({ title, date, tags, category }: Props) {
+export function ProjectHeader({ title, date, tags, category, summary }: Props) {
   return (
     <>
       <PageTitle>{title}</PageTitle>
@@ -26,9 +27,11 @@ export function ProjectHeader({ title, date, tags, category }: Props) {
         {" - "}
         <DateFormatter dateString={date} />
       </div>
-      <div className="mb-4 flex justify-center">
+      <div className="mb-1 flex justify-center">
         <TagChipList tags={tags} />
       </div>
+
+      <div className="text-md flex justify-center mb-4">{summary}</div>
     </>
   );
 }
