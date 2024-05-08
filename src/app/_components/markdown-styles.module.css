@@ -47,3 +47,11 @@
     color: rgb(14,165,233);
     @apply hover:underline;
  }
+
+ .markdown ul {
+    @apply list-disc
+ }
+
+  .markdown ol {
+    @apply list-decimal
+ }
