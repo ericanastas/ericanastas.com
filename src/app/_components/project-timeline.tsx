@@ -27,11 +27,6 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
     endYear = Math.max(maxProjectsYear, maxYear);
   } else endYear = maxProjectsYear;
 
-  //Force even number of years
-  if ((endYear - startYear) % 2 === 0) {
-    startYear -= 1;
-  }
-
   let years: number[] = [];
 
   for (let year = startYear; year <= endYear; year++) {
@@ -42,12 +37,12 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
   let maxTime = new Date(endYear + 1, 0, 1).getTime();
 
   return (
-    <div className="h-6 relative hidden md:block">
+    <div className="h-6 relative">
       <div className="absolute border-t inset-x-0 top-0 border-gray-300" />
       <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
         {years.map((year) => (
-          <div className="grow relative border-l border-gray-300 even:hidden xl:even:block">
-            <div className="text-xs ml-1 text-gray-z600 absolute bottom-0">
+          <div className="grow relative border-l border-gray-300">
+            <div className="text-[9px] lg:text-[12px] ml-[1px] text-gray-z600 absolute bottom-0">
               {year}
             </div>
           </div>
@@ -57,7 +52,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
       {projects.map((project) => (
         <div className="absolute inset-0">
           <div
-            className="bg-gray-500 w-[0.6rem] h-[0.6rem] rounded-full absolute top-0 mt-[-0.3rem] ml-[-0.3rem] opacity-50 border border-1 border-solid border-gray-900"
+            className="bg-gray-500 w-[0.4rem] h-[0.4rem] mt-[-0.2rem] ml-[-0.2rem] lg:w-[0.6rem] lg:h-[0.6rem] lg:mt-[-0.3rem] lg:ml-[-0.3rem] rounded-full absolute top-0  opacity-50 border border-1 border-solid border-gray-900"
             style={{
               left: `${
                 ((Date.parse(project.date) - minTime) * 100) /
