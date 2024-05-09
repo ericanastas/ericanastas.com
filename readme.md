@@ -1,7 +1,5 @@
 # ericanastas.com
 
-[![Deploy Production Site](https://github.com/ericanastas/ericanastas.com/actions/workflows/main.yml/badge.svg)](https://github.com/ericanastas/ericanastas.com/actions/workflows/main.yml)
-
 My personal portfolio site built with [Next.js](https://nextjs.org/).
 
 ## Deployment
