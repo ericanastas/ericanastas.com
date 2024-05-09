@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Container from "./_components/container";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import process from "process";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Container>{children}</Container>
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
 
       {process.env.NODE_ENV === "production" && (
