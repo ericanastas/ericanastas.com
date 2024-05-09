@@ -4,6 +4,7 @@ import Container from "./_components/container";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import process from "process";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Container>{children}</Container>
         {process.env.NODE_ENV === "production" && <Analytics />}
+        {process.env.NODE_ENV === "production" && <SpeedInsights />}
       </body>
 
       {process.env.NODE_ENV === "production" && (
