@@ -1,6 +1,6 @@
 ---
 title: Sustainability Data Hub
-summary: An application used to track the goals and metrics related to the energy use and carbon footprint of projects across SOM
+summary: Application which tracks the goals and metrics related to the energy use and carbon footprint of SOM projects
 coverImage: /images/som/sustainability-data-hub/project-list.png
 tags:
   [
