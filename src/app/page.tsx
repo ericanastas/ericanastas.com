@@ -39,7 +39,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="grid grid-cols-5 md:grid-cols-10 justify-between gap-y-4 pt-8">
+            <div className="grid grid-cols-6 lg:grid-cols-12 justify-between gap-y-4 mt-12">
               <Link
                 href={"https://www.linkedin.com/in/ericanastas"}
                 className="flex justify-center"
@@ -75,6 +75,30 @@ export default function Index() {
                   width={64}
                   src={"/images/picons-social/394187_github_icon.png"}
                   alt="GitHub"
+                />
+              </Link>
+
+              <Link
+                href={"https://www.thingiverse.com/eric-anastas/"}
+                className="flex justify-center"
+              >
+                <Image
+                  height={64}
+                  width={64}
+                  src={"/images/picons-social/thingiverse.png"}
+                  alt="Thingiverse"
+                />
+              </Link>
+
+              <Link
+                href={"https://www.printables.com/@EricAnastas"}
+                className="flex justify-center"
+              >
+                <Image
+                  height={64}
+                  width={64}
+                  src={"/images/picons-social/printables.png"}
+                  alt="Printables"
                 />
               </Link>
 
