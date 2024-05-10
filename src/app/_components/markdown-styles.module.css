@@ -42,6 +42,7 @@
 .markdown img {
     @apply shadow-sm;
     @apply my-10;
+    @apply mx-auto;
  }
 
  .markdown a {
