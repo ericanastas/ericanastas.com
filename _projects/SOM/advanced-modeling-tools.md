@@ -11,12 +11,12 @@ Advanced Modeling Tools is a Revit add-in that supports the generation of comple
 
 For example here is a grasshopper definition that populates a surface with cubes of various sizes.
 
-![AMT GHX](/images/som/amt/AMT-GHX.png)
+![AMT GHX](/images/som/advanced-modeling-tools/AMT-GHX.png)
 
 The position and size of each cube are then exported to Excel.
 
-![AMT Excel](/images/som/amt/AMT-Excel.png)
+![AMT Excel](/images/som/advanced-modeling-tools/AMT-Excel.png)
 
 Here are the result of loading the excel file into Revit through the add-in.
 
-![AMT Revit](/images/som/amt/AMT-Revit.png)
+![AMT Revit](/images/som/advanced-modeling-tools/AMT-Revit.png)
