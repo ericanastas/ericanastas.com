@@ -40,7 +40,8 @@
 }
 
 .markdown img {
-    @apply shadow-sm
+    @apply shadow-sm;
+    @apply my-10;
  }
 
  .markdown a {
