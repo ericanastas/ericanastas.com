@@ -10,23 +10,28 @@ export default function Index() {
       <main>
         <div className="flex justify-center max-w-4xl mx-auto mt-10">
           <div className="flex flex-col">
-            <div className="flex md:flex-row flex-col">
-              <div className="flex flex-col w-100 md:pr-8">
+            <div className="flex flex-col md:flex-row md:gap-x-8">
+              <div className="flex flex-col">
                 <p className="">Hi there 👋 I'm...</p>
-                <h1 className="text-7xl font-black mb-4 tracking-tight">
+                <h1 className="text-6xl lg:text-7xl font-black mb-4 tracking-tight">
                   Eric Anastas
                 </h1>
-                <p className="mb-8">
-                  I'm a software engineer in San Francisco with over 18 years
-                  experience driving the advancement of technology in the AEC
-                  industry.
+                <p>
+                  I'm a software engineer in San Francisco, CA with over 18
+                  years of experience driving the advancement of technology in
+                  the AEC industry.
                 </p>
+                <div className="flex items-center justify-center md:justify-start gap-x-4 grow my-8">
+                  <Link href={"/projects"} className="button bg-grey-300">
+                    Browse Projects...
+                  </Link>
+                </div>
               </div>
               <div className="shrink-0 flex justify-center align-start">
                 <div>
                   <Image
-                    height={250}
-                    width={250}
+                    height={300}
+                    width={300}
                     src={"/images/headshot_bw.jpg"}
                     alt="Head shot"
                   />
@@ -36,7 +41,7 @@ export default function Index() {
 
             <div className="grid grid-cols-5 md:grid-cols-10 justify-between gap-y-4 pt-8">
               <Link
-                href={"https://www.linkedin.com/in/ericanastas/"}
+                href={"https://www.linkedin.com/in/ericanastas"}
                 className="flex justify-center"
               >
                 <Image
@@ -99,7 +104,7 @@ export default function Index() {
               </Link>
 
               <Link
-                href={"https://www.instagram.com/ericanastas/"}
+                href={"https://www.instagram.com/ericanastas"}
                 className="flex justify-center"
               >
                 <Image
@@ -147,7 +152,7 @@ export default function Index() {
               </Link>
 
               <Link
-                href={"https://www.reddit.com/user/aireq/"}
+                href={"https://www.reddit.com/user/aireq"}
                 className="flex justify-center"
               >
                 <Image
