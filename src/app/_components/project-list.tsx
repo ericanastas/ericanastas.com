@@ -9,7 +9,7 @@ type Props = {
 export function ProjectList({ projects, selectedTagSlug }: Props) {
   return (
     <section>
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-x-5 gap-y-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-x-5 gap-y-10">
         {projects.map((project) => (
           <ProjectPreview
             key={project.category.slug + "-" + project.slug}
