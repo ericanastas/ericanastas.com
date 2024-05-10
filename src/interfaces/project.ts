@@ -9,7 +9,7 @@ export interface Project extends Page {
   /**URL to cover image */
   coverImage?: string;
 
-  /**Short one or two sentance summary of project */
+  /**Short one or two sentence summary of project */
   summary: string;
 
   /**Tags */

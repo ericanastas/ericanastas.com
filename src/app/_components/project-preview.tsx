@@ -31,10 +31,7 @@ export function ProjectPreview({
     <div>
       <p></p>
       <div className="mb-2">
-        {coverImage && <CoverImage url={url} title={title} src={coverImage} />}
-        {!coverImage && (
-          <CoverImage url={url} title={title} src={"/images/placeholder.png"} />
-        )}
+        <CoverImage url={url} title={title} src={coverImage} />
       </div>
 
       <h3 className="text-xl my-2 leading-snug">
