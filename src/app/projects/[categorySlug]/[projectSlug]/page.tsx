@@ -41,7 +41,12 @@ export default async function Project({ params }: Params) {
         </article>
       </main>
       <Footer />
-      <Script type="module" src="/scripts/init-medium-zoom.js" />
+      <Script
+        crossOrigin="anonymous"
+        type="module"
+        src="/scripts/init-medium-zoom.js"
+        strategy="lazyOnload"
+      />
     </>
   );
 }
