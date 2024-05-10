@@ -3,7 +3,7 @@ title: UWRT Prefabrication
 summary: R&D prefabrication  project on the  UW Research and Technology project
 coverImage: /images/mortenson/uwrt-prefab/slide0005_image057.jpg
 date: "2005-09-20"
-tags: ["Prefabrication", "Sketchup"]
+tags: ["Prefabrication", "Sketchup", "3D Modeling"]
 ---
 
 I worked as part of a team researching the use of prefabrication, which involved a trial prefabrication of a bathroom wet wall, and a full electrical room. The image below shows the sketchup model I created of the bathroom wall. The support steel is shown in blue.

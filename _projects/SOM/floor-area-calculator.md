@@ -2,7 +2,7 @@
 title: Floor Area Calculator
 summary: Grasshopper definition that calculates gross floor area for building masses
 coverImage: /images/som/floor-area-calculator/slide0022_image077.jpg
-tags: ["Grasshopper", "Rhino", "Design Analysis"]
+tags: ["Grasshopper", "Rhino", "Design Analysis", "3D Modeling"]
 date: "2010-04-23"
 ---
 

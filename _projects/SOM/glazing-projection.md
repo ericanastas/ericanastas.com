@@ -2,7 +2,7 @@
 title: Glazing Projection
 summary: Grasshopper definition that calculates the ratio of glazing to facade
 coverImage: /images/som/glazing-projection/glazing-projection.png
-tags: ["Grasshopper", "Rhino", "Design Analysis"]
+tags: ["Grasshopper", "Rhino", "Design Analysis", "3D Modeling"]
 date: "2010-05-19"
 project: Century Avenue 2-3
 ---

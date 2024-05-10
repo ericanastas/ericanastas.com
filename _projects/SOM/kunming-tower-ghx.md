@@ -2,7 +2,7 @@
 title: Kunming Tower Grasshopper
 summary: Grasshopper definition used to create a massing and enclosure model for the Kunming Tower project
 coverImage: /images/som/kunming-tower-ghx/Kunming-Tower.png
-tags: ["Grasshopper", "Rhino"]
+tags: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2014-05-28"
 ---
 
