@@ -29,12 +29,9 @@ export function ProjectPreview({
 }: Props) {
   return (
     <div>
-      <p></p>
-      <div className="mb-2">
-        <CoverImage url={url} title={title} src={coverImage} />
-      </div>
+      <CoverImage url={url} title={title} src={coverImage} />
 
-      <h3 className="text-xl my-2 leading-snug">
+      <h3 className="text-xl mt-4 leading-snug">
         <Link href={url} className="hover:underline">
           {title}
         </Link>
@@ -49,7 +46,7 @@ export function ProjectPreview({
         </div>
       </div>
 
-      <div className="mb-4">
+      <div className="mb-2">
         <TagChipList tags={tags} />
       </div>
 
