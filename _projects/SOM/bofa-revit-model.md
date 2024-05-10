@@ -2,7 +2,7 @@
 title: Bank of America Branch Revit Model
 summary: placeholder summary
 coverImage: /images/som/bofa-revit-model/Interior.jpg
-tags: ["Business Development", "Revit", "Revit Modeling"]
+tags: ["Business Development", "Revit", "3D Modeling"]
 date: "2010-05-22"
 hide: true
 ---

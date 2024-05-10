@@ -2,7 +2,7 @@
 title: Fuzhou Worldwide Tower
 summary: Revit support for the Fuzhou Worldwide Tower project
 coverImage: /images/som/fwt/Fuzhou-podium.jpg
-tags: ["Revit", "Revit Modeling", "Revit Support"]
+tags: ["Revit", "3D Modeling", "Revit Support"]
 date: "2012-06-01"
 project: Fuzhou Worldwide Tower
 ---

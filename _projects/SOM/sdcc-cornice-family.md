@@ -2,7 +2,7 @@
 title: SDCC Cornice Family
 summary: Complex Revit adaptive component family
 coverImage: /images/som/sdcc-cornice-family/plates.png
-tags: ["Revit", "Revit Modeling"]
+tags: ["Revit", "3D Modeling"]
 date: "2015-07-07"
 ---
 

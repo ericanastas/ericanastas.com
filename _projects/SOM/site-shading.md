@@ -2,7 +2,7 @@
 title: Site Shading
 summary: Grasshopper definition for visualizing how existing building will be shaded by new construction
 coverImage: /images/som/site-shading/ProjShadow.png
-tags: ["Design Analysis", "Grasshopper", "Rhino"]
+tags: ["Design Analysis", "Grasshopper", "Rhino", "3D Modeling"]
 date: "2013-11-15"
 ---
 

@@ -2,7 +2,7 @@
 title: Chevron Interview Model
 summary: Mock up model for business development
 coverImage: /images/som/chevron-interview-model/Perspective-Shaded.jpg
-tags: ["Business Development", "Ecotect", "Revit", "Revit Modeling"]
+tags: ["Business Development", "Ecotect", "Revit", "3D Modeling"]
 date: "2010-01-19"
 hide: true
 ---
