@@ -5,15 +5,28 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import process from "process";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const description = "Personal portfolio site of Eric Anastas";
+const url = "https://ericanastas.com";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ericanastas.com"),
+  metadataBase: new URL(url),
   title: { template: "ericanastas.com - %s", absolute: "ericanastas.com" },
-  description: `Personal portfolio website of Eric Anastas`,
+  description: description,
+  openGraph: {
+    title: "ericanastas.com",
+    description: description,
+    url: url,
+    images: [
+      {
+        height: 670,
+        width: 1280,
+        url: "/images/og-image.png",
+      },
+    ],
+  },
   robots: {
     index: false,
     follow: false,
