@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(url),
   title: { template: "ericanastas.com - %s", absolute: "ericanastas.com" },
   description: description,
+  authors: { name: "Eric Anastas", url: url },
   openGraph: {
     title: "ericanastas.com",
     description: description,
