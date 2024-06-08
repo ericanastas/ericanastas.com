@@ -9,7 +9,7 @@ tags:
     "Google Apps Script",
     "HTML & CSS",
     "Material Design",
-    "IMAGINiT Clarity",
+    "Clarity",
   ]
 date: "2023-05-08"
 repo: https://github.com/ericanastas/clarity-gdrive-access

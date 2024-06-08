@@ -2,7 +2,7 @@
 title: Shadow Overlay
 summary: Photoshop script that highlights new shadows that will be created by a proposed project
 coverImage: /images/som/shadow-overlay/overlay.png
-tags: ["JavaScript", "Photoshop", "Design Analysis"]
+tags: ["JavaScript", "Photoshop Scripting", "Design Analysis"]
 date: "2013-11-25"
 ---
 

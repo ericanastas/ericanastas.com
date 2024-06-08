@@ -2,7 +2,7 @@
 title: Revit Unit Tests Visual Studio Template
 summary: Visual Studio project template to add unit testing to any Revit add-in project
 coverImage: /images/som/revit-nunit-template/Unit-Test-Template.png
-tags: ["C#.Net", "Revit", "Revit API", "Unit Testing", "Visual Studio"]
+tags: ["C#.Net", "Revit", "Revit API", "Testing", "Visual Studio"]
 date: "2014-12-10"
 repo: https://github.com/ericanastas/revit-nunit-template
 ---

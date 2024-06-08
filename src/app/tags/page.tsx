@@ -1,5 +1,4 @@
-import { getAllTags } from "@/lib/projectsApi";
-import TagChipList from "../_components/tag-chip-list";
+import { getAllTagGroups } from "@/lib/projectsApi";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -11,10 +10,9 @@ import { ProjectTimeLine } from "../_components/project-timeline";
 import { getYearRange } from "@/lib/projectsApi";
 
 export default async function Tags() {
-  let allTags = await getAllTags();
   let yearRange = await getYearRange();
 
-  let tagList = await getAllTags();
+  let allTagGroups = await getAllTagGroups();
 
   return (
     <>
@@ -25,28 +23,29 @@ export default async function Tags() {
             <PageTitle>Tags</PageTitle>
           </div>
 
-          {/* <div className="flex flex-wrap gap-2 justify-center">
-            <TagChipList tags={allTags.map((t) => t.tag)} />
-          </div> */}
+          {allTagGroups.map((tagGroup) => (
+            <>
+              <h2 className="text-2xl font-bold mb-4 mt-8">{tagGroup.name}</h2>
+              <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">
+                {tagGroup.tags.map((tag) => (
+                  <>
+                    <div className="flex justify-end">
+                      <TagChip tag={tag} />
+                    </div>
+                    <div className="text-xs inline-flex items-center font-bold">
+                      {tag.projects.length}
+                    </div>
 
-          <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">
-            {tagList.map((tag) => (
-              <>
-                <div className="flex justify-end">
-                  <TagChip tag={tag.tag} />
-                </div>
-                <div className="text-xs inline-flex items-center font-bold">
-                  {tag.projects.length}
-                </div>
-
-                <ProjectTimeLine
-                  projects={tag.projects}
-                  minYear={yearRange.minYear}
-                  maxYear={yearRange.maxYear}
-                />
-              </>
-            ))}
-          </div>
+                    <ProjectTimeLine
+                      projects={tag.projects}
+                      minYear={yearRange.minYear}
+                      maxYear={yearRange.maxYear}
+                    />
+                  </>
+                ))}
+              </div>
+            </>
+          ))}
         </article>
       </main>
       <Footer />

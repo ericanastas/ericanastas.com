@@ -2,7 +2,7 @@
 title: Ender-3 3D Printer
 summary: My modified Creality Ender 3 3D Printer
 coverImage: /images/personal/ender3/PXL_20240507_233640327.jpg
-tags: ["3D Printing"]
+tags: ["3D Printing", "Fusion 360"]
 date: "2023-05-10"
 ---
 
