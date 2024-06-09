@@ -11,6 +11,7 @@ import type { Tag, TagDetailed } from "@/interfaces/tag";
 
 import { TAG_GROUPS } from "./tagGroups";
 import { TagGroup, TagGroupDetailed } from "@/interfaces/tagGroup";
+import { TAG_GROUP_NAMES } from "./tagGroups";
 import slugify from "slugify";
 
 const projectsDirectory = join(process.cwd(), "_projects");
@@ -196,25 +197,31 @@ export async function getAllTags(): Promise<TagDetailed[]> {
 export async function getAllTagGroups(): Promise<TagGroupDetailed[]> {
   let allTags = await getAllTags();
 
-  let returnTagGroups: TagGroupDetailed[] = [];
+  //get all tag groups
+  let returnTagGroups: TagGroupDetailed[] =
+    TAG_GROUP_NAMES.map<TagGroupDetailed>((n) => ({
+      name: n,
+      slug: slugify(n),
+      tags: [],
+    }));
 
+  //Add tags to groups
   for (let tag of allTags) {
     let tagGroup = returnTagGroups.find((g) => g.slug == tag.group.slug);
 
     if (!tagGroup) {
-      let tg = getTagGroup(tag.name);
-      tagGroup = { name: tg.name, slug: tg.slug, tags: [] };
-      returnTagGroups.push(tagGroup);
+      throw Error(`Tag group not found in tagGroups.ts: ${tag.slug}`);
     }
 
     tagGroup.tags.push(tag);
   }
 
+  //Sort tags alphabetically in group
   for (let tg of returnTagGroups) {
     tg.tags = tg.tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
   }
 
-  return returnTagGroups.sort((g1, g2) => (g1.name < g2.name ? -1 : 1));
+  return returnTagGroups;
 }
 
 function sortProjectDesc(project1: Project, project2: Project): number {

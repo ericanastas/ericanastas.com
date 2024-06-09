@@ -1,4 +1,22 @@
-export const TAG_GROUPS: { [key: string]: string } = {
+export const TAG_GROUP_NAMES = [
+  //Software Engineering
+  "Code",
+  "Frontend",
+  "Backend",
+  "APIs",
+
+  "3D Modeling",
+  "Data Visualization",
+  "Software",
+  "IT",
+
+  "AEC",
+  "Hobbies",
+] as const;
+
+export type TagGroupName = (typeof TAG_GROUP_NAMES)[number];
+
+export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   //Frontend
   React: "Frontend",
   Angular: "Frontend",
@@ -24,6 +42,16 @@ export const TAG_GROUPS: { [key: string]: string } = {
   AWS: "Backend",
   EC2: "Backend",
   SNS: "Backend",
+  PostgreSQL: "Backend",
+  Mongo: "Backend",
+  Elasticsearch: "Backend",
+  "MS SQL": "Backend",
+  "MS Access": "Backend",
+  RDS: "Backend",
+  "CI/CD": "Backend",
+  Testing: "Backend",
+  "Github Actions": "Backend",
+  Logging: "Backend",
 
   //AEC
   "3D Coordination": "AEC",
@@ -80,13 +108,7 @@ export const TAG_GROUPS: { [key: string]: string } = {
   LumApps: "Software",
   "Google Earth": "Software",
   FTP: "Software",
-
-  //Software Engineering
-  "CI/CD": "Software Engineering",
-  Testing: "Software Engineering",
-  "Github Actions": "Software Engineering",
-  Logging: "Software Engineering",
-  "Visual Studio": "Software Engineering",
+  "Visual Studio": "Software",
 
   //IT
   Intranets: "IT",
@@ -94,25 +116,17 @@ export const TAG_GROUPS: { [key: string]: string } = {
   Training: "IT",
 
   //Programming Languages
-  "C#.NET": "Programming Languages",
-  SQL: "Programming Languages",
-  Typescript: "Programming Languages",
-  JavaScript: "Programming Languages",
-  PowerShell: "Programming Languages",
-  "HTML & CSS": "Programming Languages",
-  AutoHotKey: "Programming Languages",
-  XLST: "Programming Languages",
-  XML: "Programming Languages",
-  SCSS: "Programming Languages",
-  Python: "Programming Languages",
-
-  //Databases
-  PostgreSQL: "Databases",
-  Mongo: "Databases",
-  Elasticsearch: "Databases",
-  "MS SQL": "Databases",
-  "MS Access": "Databases",
-  RDS: "Databases",
+  "C#.NET": "Code",
+  SQL: "Code",
+  Typescript: "Code",
+  JavaScript: "Code",
+  PowerShell: "Code",
+  "HTML & CSS": "Code",
+  AutoHotKey: "Code",
+  XLST: "Code",
+  XML: "Code",
+  SCSS: "Code",
+  Python: "Code",
 
   //Hobbies
   "Burning Man": "Hobbies",
