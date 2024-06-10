@@ -4,7 +4,7 @@ import {
   getAllProjectCategories,
   getProjectsByCategorySlug,
 } from "@/lib/projectsApi";
-import { ProjectList } from "@/app/_components/project-list";
+import { ProjectGrid } from "@/app/_components/project-grid";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import PageTitle from "@/app/_components/page-title";
@@ -37,7 +37,7 @@ export default async function Category({ params }: Props) {
           />
         </div>
 
-        <ProjectList projects={projects} />
+        <ProjectGrid projects={projects} />
       </main>
       <Footer />
     </>

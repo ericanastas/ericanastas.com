@@ -1,4 +1,4 @@
-import { ProjectList } from "@/app/_components/project-list";
+import { ProjectCollection } from "@/app/_components/project-collection";
 import { getAllProjects, getYearRange } from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -27,7 +27,7 @@ export default async function Projects() {
             maxYear={yearRange.maxYear}
           />
         </div>
-        {allProjects.length > 0 && <ProjectList projects={allProjects} />}
+        {allProjects.length > 0 && <ProjectCollection projects={allProjects} />}
       </main>
       <Footer />
     </>

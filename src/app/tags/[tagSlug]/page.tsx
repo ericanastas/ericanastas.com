@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProjectsByTagSlug, getAllTags } from "@/lib/projectsApi";
-import { ProjectList } from "@/app/_components/project-list";
+import { ProjectGrid } from "@/app/_components/project-grid";
 import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
@@ -32,7 +32,7 @@ export default async function Project({ params }: Props) {
           />
         </div>
 
-        <ProjectList projects={projects} selectedTagSlug={tag.slug} />
+        <ProjectGrid projects={projects} selectedTagSlugs={[tag.slug]} />
       </main>
       <Footer />
     </>
