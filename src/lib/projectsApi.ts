@@ -52,6 +52,26 @@ async function readProjectFile(
     group: getTagGroup(t),
   }));
 
+  //Check for duplicate tags
+  const tagSlugs = tagObjArr.map((t) => t.slug);
+
+  let duplicateTagSlugs = tagSlugs.filter((slug, index) =>
+    tagSlugs.some(
+      (otherSlug, otherIndex) => slug === otherSlug && index !== otherIndex
+    )
+  );
+
+  if (duplicateTagSlugs.length > 0) {
+    throw Error(
+      `Duplicate tags found in "${projectMdFileName}": ${duplicateTagSlugs.join(
+        ", "
+      )}`
+    );
+  }
+
+  //Sort tags alphabetically on project
+  tagObjArr = tagObjArr.sort((t1, t2) => (t1.name > t2.name ? 1 : -1));
+
   let url = `/projects/${category.slug}/${projectSlug}`;
 
   return {
