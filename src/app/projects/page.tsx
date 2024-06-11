@@ -5,8 +5,6 @@ import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 
-import { ProjectTimeLine } from "../_components/project-timeline";
-
 export default async function Projects() {
   const allProjects = await getAllProjects();
 
@@ -20,13 +18,6 @@ export default async function Projects() {
           <PageTitle>Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={allProjects}
-            minYear={yearRange.minYear}
-            maxYear={yearRange.maxYear}
-          />
-        </div>
         {allProjects.length > 0 && <ProjectCollection projects={allProjects} />}
       </main>
       <Footer />

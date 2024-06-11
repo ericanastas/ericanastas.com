@@ -3,6 +3,7 @@ import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import TagChipList from "./tag-chip-list";
 import type { Project } from "@/interfaces/project";
+import type { Tag } from "@/interfaces/tag";
 
 type Props = {
   project: Project;
@@ -10,6 +11,11 @@ type Props = {
 };
 
 export function ProjectGridItem({ project, selectedTagSlugs }: Props) {
+  let projectTags = project.tags.map<Tag>((tag) => ({
+    ...tag,
+    selected: selectedTagSlugs?.some((slug) => tag.slug === slug),
+  }));
+
   return (
     <div>
       <CoverImage
@@ -34,7 +40,7 @@ export function ProjectGridItem({ project, selectedTagSlugs }: Props) {
       </div>
 
       <div className="mb-2">
-        <TagChipList tags={project.tags} />
+        <TagChipList tags={projectTags} />
       </div>
 
       <p className="text-sm leading-relaxed">{project.summary}</p>

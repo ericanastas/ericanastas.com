@@ -4,12 +4,11 @@ import {
   getAllProjectCategories,
   getProjectsByCategorySlug,
 } from "@/lib/projectsApi";
-import { ProjectGrid } from "@/app/_components/project-grid";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import PageTitle from "@/app/_components/page-title";
-import { ProjectTimeLine } from "@/app/_components/project-timeline";
 import { getYearRange } from "@/lib/projectsApi";
+import { ProjectCollection } from "@/app/_components/project-collection";
 
 export default async function Category({ params }: Props) {
   const category = getAllProjectCategories().find(
@@ -29,15 +28,12 @@ export default async function Category({ params }: Props) {
           <PageTitle>{category.name} Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={projects}
-            minYear={yearRange.minYear}
-            maxYear={yearRange.maxYear}
-          />
-        </div>
-
-        <ProjectGrid projects={projects} />
+        <ProjectCollection
+          projects={projects}
+          selectedTagSlugs={[]}
+          minYear={yearRange.minYear}
+          maxYear={yearRange.maxYear}
+        />
       </main>
       <Footer />
     </>

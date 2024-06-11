@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProjectsByTagSlug, getAllTags } from "@/lib/projectsApi";
-import { ProjectGrid } from "@/app/_components/project-grid";
 import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import { ProjectTimeLine } from "@/app/_components/project-timeline";
 import { getYearRange } from "@/lib/projectsApi";
+import { ProjectCollection } from "@/app/_components/project-collection";
 
 export default async function Project({ params }: Props) {
   const tag = (await getAllTags()).find((tag) => tag.slug === params.tagSlug);
@@ -24,15 +23,12 @@ export default async function Project({ params }: Props) {
           <PageTitle>{tag.name} Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={projects}
-            minYear={yearRange.minYear}
-            maxYear={yearRange.maxYear}
-          />
-        </div>
-
-        <ProjectGrid projects={projects} selectedTagSlugs={[tag.slug]} />
+        <ProjectCollection
+          projects={projects}
+          selectedTagSlugs={[tag.slug]}
+          minYear={yearRange.minYear}
+          maxYear={yearRange.maxYear}
+        />
       </main>
       <Footer />
     </>
