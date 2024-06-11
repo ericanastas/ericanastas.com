@@ -2,7 +2,7 @@
 title: 50 Fremont
 summary: placeholder summary
 coverImage: /images/som/50-fremont/50-fremont-rendering.jpg
-tags: ["Business Development", "Revit", "3D Modeling"]
+tags: ["Business Development", "Revit", "3D Modeling", "3D Visualization"]
 date: "2010-12-30"
 hide: true
 ---

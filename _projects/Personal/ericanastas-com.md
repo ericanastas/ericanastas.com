@@ -13,6 +13,7 @@ tags:
     "UX Design",
   ]
 date: "2024-04-20"
+repo: "https://github.com/ericanastas/ericanastas.com"
 ---
 
 ![](/images/personal/ericanastas-com/project-list.png)

@@ -14,7 +14,7 @@ tags:
     "SQL",
     "Docker",
     "Elasticsearch",
-    "Unit Testing",
+    "Testing",
     "HTML & CSS",
   ]
 date: "2023-04-27"

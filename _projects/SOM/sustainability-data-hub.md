@@ -14,6 +14,8 @@ tags:
     "NgRx",
     "RxJS",
     "UX Design",
+    "EC2",
+    "AWS",
   ]
 date: "2024-01-11"
 repo: https://github.com/ericanastas/sustainability-data-hub
