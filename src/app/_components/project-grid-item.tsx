@@ -40,7 +40,7 @@ export function ProjectGridItem({ project, selectedTagSlugs }: Props) {
       </div>
 
       <div className="mb-2">
-        <TagChipList tags={projectTags} />
+        <TagChipList tags={projectTags} selectedTagSlugs={selectedTagSlugs} />
       </div>
 
       <p className="text-sm leading-relaxed">{project.summary}</p>
