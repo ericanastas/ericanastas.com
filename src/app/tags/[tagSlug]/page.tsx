@@ -5,7 +5,7 @@ import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import { getYearRange } from "@/lib/projectsApi";
-import { ProjectCollection } from "@/app/_components/project-collection";
+import ProjectCollection from "@/app/_components/project-collection";
 
 export default async function Project({ params }: Props) {
   const tag = (await getAllTags()).find((tag) => tag.slug === params.tagSlug);

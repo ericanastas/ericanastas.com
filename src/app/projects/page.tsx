@@ -1,14 +1,23 @@
-import { ProjectCollection } from "@/app/_components/project-collection";
-import { getAllProjects, getYearRange } from "@/lib/projectsApi";
+import {
+  getAllProjectCategories,
+  getAllProjects,
+  getAllTagGroups,
+  getAllTags,
+  getYearRange,
+} from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
+import FilteredProjectCollection from "../_components/filtered-project-collection";
 
 export default async function Projects() {
   const allProjects = await getAllProjects();
 
   const yearRange = await getYearRange();
+
+  const tagGroups = await getAllTagGroups();
+  const categories = await getAllProjectCategories();
 
   return (
     <>
@@ -18,7 +27,14 @@ export default async function Projects() {
           <PageTitle>Projects</PageTitle>
         </div>
 
-        {allProjects.length > 0 && <ProjectCollection projects={allProjects} />}
+        <FilteredProjectCollection
+          projects={allProjects}
+          filter={{}}
+          tagGroups={tagGroups}
+          categories={categories}
+          minYear={yearRange.minYear}
+          maxYear={yearRange.maxYear}
+        />
       </main>
       <Footer />
     </>

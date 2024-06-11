@@ -9,14 +9,14 @@ export type Props = {
   maxYear?: number;
 };
 
-export function ProjectCollection({
+export default function ProjectCollection({
   projects,
   selectedTagSlugs,
   minYear,
   maxYear,
 }: Props) {
   return (
-    <section>
+    <div>
       <div className="mb-8">
         <ProjectTimeLine
           projects={projects}
@@ -25,6 +25,6 @@ export function ProjectCollection({
         />
       </div>
       <ProjectGrid projects={projects} selectedTagSlugs={selectedTagSlugs} />
-    </section>
+    </div>
   );
 }

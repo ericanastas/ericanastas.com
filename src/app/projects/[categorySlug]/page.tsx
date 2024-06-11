@@ -8,7 +8,7 @@ import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import PageTitle from "@/app/_components/page-title";
 import { getYearRange } from "@/lib/projectsApi";
-import { ProjectCollection } from "@/app/_components/project-collection";
+import ProjectCollection from "@/app/_components/project-collection";
 
 export default async function Category({ params }: Props) {
   const category = getAllProjectCategories().find(
