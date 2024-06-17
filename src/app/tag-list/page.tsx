@@ -1,4 +1,4 @@
-import { getAllTags } from "@/lib/projectsApi";
+import { getTags } from "@/lib/projectsApi";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -7,7 +7,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export default async function Tags() {
-  let allTags = await getAllTags();
+  let allTags = await getTags();
 
   return (
     <>

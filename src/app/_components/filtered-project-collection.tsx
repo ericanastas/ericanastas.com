@@ -3,7 +3,7 @@
 import ProjectCollection from "./project-collection";
 import { Project } from "../../interfaces/project";
 import { Category } from "../../interfaces/category";
-import { TagGroupDetailed } from "../../interfaces/tagGroup";
+import { TagGroup } from "../../interfaces/tagGroup";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import ProjectFilter from "./project-filter";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import { useState } from "react";
 export type Props = {
   projects: Project[];
   categories: Category[];
-  tagGroups: TagGroupDetailed[];
+  tagGroups: TagGroup[];
   filter?: ProjectFilterOptions;
   minYear?: number;
   maxYear?: number;

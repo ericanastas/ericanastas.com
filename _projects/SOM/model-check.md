@@ -2,7 +2,7 @@
 title: Model Check
 summary: QAQC utility for Revit
 coverImage:
-tags: ["Revit", "Revit API", "WPF", "C#.NET", "UX Design"]
+tags: ["Revit", "Revit API", "WPF", "C#.Net", "UX Design"]
 date: "2016-05-27"
 repo: https://github.com/ericanastas/model-check
 ---

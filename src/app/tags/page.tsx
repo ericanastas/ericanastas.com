@@ -1,4 +1,4 @@
-import { getAllTagGroups } from "@/lib/projectsApi";
+import { getTagGroups, getProjects } from "@/lib/projectsApi";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -7,12 +7,12 @@ import { Metadata } from "next";
 
 import TagChip from "../_components/tag-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
-import { getYearRange } from "@/lib/projectsApi";
+import { getProjectsYearRange } from "@/lib/projectsApi";
 
 export default async function Tags() {
-  let yearRange = await getYearRange();
-
-  let allTagGroups = await getAllTagGroups();
+  let yearRange = await getProjectsYearRange();
+  let allTagGroups = await getTagGroups();
+  let projects = await getProjects();
 
   return (
     <>
@@ -27,22 +27,28 @@ export default async function Tags() {
             <>
               <h2 className="text-2xl font-bold mb-4 mt-8">{tagGroup.name}</h2>
               <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">
-                {tagGroup.tags.map((tag) => (
-                  <>
-                    <div className="flex justify-end">
-                      <TagChip tag={tag} />
-                    </div>
-                    <div className="text-xs inline-flex items-center font-bold">
-                      {tag.projects.length}
-                    </div>
+                {tagGroup.tags.map((tag) => {
+                  let tagProjects = projects.filter((p) =>
+                    p.tags.some((t) => t.slug === tag.slug)
+                  );
 
-                    <ProjectTimeLine
-                      projects={tag.projects}
-                      minYear={yearRange.minYear}
-                      maxYear={yearRange.maxYear}
-                    />
-                  </>
-                ))}
+                  return (
+                    <>
+                      <div className="flex justify-end">
+                        <TagChip tag={tag} />
+                      </div>
+                      <div className="text-xs inline-flex items-center font-bold">
+                        {tagProjects.length}
+                      </div>
+
+                      <ProjectTimeLine
+                        projects={tagProjects}
+                        minYear={yearRange.minYear}
+                        maxYear={yearRange.maxYear}
+                      />
+                    </>
+                  );
+                })}
               </div>
             </>
           ))}

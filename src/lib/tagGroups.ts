@@ -52,6 +52,7 @@ export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   Testing: "Backend",
   "Github Actions": "Backend",
   Logging: "Backend",
+  NuGet: "Backend",
 
   //AEC
   "3D Coordination": "AEC",
@@ -94,6 +95,9 @@ export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   "Fusion 360": "3D Modeling",
   Galapagos: "3D Modeling",
   "3D Visualization": "3D Modeling",
+  "Augmented Reality": "3D Modeling",
+  Kangaroo: "3D Modeling",
+  "Unity 3D": "3D Modeling",
 
   //Data Visualization
   Graphviz: "Data Visualization",
@@ -116,9 +120,9 @@ export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   Training: "IT",
 
   //Programming Languages
-  "C#.NET": "Code",
+  "C#.Net": "Code",
   SQL: "Code",
-  Typescript: "Code",
+  TypeScript: "Code",
   JavaScript: "Code",
   PowerShell: "Code",
   "HTML & CSS": "Code",

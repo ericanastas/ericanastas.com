@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllProjects, getProject } from "@/lib/projectsApi";
+import { getProjects, getProject } from "@/lib/projectsApi";
 import DraftAlert from "@/app/_components/draft-alert";
 import { Content } from "@/app/_components/content";
 import { ProjectHeader } from "@/app/_components/project-header";
@@ -9,7 +9,7 @@ import Footer from "@/app/_components/footer";
 import markdownStyles from "../../../_components/markdown-styles.module.css";
 import Script from "next/script";
 
-export default async function Project({ params }: Params) {
+export default async function ProjectPage({ params }: Params) {
   const project = await getProject(params.categorySlug, params.projectSlug);
 
   if (!project) {
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const projects = await getAllProjects();
+  const projects = await getProjects();
 
   return projects.map((project) => ({
     projectSlug: project.slug,

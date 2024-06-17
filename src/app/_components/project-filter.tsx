@@ -1,14 +1,14 @@
 "use client";
 
 import Select from "react-select";
-import type { TagGroupDetailed } from "../../interfaces/tagGroup";
+import type { TagGroup } from "../../interfaces/tagGroup";
 import type { Category } from "../../interfaces/category";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { useState } from "react";
 
 export type Props = {
   categories: Category[];
-  tagGroups: TagGroupDetailed[];
+  tagGroups: TagGroup[];
   filter?: ProjectFilterOptions;
   onFilterOptionsChanged: (filter: ProjectFilterOptions) => void;
 };

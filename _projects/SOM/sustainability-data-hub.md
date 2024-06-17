@@ -5,7 +5,7 @@ coverImage: /images/som/sustainability-data-hub/project-list.png
 tags:
   [
     "JavaScript",
-    "Typescript",
+    "TypeScript",
     "NodeJS",
     "Angular",
     "Material Design",

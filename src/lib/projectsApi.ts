@@ -4,37 +4,70 @@ import { join } from "path";
 import path from "path";
 import { markdownToHtml, removeFileExtension, convertToSlug } from "./util";
 import process from "process";
-
 import type { Project } from "@/interfaces/project";
 import type { Category } from "@/interfaces/category";
-import type { Tag, TagDetailed } from "@/interfaces/tag";
-
-import { TAG_GROUPS } from "./tagGroups";
-import { TagGroup, TagGroupDetailed } from "@/interfaces/tagGroup";
-import { TAG_GROUP_NAMES } from "./tagGroups";
-import slugify from "slugify";
+import type { Tag } from "@/interfaces/tag";
+import { TagGroup } from "@/interfaces/tagGroup";
+import { TAG_GROUPS, TAG_GROUP_NAMES } from "./tagGroups";
 
 const projectsDirectory = join(process.cwd(), "_projects");
 
-function getTagGroup(tagName: string): TagGroup {
-  let groupName = TAG_GROUPS[tagName] ?? "Other";
-  return { name: groupName, slug: slugify(groupName) };
+function getTagGroupName(tagName: string): string {
+  if (!TAG_GROUPS.hasOwnProperty(tagName)) {
+    throw new Error(`Tag "${tagName}" is not assigned to a group`);
+  } else {
+    let groupName = TAG_GROUPS[tagName];
+    return groupName;
+  }
+}
+
+function createCategory(name: string): Category {
+  let slug = convertToSlug(name);
+
+  return {
+    name: name,
+    slug: slug,
+    url: `/projects/${slug}`,
+  };
+}
+
+function createTag(name: string): Tag {
+  let slug = convertToSlug(name);
+  let groupName = getTagGroupName(name);
+
+  return {
+    name: name,
+    slug: slug,
+    url: `/tags/${slug}`,
+    groupName: groupName,
+  };
+}
+
+function getCategoryFolderNames(): string[] {
+  return fs.readdirSync(projectsDirectory);
+}
+
+function projectIsVisible(project: Project): boolean {
+  //Don't return hidden projects
+  if (project.hide) return false;
+  //Hide draft projects in production
+  else if (process.env.NODE_ENV === "production" && project.draft) return false;
+  else return true;
 }
 
 async function readProjectFile(
-  category: Category,
-  projectMdPath: string
+  categoryFolderName: string,
+  mdFileName: string
 ): Promise<Project> {
-  let projectMdFileName = path.basename(projectMdPath);
+  const projectMdPath = path.join(
+    projectsDirectory,
+    categoryFolderName,
+    mdFileName
+  );
 
-  const projectSlug = removeFileExtension(projectMdFileName);
-
-  if (projectSlug != convertToSlug(projectSlug)) {
-    throw Error(
-      `Project file name "${projectMdFileName}" does not match slugified version "${convertToSlug(
-        projectSlug
-      )}"`
-    );
+  //Check if file exists
+  if (!fs.existsSync(projectMdPath)) {
+    throw Error(`File not found: ${projectMdPath}`);
   }
 
   const fileContents = fs.readFileSync(projectMdPath, "utf8");
@@ -45,14 +78,9 @@ async function readProjectFile(
   let { title, date, coverImage, summary, draft, tags, featured, hide, repo } =
     data;
 
-  let tagObjArr: Tag[] = tags.map((t: string) => ({
-    name: t,
-    slug: convertToSlug(t),
-    url: `/tags/${convertToSlug(t)}`,
-    group: getTagGroup(t),
-  }));
+  let tagObjArr: Tag[] = tags.map((t: string) => createTag(t));
 
-  //Check for duplicate tags
+  //Check for duplicate tags assigned to project
   const tagSlugs = tagObjArr.map((t) => t.slug);
 
   let duplicateTagSlugs = tagSlugs.filter((slug, index) =>
@@ -63,14 +91,17 @@ async function readProjectFile(
 
   if (duplicateTagSlugs.length > 0) {
     throw Error(
-      `Duplicate tags found in "${projectMdFileName}": ${duplicateTagSlugs.join(
-        ", "
-      )}`
+      `Duplicate tags found in "${mdFileName}": ${duplicateTagSlugs.join(", ")}`
     );
   }
 
+  //Create category
+  const category = createCategory(categoryFolderName);
+
   //Sort tags alphabetically on project
   tagObjArr = tagObjArr.sort((t1, t2) => (t1.name > t2.name ? 1 : -1));
+
+  const projectSlug = removeFileExtension(mdFileName);
 
   let url = `/projects/${category.slug}/${projectSlug}`;
 
@@ -92,174 +123,181 @@ async function readProjectFile(
   } as Project;
 }
 
+function sortProjectDesc(project1: Project, project2: Project): number {
+  if (
+    (project1.featured && project2.featured) ||
+    (!project1.featured && !project2.featured)
+  ) {
+    return project1.date > project2.date ? -1 : 1;
+  } else if (project1.featured) return -1;
+  else return 1;
+}
+
 export async function getProject(
   categorySlug: string,
   projectSlug: string
 ): Promise<Project | null> {
-  let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
+  let categoryFolderNames = getCategoryFolderNames();
 
   let categoryFolderName = categoryFolderNames.find(
     (c) => convertToSlug(c) === categorySlug
   );
+
   if (!categoryFolderName) return null;
 
-  let category: Category = {
-    name: categoryFolderName,
-    slug: categorySlug,
-    url: `/projects/${categorySlug}`,
-  };
   const projectMdFileName = projectSlug + ".md";
-  const projectMdFilePath = path.join(
-    projectsDirectory,
-    categoryFolderName,
-    projectMdFileName
-  );
 
-  let project = await readProjectFile(category, projectMdFilePath);
+  let project = await readProjectFile(categoryFolderName, projectMdFileName);
 
-  return project;
+  if (!projectIsVisible(project)) return null;
+  else return project;
 }
 
-export async function getAllProjects(): Promise<Project[]> {
+export async function getProjects(): Promise<Project[]> {
   let projects: Project[] = [];
 
-  let categories = getAllProjectCategories();
+  let categoryFolderNames = await getCategoryFolderNames();
 
-  for (let category of categories) {
-    let categoryFolder = path.join(projectsDirectory, category.name);
-
-    let projectMdFileNames: string[] = fs.readdirSync(categoryFolder);
+  for (let categoryFolderName of categoryFolderNames) {
+    let categoryFolderPath = path.join(projectsDirectory, categoryFolderName);
+    let projectMdFileNames: string[] = fs.readdirSync(categoryFolderPath);
 
     for (let projectMdFileName of projectMdFileNames) {
-      let projectMdFilePath = path.join(categoryFolder, projectMdFileName);
-      let project = await readProjectFile(category, projectMdFilePath);
+      let project = await readProjectFile(
+        categoryFolderName,
+        projectMdFileName
+      );
+
       projects.push(project);
     }
   }
 
-  projects = projects.filter((p) => !p.hide);
+  //Remove hidden projects
+  projects = projects.filter((p) => projectIsVisible(p));
 
-  if (process.env.NODE_ENV === "production") {
-    projects = projects.filter((p) => !p.draft);
-  }
+  //Sort projects
+  let sortedProjects = projects.sort(sortProjectDesc);
 
-  const sortedFeaturedProjects = projects
-    .filter((p) => p.featured)
-    .sort(sortProjectDesc);
-  const sortedNonFeaturedProjects = projects
-    .filter((p) => !p.featured)
-    .sort(sortProjectDesc);
-
-  const sortedProjects = [
-    ...sortedFeaturedProjects,
-    ...sortedNonFeaturedProjects,
-  ];
   return sortedProjects;
 }
 
-let allProjectCategories: Category[];
-
-export function getAllProjectCategories(): Category[] {
-  if (!allProjectCategories) {
-    allProjectCategories = [];
-    let categoryFolderNames: string[] = fs.readdirSync(projectsDirectory);
-    for (let categoryName of categoryFolderNames) {
-      let categorySlug = convertToSlug(categoryName);
-      allProjectCategories.push({
-        name: categoryName,
-        slug: categorySlug,
-        url: `/projects/${categorySlug}`,
-      });
-    }
-  }
-
-  return allProjectCategories;
-}
-
-export async function getYearRange(): Promise<{
+export async function getProjectsYearRange(): Promise<{
   minYear: number;
   maxYear: number;
 }> {
-  let allProjects = await getAllProjects();
+  let projects = await getProjects();
 
-  let minProjectsYear: number = Math.min(
-    ...allProjects.map((p) => new Date(p.date).getFullYear())
+  let minYear: number = Math.min(
+    ...projects.map((p) => new Date(p.date).getFullYear())
   );
 
-  let maxProjectsYear: number = Math.max(
-    ...allProjects.map((p) => new Date(p.date).getFullYear())
+  let maxYear: number = Math.max(
+    ...projects.map((p) => new Date(p.date).getFullYear())
   );
 
-  return { minYear: minProjectsYear, maxYear: maxProjectsYear };
+  return { minYear, maxYear };
 }
 
-export async function getAllTags(): Promise<TagDetailed[]> {
-  let allProjects = await getAllProjects();
-
-  let allTags: TagDetailed[] = [];
-
-  for (let proj of allProjects) {
-    for (let projTag of proj.tags) {
-      let tag = allTags.find((t) => t.slug === projTag.slug);
-
-      if (!tag) {
-        tag = { ...projTag, projects: [] };
-        allTags.push(tag);
-      }
-
-      tag.projects.push(proj);
-    }
-  }
-
-  return allTags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
-}
-
-export async function getAllTagGroups(): Promise<TagGroupDetailed[]> {
-  let allTags = await getAllTags();
-
-  //get all tag groups
-  let returnTagGroups: TagGroupDetailed[] =
-    TAG_GROUP_NAMES.map<TagGroupDetailed>((n) => ({
-      name: n,
-      slug: slugify(n),
-      tags: [],
-    }));
-
-  //Add tags to groups
-  for (let tag of allTags) {
-    let tagGroup = returnTagGroups.find((g) => g.slug == tag.group.slug);
-
-    if (!tagGroup) {
-      throw Error(`Tag group not found in tagGroups.ts: ${tag.slug}`);
-    }
-
-    tagGroup.tags.push(tag);
-  }
-
-  //Sort tags alphabetically in group
-  for (let tg of returnTagGroups) {
-    tg.tags = tg.tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
-  }
-
-  return returnTagGroups;
-}
-
-function sortProjectDesc(project1: Project, project2: Project): number {
-  return project1.date > project2.date ? -1 : 1;
-}
-
-export async function getProjectsByCategorySlug(
-  categorySlug: string
-): Promise<Project[]> {
-  return (await getAllProjects()).filter(
+export async function getCategory(
+  categorySlug: string,
+  incProjects?: boolean
+): Promise<Category | null> {
+  let categoryProjects = (await getProjects()).filter(
     (p) => p.category.slug === categorySlug
   );
+
+  if (categoryProjects.length > 0) {
+    let category: Category = {
+      ...categoryProjects[0].category,
+      projects: incProjects ? categoryProjects : undefined,
+    };
+
+    return category;
+  } else return null;
 }
 
-export async function getProjectsByTagSlug(
-  tagSlug: string
-): Promise<Project[]> {
-  return (await getAllProjects()).filter((p) =>
-    p.tags.map((t) => t.slug).includes(tagSlug)
+export async function getCategories(
+  incProjects?: boolean
+): Promise<Category[]> {
+  let categories: Category[] = [];
+
+  //get projects
+  let projects = await getProjects();
+
+  for (let project of projects) {
+    let category: Category | undefined = categories.find(
+      (c) => c.slug === project.category.slug
+    );
+
+    if (!category) {
+      category = {
+        ...project.category,
+        projects: incProjects
+          ? projects.filter((p) => p.category.slug === project.category.slug)
+          : undefined,
+      };
+      categories.push(category);
+    }
+  }
+
+  return categories.sort((c1, c2) => (c1.name < c2.name ? -1 : 1));
+}
+
+export async function getTag(
+  tagSlug: string,
+  incProjects?: Boolean
+): Promise<Tag | null> {
+  let tagProjects = (await getProjects()).filter((p) =>
+    p.tags.some((t) => t.slug === tagSlug)
   );
+
+  if (tagProjects.length > 0) {
+    let tag: Tag = {
+      ...tagProjects[0].tags.find((t) => t.slug === tagSlug)!,
+      projects: incProjects ? tagProjects : undefined,
+    };
+
+    return tag;
+  } else return null;
+}
+
+export async function getTags(incProjects?: boolean): Promise<Tag[]> {
+  let projects = await getProjects();
+
+  let tags: Tag[] = [];
+
+  for (let project of projects) {
+    for (let projTag of project.tags) {
+      let tag = tags.find((t) => t.slug === projTag.slug);
+
+      if (!tag) {
+        tag = {
+          ...projTag,
+          projects: incProjects
+            ? projects.filter((p) => p.tags.some((t) => t.slug == projTag.slug))
+            : undefined,
+        };
+        tags.push(projTag);
+      }
+    }
+  }
+
+  return tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
+}
+
+export async function getTagGroups(incProjects?: boolean): Promise<TagGroup[]> {
+  let tagGroups: TagGroup[] = TAG_GROUP_NAMES.map((n) => ({
+    name: n,
+    tags: [],
+  }));
+
+  let tags = await getTags(incProjects);
+
+  for (let tag of tags) {
+    let matchingGroup = tagGroups.find((tg) => tg.name == tag.groupName);
+
+    matchingGroup!.tags.push(tag);
+  }
+
+  return tagGroups;
 }

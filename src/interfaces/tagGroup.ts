@@ -1,10 +1,6 @@
-import type { TagDetailed } from "./tag";
+import type { Tag } from "./tag";
 
 export interface TagGroup {
   name: string;
-  slug: string;
-}
-
-export interface TagGroupDetailed extends TagGroup {
-  tags: TagDetailed[];
+  tags: Tag[];
 }

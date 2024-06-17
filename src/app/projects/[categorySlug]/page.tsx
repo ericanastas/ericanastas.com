@@ -1,24 +1,18 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  getAllProjectCategories,
-  getProjectsByCategorySlug,
-} from "@/lib/projectsApi";
+import { getCategory, getCategories } from "@/lib/projectsApi";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import PageTitle from "@/app/_components/page-title";
-import { getYearRange } from "@/lib/projectsApi";
+import { getProjectsYearRange } from "@/lib/projectsApi";
 import ProjectCollection from "@/app/_components/project-collection";
 
-export default async function Category({ params }: Props) {
-  const category = getAllProjectCategories().find(
-    (cat) => cat.slug === params.categorySlug
-  );
+export default async function CategoryPage({ params }: Props) {
+  const category = await getCategory(params.categorySlug, true);
 
   if (!category) notFound();
 
-  let projects = await getProjectsByCategorySlug(category.slug);
-  const yearRange = await getYearRange();
+  const yearRange = await getProjectsYearRange();
 
   return (
     <>
@@ -29,7 +23,7 @@ export default async function Category({ params }: Props) {
         </div>
 
         <ProjectCollection
-          projects={projects}
+          projects={category.projects!}
           selectedTagSlugs={[]}
           minYear={yearRange.minYear}
           maxYear={yearRange.maxYear}
@@ -46,23 +40,20 @@ type Props = {
   };
 };
 
-export function generateMetadata({ params }: Props): Metadata {
-  const category = getAllProjectCategories().find(
-    (cat) => cat.slug === params.categorySlug
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const category = await getCategory(params.categorySlug);
 
   if (!category) notFound();
-
-  const title = `${category.name} Projects`;
-
-  return {
-    title,
-  };
+  else {
+    const title = `${category.name} Projects`;
+    return {
+      title,
+    };
+  }
 }
 
 export async function generateStaticParams() {
-  const allCategories = getAllProjectCategories();
-
+  const allCategories = await getCategories();
   return allCategories.map((category) => ({
     categorySlug: category.slug,
   }));
