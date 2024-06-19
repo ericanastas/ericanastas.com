@@ -114,6 +114,19 @@ export default function ProjectFilter({
 
       <div className="min-w-64">
         <Select
+          styles={{
+            groupHeading: (base) => ({
+              ...base,
+              fontWeight: "bold",
+              color: "#4b5563",
+              fontSize: "24",
+              backgroundColor: "#e5e7eb",
+              paddingBottom: 5,
+              paddingTop: 5,
+              textTransform: "none",
+              margin: 0,
+            }),
+          }}
           instanceId={useId()}
           isMulti
           options={tagOptions}
