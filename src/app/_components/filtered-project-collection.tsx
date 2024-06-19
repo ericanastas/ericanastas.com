@@ -26,9 +26,58 @@ export default function FilteredProjectCollection({
   maxYear,
 }: Props) {
   let [filteredProjects, setFilteredProjects] = useState(projects);
+  let [selectedTagSlugs, setSelectedTagSlugs] = useState(
+    filter?.selectedTagSlugs ?? []
+  );
 
-  function handleFilterOptionsChanged(filter: ProjectFilterOptions) {}
+  function handleFilterOptionsChanged(filter: ProjectFilterOptions) {
+    console.log(
+      `handleFilterOptionsChanged(), filter: ${JSON.stringify(filter, null, 4)}`
+    );
 
+    setSelectedTagSlugs(() => filter.selectedTagSlugs);
+
+    setFilteredProjects(() =>
+      projects.filter((proj) => projectFilterPredicate(proj, filter))
+    );
+  }
+
+  function projectFilterPredicate(
+    project: Project,
+    filter: ProjectFilterOptions
+  ): boolean {
+    //If categories are selected project category
+    if (
+      filter.selectedCategorySlugs.length > 0 &&
+      !filter.selectedCategorySlugs.some((s) => s === project.category.slug)
+    ) {
+      return false;
+    }
+
+    if (
+      filter.selectedTagSlugs.length > 0 &&
+      !project.tags
+        .map((t) => t.slug)
+        .some((ts) => filter.selectedTagSlugs.includes(ts))
+    ) {
+      return false;
+    }
+
+    //If searchQuery is set
+    if (filter.searchQuery) {
+      let searchContent = (
+        project.title +
+        " " +
+        project.content
+      ).toLocaleLowerCase();
+
+      if (!searchContent.includes(filter.searchQuery.toLocaleLowerCase())) {
+        return false;
+      }
+    }
+
+    return true;
+  }
   return (
     <div>
       <ProjectFilter
@@ -38,9 +87,10 @@ export default function FilteredProjectCollection({
         onFilterOptionsChanged={handleFilterOptionsChanged}
       />
       <ProjectCollection
-        projects={projects}
+        projects={filteredProjects}
         minYear={minYear}
         maxYear={maxYear}
+        selectedTagSlugs={selectedTagSlugs}
       />
     </div>
   );

@@ -26,7 +26,11 @@ export default async function ProjectsPage() {
 
         <FilteredProjectCollection
           projects={allProjects}
-          filter={{}}
+          filter={{
+            searchQuery: "",
+            selectedCategorySlugs: [],
+            selectedTagSlugs: [],
+          }}
           tagGroups={tagGroups}
           categories={categories}
           minYear={yearRange.minYear}
