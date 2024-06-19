@@ -105,6 +105,10 @@ export default function ProjectFilter({
           placeholder="Filter by categories..."
           onChange={onCategorySelectionChanged}
           value={selectedCategoryOptions}
+          closeMenuOnSelect={false}
+          menuShouldScrollIntoView={true}
+          maxMenuHeight={800}
+          menuPlacement="bottom"
         />
       </div>
 
@@ -116,6 +120,10 @@ export default function ProjectFilter({
           placeholder="Filter by tags..."
           onChange={onTagSelectionChanged}
           value={selectedTagOptions}
+          closeMenuOnSelect={false}
+          menuShouldScrollIntoView={true}
+          maxMenuHeight={800}
+          menuPlacement="bottom"
         />
       </div>
 
