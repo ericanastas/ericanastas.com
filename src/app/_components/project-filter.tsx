@@ -82,8 +82,8 @@ export default function ProjectFilter({
   }
 
   return (
-    <div className="flex gap-4 my-8">
-      <div className="min-w-64">
+    <div className="flex flex-wrap gap-4 my-8">
+      <div className="grow min-w-64">
         <Select
           instanceId={useId()}
           isMulti
@@ -99,7 +99,7 @@ export default function ProjectFilter({
         />
       </div>
 
-      <div className="min-w-64">
+      <div className="grow min-w-64">
         <Select
           styles={{
             groupHeading: (base) => ({
@@ -128,15 +128,15 @@ export default function ProjectFilter({
         />
       </div>
 
-      <div>
-        <div className="relative rounded-md b">
+      <div className="grow min-w-64">
+        <div className="relative rounded-md">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <MagnifyingGlassIcon className="size-4 text-gray-900" />
           </div>
           <input
             type="text"
-            name="price"
-            id="price"
+            name="searchQuery"
+            id="searchQueryInput"
             className="block w-full rounded border-0 py-1.5 pl-9 pr-4 text-gray-900 ring-1 ring-neutral-400 placeholder:text-gray-400"
             placeholder="Search..."
             onChange={onSearchQueryChanged}
