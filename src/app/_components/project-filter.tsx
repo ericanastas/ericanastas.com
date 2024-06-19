@@ -95,6 +95,7 @@ export default function ProjectFilter({
           menuShouldScrollIntoView={true}
           maxMenuHeight={800}
           menuPlacement="bottom"
+          hideSelectedOptions={false}
         />
       </div>
 
@@ -123,6 +124,7 @@ export default function ProjectFilter({
           menuShouldScrollIntoView={true}
           maxMenuHeight={800}
           menuPlacement="bottom"
+          hideSelectedOptions={false}
         />
       </div>
 
