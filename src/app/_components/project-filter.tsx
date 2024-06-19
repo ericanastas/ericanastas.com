@@ -86,20 +86,6 @@ export default function ProjectFilter({
       <div className="min-w-64">
         <Select
           instanceId={useId()}
-          classNames={{
-            groupHeading: (state) => "text-lg text-indigo-600",
-            group: (state) => "text-lg text-indigo-600",
-          }}
-          styles={{
-            groupHeading: (base) => ({ ...base, color: "red" }),
-            group: (base) => ({ ...base, color: "red" }),
-            input: (base) => ({
-              ...base,
-              "input:focus": {
-                boxShadow: "none",
-              },
-            }),
-          }}
           isMulti
           options={categoryOptions}
           placeholder="Filter by categories..."
@@ -141,7 +127,7 @@ export default function ProjectFilter({
       </div>
 
       <div>
-        <div className="relative rounded-md">
+        <div className="relative rounded-md b">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <MagnifyingGlassIcon className="size-4 text-gray-900" />
           </div>
@@ -149,7 +135,7 @@ export default function ProjectFilter({
             type="text"
             name="price"
             id="price"
-            className="block w-full rounded border-0  py-1.5 pl-9 pr-4 text-gray-900 ring-1 ring-neutral-400 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500"
+            className="block w-full rounded border-0 py-1.5 pl-9 pr-4 text-gray-900 ring-1 ring-neutral-400 placeholder:text-gray-400"
             placeholder="Search..."
             onChange={onSearchQueryChanged}
             value={searchQuery}
