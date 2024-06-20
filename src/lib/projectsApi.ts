@@ -277,7 +277,7 @@ export async function getTags(incProjects?: boolean): Promise<Tag[]> {
             ? projects.filter((p) => p.tags.some((t) => t.slug == projTag.slug))
             : undefined,
         };
-        tags.push(projTag);
+        tags.push(tag);
       }
     }
   }
