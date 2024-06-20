@@ -9,6 +9,7 @@ import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 import ProjectsPageFilteredProjects from "../_components/projects-page-filtered-projects";
+import { Suspense } from "react";
 
 export default async function ProjectsPage() {
   const allProjects = await getProjects();
@@ -24,13 +25,15 @@ export default async function ProjectsPage() {
           <PageTitle>Projects</PageTitle>
         </div>
 
-        <ProjectsPageFilteredProjects
-          categories={categories}
-          maxYear={yearRange.maxYear}
-          minYear={yearRange.minYear}
-          projects={allProjects}
-          tagGroups={tagGroups}
-        />
+        <Suspense>
+          <ProjectsPageFilteredProjects
+            categories={categories}
+            maxYear={yearRange.maxYear}
+            minYear={yearRange.minYear}
+            projects={allProjects}
+            tagGroups={tagGroups}
+          />
+        </Suspense>
       </main>
       <Footer />
     </>
