@@ -43,6 +43,8 @@ function projectFilterPredicate(
     let searchContent = (
       project.title +
       " " +
+      project.tags.map((t) => t.name).join(" ") +
+      " " +
       project.content
     ).toLocaleLowerCase();
 
