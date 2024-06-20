@@ -6,7 +6,7 @@ import Footer from "../_components/footer";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export default async function Tags() {
+export default async function TagListPage() {
   let allTags = await getTags();
 
   return (

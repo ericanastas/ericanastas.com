@@ -9,7 +9,7 @@ import TagChip from "../_components/tag-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
 import { getProjectsYearRange } from "@/lib/projectsApi";
 
-export default async function Tags() {
+export default async function TagsPage() {
   let yearRange = await getProjectsYearRange();
   let allTagGroups = await getTagGroups();
   let projects = await getProjects();
