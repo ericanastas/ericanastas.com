@@ -126,7 +126,6 @@ export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   JavaScript: "Code",
   PowerShell: "Code",
   "HTML & CSS": "Code",
-  AutoHotKey: "Code",
   XLST: "Code",
   XML: "Code",
   SCSS: "Code",
