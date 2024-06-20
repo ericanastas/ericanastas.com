@@ -2,7 +2,7 @@
 title: DDG Project Staffing DB
 summary: Web app that tracks Revit projects, users, training class attendance, and skills
 coverImage: /images/som/ddg-project-staffing-db/0-User-List.png
-tags: ["SQL", "C#.Net", "MS SQL", "UX Design"]
+tags: ["SQL", "C#", "MS SQL", "UX Design"]
 date: "2016-06-24"
 repo: https://github.com/ericanastas/ddg-project-staffing-db
 ---

@@ -2,7 +2,7 @@
 title: Beatport to FLAC
 summary: Console application that automates converting WAV files downloaded from beatport.com to FLAC files with track metadata
 coverImage:
-tags: ["C#.Net", "DJing", "REST"]
+tags: ["C#", "DJing", "REST"]
 date: "2016-08-01"
 repo: https://github.com/ericanastas/beatport-to-flac
 ---

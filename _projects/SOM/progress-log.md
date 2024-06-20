@@ -2,7 +2,7 @@
 title: Progress Log
 summary: Revit add-in that log messages in the Revit status bar to diagnose issues with a model
 coverImage: /images/som/progress-log/Progress-Log.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF"]
+tags: ["C#", "Revit", "Revit API", "WPF"]
 date: "2013-11-01"
 repo: https://github.com/ericanastas/progress-log
 ---

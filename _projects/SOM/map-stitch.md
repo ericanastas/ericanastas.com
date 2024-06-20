@@ -2,7 +2,7 @@
 title: Map Stitch
 summary: Windows application that combines image tiles from Google Earth into one large high resolution image
 coverImage: /images/som/map-stitch/2012-03-08_001927.png
-tags: ["C#.Net", "Google Earth", "WinForms", "UX Design"]
+tags: ["C#", "Google Earth", "WinForms", "UX Design"]
 date: "2010-06-28"
 repo: https://github.com/ericanastas/map-stitch
 ---

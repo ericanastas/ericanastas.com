@@ -2,7 +2,7 @@
 title: Faceted Elliptical Tower
 summary: Grasshopper definition that creates a faceted elliptical building mass
 coverImage: /images/som/faceted-elliptical-tower/facet-tower.jpg
-tags: ["C#.Net", "Grasshopper", "Rhino", "3D Modeling"]
+tags: ["C#", "Grasshopper", "Rhino", "3D Modeling"]
 date: "2010-07-26"
 project: Poly Dawangjing Complex
 ---

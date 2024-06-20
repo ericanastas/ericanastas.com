@@ -120,7 +120,7 @@ export const TAG_GROUPS: { [key: string]: TagGroupName } = {
   Training: "IT",
 
   //Programming Languages
-  "C#.Net": "Code",
+  "C#": "Code",
   SQL: "Code",
   TypeScript: "Code",
   JavaScript: "Code",

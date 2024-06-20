@@ -2,7 +2,7 @@
 title: Navisworks Power Tools
 summary: Custom Navisworks plug-in for generating clash tests and search sets
 coverImage: /images/som/navisworks-power-tools/generate-clash-tests-0.png
-tags: ["3D Coordination", "C#.Net", "Navisworks", "NavisWorks API"]
+tags: ["3D Coordination", "C#", "Navisworks", "NavisWorks API"]
 date: "2013-05-02"
 repo: https://github.com/ericanastas/navisworks-power-tools
 ---

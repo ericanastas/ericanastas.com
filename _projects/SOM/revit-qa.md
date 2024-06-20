@@ -2,7 +2,7 @@
 title: Revit QA Tool
 summary: Revit add-in that run quality checks on a model
 coverImage: /images/som/revit-qa/RevitQA-Screen-Shot.jpg
-tags: ["C#.Net", "Revit", "Revit API", "WinForms", "UX Design"]
+tags: ["C#", "Revit", "Revit API", "WinForms", "UX Design"]
 date: "2011-03-04"
 repo: "https://github.com/ericanastas/revit-qa"
 ---

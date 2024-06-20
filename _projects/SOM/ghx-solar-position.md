@@ -4,7 +4,7 @@ summary: Custom Grasshopper component which calculates the position of the sun a
 coverImage: /images/som/ghx-solar-position/solar-ghx.png
 tags:
   [
-    "C#.Net",
+    "C#",
     "Grasshopper",
     "Grasshopper API",
     "Rhino",

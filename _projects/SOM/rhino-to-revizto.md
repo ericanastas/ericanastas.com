@@ -2,7 +2,7 @@
 title: Rhino to Revizto
 summary: Plug-in for Rhino which simplifies opening a model in Revizto
 coverImage: /images/som/rhino-to-revizto/Export-to-Revizto-0.png
-tags: ["C#.Net", "Revizto", "Rhino", "Rhino API", "3D Visualization"]
+tags: ["C#", "Revizto", "Rhino", "Rhino API", "3D Visualization"]
 date: "2015-04-04"
 repo: https://github.com/ericanastas/rhino-to-revizto
 ---

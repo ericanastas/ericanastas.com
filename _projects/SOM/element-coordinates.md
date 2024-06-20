@@ -2,7 +2,7 @@
 title: Element Coordinates
 summary: Revit add-in that writes the coordinates of elements in a model to parameters that can be tagged and scheduled
 coverImage: /images/som/element-coordinates/Element-Coordinates.png
-tags: ["C#.Net", "Revit", "Revit API"]
+tags: ["C#", "Revit", "Revit API"]
 date: "2013-11-20"
 ---
 

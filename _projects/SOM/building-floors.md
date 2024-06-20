@@ -4,7 +4,7 @@ summary: Custom grasshopper components that simplify common tasks related to cre
 coverImage: /images/som/building-floors/Building-Floors.jpg
 tags:
   [
-    "C#.Net",
+    "C#",
     "Grasshopper",
     "Grasshopper API",
     "Rhino",

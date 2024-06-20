@@ -2,7 +2,7 @@
 title: Sheet Revisions
 summary: Revit add-in that allows revision information to be displayed the a sheet list
 coverImage: /images/som/sheet-revisions/Sheet-Revisions-List.png
-tags: ["C#.Net", "Revit", "Revit API"]
+tags: ["C#", "Revit", "Revit API"]
 date: "2013-11-21"
 repo: https://github.com/ericanastas/sheet-revisions
 ---

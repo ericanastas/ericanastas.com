@@ -5,7 +5,7 @@ coverImage: /images/som/informa-revit/Informa-Revit-Massing.jpg
 tags:
   [
     "MS Access",
-    "C#.Net",
+    "C#",
     "Master Planning",
     "Revit",
     "Revit API",

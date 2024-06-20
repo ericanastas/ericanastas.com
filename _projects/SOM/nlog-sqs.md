@@ -2,7 +2,7 @@
 title: AWS SQS NLog Target
 summary: Custom NLog target for Amazon SQS
 coverImage:
-tags: ["AWS", "SQS", "C#.Net", "Logging"]
+tags: ["AWS", "SQS", "C#", "Logging"]
 date: "2016-11-09"
 repo: https://github.com/ericanastas/NLog.Targets.SQS
 ---
