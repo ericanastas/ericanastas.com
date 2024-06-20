@@ -93,12 +93,21 @@ export default function FilteredProjectCollection({
         filter={projectFilter}
         onFilterOptionsChanged={handleFilterOptionsChanged}
       />
-      <ProjectCollection
-        projects={filteredProjects}
-        minYear={minYear}
-        maxYear={maxYear}
-        selectedTagSlugs={projectFilter.selectedTagSlugs}
-      />
+
+      {filteredProjects.length > 0 ? (
+        <ProjectCollection
+          projects={filteredProjects}
+          minYear={minYear}
+          maxYear={maxYear}
+          selectedTagSlugs={projectFilter.selectedTagSlugs}
+        />
+      ) : (
+        <div className="flex justify-center items-center py-20">
+          <p className="text-gray-500 text-lg">
+            No projects match the selected filters 😕
+          </p>
+        </div>
+      )}
     </div>
   );
 }
