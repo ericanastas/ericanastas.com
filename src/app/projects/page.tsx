@@ -8,7 +8,7 @@ import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
-import FilteredProjectCollection from "../_components/filtered-project-collection";
+import ProjectsPageFilteredProjects from "../_components/projects-page-filtered-projects";
 
 export default async function ProjectsPage() {
   const allProjects = await getProjects();
@@ -24,17 +24,12 @@ export default async function ProjectsPage() {
           <PageTitle>Projects</PageTitle>
         </div>
 
-        <FilteredProjectCollection
-          projects={allProjects}
-          filter={{
-            searchQuery: "",
-            selectedCategorySlugs: [],
-            selectedTagSlugs: [],
-          }}
-          tagGroups={tagGroups}
+        <ProjectsPageFilteredProjects
           categories={categories}
-          minYear={yearRange.minYear}
           maxYear={yearRange.maxYear}
+          minYear={yearRange.minYear}
+          projects={allProjects}
+          tagGroups={tagGroups}
         />
       </main>
       <Footer />
@@ -45,3 +40,5 @@ export default async function ProjectsPage() {
 export const metadata: Metadata = {
   title: "Projects",
 };
+
+export const fetchCache = "force-no-store";

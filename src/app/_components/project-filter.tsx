@@ -10,14 +10,14 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 export type Props = {
   categories: Category[];
   tagGroups: TagGroup[];
-  filter?: ProjectFilterOptions;
+  filter: ProjectFilterOptions;
   onFilterOptionsChanged: (filter: ProjectFilterOptions) => void;
 };
 
 export default function ProjectFilter({
   categories,
   tagGroups,
-  filter = { searchQuery: "", selectedCategorySlugs: [], selectedTagSlugs: [] },
+  filter,
   onFilterOptionsChanged,
 }: Props) {
   const categoryOptions = categories.map((cat) => ({
@@ -25,7 +25,7 @@ export default function ProjectFilter({
     value: cat.slug,
   }));
 
-  const tagOptions = tagGroups.map((tg) => ({
+  const tagGroupOptions = tagGroups.map((tg) => ({
     label: tg.name,
     options: tg.tags.map((t) => ({
       value: t.slug,
@@ -33,52 +33,55 @@ export default function ProjectFilter({
     })),
   }));
 
-  let [searchQuery, setSearchQuery] = useState(filter.searchQuery);
+  const allTagOptions = tagGroupOptions.reduce<
+    { label: string; value: string }[]
+  >((prev, curr) => [...prev, ...curr.options], []);
 
-  let [selectedCategoryOptions, setSelectedCategoryOptions] = useState(
-    categoryOptions.filter((co) =>
-      filter.selectedCategorySlugs.some((s) => s == co.value)
-    )
-  );
-
-  const allTagOptions = tagOptions.reduce<{ label: string; value: string }[]>(
-    (prev, curr) => [...prev, ...curr.options],
-    []
-  );
-
-  let [selectedTagOptions, setSelectedTagOptions] = useState(
-    allTagOptions.filter((to) =>
-      filter.selectedTagSlugs.some((ts) => ts === to.value)
-    )
-  );
+  let [filterState, setFilterState] = useState(filter);
 
   useEffect(() => {
-    let newFilter: ProjectFilterOptions = {
-      searchQuery: searchQuery,
-      selectedCategorySlugs: selectedCategoryOptions.map((o) => o.value),
-      selectedTagSlugs: selectedTagOptions.map((o) => o.value),
-    };
-    onFilterOptionsChanged(newFilter);
-  }, [searchQuery, selectedTagOptions, selectedCategoryOptions]);
+    setFilterState(filter);
+  }, [filter]);
+
+  const selectedCategoryOptions = categoryOptions.filter((co) =>
+    filterState.selectedCategorySlugs.some((s) => s == co.value)
+  );
+
+  const selectedTagOptions = allTagOptions.filter((to) =>
+    filterState.selectedTagSlugs.some((ts) => ts === to.value)
+  );
+
+  useEffect(() => {}, [filterState]);
 
   function onCategorySelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
   ) {
-    setSelectedCategoryOptions((prev) =>
-      newValue.map((v) => ({ label: v.label, value: v.value }))
-    );
+    let newFilter: ProjectFilterOptions = {
+      ...filterState,
+      selectedCategorySlugs: newValue.map((v) => v.value),
+    };
+    setFilterState(newFilter);
+    onFilterOptionsChanged(newFilter);
   }
 
   function onTagSelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
   ) {
-    setSelectedTagOptions((prev) =>
-      newValue.map((v) => ({ label: v.label, value: v.value }))
-    );
+    let newFilter: ProjectFilterOptions = {
+      ...filterState,
+      selectedTagSlugs: newValue.map((v) => v.value),
+    };
+    setFilterState(newFilter);
+    onFilterOptionsChanged(newFilter);
   }
 
   function onSearchQueryChanged(event: any) {
-    setSearchQuery((prev) => event.target.value);
+    let newFilter: ProjectFilterOptions = {
+      ...filterState,
+      searchQuery: event.target.value,
+    };
+    setFilterState(newFilter);
+    onFilterOptionsChanged(newFilter);
   }
 
   return (
@@ -116,7 +119,7 @@ export default function ProjectFilter({
           }}
           instanceId={useId()}
           isMulti
-          options={tagOptions}
+          options={tagGroupOptions}
           placeholder="Filter by tags..."
           onChange={onTagSelectionChanged}
           value={selectedTagOptions}
@@ -140,7 +143,7 @@ export default function ProjectFilter({
             className="block w-full rounded border-0 py-1.5 pl-9 pr-4 text-gray-900 ring-1 ring-neutral-400 placeholder:text-gray-400"
             placeholder="Search..."
             onChange={onSearchQueryChanged}
-            value={searchQuery}
+            value={filterState.searchQuery}
           />
         </div>
       </div>

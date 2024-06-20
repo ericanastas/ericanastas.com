@@ -27,7 +27,7 @@ function createCategory(name: string): Category {
   return {
     name: name,
     slug: slug,
-    url: `/projects/${slug}`,
+    url: `/projects?category=${slug}`,
   };
 }
 
@@ -38,7 +38,7 @@ function createTag(name: string): Tag {
   return {
     name: name,
     slug: slug,
-    url: `/tags/${slug}`,
+    url: `/projects?tag=${slug}`,
     groupName: groupName,
   };
 }
