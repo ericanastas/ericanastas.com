@@ -56,6 +56,24 @@ function projectFilterPredicate(
   return true;
 }
 
+function updateUrl(f: ProjectFilterOptions) {
+  const params = new URLSearchParams();
+
+  if (f.searchQuery && f.searchQuery.length > 0) {
+    params.append("search", f.searchQuery);
+  }
+
+  for (let catSlug of f.selectedCategorySlugs) {
+    params.append("category", catSlug);
+  }
+
+  for (let tagSlug of f.selectedTagSlugs) {
+    params.append("tag", tagSlug);
+  }
+
+  window.history.replaceState(null, "", `?${params.toString()}`);
+}
+
 export default function FilteredProjectCollection({
   projects,
   categories,
@@ -83,6 +101,7 @@ export default function FilteredProjectCollection({
 
   function handleFilterOptionsChanged(f: ProjectFilterOptions) {
     setProjectFilter(f);
+    updateUrl(f);
   }
 
   return (
