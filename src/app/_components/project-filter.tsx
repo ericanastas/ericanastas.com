@@ -85,7 +85,7 @@ export default function ProjectFilter({
   }
 
   return (
-    <div className="flex flex-wrap gap-4 my-8">
+    <div className="flex flex-wrap gap-4 mb-12">
       <div className="grow min-w-64">
         <Select
           instanceId={useId()}

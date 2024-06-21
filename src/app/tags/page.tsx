@@ -17,7 +17,7 @@ export default async function TagsPage() {
     <>
       <Header />
       <main>
-        <article className="mb-16 max-w-4xl mx-auto">
+        <article className="mb-16 mx-auto">
           <div className="mb-12">
             <PageTitle>Tags</PageTitle>
           </div>
@@ -25,15 +25,12 @@ export default async function TagsPage() {
           {allTagGroups.map((tagGroup) => (
             <>
               <h2 className="text-2xl font-bold mb-4 mt-8">{tagGroup.name}</h2>
-              <div className="grid grid-cols-3 gap-y-4 gap-x-1 grid-cols-[min-content_min-content_1fr]">
+              <div className="grid items-center	 grid-cols-2 gap-y-0 gap-x-1 grid-cols-[8rem_1fr]">
                 {tagGroup.tags.map((tag) => {
                   return (
                     <>
-                      <div className="flex justify-end">
+                      <div className="flex justify-end mr-2">
                         <TagChip tag={tag} />
-                      </div>
-                      <div className="text-xs inline-flex items-center font-bold">
-                        {tag.projects!.length}
                       </div>
 
                       <ProjectTimeLine

@@ -16,15 +16,13 @@ export default function ProjectCollection({
   maxYear,
 }: Props) {
   return (
-    <div>
-      <div className="mb-8">
-        <ProjectTimeLine
-          projects={projects}
-          minYear={minYear}
-          maxYear={maxYear}
-        />
-      </div>
+    <>
+      <ProjectTimeLine
+        projects={projects}
+        minYear={minYear}
+        maxYear={maxYear}
+      />
       <ProjectGrid projects={projects} selectedTagSlugs={selectedTagSlugs} />
-    </div>
+    </>
   );
 }
