@@ -5,7 +5,7 @@ coverImage: /images/som/informa-rhino/Informa.jpg
 tags:
   [
     "MS Access",
-    "C#.Net",
+    "C#",
     "Rhino",
     "Rhino API",
     "Visual Studio",

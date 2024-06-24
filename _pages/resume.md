@@ -68,7 +68,7 @@ This application is a general-purpose system to automate the setup and maintenan
 
 - Angular
 - Bootstrap
-- C#.Net
+- C#
 - CSS
 - Data Structures
 - Docker

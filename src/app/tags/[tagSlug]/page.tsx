@@ -1,20 +1,18 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getProjectsByTagSlug, getAllTags } from "@/lib/projectsApi";
-import { ProjectGrid } from "@/app/_components/project-grid";
+import { getTag, getTags } from "@/lib/projectsApi";
 import PageTitle from "@/app/_components/page-title";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import { ProjectTimeLine } from "@/app/_components/project-timeline";
-import { getYearRange } from "@/lib/projectsApi";
+import { getProjectsYearRange } from "@/lib/projectsApi";
+import ProjectCollection from "@/app/_components/project-collection";
 
-export default async function Project({ params }: Props) {
-  const tag = (await getAllTags()).find((tag) => tag.slug === params.tagSlug);
+export default async function TagPage({ params }: Props) {
+  const tag = await getTag(params.tagSlug, true);
 
   if (!tag) notFound();
 
-  let projects = await getProjectsByTagSlug(tag.slug);
-  const yearRange = await getYearRange();
+  const yearRange = await getProjectsYearRange();
 
   return (
     <>
@@ -24,15 +22,12 @@ export default async function Project({ params }: Props) {
           <PageTitle>{tag.name} Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={projects}
-            minYear={yearRange.minYear}
-            maxYear={yearRange.maxYear}
-          />
-        </div>
-
-        <ProjectGrid projects={projects} selectedTagSlugs={[tag.slug]} />
+        <ProjectCollection
+          projects={tag.projects!}
+          selectedTagSlugs={[tag.slug]}
+          minYear={yearRange.minYear}
+          maxYear={yearRange.maxYear}
+        />
       </main>
       <Footer />
     </>
@@ -46,7 +41,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const tag = (await getAllTags()).find((ts) => ts.slug === params.tagSlug);
+  const tag = await getTag(params.tagSlug);
   if (!tag) notFound();
 
   const title = `${tag.name} Projects`;
@@ -57,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const allTags = await getAllTags();
+  const allTags = await getTags();
 
   return allTags.map((tag) => ({
     tagSlug: tag.slug,

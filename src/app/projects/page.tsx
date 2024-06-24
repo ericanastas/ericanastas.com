@@ -1,16 +1,21 @@
-import { ProjectCollection } from "@/app/_components/project-collection";
-import { getAllProjects, getYearRange } from "@/lib/projectsApi";
+import {
+  getCategories,
+  getProjects,
+  getTagGroups,
+  getProjectsYearRange,
+} from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
+import ProjectsPageFilteredProjects from "../_components/projects-page-filtered-projects";
+import { Suspense } from "react";
 
-import { ProjectTimeLine } from "../_components/project-timeline";
-
-export default async function Projects() {
-  const allProjects = await getAllProjects();
-
-  const yearRange = await getYearRange();
+export default async function ProjectsPage() {
+  const allProjects = await getProjects();
+  const yearRange = await getProjectsYearRange();
+  const tagGroups = await getTagGroups();
+  const categories = await getCategories();
 
   return (
     <>
@@ -20,14 +25,15 @@ export default async function Projects() {
           <PageTitle>Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={allProjects}
-            minYear={yearRange.minYear}
+        <Suspense>
+          <ProjectsPageFilteredProjects
+            categories={categories}
             maxYear={yearRange.maxYear}
+            minYear={yearRange.minYear}
+            projects={allProjects}
+            tagGroups={tagGroups}
           />
-        </div>
-        {allProjects.length > 0 && <ProjectCollection projects={allProjects} />}
+        </Suspense>
       </main>
       <Footer />
     </>
@@ -37,3 +43,5 @@ export default async function Projects() {
 export const metadata: Metadata = {
   title: "Projects",
 };
+
+export const fetchCache = "force-no-store";

@@ -2,7 +2,7 @@
 title: Revit Content Library
 summary: Content library add-in for Revit
 coverImage: /images/som/revit-content-library/Revit-Content-Library.jpg
-tags: ["C#.Net", "Revit", "Revit API", "WinForms", "UX Design"]
+tags: ["C#", "Revit", "Revit API", "WinForms", "UX Design"]
 date: "2010-08-06"
 repo: https://github.com/ericanastas/revit-content-library
 ---

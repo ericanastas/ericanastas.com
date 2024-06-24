@@ -1,12 +1,12 @@
-import { getAllProjects } from "@/lib/projectsApi";
+import { getProjects } from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export default async function Repos() {
-  const allProjects = await getAllProjects();
+export default async function ReposPage() {
+  const allProjects = await getProjects();
   const repoProjects = allProjects.filter((p) => p.repo);
 
   return (

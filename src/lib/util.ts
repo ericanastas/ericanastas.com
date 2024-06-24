@@ -8,8 +8,9 @@ export function removeFileExtension(fileName: string): string {
 }
 
 const slugifyOpt = { lower: true };
-
 export function convertToSlug(value: string): string {
+  slugify.extend({ "#": "sharp" });
+
   return slugify(value, slugifyOpt);
 }
 

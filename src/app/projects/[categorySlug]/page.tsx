@@ -1,25 +1,18 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  getAllProjectCategories,
-  getProjectsByCategorySlug,
-} from "@/lib/projectsApi";
-import { ProjectGrid } from "@/app/_components/project-grid";
+import { getCategory, getCategories } from "@/lib/projectsApi";
 import Header from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import PageTitle from "@/app/_components/page-title";
-import { ProjectTimeLine } from "@/app/_components/project-timeline";
-import { getYearRange } from "@/lib/projectsApi";
+import { getProjectsYearRange } from "@/lib/projectsApi";
+import ProjectCollection from "@/app/_components/project-collection";
 
-export default async function Category({ params }: Props) {
-  const category = getAllProjectCategories().find(
-    (cat) => cat.slug === params.categorySlug
-  );
+export default async function CategoryPage({ params }: Props) {
+  const category = await getCategory(params.categorySlug, true);
 
   if (!category) notFound();
 
-  let projects = await getProjectsByCategorySlug(category.slug);
-  const yearRange = await getYearRange();
+  const yearRange = await getProjectsYearRange();
 
   return (
     <>
@@ -29,15 +22,12 @@ export default async function Category({ params }: Props) {
           <PageTitle>{category.name} Projects</PageTitle>
         </div>
 
-        <div className="mb-6">
-          <ProjectTimeLine
-            projects={projects}
-            minYear={yearRange.minYear}
-            maxYear={yearRange.maxYear}
-          />
-        </div>
-
-        <ProjectGrid projects={projects} />
+        <ProjectCollection
+          projects={category.projects!}
+          selectedTagSlugs={[]}
+          minYear={yearRange.minYear}
+          maxYear={yearRange.maxYear}
+        />
       </main>
       <Footer />
     </>
@@ -50,23 +40,20 @@ type Props = {
   };
 };
 
-export function generateMetadata({ params }: Props): Metadata {
-  const category = getAllProjectCategories().find(
-    (cat) => cat.slug === params.categorySlug
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const category = await getCategory(params.categorySlug);
 
   if (!category) notFound();
-
-  const title = `${category.name} Projects`;
-
-  return {
-    title,
-  };
+  else {
+    const title = `${category.name} Projects`;
+    return {
+      title,
+    };
+  }
 }
 
 export async function generateStaticParams() {
-  const allCategories = getAllProjectCategories();
-
+  const allCategories = await getCategories();
   return allCategories.map((category) => ({
     categorySlug: category.slug,
   }));

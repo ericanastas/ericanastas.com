@@ -2,7 +2,7 @@
 title: Revit Add-In Library
 summary: A platform for packaging, installing, distributing, and updating Revit add-ins
 coverImage: /images/som/revit-add-in-library/Revit-Add-In-Installer.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF", "XML", "UX Design"]
+tags: ["C#", "Revit", "Revit API", "WPF", "XML", "UX Design"]
 date: "2014-01-27"
 repo: https://github.com/ericanastas/revit-add-in-library
 featured: true

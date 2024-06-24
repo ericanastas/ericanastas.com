@@ -1,15 +1,28 @@
 import { ProjectGrid } from "./project-grid";
 import type { Project } from "@/interfaces/project";
+import { ProjectTimeLine } from "./project-timeline";
 
 export type Props = {
   projects: Project[];
   selectedTagSlugs?: string[];
+  minYear?: number;
+  maxYear?: number;
 };
 
-export function ProjectCollection({ projects, selectedTagSlugs }: Props) {
+export default function ProjectCollection({
+  projects,
+  selectedTagSlugs,
+  minYear,
+  maxYear,
+}: Props) {
   return (
-    <section>
+    <>
+      <ProjectTimeLine
+        projects={projects}
+        minYear={minYear}
+        maxYear={maxYear}
+      />
       <ProjectGrid projects={projects} selectedTagSlugs={selectedTagSlugs} />
-    </section>
+    </>
   );
 }

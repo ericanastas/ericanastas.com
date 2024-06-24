@@ -2,7 +2,7 @@
 title: View Owner
 summary: Revit add-in that automates the organization of views by the users who created them
 coverImage: /images/som/view-owner/view-owner2.png
-tags: ["C#.Net", "Revit", "Revit API"]
+tags: ["C#", "Revit", "Revit API"]
 date: "2014-10-04"
 repo: https://github.com/ericanastas/view-owner
 ---

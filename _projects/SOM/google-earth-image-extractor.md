@@ -2,7 +2,7 @@
 title: Google Earth Image Extractor
 summary: Tool that combines tiles from Google Earth into a single high resolution image
 coverImage: /images/som/google-earth-image-extractor/tile-Ge-image-extractor.png
-tags: ["AutoHotKey", "Google Earth", "HTML & CSS", "JavaScript", "UX Design"]
+tags: ["Google Earth", "HTML & CSS", "JavaScript", "UX Design"]
 date: "2009-05-18"
 ---
 

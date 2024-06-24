@@ -2,7 +2,7 @@
 title: Performance Advisor
 summary: Revit add-in that exposes the PerformanceAdviser functionality in the Revit API to users
 coverImage: /images/som/performance-advisor/Perf-Advisor.png
-tags: ["C#.Net", "Revit", "Revit API", "WPF"]
+tags: ["C#", "Revit", "Revit API", "WPF"]
 date: "2013-11-04"
 repo: https://github.com/ericanastas/performance-advisor
 ---

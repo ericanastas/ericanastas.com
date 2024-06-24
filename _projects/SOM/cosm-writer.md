@@ -2,7 +2,7 @@
 title: COSM Writer
 summary: Console application that sends data from Arduino sensors to cosm.com
 coverImage: /images/som/cosm-writer/cosm-writer.png
-tags: ["Arduino", "C#.Net", "REST"]
+tags: ["Arduino", "C#", "REST"]
 date: "2013-02-19"
 ---
 

@@ -2,7 +2,7 @@
 title: Export Category Info
 summary: Exports a full list of all Revit categories and API parameters to an excel file
 coverImage: /images/som/export-category-info/revit-categories.png
-tags: ["Revit", "C#.Net", "Revit API", "Excel"]
+tags: ["Revit", "C#", "Revit API", "Excel"]
 date: "2017-04-12"
 repo: https://github.com/ericanastas/export-category-info
 ---
