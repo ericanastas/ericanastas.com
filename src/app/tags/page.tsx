@@ -4,6 +4,7 @@ import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
+import Link from "next/link";
 
 import TagChip from "../_components/tag-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
@@ -30,7 +31,9 @@ export default async function TagsPage() {
                   return (
                     <>
                       <div className="flex justify-end mr-2">
-                        <TagChip tag={tag} />
+                        <Link key={tag.slug} href={tag.url}>
+                          <TagChip tag={tag} />
+                        </Link>
                       </div>
 
                       <ProjectTimeLine
