@@ -21,9 +21,7 @@ export default async function ProjectsPage() {
     <>
       <Header />
       <main>
-        <div className="mb-12">
-          <PageTitle>Projects</PageTitle>
-        </div>
+        <PageTitle>Projects</PageTitle>
 
         <Suspense>
           <ProjectsPageFilteredProjects

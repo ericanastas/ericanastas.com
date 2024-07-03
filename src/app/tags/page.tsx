@@ -19,9 +19,7 @@ export default async function TagsPage() {
       <Header />
       <main>
         <article className="mb-16 mx-auto">
-          <div className="mb-12">
-            <PageTitle>Tags</PageTitle>
-          </div>
+          <PageTitle>Tags</PageTitle>
 
           {allTagGroups.map((tagGroup) => (
             <>

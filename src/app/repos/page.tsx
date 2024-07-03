@@ -13,9 +13,7 @@ export default async function ReposPage() {
     <>
       <Header />
       <main>
-        <div className="mb-12">
-          <PageTitle>Git Repositories</PageTitle>
-        </div>
+        <PageTitle>Git Repositories</PageTitle>
 
         <ul role="list" className="divide-y divide-gray-100">
           {repoProjects.map((project) => (
