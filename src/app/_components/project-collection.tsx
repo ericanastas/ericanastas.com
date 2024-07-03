@@ -56,11 +56,9 @@ export default function ProjectCollection({
   }
 
   function handleProjectHoverStart(project: Project) {
-    console.log(`handleProjectHoverStart ${project.title}`);
     setHoverProjectUrl(project.url);
   }
   function handleProjectHoverEnd(project: Project) {
-    console.log(`handleProjectHoverEnd ${project.title}`);
     setHoverProjectUrl("");
   }
 
