@@ -1,5 +1,5 @@
 import DateFormatter from "./date-formatter";
-import TagChipList from "./tag-chip-list";
+import TagChip from "./tag-chip";
 import type { Tag } from "@/interfaces/tag";
 
 import PageTitle from "./page-title";
@@ -28,7 +28,13 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
         <DateFormatter dateString={date} />
       </div>
       <div className="mb-1 flex justify-center">
-        <TagChipList tags={tags} />
+        <div className="flex flex-wrap gap-2">
+          {tags.map((t) => (
+            <Link key={t.slug} href={t.url}>
+              <TagChip key={t.slug} tag={t} />
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div className="text-md flex justify-center mb-4">{summary}</div>

@@ -5,9 +5,15 @@ type Props = {
   minYear?: number;
   maxYear?: number;
   projects: Project[];
+  selectedProjectUrl?: string;
 };
 
-export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
+export function ProjectTimeLine({
+  projects,
+  minYear,
+  maxYear,
+  selectedProjectUrl,
+}: Props) {
   //Calc year range from projects
   let minProjectsYear: number = Math.min(
     ...projects.map((p) => new Date(p.date).getFullYear())
@@ -39,44 +45,57 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
 
   return (
     <>
-      <div className="h-8 relative mt-8">
-        <div className="absolute border-t inset-x-0 top-0 border-gray-300" />
-        <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
-          {years.map((year) => (
-            <div key={year} className="grow relative border-l border-gray-300">
-              <div className="text-[8px] lg:text-[12px] ml-[1px] text-gray-z600 absolute bottom-0">
-                {year}
+      <div className="relative pt-2">
+        <div className="relative lg:h-8 h-12">
+          <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
+            {years.map((year) => (
+              <div
+                key={year}
+                className="grow relative border-l border-t-2 border-gray-300"
+              >
+                <div className="absolute lg:rotate-0 lg:bottom-0 lg:left-1 -rotate-90 bottom-2 -left-1">
+                  <p className="text-xs text-gray-600 ">{year}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {projects.map((project) => (
-          <div className="absolute inset-0" key={project.url}>
-            <div
-              className="group relative w-[0.6rem] h-[0.6rem] mt-[-0.3rem] ml-[-0.3rem] lg:w-[1.0rem] lg:h-[1.0rem] lg:mt-[-0.5rem] lg:ml-[-0.5rem] top-0"
-              style={{
-                left: `${
-                  ((Date.parse(project.date) - minTime) * 100) /
-                  (maxTime - minTime)
-                }%`,
-              }}
-            >
-              <div className="absolute h-full w-full  rounded-full border border-1 border-solid border-gray-900 group-hover:border-blue-900 bg-gray-500 group-hover:bg-blue-500 group-hover:opacity-100 opacity-50" />
-
-              <Link
-                href={project.url}
-                className="absolute block bg-red-500 h-full w-full opacity-0"
-              ></Link>
-
-              <div className="absolute w-max -top-9 hidden group-hover:block bg-gray-50  rounded-lg py-0.5 px-2 ring-1 ring-inset ring-gray-400 z-50">
-                <span className="static leading-snug w-max text-gray-600">
-                  {project.title}
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
+
+          <div className="absolute inset-0">
+            {projects.map((project) => (
+              <div
+                key={project.url}
+                className="absolute w-0 h-0 group"
+                style={{
+                  left: `${
+                    ((Date.parse(project.date) - minTime) * 100) /
+                    (maxTime - minTime)
+                  }%`,
+                }}
+              >
+                <div
+                  className={`absolute h-4 w-4 -left-2 -top-2 rounded-full border border-solid group-hover:border-2 group-hover:border-blue-900 group-hover:bg-blue-500 group-hover:opacity-100${
+                    selectedProjectUrl === project.url
+                      ? " border-blue-900 bg-blue-500 opacity-100 z-50 border-2"
+                      : " border-gray-900 bg-gray-400 opacity-50 z-0 border-1"
+                  }`}
+                >
+                  <Link
+                    href={project.url}
+                    className="absolute block bg-red-500 h-full w-full opacity-0"
+                  ></Link>
+                </div>
+
+                <div className="absolute w-96 -left-48 -top-10 flex justify-center">
+                  <div className="w-max hidden group-hover:block bg-blue-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-blue-400">
+                    <span className="leading-snug text-gray-600 text-sm">
+                      {project.title}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

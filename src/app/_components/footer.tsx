@@ -14,6 +14,10 @@ export function Footer() {
         <div className="flex grow justify-end">
           <span className="block text-sm text-gray-500 text-left dark:text-gray-400 mb-4 italic">
             Built with{" "}
+            <a className="hover:underline" href="https://react.dev/">
+              React
+            </a>
+            {" & "}
             <a className="hover:underline" href="https://nextjs.org/">
               Next.js
             </a>

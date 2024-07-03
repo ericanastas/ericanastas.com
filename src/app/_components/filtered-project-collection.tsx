@@ -7,6 +7,7 @@ import { TagGroup } from "../../interfaces/tagGroup";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import ProjectFilter from "./project-filter";
 import { useEffect, useState } from "react";
+import type { Tag } from "@/interfaces/tag";
 
 export type Props = {
   projects: Project[];
@@ -97,11 +98,24 @@ export default function FilteredProjectCollection({
     setFilteredProjects(() =>
       projects.filter((proj) => projectFilterPredicate(proj, projectFilter))
     );
+    updateUrl(projectFilter);
   }, [projectFilter]);
 
   function handleFilterOptionsChanged(f: ProjectFilterOptions) {
     setProjectFilter(f);
-    updateUrl(f);
+  }
+
+  function handleAddTag(tag: Tag) {
+    setProjectFilter((f) => ({
+      ...f,
+      selectedTagSlugs: [...f.selectedTagSlugs, tag.slug],
+    }));
+  }
+  function handleRemoveTag(tag: Tag) {
+    setProjectFilter((f) => ({
+      ...f,
+      selectedTagSlugs: f.selectedTagSlugs.filter((ts) => ts !== tag.slug),
+    }));
   }
 
   return (
@@ -115,6 +129,8 @@ export default function FilteredProjectCollection({
 
       {filteredProjects.length > 0 ? (
         <ProjectCollection
+          onAddTag={handleAddTag}
+          onRemoveTag={handleRemoveTag}
           projects={filteredProjects}
           minYear={minYear}
           maxYear={maxYear}

@@ -14,9 +14,7 @@ export default async function TagListPage() {
       <Header />
       <main>
         <article className="mb-16 max-w-4xl mx-auto">
-          <div className="mb-12">
-            <PageTitle>Tag List</PageTitle>
-          </div>
+          <PageTitle>Tag List</PageTitle>
 
           <ul>
             {allTags.map((tag) => (
