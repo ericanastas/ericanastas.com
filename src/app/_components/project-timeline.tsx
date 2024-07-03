@@ -41,7 +41,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
 
   return (
     <>
-      <div className="relative pt-8">
+      <div className="relative pt-2">
         <div className="relative lg:h-8 h-12">
           <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
             {years.map((year) => (

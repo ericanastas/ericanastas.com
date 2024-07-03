@@ -25,23 +25,26 @@ export default async function TagsPage() {
 
           {allTagGroups.map((tagGroup) => (
             <>
-              <h2 className="text-2xl font-bold mb-4 mt-8">{tagGroup.name}</h2>
-              <div className="grid items-center	 grid-cols-2 gap-y-0 gap-x-1 grid-cols-[8rem_1fr]">
+              <h2 className="text-2xl font-bold mt-8">{tagGroup.name}</h2>
+
+              <div className="flex flex-col">
                 {tagGroup.tags.map((tag) => {
                   return (
-                    <>
-                      <div className="flex justify-end mr-2">
+                    <div className="flex lg:items-center lg:flex-row flex-col">
+                      <div className="flex lg:justify-end lg:mr-1 lg:w-36 lg:mt-0 mt-6 lg:mb-0 mb-1">
                         <Link key={tag.slug} href={tag.url}>
                           <TagChip tag={tag} />
                         </Link>
                       </div>
 
-                      <ProjectTimeLine
-                        projects={tag.projects!}
-                        minYear={yearRange.minYear}
-                        maxYear={yearRange.maxYear}
-                      />
-                    </>
+                      <div className="grow lg:mt-6">
+                        <ProjectTimeLine
+                          projects={tag.projects!}
+                          minYear={yearRange.minYear}
+                          maxYear={yearRange.maxYear}
+                        />
+                      </div>
+                    </div>
                   );
                 })}
               </div>
