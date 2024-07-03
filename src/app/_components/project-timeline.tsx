@@ -60,7 +60,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
             {projects.map((project) => (
               <div
                 key={project.url}
-                className="absolute w-0 h-0 group bg-blue-600"
+                className="absolute w-0 h-0 group"
                 style={{
                   left: `${
                     ((Date.parse(project.date) - minTime) * 100) /
@@ -68,7 +68,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
                   }%`,
                 }}
               >
-                <div className="absolute h-4 w-4 -left-2 -top-2 rounded-full border border-1 border-solid border-gray-900 group-hover:border-blue-900 bg-gray-400 group-hover:bg-gray-500 group-hover:opacity-100 opacity-50">
+                <div className="absolute h-4 w-4 -left-2 -top-2 rounded-full border border-1 border-solid border-gray-900 group-hover:border-blue-900 bg-gray-400 group-hover:bg-blue-500 group-hover:opacity-100 opacity-50">
                   <Link
                     href={project.url}
                     className="absolute block bg-red-500 h-full w-full opacity-0"
@@ -76,7 +76,7 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
                 </div>
 
                 <div className="absolute w-96 -left-48 -top-10 flex justify-center">
-                  <div className="w-max hidden group-hover:block bg-gray-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-gray-400">
+                  <div className="w-max hidden group-hover:block bg-blue-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-blue-400">
                     <span className="leading-snug text-gray-600 text-sm">
                       {project.title}
                     </span>
