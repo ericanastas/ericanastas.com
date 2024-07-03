@@ -28,12 +28,10 @@ export function ProjectGridItem({
   }));
 
   function handleMouseEnter(event: any) {
-    console.log("Mouse Enter");
     onMouseEnter(project);
   }
 
   function handleMouseLeave(event: any) {
-    console.log("Mouse Leave");
     onMouseLeave(project);
   }
 
