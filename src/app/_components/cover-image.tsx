@@ -9,7 +9,7 @@ type Props = {
 
 const CoverImage = ({ title, src, url }: Props) => {
   return (
-    <div className="shadow-sm">
+    <div className="shadow-sm bg-white">
       <Link href={url} aria-label={title}>
         {src && (
           <div>

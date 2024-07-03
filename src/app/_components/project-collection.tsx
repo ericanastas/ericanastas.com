@@ -39,6 +39,8 @@ export default function ProjectCollection({
 }: Props) {
   const [page, setPage] = useState(1);
 
+  const [hoverProjectUrl, setHoverProjectUrl] = useState<string>("");
+
   const [pagedProjects, setPagedProjects] = useState<Project[]>([]);
 
   useEffect(() => {
@@ -53,14 +55,26 @@ export default function ProjectCollection({
     setPage(newPage);
   }
 
+  function handleProjectHoverStart(project: Project) {
+    console.log(`handleProjectHoverStart ${project.title}`);
+    setHoverProjectUrl(project.url);
+  }
+  function handleProjectHoverEnd(project: Project) {
+    console.log(`handleProjectHoverEnd ${project.title}`);
+    setHoverProjectUrl("");
+  }
+
   return (
     <>
       <ProjectTimeLine
+        selectedProjectUrl={hoverProjectUrl}
         projects={projects}
         minYear={minYear}
         maxYear={maxYear}
       />
       <ProjectGrid
+        onMouseEnter={handleProjectHoverStart}
+        onMouseLeave={handleProjectHoverEnd}
         onAddTag={onAddTag}
         onRemoveTag={onRemoveTag}
         projects={pagedProjects}

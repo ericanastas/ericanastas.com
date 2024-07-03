@@ -5,9 +5,15 @@ type Props = {
   minYear?: number;
   maxYear?: number;
   projects: Project[];
+  selectedProjectUrl?: string;
 };
 
-export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
+export function ProjectTimeLine({
+  projects,
+  minYear,
+  maxYear,
+  selectedProjectUrl,
+}: Props) {
   //Calc year range from projects
   let minProjectsYear: number = Math.min(
     ...projects.map((p) => new Date(p.date).getFullYear())
@@ -36,8 +42,6 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
 
   let minTime = new Date(startYear, 0, 1).getTime();
   let maxTime = new Date(endYear + 1, 0, 1).getTime();
-
-  let zeroProjects: Project[] = [];
 
   return (
     <>
@@ -68,7 +72,12 @@ export function ProjectTimeLine({ projects, minYear, maxYear }: Props) {
                   }%`,
                 }}
               >
-                <div className="absolute h-4 w-4 -left-2 -top-2 rounded-full border border-1 border-solid border-gray-900 group-hover:border-blue-900 bg-gray-400 group-hover:bg-blue-500 group-hover:opacity-100 opacity-50">
+                <div
+                  className={`absolute h-4 w-4 -left-2 -top-2 rounded-full border border-1 border-solid border-gray-900 group-hover:border-2 group-hover:border-blue-900 bg-gray-400 group-hover:bg-blue-500 group-hover:opacity-100 opacity-50 ${
+                    selectedProjectUrl === project.url &&
+                    " border-blue-900 bg-blue-500 opacity-100 z-50 border-2"
+                  }`}
+                >
                   <Link
                     href={project.url}
                     className="absolute block bg-red-500 h-full w-full opacity-0"

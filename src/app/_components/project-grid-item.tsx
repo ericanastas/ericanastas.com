@@ -10,6 +10,8 @@ type Props = {
   selectedTagSlugs?: string[];
   onAddTag: (tag: Tag) => void;
   onRemoveTag: (tag: Tag) => void;
+  onMouseEnter: (project: Project) => void;
+  onMouseLeave: (project: Project) => void;
 };
 
 export function ProjectGridItem({
@@ -17,14 +19,30 @@ export function ProjectGridItem({
   selectedTagSlugs,
   onAddTag,
   onRemoveTag,
+  onMouseEnter,
+  onMouseLeave,
 }: Props) {
   let projectTags = project.tags.map<Tag>((tag) => ({
     ...tag,
     selected: selectedTagSlugs?.some((slug) => tag.slug === slug),
   }));
 
+  function handleMouseEnter(event: any) {
+    console.log("Mouse Enter");
+    onMouseEnter(project);
+  }
+
+  function handleMouseLeave(event: any) {
+    console.log("Mouse Leave");
+    onMouseLeave(project);
+  }
+
   return (
-    <div>
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="hover:ring-2 ring-blue-400 p-2 rounded-md"
+    >
       <CoverImage
         url={project.url}
         title={project.title}
@@ -47,7 +65,7 @@ export function ProjectGridItem({
       </div>
 
       <div className="mb-2">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {projectTags.map((t) => {
             let selected = selectedTagSlugs?.some((slug) => slug === t.slug);
             return (
