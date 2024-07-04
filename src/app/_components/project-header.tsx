@@ -37,7 +37,7 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
         </div>
       </div>
 
-      <div className="text-md flex justify-center mb-4">{summary}</div>
+      <div className="text-md flex justify-center my-6">{summary}</div>
     </>
   );
 }
