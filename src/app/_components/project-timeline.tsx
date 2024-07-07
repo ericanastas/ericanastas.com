@@ -1,5 +1,6 @@
 import type { Project } from "@/interfaces/project";
 import Link from "next/link";
+import DateFormatter from "./date-formatter";
 
 type Props = {
   minYear?: number;
@@ -81,7 +82,7 @@ export function ProjectTimeLine({
                     selectedProjectUrl
                       ? selectedProjectUrl === project.url
                         ? "opacity-100"
-                        : "opacity-10"
+                        : "opacity-5"
                       : "opacity-60"
                   }`}
                 >
@@ -91,11 +92,16 @@ export function ProjectTimeLine({
                   ></Link>
                 </div>
 
-                <div className="absolute w-96 -left-48 -top-10 flex justify-center">
+                <div className="absolute w-96 -left-48 top-8 flex justify-center">
                   <div className="w-max hidden group-hover:block bg-blue-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-blue-400">
-                    <span className="leading-snug text-gray-600 text-sm">
-                      {project.title}
-                    </span>
+                    <div className="flex flex-col items-end">
+                      <span className="leading-snug text-gray-600 text-md">
+                        {project.title}
+                      </span>
+                      <span className="text-gray-600 text-xs">
+                        <DateFormatter dateString={project.date} />
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
