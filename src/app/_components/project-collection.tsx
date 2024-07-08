@@ -43,7 +43,7 @@ export default function ProjectCollection({
 
   const [pagedProjects, setPagedProjects] = useState<Project[]>([]);
 
-  const [isTimelineStuck, setIsTimeLineStuck] = useState<boolean>(true);
+  const [isTimelineStuck, setIsTimeLineStuck] = useState<boolean>(false);
   const containerRef = useRef(null);
 
   let intersectionCallBack: IntersectionObserverCallback = (
