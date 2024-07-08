@@ -2,7 +2,7 @@
 title: Project Access Management
 summary: Custom interface for managing project access through Google Groups
 coverImage: /images/som/project-access-management/project-access-management.png
-tags:
+skills:
   [
     "HTML & CSS",
     "JavaScript",

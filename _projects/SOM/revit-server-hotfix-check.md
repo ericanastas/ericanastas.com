@@ -2,7 +2,7 @@
 title: Revit Server Hotfix Check
 summary: Revit add-in that reports when a user opens Revit with out a critical hotfix installed
 coverImage: /images/som/revit-server-hotfix-check/Revit-Server-Hotfix-Check.png
-tags: ["AWS", "C#", "Revit", "Revit API"]
+skills: ["AWS", "C#", "Revit", "Revit API"]
 date: "2014-06-18"
 repo: https://github.com/ericanastas/revit-server-hot-fix-check
 ---

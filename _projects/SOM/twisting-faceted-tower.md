@@ -2,7 +2,7 @@
 title: Twisting Faceted Tower
 summary: Grasshopper definition that creates a twisted faceted facade model
 coverImage: /images/som/twisting-faceted-tower/twisting-faceted-tower.png
-tags: ["Grasshopper", "Rhino", "3D Modeling"]
+skills: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2011-01-24"
 project: Poly Dawangjing Complex
 ---

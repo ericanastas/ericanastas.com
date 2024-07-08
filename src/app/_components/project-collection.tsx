@@ -5,15 +5,15 @@ import type { Project } from "@/interfaces/project";
 import { ProjectTimeLine } from "./project-timeline";
 import Pagination from "./pagination";
 import { useState, useEffect, useRef } from "react";
-import type { Tag } from "@/interfaces/tag";
+import type { Skill } from "@/interfaces/skill";
 
 export type Props = {
   projects: Project[];
-  selectedTagSlugs?: string[];
+  selectedSkillSlugs?: string[];
   minYear?: number;
   maxYear?: number;
-  onAddTag: (tag: Tag) => void;
-  onRemoveTag: (tag: Tag) => void;
+  onAddSkill: (skill: Skill) => void;
+  onRemoveSkill: (skill: Skill) => void;
 };
 
 const pageSize = 12;
@@ -31,11 +31,11 @@ function getProjectsByPage(
 
 export default function ProjectCollection({
   projects,
-  selectedTagSlugs,
+  selectedSkillSlugs,
   minYear,
   maxYear,
-  onAddTag,
-  onRemoveTag,
+  onAddSkill,
+  onRemoveSkill,
 }: Props) {
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -115,10 +115,10 @@ export default function ProjectCollection({
       <ProjectGrid
         onMouseEnter={handleProjectHoverStart}
         onMouseLeave={handleProjectHoverEnd}
-        onAddTag={onAddTag}
-        onRemoveTag={onRemoveTag}
+        onAddSkill={onAddSkill}
+        onRemoveSkill={onRemoveSkill}
         projects={pagedProjects}
-        selectedTagSlugs={selectedTagSlugs}
+        selectedSkillSlugs={selectedSkillSlugs}
       />
       <Pagination
         currentPage={currentPage}

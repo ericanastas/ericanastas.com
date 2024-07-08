@@ -2,7 +2,7 @@
 title: Wii Whiteboard
 summary: placeholder summary
 coverImage: /images/som/wii-whiteboard/IMG_20111004_205740.jpg
-tags: ["UX Design"]
+skills: ["UX Design"]
 date: "2011-10-05"
 hide: true
 ---

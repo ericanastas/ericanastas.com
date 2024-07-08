@@ -2,7 +2,7 @@
 title: Faceted Surface
 summary: placeholder summary
 coverImage: /images/som/faceted-surface/facets.jpg
-tags: ["Grasshopper", "Rhino"]
+skills: ["Grasshopper", "Rhino"]
 date: "2011-02-22"
 project: Beijing Tiangqiao Performing arts Center
 hide: true

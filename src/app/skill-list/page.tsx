@@ -1,4 +1,4 @@
-import { getTags } from "@/lib/projectsApi";
+import { getSkills } from "@/lib/projectsApi";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -6,20 +6,20 @@ import Footer from "../_components/footer";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export default async function TagListPage() {
-  let allTags = await getTags();
+export default async function SkillListPage() {
+  let allSkills = await getSkills();
 
   return (
     <>
       <Header />
       <main>
         <article className="mb-16 max-w-4xl mx-auto">
-          <PageTitle>Tag List</PageTitle>
+          <PageTitle>Skill List</PageTitle>
 
           <ul>
-            {allTags.map((tag) => (
+            {allSkills.map((skill) => (
               <li>
-                <Link href={tag.url}>{tag.name}</Link>
+                <Link href={skill.url}>{skill.name}</Link>
               </li>
             ))}
           </ul>
@@ -31,5 +31,5 @@ export default async function TagListPage() {
 }
 
 export const metadata: Metadata = {
-  title: "Tags",
+  title: "Skills",
 };

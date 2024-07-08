@@ -2,7 +2,7 @@
 title: Proximity Frame
 summary: Grasshopper definition to create panels with variable sized frames
 coverImage: /images/som/proximity-frame/prox-frame.png
-tags: ["Grasshopper", "Rhino", "3D Modeling"]
+skills: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2010-04-20"
 ---
 

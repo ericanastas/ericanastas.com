@@ -2,7 +2,7 @@
 title: Weatherflow to Ecotect
 summary: Translation of climate data from weatherflow.com to Ecotect
 coverImage: /images/som/weatherflow-to-ecotect/2012-04-11_225457.png
-tags: ["MS Access", "Ecotect", "SQL"]
+skills: ["MS Access", "Ecotect", "SQL"]
 date: "2009-03-03"
 ---
 

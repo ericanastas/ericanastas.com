@@ -1,7 +1,7 @@
 "use client";
 import Select from "react-select";
 import type { MultiValue } from "react-select";
-import type { TagGroup } from "../../interfaces/tagGroup";
+import type { SkillGroup } from "../../interfaces/skillGroup";
 import type { Category } from "../../interfaces/category";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { useId, useState, useEffect } from "react";
@@ -9,14 +9,14 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 export type Props = {
   categories: Category[];
-  tagGroups: TagGroup[];
+  skillGroups: SkillGroup[];
   filter: ProjectFilterOptions;
   onFilterOptionsChanged: (filter: ProjectFilterOptions) => void;
 };
 
 export default function ProjectFilter({
   categories,
-  tagGroups,
+  skillGroups,
   filter,
   onFilterOptionsChanged,
 }: Props) {
@@ -25,15 +25,15 @@ export default function ProjectFilter({
     value: cat.slug,
   }));
 
-  const tagGroupOptions = tagGroups.map((tg) => ({
+  const skillGroupOptions = skillGroups.map((tg) => ({
     label: tg.name,
-    options: tg.tags.map((t) => ({
+    options: tg.skills.map((t) => ({
       value: t.slug,
       label: t.name,
     })),
   }));
 
-  const allTagOptions = tagGroupOptions.reduce<
+  const allSkillOptions = skillGroupOptions.reduce<
     { label: string; value: string }[]
   >((prev, curr) => [...prev, ...curr.options], []);
 
@@ -47,8 +47,8 @@ export default function ProjectFilter({
     filterState.selectedCategorySlugs.some((s) => s == co.value)
   );
 
-  const selectedTagOptions = allTagOptions.filter((to) =>
-    filterState.selectedTagSlugs.some((ts) => ts === to.value)
+  const selectedSkillOptions = allSkillOptions.filter((to) =>
+    filterState.selectedSkillSlugs.some((slug) => slug === to.value)
   );
 
   useEffect(() => {}, [filterState]);
@@ -64,12 +64,12 @@ export default function ProjectFilter({
     onFilterOptionsChanged(newFilter);
   }
 
-  function onTagSelectionChanged(
+  function onSkillSelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
   ) {
     let newFilter: ProjectFilterOptions = {
       ...filterState,
-      selectedTagSlugs: newValue.map((v) => v.value),
+      selectedSkillSlugs: newValue.map((v) => v.value),
     };
     setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
@@ -136,10 +136,10 @@ export default function ProjectFilter({
           }}
           instanceId={useId()}
           isMulti
-          options={tagGroupOptions}
-          placeholder="Filter by tags..."
-          onChange={onTagSelectionChanged}
-          value={selectedTagOptions}
+          options={skillGroupOptions}
+          placeholder="Filter by skills..."
+          onChange={onSkillSelectionChanged}
+          value={selectedSkillOptions}
           closeMenuOnSelect={false}
           menuShouldScrollIntoView={true}
           maxMenuHeight={800}

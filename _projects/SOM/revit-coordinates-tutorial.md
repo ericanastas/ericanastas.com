@@ -2,7 +2,7 @@
 title: Revit Coordinate Systems Tutorial
 summary: Tutorial slideshow that explains the Revit coordinate systems and related commands
 coverImage: /images/som/revit-coordinates-tutorial/tiles.png
-tags: ["Revit", "HTML & CSS", "Revit Support"]
+skills: ["Revit", "HTML & CSS", "Revit Support"]
 date: "2016-07-26"
 repo: https://github.com/ericanastas/revit-coordinates-tutorial
 ---

@@ -2,7 +2,7 @@
 title: Virtual Wind Image Recoloring Script
 summary: Python script to recolor analysis images generated from Virtual Wind to indicate a single wind speed threshold
 coverImage: /images/som/vw-image-recolor-script/vw-script.png
-tags: ["Design Analysis", "Python"]
+skills: ["Design Analysis", "Python"]
 date: "2011-08-10"
 project:
   ["Park Merced Master Plan", "Treasure Island Master Plan", "Design Analysis"]

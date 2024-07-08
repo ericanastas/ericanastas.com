@@ -2,7 +2,7 @@
 title: Road Drawing RhinoScript
 summary: RhinoScript that generates roads and sidewalk lines from road center lines
 coverImage: /images/som/road-drawing-rhinoscript/RoadDrawingScript.png
-tags: ["Rhino", "RhinoScript"]
+skills: ["Rhino", "RhinoScript"]
 date: "2010-12-28"
 ---
 

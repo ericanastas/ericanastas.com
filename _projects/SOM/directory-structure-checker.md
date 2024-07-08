@@ -2,7 +2,7 @@
 title: Directory Structure Checker
 summary: Utility that can validate a directory folder structure against a predefined company standard
 coverImage: /images/som/directory-structure-checker/directory_structure_checker.png
-tags: ["C#", "WPF", "UX Design"]
+skills: ["C#", "WPF", "UX Design"]
 date: "2014-09-23"
 repo: https://github.com/ericanastas/directory-structure-checker
 ---

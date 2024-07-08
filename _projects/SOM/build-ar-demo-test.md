@@ -2,7 +2,7 @@
 title: Build AR
 summary: Test of Build AR augmented reality software
 coverImage: /images/som/build-ar-demo-test/BuildARTest.png
-tags: ["Augmented Reality", "Visualization"]
+skills: ["Augmented Reality", "Visualization"]
 date: "2010-09-09"
 hide: true
 ---

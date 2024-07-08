@@ -2,7 +2,7 @@
 title: Check Family Names
 summary: Revit add-in that validates family names in a model against company standards
 coverImage: /images/som/check-family-names/check-family-names.png
-tags: ["Revit", "Revit API"]
+skills: ["Revit", "Revit API"]
 date: "2013-12-06"
 repo: https://github.com/ericanastas/check-family-names
 ---

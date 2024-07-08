@@ -2,7 +2,7 @@
 title: PVC Geodesic Dome
 summary: Geodesic dome shelter structure
 coverImage: /images/personal/pvc-dome/P1100286.jpg
-tags: ["Burning Man"]
+skills: ["Burning Man"]
 date: "2015-08-17"
 ---
 

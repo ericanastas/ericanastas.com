@@ -2,7 +2,7 @@
 title: Network File Checker
 summary: Utility which validates files on multiple network computers by checking file size, version, and/or MD5 hash.
 coverImage: /images/som/network-file-checker/Network-File-Checker.png
-tags: ["C#", "WPF", "UX Design"]
+skills: ["C#", "WPF", "UX Design"]
 date: "2014-10-07"
 repo: https://github.com/ericanastas/network-file-checker
 ---

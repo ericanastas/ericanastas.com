@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }: Params) {
           <ProjectHeader
             title={project.title}
             date={project.date}
-            tags={project.tags}
+            skills={project.skills}
             category={project.category}
             summary={project.summary}
           />

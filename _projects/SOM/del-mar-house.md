@@ -2,7 +2,7 @@
 title: Del Mar House
 summary: Revit support consulting project
 coverImage: /images/som/del-mar-house/6.jpg
-tags: ["Revit", "3D Modeling", "Revit Support"]
+skills: ["Revit", "3D Modeling", "Revit Support"]
 date: "2010-06-10"
 ---
 

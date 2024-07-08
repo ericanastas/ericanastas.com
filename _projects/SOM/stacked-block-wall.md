@@ -2,7 +2,7 @@
 title: Stacked Block Wall
 summary: Grasshopper definition that creates a wall of stacked block window frames
 coverImage: /images/som/stacked-block-wall/blocks-2.jpg
-tags: ["Grasshopper", "Rhino", "3D Modeling"]
+skills: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2010-09-21"
 project: Christ Our Savior Cathedral
 ---

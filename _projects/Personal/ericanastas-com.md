@@ -2,7 +2,7 @@
 title: ericanastas.com
 summary: Personal portfolio site
 coverImage: /images/personal/ericanastas-com/front-page.png
-tags:
+skills:
   [
     "React",
     "Tailwind",

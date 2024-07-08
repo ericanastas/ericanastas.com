@@ -2,7 +2,7 @@
 title: Frit Pattern
 summary: Grasshopper definition for creating class frit patterns
 coverImage: /images/som/frit-pattern/frit-pattern.png
-tags: ["Grasshopper", "Rhino"]
+skills: ["Grasshopper", "Rhino"]
 date: "2011-10-03"
 project: 8 Washington St
 ---

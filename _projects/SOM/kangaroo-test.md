@@ -2,7 +2,7 @@
 title: Kangaroo Test
 summary: placeholder summary
 coverImage: /images/som/kangaroo-test/kangaroo-test.png
-tags: ["Grasshopper", "Kangaroo"]
+skills: ["Grasshopper", "Kangaroo"]
 date: "2010-05-12"
 hide: true
 ---

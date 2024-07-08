@@ -1,21 +1,21 @@
 import { ProjectGridItem } from "./project-grid-item";
 import type { Project } from "@/interfaces/project";
-import type { Tag } from "@/interfaces/tag";
+import type { Skill } from "@/interfaces/skill";
 
 export type Props = {
   projects: Project[];
-  selectedTagSlugs?: string[];
-  onAddTag: (tag: Tag) => void;
-  onRemoveTag: (tag: Tag) => void;
+  selectedSkillSlugs?: string[];
+  onAddSkill: (skill: Skill) => void;
+  onRemoveSkill: (skill: Skill) => void;
   onMouseEnter: (project: Project) => void;
   onMouseLeave: (project: Project) => void;
 };
 
 export function ProjectGrid({
   projects,
-  selectedTagSlugs,
-  onAddTag,
-  onRemoveTag,
+  selectedSkillSlugs,
+  onAddSkill,
+  onRemoveSkill,
   onMouseEnter,
   onMouseLeave,
 }: Props) {
@@ -25,10 +25,10 @@ export function ProjectGrid({
         <ProjectGridItem
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
-          onAddTag={onAddTag}
-          onRemoveTag={onRemoveTag}
+          onAddSkill={onAddSkill}
+          onRemoveSkill={onRemoveSkill}
           project={project}
-          selectedTagSlugs={selectedTagSlugs}
+          selectedSkillSlugs={selectedSkillSlugs}
           key={project.category.slug + "-" + project.slug}
         />
       ))}
