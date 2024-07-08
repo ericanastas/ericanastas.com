@@ -75,8 +75,7 @@ async function readProjectFile(
 
   const html = await markdownToHtml(content || "");
 
-  let { title, date, coverImage, summary, draft, tags, featured, hide, repo } =
-    data;
+  let { title, date, coverImage, summary, draft, tags, hide, repo } = data;
 
   let tagObjArr: Tag[] = tags.map((t: string) => createTag(t));
 
@@ -113,7 +112,6 @@ async function readProjectFile(
     summary,
     draft,
     content,
-    featured,
     tags: tagObjArr,
     url,
     category,
@@ -124,13 +122,7 @@ async function readProjectFile(
 }
 
 function sortProjectDesc(project1: Project, project2: Project): number {
-  if (
-    (project1.featured && project2.featured) ||
-    (!project1.featured && !project2.featured)
-  ) {
-    return project1.date > project2.date ? -1 : 1;
-  } else if (project1.featured) return -1;
-  else return 1;
+  return project1.date > project2.date ? -1 : 1;
 }
 
 export async function getProject(

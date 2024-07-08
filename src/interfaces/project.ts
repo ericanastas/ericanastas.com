@@ -15,9 +15,6 @@ export interface Project extends Page {
   /**Tags */
   tags: Tag[];
 
-  /**Mark the project as featured to cause it to sort to the top */
-  featured?: boolean;
-
   /**Project category */
   category: Category;
 

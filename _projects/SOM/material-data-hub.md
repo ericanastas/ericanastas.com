@@ -6,7 +6,6 @@ tags:
   ["React", "HTML & CSS", "Material Design", "MUI", "UX Design", "JavaScript"]
 date: "2022-12-14"
 repo: https://github.com/ericanastas/materials-data-hub
-featured: true
 ---
 
 ![](/images/som/material-data-hub/material-search.png)

@@ -14,7 +14,6 @@ tags:
   ]
 date: "2023-03-09"
 repo: https://github.com/ericanastas/gdrive-transmittals
-featured: true
 ---
 
 [sample-transmittal.pdf](/images/som/gdrive-transmittals/sample-transmittal.pdf)

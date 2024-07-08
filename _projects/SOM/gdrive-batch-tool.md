@@ -13,5 +13,4 @@ tags:
   ]
 date: "2021-05-24"
 repo: https://github.com/ericanastas/gdrive-batch-tool/
-featured: true
 ---

@@ -13,7 +13,6 @@ tags:
   ]
 date: "2022-11-15"
 repo: https://github.com/ericanastas/project-access-request
-featured: true
 ---
 
 This form is used to request access to SOM project resources via Google Group membership.

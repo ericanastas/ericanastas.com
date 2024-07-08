@@ -19,7 +19,6 @@ tags:
   ]
 date: "2024-01-11"
 repo: https://github.com/ericanastas/sustainability-data-hub
-featured: true
 ---
 
 ![](/images/som/sustainability-data-hub/project-summary.png)
