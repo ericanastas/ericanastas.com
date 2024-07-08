@@ -50,8 +50,6 @@ export default function ProjectCollection({
     entries: IntersectionObserverEntry[],
     observer: IntersectionObserver
   ) => {
-    console.log("intersectionCallBack");
-
     const [entry] = entries;
 
     setIsTimeLineStuck(!entry.isIntersecting);
@@ -66,7 +64,6 @@ export default function ProjectCollection({
   useEffect(() => {
     const observer = new IntersectionObserver(intersectionCallBack, options);
     if (containerRef.current) {
-      console.log("observe");
       observer.observe(containerRef.current);
     }
 

@@ -33,41 +33,30 @@ export default function Pagination({
   let displayedPageNumbers: number[];
 
   if (pageCount <= maxPageButtons) {
-    console.log(`All Pages`);
     displayedPageNumbers = getRange(1, pageCount);
   } else {
     //Truncate page buttons
 
     let boundaryPages = Math.floor((maxPageButtons - 4) / 2);
-    console.log(`boundaryPages: ${boundaryPages}`);
-
     let startBoundaryPages = boundaryPages + 3;
-    console.log(`startBoundaryPages: ${startBoundaryPages}`);
-
     let endBoundaryPages = pageCount - 3 - boundaryPages;
-    console.log(`endBoundaryPages: ${endBoundaryPages}`);
 
     if (currentPage < startBoundaryPages) {
-      console.log(`First Pages`);
-
-      //display the first page numbers
+      //First pages
       let firstPageNumbers: number[] = getRange(
         1,
         startBoundaryPages + boundaryPages
       );
       displayedPageNumbers = [...firstPageNumbers, -1, pageCount];
     } else if (currentPage > endBoundaryPages) {
-      console.log(`Last Pages`);
-
+      //Last pages
       let lastPageNumbers: number[] = getRange(
         endBoundaryPages - boundaryPages + 1,
         pageCount
       );
       displayedPageNumbers = [1, -1, ...lastPageNumbers];
     } else {
-      console.log(`Mid Pages`);
-
-      //display middle range page numbers
+      //Middle pages
       let midPageNumbers: number[] = getRange(
         currentPage - boundaryPages,
         currentPage + boundaryPages
@@ -75,8 +64,6 @@ export default function Pagination({
       displayedPageNumbers = [1, -1, ...midPageNumbers, -2, pageCount];
     }
   }
-
-  console.log(`displayedPageNumbers:${JSON.stringify(displayedPageNumbers)}`);
 
   function renderPageButton(pageNumber: number) {
     if (pageNumber > 0) {
