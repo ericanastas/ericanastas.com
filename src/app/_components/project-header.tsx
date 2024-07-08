@@ -1,5 +1,5 @@
 import DateFormatter from "./date-formatter";
-import TagChip from "./tag-chip";
+import SkillChip from "./skill-chip";
 import type { Tag } from "@/interfaces/tag";
 
 import PageTitle from "./page-title";
@@ -31,7 +31,7 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
         <div className="flex flex-wrap gap-1.5">
           {tags.map((t) => (
             <Link key={t.slug} href={t.url}>
-              <TagChip key={t.slug} tag={t} />
+              <SkillChip key={t.slug} skill={t} />
             </Link>
           ))}
         </div>

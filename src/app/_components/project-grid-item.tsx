@@ -3,7 +3,7 @@ import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import type { Project } from "@/interfaces/project";
 import type { Tag } from "@/interfaces/tag";
-import TagChip from "./tag-chip";
+import SkillChip from "./skill-chip";
 
 type Props = {
   project: Project;
@@ -72,10 +72,10 @@ export function ProjectGridItem({
                 onClick={selected ? () => onRemoveTag(t) : () => onAddTag(t)}
                 key={t.slug}
               >
-                <TagChip
+                <SkillChip
                   icon={selected ? "Remove" : "Add"}
                   key={t.slug}
-                  tag={t}
+                  skill={t}
                   selected={selected}
                 />
               </div>

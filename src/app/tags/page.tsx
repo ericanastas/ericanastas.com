@@ -6,7 +6,7 @@ import Footer from "../_components/footer";
 import { Metadata } from "next";
 import Link from "next/link";
 
-import TagChip from "../_components/tag-chip";
+import SkillChip from "../_components/skill-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
 import { getProjectsYearRange } from "@/lib/projectsApi";
 
@@ -31,7 +31,7 @@ export default async function TagsPage() {
                     <div className="flex lg:items-center lg:flex-row flex-col">
                       <div className="flex lg:justify-end lg:mr-1 lg:w-36 lg:mt-0 mt-6 lg:mb-0 mb-1">
                         <Link key={tag.slug} href={tag.url}>
-                          <TagChip tag={tag} />
+                          <SkillChip skill={tag} />
                         </Link>
                       </div>
 
