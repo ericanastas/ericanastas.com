@@ -21,7 +21,7 @@ const Header = ({ hideTitle }: Props) => {
           <NavBar />
         </div>
       </div>
-      <hr className="border-neutral-300 mt-0 mb-4" />
+      <hr className="border-gray-400 mt-0 mb-4" />
     </header>
   );
 };
