@@ -1,54 +1,170 @@
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  EllipsisHorizontalIcon,
+} from "@heroicons/react/24/solid";
+
 export type Props = {
-  page: number;
+  currentPage: number;
   pageCount: number;
-  onPageSelected: (page: number) => void;
+  onPageButtonClicked: (page: number) => void;
 };
 
+function getRange(start: number, end: number): number[] {
+  if (end < start) throw new Error("end < start");
+
+  return Array.from(
+    { length: end - start + 1 },
+    (x: undefined, i: number) => i + start
+  );
+}
+
 export default function Pagination({
-  page,
+  currentPage,
   pageCount,
-  onPageSelected: onPageChanged,
+  onPageButtonClicked,
 }: Props) {
+  const isFirstPage = currentPage === 1;
+  const isLastPage = currentPage === pageCount;
+
+  //Maximum number of page buttons, must be an odd number 7 or greater
+  const maxPageButtons = 13;
+
+  let displayedPageNumbers: number[];
+
+  if (pageCount <= maxPageButtons) {
+    console.log(`All Pages`);
+    displayedPageNumbers = getRange(1, pageCount);
+  } else {
+    //Truncate page buttons
+
+    let boundaryPages = Math.floor((maxPageButtons - 4) / 2);
+    console.log(`boundaryPages: ${boundaryPages}`);
+
+    let startBoundaryPages = boundaryPages + 3;
+    console.log(`startBoundaryPages: ${startBoundaryPages}`);
+
+    let endBoundaryPages = pageCount - 3 - boundaryPages;
+    console.log(`endBoundaryPages: ${endBoundaryPages}`);
+
+    if (currentPage < startBoundaryPages) {
+      console.log(`First Pages`);
+
+      //display the first page numbers
+      let firstPageNumbers: number[] = getRange(
+        1,
+        startBoundaryPages + boundaryPages
+      );
+      displayedPageNumbers = [...firstPageNumbers, -1, pageCount];
+    } else if (currentPage > endBoundaryPages) {
+      console.log(`Last Pages`);
+
+      let lastPageNumbers: number[] = getRange(
+        endBoundaryPages - boundaryPages + 1,
+        pageCount
+      );
+      displayedPageNumbers = [1, -1, ...lastPageNumbers];
+    } else {
+      console.log(`Mid Pages`);
+
+      //display middle range page numbers
+      let midPageNumbers: number[] = getRange(
+        currentPage - boundaryPages,
+        currentPage + boundaryPages
+      );
+      displayedPageNumbers = [1, -1, ...midPageNumbers, -2, pageCount];
+    }
+  }
+
+  console.log(`displayedPageNumbers:${JSON.stringify(displayedPageNumbers)}`);
+
+  function renderPageButton(pageNumber: number) {
+    if (pageNumber > 0) {
+      if (pageNumber === currentPage) {
+        return (
+          <a
+            key={pageNumber}
+            className={
+              "relative inline-flex items-center justify-center px-4 py-2 min-w-12 text-sm font-semibold bg-gray-600 text-white"
+            }
+          >
+            {pageNumber}
+          </a>
+        );
+      } else {
+        return (
+          <a
+            key={pageNumber}
+            data-value={pageNumber}
+            onClick={onPageNumberClick}
+            className={
+              "relative inline-flex items-center px-4 py-2 justify-center text-sm min-w-12 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 hover:bg-gray-100 cursor-pointer"
+            }
+          >
+            {pageNumber}
+          </a>
+        );
+      }
+    } else {
+      return (
+        <a
+          key={pageNumber}
+          className={
+            "relative inline-flex items-center px-4 py-2 justify-center min-w-12 text-sm font-semibold ring-1 ring-inset ring-gray-400 text-gray-900"
+          }
+        >
+          <EllipsisHorizontalIcon className="size-4" />
+        </a>
+      );
+    }
+  }
+
   function nextButtonClick() {
-    if (page < pageCount) {
-      let newPage = page + 1;
-      onPageChanged(newPage);
+    if (currentPage < pageCount) {
+      let newPage = currentPage + 1;
+      onPageButtonClicked(newPage);
     }
   }
 
   function prevButtonClick() {
-    if (page > 1) {
-      let newPage = page - 1;
-      onPageChanged(newPage);
+    if (currentPage > 1) {
+      let newPage = currentPage - 1;
+      onPageButtonClicked(newPage);
     }
   }
   function onPageNumberClick(event: any) {
     let pageNumber = parseInt(event.currentTarget.getAttribute("data-value"));
 
-    onPageChanged(pageNumber);
+    onPageButtonClicked(pageNumber);
   }
 
-  if (pageCount < 2) return null;
+  if (pageCount == 1) return null;
 
   return (
     <div className="flex items-center justify-between py-3">
       <div className="flex flex-1 justify-between lg:hidden">
         <a
           onClick={prevButtonClick}
-          className="relative inline-flex items-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white cursor-pointer"
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-24 text-gray-900 ${
+            isFirstPage ? "invisible" : "cursor-pointer"
+          }`}
         >
+          <ChevronLeftIcon className="size-4" />
           Previous
         </a>
 
         <div className="font-medium">
-          Page {page} of {pageCount}
+          Page {currentPage} of {pageCount}
         </div>
 
         <a
           onClick={nextButtonClick}
-          className="relative ml-3 inline-flex items-center rounded-md  bg-black px-4 py-2 text-sm font-medium text-white  cursor-pointer"
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-24 text-gray-900 ${
+            isLastPage ? "invisible" : "cursor-pointer"
+          }`}
         >
           Next
+          <ChevronRightIcon className="size-4" />
         </a>
       </div>
 
@@ -59,68 +175,25 @@ export default function Pagination({
         >
           <a
             onClick={prevButtonClick}
-            className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 cursor-pointer"
+            className={`relative inline-flex items-center justify-center font-semibold rounded-l-md px-2 py-2 text-gray-900 ring-1 ring-inset ring-gray-400 w-24 ${
+              isFirstPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
+            }`}
           >
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <ChevronLeftIcon className="size-4" />
+            Previous
           </a>
 
-          {Array.from(
-            { length: pageCount },
-            (x: undefined, i: number) => i + 1
-          ).map((p) => {
-            let selectedClassName =
-              "relative z-10 inline-flex items-center bg-gray-600 px-4 py-2 text-sm font-semibold text-white";
+          {displayedPageNumbers.map((p) => renderPageButton(p))}
 
-            let className =
-              "relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 cursor-pointer";
-            if (p === page) {
-              return (
-                <a key={p} className={`${selectedClassName}`}>
-                  {p}
-                </a>
-              );
-            } else {
-              return (
-                <a
-                  key={p}
-                  data-value={p}
-                  onClick={onPageNumberClick}
-                  className={`${className}`}
-                >
-                  {p}
-                </a>
-              );
-            }
-          })}
-
-          <a
+          <div
             onClick={nextButtonClick}
-            className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 cursor-pointer"
+            className={`relative inline-flex items-center justify-center rounded-r-md px-2 py-2 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 w-24 ${
+              isLastPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
+            }`}
           >
-            <svg
-              className="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
+            Next
+            <ChevronRightIcon className="size-4" />
+          </div>
         </nav>
       </div>
     </div>

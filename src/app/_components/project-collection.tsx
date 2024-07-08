@@ -37,7 +37,7 @@ export default function ProjectCollection({
   onAddTag,
   onRemoveTag,
 }: Props) {
-  const [page, setPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const [hoverProjectUrl, setHoverProjectUrl] = useState<string>("");
 
@@ -78,15 +78,15 @@ export default function ProjectCollection({
   }, [containerRef, options]);
 
   useEffect(() => {
-    setPagedProjects(getProjectsByPage(projects, page, pageSize));
-  }, [page, projects]);
+    setPagedProjects(getProjectsByPage(projects, currentPage, pageSize));
+  }, [currentPage, projects]);
 
   useEffect(() => {
-    setPage(1);
+    setCurrentPage(1);
   }, [projects]);
 
-  function handlePageChanged(newPage: number) {
-    setPage(newPage);
+  function handlePageButtonClicked(newPage: number) {
+    setCurrentPage(newPage);
   }
 
   function handleProjectHoverStart(project: Project) {
@@ -124,9 +124,9 @@ export default function ProjectCollection({
         selectedTagSlugs={selectedTagSlugs}
       />
       <Pagination
-        page={page}
+        currentPage={currentPage}
         pageCount={Math.ceil(projects.length / pageSize)}
-        onPageSelected={handlePageChanged}
+        onPageButtonClicked={handlePageButtonClicked}
       />
     </>
   );
