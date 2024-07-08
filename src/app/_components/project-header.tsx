@@ -28,7 +28,7 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
         <DateFormatter dateString={date} />
       </div>
       <div className="mb-1 flex justify-center">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {tags.map((t) => (
             <Link key={t.slug} href={t.url}>
               <TagChip key={t.slug} tag={t} />
@@ -37,7 +37,9 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
         </div>
       </div>
 
-      <div className="text-md flex justify-center mb-4">{summary}</div>
+      <div className="flex justify-center my-6 font-size text-[18px]">
+        {summary}
+      </div>
     </>
   );
 }

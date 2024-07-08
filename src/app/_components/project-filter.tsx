@@ -88,6 +88,15 @@ export default function ProjectFilter({
     <div className="flex flex-wrap gap-4 mb-4">
       <div className="grow min-w-64">
         <Select
+          styles={{
+            control: (baseStyles, state) => ({
+              ...baseStyles,
+              border: state.isFocused ? "none" : "1px solid #A3A3A3", // default border color
+              boxShadow: state.isFocused
+                ? "inset 0 0 0 2px black"
+                : "2 0 0 0 black", // no box-shadow
+            }),
+          }}
           instanceId={useId()}
           isMulti
           options={categoryOptions}
@@ -105,8 +114,16 @@ export default function ProjectFilter({
       <div className="grow min-w-64">
         <Select
           styles={{
-            groupHeading: (base) => ({
-              ...base,
+            control: (baseStyles, state) => ({
+              ...baseStyles,
+              border: state.isFocused ? "none" : "1px solid #A3A3A3", // default border color
+              boxShadow: state.isFocused
+                ? "inset 0 0 0 2px black"
+                : "2 0 0 0 black", // no box-shadow
+            }),
+
+            groupHeading: (baseStyles, state) => ({
+              ...baseStyles,
               fontWeight: "bold",
               color: "#4b5563",
               fontSize: "24",

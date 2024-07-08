@@ -4,7 +4,7 @@ import { ProjectGrid } from "./project-grid";
 import type { Project } from "@/interfaces/project";
 import { ProjectTimeLine } from "./project-timeline";
 import Pagination from "./pagination";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { Tag } from "@/interfaces/tag";
 
 export type Props = {
@@ -43,6 +43,40 @@ export default function ProjectCollection({
 
   const [pagedProjects, setPagedProjects] = useState<Project[]>([]);
 
+  const [isTimelineStuck, setIsTimeLineStuck] = useState<boolean>(true);
+  const containerRef = useRef(null);
+
+  let intersectionCallBack: IntersectionObserverCallback = (
+    entries: IntersectionObserverEntry[],
+    observer: IntersectionObserver
+  ) => {
+    console.log("intersectionCallBack");
+
+    const [entry] = entries;
+
+    setIsTimeLineStuck(!entry.isIntersecting);
+  };
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(intersectionCallBack, options);
+    if (containerRef.current) {
+      console.log("observe");
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, [containerRef, options]);
+
   useEffect(() => {
     setPagedProjects(getProjectsByPage(projects, page, pageSize));
   }, [page, projects]);
@@ -64,12 +98,23 @@ export default function ProjectCollection({
 
   return (
     <>
-      <ProjectTimeLine
-        selectedProjectUrl={hoverProjectUrl}
-        projects={projects}
-        minYear={minYear}
-        maxYear={maxYear}
-      />
+      <div ref={containerRef} className="h-1" />
+
+      <div
+        className={`sticky top-2 transition-all ${
+          isTimelineStuck
+            ? "border border-gray-400 border-2 bg-white py-4 px-4 drop-shadow-lg rounded-md z-50"
+            : ""
+        }`}
+      >
+        <ProjectTimeLine
+          selectedProjectUrl={hoverProjectUrl}
+          projects={projects}
+          minYear={minYear}
+          maxYear={maxYear}
+        />
+      </div>
+
       <ProjectGrid
         onMouseEnter={handleProjectHoverStart}
         onMouseLeave={handleProjectHoverEnd}
