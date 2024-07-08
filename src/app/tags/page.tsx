@@ -26,7 +26,7 @@ export default async function TagsPage() {
               <h2 className="text-2xl font-bold mt-8">{tagGroup.name}</h2>
 
               <div className="flex flex-col">
-                {tagGroup.tags.map((tag) => {
+                {tagGroup.skills.map((tag) => {
                   return (
                     <div className="flex lg:items-center lg:flex-row flex-col">
                       <div className="flex lg:justify-end lg:mr-1 lg:w-36 lg:mt-0 mt-6 lg:mb-0 mb-1">

@@ -1,6 +1,6 @@
 import type { Project } from "./project";
 
-export interface Tag {
+export interface Skill {
   name: string;
   slug: string;
   url: string;

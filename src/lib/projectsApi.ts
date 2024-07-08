@@ -6,8 +6,8 @@ import { markdownToHtml, removeFileExtension, convertToSlug } from "./util";
 import process from "process";
 import type { Project } from "@/interfaces/project";
 import type { Category } from "@/interfaces/category";
-import type { Tag } from "@/interfaces/tag";
-import { TagGroup } from "@/interfaces/tagGroup";
+import type { Skill } from "@/interfaces/skill";
+import { SkillGroup } from "@/interfaces/skillGroup";
 import { TAG_GROUPS, TAG_GROUP_NAMES } from "./tagGroups";
 
 const projectsDirectory = join(process.cwd(), "_projects");
@@ -31,7 +31,7 @@ function createCategory(name: string): Category {
   };
 }
 
-function createTag(name: string): Tag {
+function createTag(name: string): Skill {
   let slug = convertToSlug(name);
   let groupName = getTagGroupName(name);
 
@@ -77,7 +77,7 @@ async function readProjectFile(
 
   let { title, date, coverImage, summary, draft, tags, hide, repo } = data;
 
-  let tagObjArr: Tag[] = tags.map((t: string) => createTag(t));
+  let tagObjArr: Skill[] = tags.map((t: string) => createTag(t));
 
   //Check for duplicate tags assigned to project
   const tagSlugs = tagObjArr.map((t) => t.slug);
@@ -238,29 +238,29 @@ export async function getCategories(
 export async function getTag(
   tagSlug: string,
   incProjects?: Boolean
-): Promise<Tag | null> {
+): Promise<Skill | null> {
   let tagProjects = (await getProjects()).filter((p) =>
     p.tags.some((t) => t.slug === tagSlug)
   );
 
   if (tagProjects.length > 0) {
-    let tag: Tag = {
+    let skill: Skill = {
       ...tagProjects[0].tags.find((t) => t.slug === tagSlug)!,
       projects: incProjects ? tagProjects : undefined,
     };
 
-    return tag;
+    return skill;
   } else return null;
 }
 
-export async function getTags(incProjects?: boolean): Promise<Tag[]> {
+export async function getTags(incProjects?: boolean): Promise<Skill[]> {
   let projects = await getProjects();
 
-  let tags: Tag[] = [];
+  let skills: Skill[] = [];
 
   for (let project of projects) {
     for (let projTag of project.tags) {
-      let tag = tags.find((t) => t.slug === projTag.slug);
+      let tag = skills.find((t) => t.slug === projTag.slug);
 
       if (!tag) {
         tag = {
@@ -269,27 +269,29 @@ export async function getTags(incProjects?: boolean): Promise<Tag[]> {
             ? projects.filter((p) => p.tags.some((t) => t.slug == projTag.slug))
             : undefined,
         };
-        tags.push(tag);
+        skills.push(tag);
       }
     }
   }
 
-  return tags.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
+  return skills.sort((t1, t2) => (t1.name < t2.name ? -1 : 1));
 }
 
-export async function getTagGroups(incProjects?: boolean): Promise<TagGroup[]> {
-  let tagGroups: TagGroup[] = TAG_GROUP_NAMES.map((n) => ({
+export async function getTagGroups(
+  incProjects?: boolean
+): Promise<SkillGroup[]> {
+  let skillGroups: SkillGroup[] = TAG_GROUP_NAMES.map((n) => ({
     name: n,
-    tags: [],
+    skills: [],
   }));
 
   let tags = await getTags(incProjects);
 
   for (let tag of tags) {
-    let matchingGroup = tagGroups.find((tg) => tg.name == tag.groupName);
+    let matchingGroup = skillGroups.find((tg) => tg.name == tag.groupName);
 
-    matchingGroup!.tags.push(tag);
+    matchingGroup!.skills.push(tag);
   }
 
-  return tagGroups;
+  return skillGroups;
 }

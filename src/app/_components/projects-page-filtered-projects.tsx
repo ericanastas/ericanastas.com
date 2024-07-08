@@ -3,7 +3,7 @@
 import { Category } from "@/interfaces/category";
 import { Project } from "@/interfaces/project";
 import { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
-import { TagGroup } from "@/interfaces/tagGroup";
+import { SkillGroup } from "@/interfaces/skillGroup";
 import FilteredProjectCollection from "../_components/filtered-project-collection";
 import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -14,7 +14,7 @@ type Props = {
   maxYear: number;
   projects: Project[];
   categories: Category[];
-  tagGroups: TagGroup[];
+  tagGroups: SkillGroup[];
 };
 
 function parseSearchParams(

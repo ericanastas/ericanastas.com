@@ -1,7 +1,7 @@
 "use client";
 import Select from "react-select";
 import type { MultiValue } from "react-select";
-import type { TagGroup } from "../../interfaces/tagGroup";
+import type { SkillGroup } from "../../interfaces/skillGroup";
 import type { Category } from "../../interfaces/category";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { useId, useState, useEffect } from "react";
@@ -9,7 +9,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 export type Props = {
   categories: Category[];
-  tagGroups: TagGroup[];
+  tagGroups: SkillGroup[];
   filter: ProjectFilterOptions;
   onFilterOptionsChanged: (filter: ProjectFilterOptions) => void;
 };
@@ -27,7 +27,7 @@ export default function ProjectFilter({
 
   const tagGroupOptions = tagGroups.map((tg) => ({
     label: tg.name,
-    options: tg.tags.map((t) => ({
+    options: tg.skills.map((t) => ({
       value: t.slug,
       label: t.name,
     })),

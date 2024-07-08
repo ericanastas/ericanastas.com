@@ -1,4 +1,4 @@
-import type { Tag } from "./tag";
+import type { Skill } from "./skill";
 import { Category } from "./category";
 import type { Page } from "./page";
 
@@ -13,7 +13,7 @@ export interface Project extends Page {
   summary: string;
 
   /**Tags */
-  tags: Tag[];
+  tags: Skill[];
 
   /**Project category */
   category: Category;

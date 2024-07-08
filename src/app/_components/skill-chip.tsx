@@ -1,8 +1,8 @@
-import type { Tag } from "../../interfaces/tag";
+import type { Skill } from "../../interfaces/skill";
 import { PlusIcon, XMarkIcon } from "@heroicons/react/16/solid";
 
 type Props = {
-  skill: Tag;
+  skill: Skill;
   selected?: boolean;
   icon?: "Add" | "Remove";
 };
