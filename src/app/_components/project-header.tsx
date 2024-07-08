@@ -1,6 +1,6 @@
 import DateFormatter from "./date-formatter";
 import SkillChip from "./skill-chip";
-import type { Tag } from "@/interfaces/tag";
+import type { Skill } from "@/interfaces/skill";
 
 import PageTitle from "./page-title";
 import { Category } from "@/interfaces/category";
@@ -10,12 +10,18 @@ import Link from "next/link";
 type Props = {
   title: string;
   date: string;
-  tags: Tag[];
+  skills: Skill[];
   category: Category;
   summary: string;
 };
 
-export function ProjectHeader({ title, date, tags, category, summary }: Props) {
+export function ProjectHeader({
+  title,
+  date,
+  skills,
+  category,
+  summary,
+}: Props) {
   return (
     <>
       <PageTitle>{title}</PageTitle>
@@ -29,7 +35,7 @@ export function ProjectHeader({ title, date, tags, category, summary }: Props) {
       </div>
       <div className="mb-1 flex justify-center">
         <div className="flex flex-wrap gap-1.5">
-          {tags.map((t) => (
+          {skills.map((t) => (
             <Link key={t.slug} href={t.url}>
               <SkillChip key={t.slug} skill={t} />
             </Link>

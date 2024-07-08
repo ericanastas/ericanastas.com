@@ -2,7 +2,7 @@
 title: GDrive Batch Tool
 summary: Batch processing tool for reporting on and maintaining Google Shared Drives
 coverImage: /images/som/gdrive-batch-tool/gdrive-batch-tool.png
-tags:
+skills:
   [
     "Bootstrap",
     "HTML & CSS",

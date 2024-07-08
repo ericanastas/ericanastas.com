@@ -2,29 +2,29 @@ import Link from "next/link";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import type { Project } from "@/interfaces/project";
-import type { Tag } from "@/interfaces/tag";
+import type { Skill } from "@/interfaces/skill";
 import SkillChip from "./skill-chip";
 
 type Props = {
   project: Project;
-  selectedTagSlugs?: string[];
-  onAddTag: (tag: Tag) => void;
-  onRemoveTag: (tag: Tag) => void;
+  selectedSkillSlugs?: string[];
+  onAddSkill: (skill: Skill) => void;
+  onRemoveSkill: (skill: Skill) => void;
   onMouseEnter: (project: Project) => void;
   onMouseLeave: (project: Project) => void;
 };
 
 export function ProjectGridItem({
   project,
-  selectedTagSlugs,
-  onAddTag,
-  onRemoveTag,
+  selectedSkillSlugs,
+  onAddSkill,
+  onRemoveSkill,
   onMouseEnter,
   onMouseLeave,
 }: Props) {
-  let projectTags = project.tags.map<Tag>((tag) => ({
-    ...tag,
-    selected: selectedTagSlugs?.some((slug) => tag.slug === slug),
+  let projectSkills = project.skills.map<Skill>((skill) => ({
+    ...skill,
+    selected: selectedSkillSlugs?.some((slug) => skill.slug === slug),
   }));
 
   function handleMouseEnter(event: any) {
@@ -64,12 +64,14 @@ export function ProjectGridItem({
 
       <div className="mb-2">
         <div className="flex flex-wrap gap-1.5">
-          {projectTags.map((t) => {
-            let selected = selectedTagSlugs?.some((slug) => slug === t.slug);
+          {projectSkills.map((t) => {
+            let selected = selectedSkillSlugs?.some((slug) => slug === t.slug);
             return (
               <div
                 className="cursor-pointer"
-                onClick={selected ? () => onRemoveTag(t) : () => onAddTag(t)}
+                onClick={
+                  selected ? () => onRemoveSkill(t) : () => onAddSkill(t)
+                }
                 key={t.slug}
               >
                 <SkillChip

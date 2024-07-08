@@ -1,7 +1,7 @@
 import {
   getCategories,
   getProjects,
-  getTagGroups,
+  getSkillGroups,
   getProjectsYearRange,
 } from "@/lib/projectsApi";
 import PageTitle from "../_components/page-title";
@@ -14,7 +14,7 @@ import { Suspense } from "react";
 export default async function ProjectsPage() {
   const allProjects = await getProjects();
   const yearRange = await getProjectsYearRange();
-  const tagGroups = await getTagGroups();
+  const skillGroups = await getSkillGroups();
   const categories = await getCategories();
 
   return (
@@ -29,7 +29,7 @@ export default async function ProjectsPage() {
             maxYear={yearRange.maxYear}
             minYear={yearRange.minYear}
             projects={allProjects}
-            tagGroups={tagGroups}
+            skillGroups={skillGroups}
           />
         </Suspense>
       </main>

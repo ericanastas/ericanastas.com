@@ -2,7 +2,7 @@
 title: Fractal Tree Canopy
 summary: Grasshopper definition that creates a recursive fractal tree canopy structure
 coverImage: /images/som/fractal-tree-canopy/tree-canopy.png
-tags: ["C#", "Grasshopper", "Rhino", "3D Modeling"]
+skills: ["C#", "Grasshopper", "Rhino", "3D Modeling"]
 date: "2011-02-16"
 project: Beijing Tiangqiao Performing arts Center
 ---

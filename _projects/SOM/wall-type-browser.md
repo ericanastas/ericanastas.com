@@ -2,7 +2,7 @@
 title: Wall Type Browser
 summary: Revit add-in that allows users to filter available wall types in a model.
 coverImage: /images/som/wall-type-browser/Wall-Type-Browser.png
-tags: ["C#", "Revit", "Revit API", "WPF", "UX Design"]
+skills: ["C#", "Revit", "Revit API", "WPF", "UX Design"]
 date: "2014-08-02"
 repo: https://github.com/ericanastas/wall-types-browser
 ---

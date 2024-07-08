@@ -2,7 +2,7 @@
 title: SOM Sync
 summary: FTP transfer tool for Navisworks models
 coverImage: /images/som/som-sync/som-sync-screenshot.jpg
-tags: ["C#", "FTP", "Navisworks", "WinForms", "UX Design"]
+skills: ["C#", "FTP", "Navisworks", "WinForms", "UX Design"]
 date: "2009-11-25"
 repo: https://github.com/ericanastas/som-sync
 ---

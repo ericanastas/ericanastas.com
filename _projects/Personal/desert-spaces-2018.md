@@ -2,7 +2,7 @@
 title: Desert Spaces 2018
 summary: Burning Man 2018 Art installation
 coverImage: /images/personal/desert-spaces-2018/bm-2018-10.jpg
-tags: ["Burning Man", "LEDs", "Electronics"]
+skills: ["Burning Man", "LEDs", "Electronics"]
 date: "2018-08-26"
 ---
 

@@ -2,7 +2,7 @@
 title: DVAMC Revit Plug-in
 summary: Revit plug-in that links room in Revit model to the program provided by the client
 coverImage: /images/som/dvamc-db-sync/dvamc-0.4_2_2.jpg
-tags: ["C#", "Revit", "Revit API", "SQL", "WinForms", "MS SQL", "UX Design"]
+skills: ["C#", "Revit", "Revit API", "SQL", "WinForms", "MS SQL", "UX Design"]
 date: "2011-10-26"
 repo: https://github.com/ericanastas/dvamc-db-sync
 project: Denver VA Medical Center

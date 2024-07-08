@@ -2,7 +2,7 @@
 title: Seating Layout
 summary: Grasshopper definition used to plan optimum auditorium seating layouts
 coverImage: /images/som/seating-layout/seating-curve.png
-tags: ["Grasshopper", "Rhino"]
+skills: ["Grasshopper", "Rhino"]
 date: "2010-07-16"
 project: Christ Our Savior Cathedral
 ---

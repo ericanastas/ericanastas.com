@@ -2,7 +2,7 @@
 title: Desert Spaces 2019
 summary: Burning Man 2019 Art installation
 coverImage: /images/personal/desert-spaces-2019/P8291307.jpg
-tags: ["Burning Man", "LEDs", "Electronics"]
+skills: ["Burning Man", "LEDs", "Electronics"]
 date: "2019-08-24"
 ---
 

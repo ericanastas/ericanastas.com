@@ -2,7 +2,7 @@
 title: Revit Diagnostics Report
 summary: Utility for diagnosing issues with Autodesk Revit
 coverImage:
-tags: ["Revit", "Revit API", "WinForms", "C#"]
+skills: ["Revit", "Revit API", "WinForms", "C#"]
 date: "2017-05-09"
 repo: https://github.com/ericanastas/revit-diagnostics
 ---

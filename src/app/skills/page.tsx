@@ -1,4 +1,4 @@
-import { getTagGroups, getProjects } from "@/lib/projectsApi";
+import { getSkillGroups } from "@/lib/projectsApi";
 
 import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
@@ -10,34 +10,37 @@ import SkillChip from "../_components/skill-chip";
 import { ProjectTimeLine } from "../_components/project-timeline";
 import { getProjectsYearRange } from "@/lib/projectsApi";
 
-export default async function TagsPage() {
+export default async function SkillsPage() {
   let yearRange = await getProjectsYearRange();
-  let allTagGroups = await getTagGroups(true);
+  let allSkillGroups = await getSkillGroups(true);
 
   return (
     <>
       <Header />
       <main>
         <article className="mb-16 mx-auto">
-          <PageTitle>Tags</PageTitle>
+          <PageTitle>Skills</PageTitle>
 
-          {allTagGroups.map((tagGroup) => (
+          {allSkillGroups.map((skillGroup) => (
             <>
-              <h2 className="text-2xl font-bold mt-8">{tagGroup.name}</h2>
+              <h2 className="text-2xl font-bold mt-8">{skillGroup.name}</h2>
 
               <div className="flex flex-col">
-                {tagGroup.skills.map((tag) => {
+                {skillGroup.skills.map((skill) => {
                   return (
-                    <div className="flex lg:items-center lg:flex-row flex-col">
+                    <div
+                      key={skill.slug}
+                      className="flex lg:items-center lg:flex-row flex-col"
+                    >
                       <div className="flex lg:justify-end lg:mr-1 lg:w-36 lg:mt-0 mt-6 lg:mb-0 mb-1">
-                        <Link key={tag.slug} href={tag.url}>
-                          <SkillChip skill={tag} />
+                        <Link key={skill.slug} href={skill.url}>
+                          <SkillChip skill={skill} />
                         </Link>
                       </div>
 
                       <div className="grow lg:mt-6">
                         <ProjectTimeLine
-                          projects={tag.projects!}
+                          projects={skill.projects!}
                           minYear={yearRange.minYear}
                           maxYear={yearRange.maxYear}
                         />
@@ -56,5 +59,5 @@ export default async function TagsPage() {
 }
 
 export const metadata: Metadata = {
-  title: "Tags",
+  title: "Skills",
 };

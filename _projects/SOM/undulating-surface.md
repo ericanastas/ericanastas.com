@@ -2,7 +2,7 @@
 title: Undulating Surface
 summary: placeholder summary
 coverImage: /images/som/undulating-surface/articulated-surface.png
-tags: ["Grasshopper", "Rhino"]
+skills: ["Grasshopper", "Rhino"]
 date: "2009-04-16"
 hide: true
 ---

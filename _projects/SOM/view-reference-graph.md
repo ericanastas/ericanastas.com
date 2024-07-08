@@ -2,7 +2,7 @@
 title: View Reference Graph
 summary: Revit plug-in that visualizes the relationships between views and drawing series in a Revit model
 coverImage: /images/som/view-reference-graph/SM-MP-A-View-Ref-Graph.png
-tags: ["C#", "Graphviz", "Revit", "Revit API"]
+skills: ["C#", "Graphviz", "Revit", "Revit API"]
 date: "2013-10-16"
 repo: https://github.com/ericanastas/view-reference-graph
 ---

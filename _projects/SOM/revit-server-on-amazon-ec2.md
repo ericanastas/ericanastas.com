@@ -2,7 +2,7 @@
 title: Revit Server on Amazon EC2
 summary: Deploying Revit Server on AWS EC2
 coverImage: /images/som/revit-server-on-amazon-ec2/EC2-Revit-Server-Screen-Shot-Annotated.png
-tags: ["AWS", "Revit", "Revit Server", "EC2", "SNS"]
+skills: ["AWS", "Revit", "Revit Server", "EC2", "SNS"]
 date: "2012-03-01"
 ---
 

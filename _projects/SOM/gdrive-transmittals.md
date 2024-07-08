@@ -2,7 +2,7 @@
 title: GDrive Transmittal Form
 summary: Form to send transmittals via Google Shared Drive
 coverImage: /images/som/gdrive-transmittals/transmittal-form.png
-tags:
+skills:
   [
     "TypeScript",
     "JavaScript",

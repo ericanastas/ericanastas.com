@@ -2,7 +2,7 @@
 title: Poly Chengdu Dayuan Massing
 summary: Building mass Grashopper definition for Poly Chengdu Dayuan tower 1
 coverImage: /images/som/pcd/Poly-Dayuan-Tower-1.png
-tags: ["Grasshopper", "Rhino", "3D Modeling"]
+skills: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2013-01-10"
 project: Chengdu Poly International Plaza
 ---

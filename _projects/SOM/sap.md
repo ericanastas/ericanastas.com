@@ -2,7 +2,7 @@
 title: Sichuan Aviation Plaza
 summary: Revit support for a commercial building in Chengdu, China
 coverImage: /images/som/sap/Podium.jpg
-tags: ["Revit", "3D Modeling", "Revit Support"]
+skills: ["Revit", "3D Modeling", "Revit Support"]
 date: "2011-10-10"
 project: Sichuan Aviation Plaza
 ---

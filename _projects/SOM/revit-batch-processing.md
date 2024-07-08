@@ -2,7 +2,7 @@
 title: Revit Batch Processing
 summary: Revit add-in utility for batch processing Revit files and the nested families they contain
 coverImage: /images/som/revit-batch-processing/rbp-demo.png
-tags: ["Revit", "Revit API", "C#", "WPF", "UX Design"]
+skills: ["Revit", "Revit API", "C#", "WPF", "UX Design"]
 date: "2018-03-18"
 repo: https://github.com/ericanastas/revit-batch-processing
 ---

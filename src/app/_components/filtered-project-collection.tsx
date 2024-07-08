@@ -7,12 +7,12 @@ import { SkillGroup } from "../../interfaces/skillGroup";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import ProjectFilter from "./project-filter";
 import { useEffect, useState } from "react";
-import type { Tag } from "@/interfaces/tag";
+import type { Skill } from "@/interfaces/skill";
 
 export type Props = {
   projects: Project[];
   categories: Category[];
-  tagGroups: SkillGroup[];
+  skillGroups: SkillGroup[];
   filter: ProjectFilterOptions;
   minYear: number;
   maxYear: number;
@@ -31,10 +31,10 @@ function projectFilterPredicate(
   }
 
   if (
-    filter.selectedTagSlugs.length > 0 &&
-    !project.tags
-      .map((t) => t.slug)
-      .some((ts) => filter.selectedTagSlugs.includes(ts))
+    filter.selectedSkillSlugs.length > 0 &&
+    !project.skills
+      .map((s) => s.slug)
+      .some((slug) => filter.selectedSkillSlugs.includes(slug))
   ) {
     return false;
   }
@@ -44,7 +44,7 @@ function projectFilterPredicate(
     let searchContent = (
       project.title +
       " " +
-      project.tags.map((t) => t.name).join(" ") +
+      project.skills.map((s) => s.name).join(" ") +
       " " +
       project.content
     ).toLocaleLowerCase();
@@ -68,8 +68,8 @@ function updateUrl(f: ProjectFilterOptions) {
     params.append("category", catSlug);
   }
 
-  for (let tagSlug of f.selectedTagSlugs) {
-    params.append("tag", tagSlug);
+  for (let skillSlug of f.selectedSkillSlugs) {
+    params.append("skill", skillSlug);
   }
 
   window.history.replaceState(null, "", `?${params.toString()}`);
@@ -78,7 +78,7 @@ function updateUrl(f: ProjectFilterOptions) {
 export default function FilteredProjectCollection({
   projects,
   categories,
-  tagGroups,
+  skillGroups,
   filter,
   minYear,
   maxYear,
@@ -105,16 +105,18 @@ export default function FilteredProjectCollection({
     setProjectFilter(f);
   }
 
-  function handleAddTag(tag: Tag) {
+  function handleAddSkill(skill: Skill) {
     setProjectFilter((f) => ({
       ...f,
-      selectedTagSlugs: [...f.selectedTagSlugs, tag.slug],
+      selectedSkillSlugs: [...f.selectedSkillSlugs, skill.slug],
     }));
   }
-  function handleRemoveTag(tag: Tag) {
+  function handleRemoveSkill(skill: Skill) {
     setProjectFilter((f) => ({
       ...f,
-      selectedTagSlugs: f.selectedTagSlugs.filter((ts) => ts !== tag.slug),
+      selectedSkillSlugs: f.selectedSkillSlugs.filter(
+        (ts) => ts !== skill.slug
+      ),
     }));
   }
 
@@ -122,19 +124,19 @@ export default function FilteredProjectCollection({
     <div>
       <ProjectFilter
         categories={categories}
-        tagGroups={tagGroups}
+        skillGroups={skillGroups}
         filter={projectFilter}
         onFilterOptionsChanged={handleFilterOptionsChanged}
       />
 
       {filteredProjects.length > 0 ? (
         <ProjectCollection
-          onAddTag={handleAddTag}
-          onRemoveTag={handleRemoveTag}
+          onAddSkill={handleAddSkill}
+          onRemoveSkill={handleRemoveSkill}
           projects={filteredProjects}
           minYear={minYear}
           maxYear={maxYear}
-          selectedTagSlugs={projectFilter.selectedTagSlugs}
+          selectedSkillSlugs={projectFilter.selectedSkillSlugs}
         />
       ) : (
         <div className="flex justify-center items-center py-20">

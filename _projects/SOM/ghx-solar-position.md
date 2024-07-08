@@ -2,7 +2,7 @@
 title: Solar Position Grasshopper Component
 summary: Custom Grasshopper component which calculates the position of the sun at a given latitude, longitude, and time
 coverImage: /images/som/ghx-solar-position/solar-ghx.png
-tags:
+skills:
   [
     "C#",
     "Grasshopper",

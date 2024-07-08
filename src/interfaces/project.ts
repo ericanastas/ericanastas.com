@@ -12,8 +12,8 @@ export interface Project extends Page {
   /**Short one or two sentence summary of project */
   summary: string;
 
-  /**Tags */
-  tags: Skill[];
+  /**Skills */
+  skills: Skill[];
 
   /**Project category */
   category: Category;

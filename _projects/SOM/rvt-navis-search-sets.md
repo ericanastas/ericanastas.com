@@ -2,7 +2,7 @@
 title: Revit Model Navisworks Search Sets
 summary: Standard search sets for coordinating Revit models in Navisworks
 coverImage: /images/som/rvt-navis-search-sets/Profiler-Colors.png
-tags: ["3D Coordination", "Navisworks"]
+skills: ["3D Coordination", "Navisworks"]
 date: "2013-03-29"
 ---
 

@@ -2,7 +2,7 @@
 title: Desert Spaces 2022
 summary: Burning Man 2022 Art installation
 coverImage: /images/personal/desert-spaces-2022/IMG_2080.jpg
-tags: ["Burning Man", "LEDs", "Electronics"]
+skills: ["Burning Man", "LEDs", "Electronics"]
 date: "2022-08-27"
 ---
 

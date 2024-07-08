@@ -2,7 +2,7 @@
 title: EMT Shade
 summary: EMT electrical conduit shade structure
 coverImage: /images/personal/emt-shade/P8230401.jpg
-tags: ["Burning Man"]
+skills: ["Burning Man"]
 date: "2016-08-27"
 ---
 

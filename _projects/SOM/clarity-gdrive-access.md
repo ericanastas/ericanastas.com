@@ -2,7 +2,7 @@
 title: Clarity GDrive Access Request Form
 summary: Self service form used by BIM managers to add the service account used by IMAGINiT Clarity to their project's GDrives
 coverImage: /images/som/clarity-gdrive-access/clarity-gdrive-access.png
-tags:
+skills:
   [
     "JavaScript",
     "Google API",

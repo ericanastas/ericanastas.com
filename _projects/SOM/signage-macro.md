@@ -2,7 +2,7 @@
 title: Signage Room Assignment
 summary: Revit macro that assigns signage to associated rooms.
 coverImage: /images/som/signage-macro/dvamc-signage-macro.jpg
-tags: ["C#", "Revit", "Revit API"]
+skills: ["C#", "Revit", "Revit API"]
 date: "2011-02-17"
 project: Denver VA Medical Center
 ---

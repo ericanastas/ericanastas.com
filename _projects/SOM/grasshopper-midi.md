@@ -2,7 +2,7 @@
 title: MIDI Controlled Grasshopper
 summary: Controlling Grasshopper variables with knobs on a physical MIDI controller
 coverImage: /images/som/ghx-midi/ghx-midi.png
-tags: ["C#", "Grasshopper", "Grasshopper API", "WinForms", "Rhino"]
+skills: ["C#", "Grasshopper", "Grasshopper API", "WinForms", "Rhino"]
 date: "2011-02-25"
 repo: https://github.com/ericanastas/grasshopper-midi
 ---

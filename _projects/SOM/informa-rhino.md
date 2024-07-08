@@ -2,7 +2,7 @@
 title: Informa Master Planning Rhino Plug-in
 summary: Master planning plug-in for Rhino
 coverImage: /images/som/informa-rhino/Informa.jpg
-tags:
+skills:
   [
     "MS Access",
     "C#",

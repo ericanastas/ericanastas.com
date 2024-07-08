@@ -2,7 +2,7 @@
 title: Show Coordinate Systems
 summary: A Revit add-in which helps visualize the relationships between the various coordinate systems
 coverImage: /images/som/show-coordinate-systems/ShowCoordinateSystems.png
-tags: ["C#", "Revit API", "Revit"]
+skills: ["C#", "Revit API", "Revit"]
 date: "2017-07-24"
 repo: https://github.com/ericanastas/show-coordinate-systems
 ---
