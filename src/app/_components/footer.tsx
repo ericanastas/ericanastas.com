@@ -6,13 +6,13 @@ export function Footer() {
 
   return (
     <footer>
-      <hr className="border-neutral-300 mt-12 mb-4" />
+      <hr className="border-gray-400 mt-12 mb-4" />
       <div className="flex flex-row">
-        <span className="block text-sm text-gray-500 text-left dark:text-gray-400 mb-4">
+        <span className="block text-sm text-gray-500 text-left mb-4">
           © {YEAR} Eric Anastas
         </span>
         <div className="flex grow justify-end">
-          <span className="block text-sm text-gray-500 text-left dark:text-gray-400 mb-4 italic">
+          <span className="block text-sm text-gray-500 text-left mb-4 italic">
             Built with{" "}
             <a className="hover:underline" href="https://react.dev/">
               React
