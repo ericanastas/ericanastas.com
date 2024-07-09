@@ -17,12 +17,12 @@ export default async function SkillsPage() {
         <article className="mb-16 mx-auto">
           <PageTitle>Skills</PageTitle>
 
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 gap-y-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 gap-y-4">
             {allSkillGroups.map((skillGroup) => (
               <div key={skillGroup.name}>
-                <h2 className="text-2xl font-bold mb-2">{skillGroup.name}</h2>
+                <h2 className="text-2xl font-bold mb-3">{skillGroup.name}</h2>
 
-                <div className="flex flex-wrap gap-2 mb-10">
+                <div className="flex flex-wrap gap-3 mb-10">
                   {skillGroup.skills.map((skill) => {
                     return (
                       <div
@@ -30,7 +30,11 @@ export default async function SkillsPage() {
                         className="flex lg:items-center lg:flex-row flex-col"
                       >
                         <Link key={skill.slug} href={skill.url}>
-                          <SkillChip skill={skill} />
+                          <SkillChip
+                            textSize="lg"
+                            badge={`${skill.projects?.length}`}
+                            skill={skill}
+                          />
                         </Link>
                       </div>
                     );
@@ -38,6 +42,14 @@ export default async function SkillsPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="flex justify-end">
+            <dfn>
+              <Link href={"/skills/timeline"} className="button not-italic">
+                View Skills Timeline ...
+              </Link>
+            </dfn>
           </div>
         </article>
       </main>

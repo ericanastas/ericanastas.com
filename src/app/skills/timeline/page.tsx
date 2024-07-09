@@ -19,7 +19,7 @@ export default async function SkillsPage() {
       <Header />
       <main>
         <article className="mb-16 mx-auto">
-          <PageTitle>Skills</PageTitle>
+          <PageTitle>Skills Timeline</PageTitle>
 
           {allSkillGroups.map((skillGroup) => (
             <>
@@ -32,9 +32,13 @@ export default async function SkillsPage() {
                       key={skill.slug}
                       className="flex lg:items-center lg:flex-row flex-col"
                     >
-                      <div className="flex lg:justify-end lg:mr-1 lg:w-36 lg:mt-0 mt-6 lg:mb-0 mb-1">
+                      <div className="flex lg:justify-end lg:mr-2 lg:w-48 lg:mt-0 mt-8 lg:mb-0 mb-2">
                         <Link key={skill.slug} href={skill.url}>
-                          <SkillChip skill={skill} />
+                          <SkillChip
+                            textSize="sm"
+                            badge={`${skill.projects?.length}`}
+                            skill={skill}
+                          />
                         </Link>
                       </div>
 
