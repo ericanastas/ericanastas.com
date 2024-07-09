@@ -29,7 +29,7 @@ export function ProjectGrid({
           onRemoveSkill={onRemoveSkill}
           project={project}
           selectedSkillSlugs={selectedSkillSlugs}
-          key={project.category.slug + "-" + project.slug}
+          key={project.group.slug + "-" + project.slug}
         />
       ))}
     </div>

@@ -54,8 +54,8 @@ export function ProjectGridItem({
       </h3>
 
       <div className="flex justify-between mb-2">
-        <Link className="hover:underline" href={project.category.url}>
-          {project.category.name} Projects
+        <Link className="hover:underline" href={project.group.url}>
+          {project.group.name} Projects
         </Link>
         <div>
           <DateFormatter dateString={project.date} />

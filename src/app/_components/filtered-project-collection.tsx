@@ -2,7 +2,7 @@
 
 import ProjectCollection from "./project-collection";
 import { Project } from "../../interfaces/project";
-import { Category } from "../../interfaces/category";
+import { Group } from "../../interfaces/group";
 import { SkillGroup } from "../../interfaces/skillGroup";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import ProjectFilter from "./project-filter";
@@ -11,7 +11,7 @@ import type { Skill } from "@/interfaces/skill";
 
 export type Props = {
   projects: Project[];
-  categories: Category[];
+  groups: Group[];
   skillGroups: SkillGroup[];
   filter: ProjectFilterOptions;
   minYear: number;
@@ -22,10 +22,10 @@ function projectFilterPredicate(
   project: Project,
   filter: ProjectFilterOptions
 ): boolean {
-  //If categories are selected project category
+  //If groups are selected project group
   if (
-    filter.selectedCategorySlugs.length > 0 &&
-    !filter.selectedCategorySlugs.some((s) => s === project.category.slug)
+    filter.selectedGroupSlugs.length > 0 &&
+    !filter.selectedGroupSlugs.some((s) => s === project.group.slug)
   ) {
     return false;
   }
@@ -64,8 +64,8 @@ function updateUrl(f: ProjectFilterOptions) {
     params.append("search", f.searchQuery);
   }
 
-  for (let catSlug of f.selectedCategorySlugs) {
-    params.append("category", catSlug);
+  for (let catSlug of f.selectedGroupSlugs) {
+    params.append("group", catSlug);
   }
 
   for (let skillSlug of f.selectedSkillSlugs) {
@@ -77,7 +77,7 @@ function updateUrl(f: ProjectFilterOptions) {
 
 export default function FilteredProjectCollection({
   projects,
-  categories,
+  groups,
   skillGroups,
   filter,
   minYear,
@@ -123,7 +123,7 @@ export default function FilteredProjectCollection({
   return (
     <div>
       <ProjectFilter
-        categories={categories}
+        groups={groups}
         skillGroups={skillGroups}
         filter={projectFilter}
         onFilterOptionsChanged={handleFilterOptionsChanged}
