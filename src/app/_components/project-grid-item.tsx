@@ -47,7 +47,7 @@ export function ProjectGridItem({
         src={project.coverImage}
       />
 
-      <h3 className="text-xl mt-4 leading-snug">
+      <h3 className="text-xl mt-4 leading-snug font-semibold">
         <Link href={project.url} className="hover:underline">
           {project.title}
         </Link>
