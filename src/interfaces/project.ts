@@ -1,5 +1,5 @@
 import type { Skill } from "./skill";
-import { Category } from "./category";
+import { Group } from "./group";
 import type { Page } from "./page";
 
 export interface Project extends Page {
@@ -15,8 +15,8 @@ export interface Project extends Page {
   /**Skills */
   skills: Skill[];
 
-  /**Project category */
-  category: Category;
+  /**Project group */
+  group: Group;
 
   /**Hide the project */
   hide?: boolean;

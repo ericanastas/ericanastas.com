@@ -1,6 +1,6 @@
 "use client";
 
-import { Category } from "@/interfaces/category";
+import { Group } from "@/interfaces/group";
 import { Project } from "@/interfaces/project";
 import { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { SkillGroup } from "@/interfaces/skillGroup";
@@ -13,7 +13,7 @@ type Props = {
   minYear: number;
   maxYear: number;
   projects: Project[];
-  categories: Category[];
+  groups: Group[];
   skillGroups: SkillGroup[];
 };
 
@@ -22,7 +22,7 @@ function parseSearchParams(
 ): ProjectFilterOptions {
   let newFilter: ProjectFilterOptions = {
     searchQuery: params.get("search") ?? "",
-    selectedCategorySlugs: params.getAll("category"),
+    selectedGroupSlugs: params.getAll("group"),
     selectedSkillSlugs: params.getAll("skill"),
   };
 
@@ -33,7 +33,7 @@ export default function ProjectsPageFilteredProjects({
   minYear,
   maxYear,
   projects,
-  categories,
+  groups,
   skillGroups,
 }: Props) {
   const searchParams = useSearchParams();
@@ -54,7 +54,7 @@ export default function ProjectsPageFilteredProjects({
       projects={projects}
       filter={filter}
       skillGroups={skillGroups}
-      categories={categories}
+      groups={groups}
       minYear={minYear}
       maxYear={maxYear}
     />
