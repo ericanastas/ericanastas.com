@@ -93,7 +93,7 @@ export function ProjectTimeLine({
                 </div>
 
                 <div className="absolute w-96 -left-48 top-8 flex justify-center">
-                  <div className="w-max hidden group-hover:block bg-blue-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-blue-400">
+                  <div className="w-max hidden group-hover:block bg-blue-50 rounded-lg py-0.5 px-2 ring-1 ring-inset ring-blue-400 z-50">
                     <div className="flex flex-col items-end">
                       <span className="leading-snug text-gray-600 text-md">
                         {project.title}
