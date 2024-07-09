@@ -1,5 +1,5 @@
 export interface ProjectFilterOptions {
   searchQuery: string;
-  selectedCategorySlugs: string[];
+  selectedGroupSlugs: string[];
   selectedSkillSlugs: string[];
 }

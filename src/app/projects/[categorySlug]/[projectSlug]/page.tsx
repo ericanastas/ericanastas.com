@@ -10,7 +10,7 @@ import markdownStyles from "../../../_components/markdown-styles.module.css";
 import Script from "next/script";
 
 export default async function ProjectPage({ params }: Params) {
-  const project = await getProject(params.categorySlug, params.projectSlug);
+  const project = await getProject(params.groupSlug, params.projectSlug);
 
   if (!project) {
     return notFound();
@@ -27,7 +27,7 @@ export default async function ProjectPage({ params }: Params) {
             title={project.title}
             date={project.date}
             skills={project.skills}
-            category={project.category}
+            group={project.group}
             summary={project.summary}
           />
 
@@ -54,12 +54,12 @@ export default async function ProjectPage({ params }: Params) {
 type Params = {
   params: {
     projectSlug: string;
-    categorySlug: string;
+    groupSlug: string;
   };
 };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const project = await getProject(params.categorySlug, params.projectSlug);
+  const project = await getProject(params.groupSlug, params.projectSlug);
 
   if (!project) {
     return notFound();
@@ -80,6 +80,6 @@ export async function generateStaticParams() {
 
   return projects.map((project) => ({
     projectSlug: project.slug,
-    categorySlug: project.category.slug,
+    groupSlug: project.group.slug,
   }));
 }

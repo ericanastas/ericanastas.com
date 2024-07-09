@@ -5,7 +5,7 @@ import path from "path";
 import { markdownToHtml, removeFileExtension, convertToSlug } from "./util";
 import process from "process";
 import type { Project } from "@/interfaces/project";
-import type { Category } from "@/interfaces/category";
+import type { Group } from "@/interfaces/group";
 import type { Skill } from "@/interfaces/skill";
 import { SkillGroup } from "@/interfaces/skillGroup";
 import { SKILL_GROUPS, SKILL_GROUP_NAMES } from "./skillGroups";
@@ -21,13 +21,13 @@ function getSkillGroupName(skillName: string): string {
   }
 }
 
-function createCategory(name: string): Category {
+function createGroup(name: string): Group {
   let slug = convertToSlug(name);
 
   return {
     name: name,
     slug: slug,
-    url: `/projects?category=${slug}`,
+    url: `/projects?group=${slug}`,
   };
 }
 
@@ -43,7 +43,7 @@ function createSkill(name: string): Skill {
   };
 }
 
-function getCategoryFolderNames(): string[] {
+function getGroupFolderNames(): string[] {
   return fs.readdirSync(projectsDirectory);
 }
 
@@ -56,12 +56,12 @@ function projectIsVisible(project: Project): boolean {
 }
 
 async function readProjectFile(
-  categoryFolderName: string,
+  groupFolderName: string,
   mdFileName: string
 ): Promise<Project> {
   const projectMdPath = path.join(
     projectsDirectory,
-    categoryFolderName,
+    groupFolderName,
     mdFileName
   );
 
@@ -96,15 +96,15 @@ async function readProjectFile(
     );
   }
 
-  //Create category
-  const category = createCategory(categoryFolderName);
+  //Create group
+  const group = createGroup(groupFolderName);
 
   //Sort skills alphabetically on project
   skillObjArr = skillObjArr.sort((t1, t2) => (t1.name > t2.name ? 1 : -1));
 
   const projectSlug = removeFileExtension(mdFileName);
 
-  let url = `/projects/${category.slug}/${projectSlug}`;
+  let url = `/projects/${group.slug}/${projectSlug}`;
 
   return {
     slug: projectSlug,
@@ -116,7 +116,7 @@ async function readProjectFile(
     content,
     skills: skillObjArr,
     url,
-    category,
+    group: group,
     html,
     hide,
     repo,
@@ -128,20 +128,20 @@ function sortProjectDesc(project1: Project, project2: Project): number {
 }
 
 export async function getProject(
-  categorySlug: string,
+  groupSlug: string,
   projectSlug: string
 ): Promise<Project | null> {
-  let categoryFolderNames = getCategoryFolderNames();
+  let groupFolderNames = getGroupFolderNames();
 
-  let categoryFolderName = categoryFolderNames.find(
-    (c) => convertToSlug(c) === categorySlug
+  let groupFolderName = groupFolderNames.find(
+    (c) => convertToSlug(c) === groupSlug
   );
 
-  if (!categoryFolderName) return null;
+  if (!groupFolderName) return null;
 
   const projectMdFileName = projectSlug + ".md";
 
-  let project = await readProjectFile(categoryFolderName, projectMdFileName);
+  let project = await readProjectFile(groupFolderName, projectMdFileName);
 
   if (!projectIsVisible(project)) return null;
   else return project;
@@ -150,17 +150,14 @@ export async function getProject(
 export async function getProjects(): Promise<Project[]> {
   let projects: Project[] = [];
 
-  let categoryFolderNames = await getCategoryFolderNames();
+  let groupFolderNames = await getGroupFolderNames();
 
-  for (let categoryFolderName of categoryFolderNames) {
-    let categoryFolderPath = path.join(projectsDirectory, categoryFolderName);
-    let projectMdFileNames: string[] = fs.readdirSync(categoryFolderPath);
+  for (let groupFolderName of groupFolderNames) {
+    let groupFolderPath = path.join(projectsDirectory, groupFolderName);
+    let projectMdFileNames: string[] = fs.readdirSync(groupFolderPath);
 
     for (let projectMdFileName of projectMdFileNames) {
-      let project = await readProjectFile(
-        categoryFolderName,
-        projectMdFileName
-      );
+      let project = await readProjectFile(groupFolderName, projectMdFileName);
 
       projects.push(project);
     }
@@ -192,49 +189,47 @@ export async function getProjectsYearRange(): Promise<{
   return { minYear, maxYear };
 }
 
-export async function getCategory(
-  categorySlug: string,
+export async function getGroup(
+  groupSlug: string,
   incProjects?: boolean
-): Promise<Category | null> {
-  let categoryProjects = (await getProjects()).filter(
-    (p) => p.category.slug === categorySlug
+): Promise<Group | null> {
+  let groupProjects = (await getProjects()).filter(
+    (p) => p.group.slug === groupSlug
   );
 
-  if (categoryProjects.length > 0) {
-    let category: Category = {
-      ...categoryProjects[0].category,
-      projects: incProjects ? categoryProjects : undefined,
+  if (groupProjects.length > 0) {
+    let group: Group = {
+      ...groupProjects[0].group,
+      projects: incProjects ? groupProjects : undefined,
     };
 
-    return category;
+    return group;
   } else return null;
 }
 
-export async function getCategories(
-  incProjects?: boolean
-): Promise<Category[]> {
-  let categories: Category[] = [];
+export async function getGroups(incProjects?: boolean): Promise<Group[]> {
+  let groups: Group[] = [];
 
   //get projects
   let projects = await getProjects();
 
   for (let project of projects) {
-    let category: Category | undefined = categories.find(
-      (c) => c.slug === project.category.slug
+    let group: Group | undefined = groups.find(
+      (c) => c.slug === project.group.slug
     );
 
-    if (!category) {
-      category = {
-        ...project.category,
+    if (!group) {
+      group = {
+        ...project.group,
         projects: incProjects
-          ? projects.filter((p) => p.category.slug === project.category.slug)
+          ? projects.filter((p) => p.group.slug === project.group.slug)
           : undefined,
       };
-      categories.push(category);
+      groups.push(group);
     }
   }
 
-  return categories.sort((c1, c2) => (c1.name < c2.name ? -1 : 1));
+  return groups.sort((c1, c2) => (c1.name < c2.name ? -1 : 1));
 }
 
 export async function getSkill(

@@ -1,6 +1,6 @@
 import { Project } from "./project";
 
-export interface Category {
+export interface Group {
   name: string;
   slug: string;
   url: string;

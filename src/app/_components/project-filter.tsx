@@ -2,25 +2,25 @@
 import Select from "react-select";
 import type { MultiValue } from "react-select";
 import type { SkillGroup } from "../../interfaces/skillGroup";
-import type { Category } from "../../interfaces/category";
+import type { Group } from "../../interfaces/group";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { useId, useState, useEffect } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 export type Props = {
-  categories: Category[];
+  groups: Group[];
   skillGroups: SkillGroup[];
   filter: ProjectFilterOptions;
   onFilterOptionsChanged: (filter: ProjectFilterOptions) => void;
 };
 
 export default function ProjectFilter({
-  categories,
+  groups,
   skillGroups,
   filter,
   onFilterOptionsChanged,
 }: Props) {
-  const categoryOptions = categories.map((cat) => ({
+  const groupOptions = groups.map((cat) => ({
     label: cat.name + " Projects",
     value: cat.slug,
   }));
@@ -43,8 +43,8 @@ export default function ProjectFilter({
     setFilterState(filter);
   }, [filter]);
 
-  const selectedCategoryOptions = categoryOptions.filter((co) =>
-    filterState.selectedCategorySlugs.some((s) => s == co.value)
+  const selectedGroupOptions = groupOptions.filter((go) =>
+    filterState.selectedGroupSlugs.some((s) => s == go.value)
   );
 
   const selectedSkillOptions = allSkillOptions.filter((to) =>
@@ -53,12 +53,12 @@ export default function ProjectFilter({
 
   useEffect(() => {}, [filterState]);
 
-  function onCategorySelectionChanged(
+  function onGroupSelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
   ) {
     let newFilter: ProjectFilterOptions = {
       ...filterState,
-      selectedCategorySlugs: newValue.map((v) => v.value),
+      selectedGroupSlugs: newValue.map((v) => v.value),
     };
     setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
@@ -99,10 +99,10 @@ export default function ProjectFilter({
           }}
           instanceId={useId()}
           isMulti
-          options={categoryOptions}
-          placeholder="Filter by categories..."
-          onChange={onCategorySelectionChanged}
-          value={selectedCategoryOptions}
+          options={groupOptions}
+          placeholder="Filter by groups..."
+          onChange={onGroupSelectionChanged}
+          value={selectedGroupOptions}
           closeMenuOnSelect={false}
           menuShouldScrollIntoView={true}
           maxMenuHeight={800}

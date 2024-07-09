@@ -35,8 +35,8 @@ export default async function ReposPage() {
               </div>
               <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                 <p className="text-sm leading-6 text-gray-900">
-                  <Link className="hover:underline" href={project.category.url}>
-                    {project.category.name} Projects
+                  <Link className="hover:underline" href={project.group.url}>
+                    {project.group.name} Projects
                   </Link>
                 </p>
                 <p className="mt-1 text-xs leading-5 text-gray-500">

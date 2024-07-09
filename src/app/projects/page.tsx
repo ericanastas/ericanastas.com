@@ -1,5 +1,5 @@
 import {
-  getCategories,
+  getGroups,
   getProjects,
   getSkillGroups,
   getProjectsYearRange,
@@ -15,7 +15,7 @@ export default async function ProjectsPage() {
   const allProjects = await getProjects();
   const yearRange = await getProjectsYearRange();
   const skillGroups = await getSkillGroups();
-  const categories = await getCategories();
+  const groups = await getGroups();
 
   return (
     <>
@@ -25,7 +25,7 @@ export default async function ProjectsPage() {
 
         <Suspense>
           <ProjectsPageFilteredProjects
-            categories={categories}
+            groups={groups}
             maxYear={yearRange.maxYear}
             minYear={yearRange.minYear}
             projects={allProjects}
