@@ -22,7 +22,10 @@ export default function Index() {
                   the AEC industry.
                 </p>
                 <div className="flex items-center justify-center md:justify-start gap-x-4 grow my-8">
-                  <Link href={"/projects"} className="button bg-grey-300">
+                  <Link
+                    href={"/projects"}
+                    className="button-dark px-3.5 py-2.5"
+                  >
                     Browse Projects...
                   </Link>
                 </div>

@@ -5,7 +5,7 @@ import type { SkillGroup } from "../../interfaces/skillGroup";
 import type { Group } from "../../interfaces/group";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { useId, useState, useEffect } from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export type Props = {
   groups: Group[];
@@ -51,7 +51,17 @@ export default function ProjectFilter({
     filterState.selectedSkillSlugs.some((slug) => slug === to.value)
   );
 
-  useEffect(() => {}, [filterState]);
+  const [showClearButton, setShowClearButton] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (
+      filterState.searchQuery.length > 0 ||
+      filterState.selectedSkillSlugs.length > 0 ||
+      filterState.selectedGroupSlugs.length > 0
+    ) {
+      setShowClearButton(true);
+    } else setShowClearButton(false);
+  }, [filterState]);
 
   function onGroupSelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
@@ -84,8 +94,18 @@ export default function ProjectFilter({
     onFilterOptionsChanged(newFilter);
   }
 
+  function handleClearFiltersClick() {
+    let newFilter: ProjectFilterOptions = {
+      searchQuery: "",
+      selectedGroupSlugs: [],
+      selectedSkillSlugs: [],
+    };
+    setFilterState(newFilter);
+    onFilterOptionsChanged(newFilter);
+  }
+
   return (
-    <div className="flex flex-wrap gap-4 mb-4">
+    <div className="flex flex-wrap gap-3 mb-4">
       <div className="grow min-w-64">
         <Select
           styles={{
@@ -148,7 +168,7 @@ export default function ProjectFilter({
         />
       </div>
 
-      <div className="grow min-w-64">
+      <div className="grow">
         <div className="relative rounded-md">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <MagnifyingGlassIcon className="size-4 text-gray-900" />
@@ -164,6 +184,17 @@ export default function ProjectFilter({
           />
         </div>
       </div>
+      {showClearButton && (
+        <div className="relative w-32 h-9">
+          <div
+            onClick={handleClearFiltersClick}
+            className="absolute button-light cursor-pointer flex justify-center items-center -top-[1px] bottom-0 left-0 right-0"
+          >
+            <XMarkIcon className="size-5" />
+            Clear Filters
+          </div>
+        </div>
+      )}
     </div>
   );
 }
