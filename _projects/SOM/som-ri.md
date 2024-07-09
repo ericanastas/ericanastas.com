@@ -2,7 +2,7 @@
 title: Research & Innovation Workflow
 summary: Automated forms based approval process for reviewing research and development project proposals
 coverImage: /images/som/som-ri/10.52.01.067.png
-tags: ["GW Apps"]
+skills: ["GW Apps"]
 date: "2020-04-01"
 ---
 

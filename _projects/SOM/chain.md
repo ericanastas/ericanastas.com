@@ -2,7 +2,7 @@
 title: Chain
 summary: placeholder summary
 coverImage: /images/som/chain/chain.jpg
-tags: ["Grasshopper"]
+skills: ["Grasshopper"]
 date: "2009-04-29"
 hide: true
 ---

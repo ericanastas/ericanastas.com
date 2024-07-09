@@ -2,7 +2,7 @@
 title: Project Access Request Form
 summary: Automated workflow to used to request and approve access to project drives
 coverImage: /images/som/project-access-request/Approval-01Form.png
-tags:
+skills:
   [
     "JavaScript",
     "Google Apps Script",
@@ -13,7 +13,6 @@ tags:
   ]
 date: "2022-11-15"
 repo: https://github.com/ericanastas/project-access-request
-featured: true
 ---
 
 This form is used to request access to SOM project resources via Google Group membership.

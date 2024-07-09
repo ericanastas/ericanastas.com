@@ -2,7 +2,7 @@
 title: GDrive Batch Tool
 summary: Batch processing tool for reporting on and maintaining Google Shared Drives
 coverImage: /images/som/gdrive-batch-tool/gdrive-batch-tool.png
-tags:
+skills:
   [
     "Bootstrap",
     "HTML & CSS",
@@ -13,5 +13,4 @@ tags:
   ]
 date: "2021-05-24"
 repo: https://github.com/ericanastas/gdrive-batch-tool/
-featured: true
 ---

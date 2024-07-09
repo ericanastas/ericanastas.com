@@ -2,7 +2,7 @@
 title: Distribute Land Use
 summary: Rhino plug-in created to automatically create different land use distribution options.
 coverImage: /images/som/distribute-land-use/dist-land-use-1.png
-tags: ["C#", "Master Planning", "Rhino", "Rhino API"]
+skills: ["C#", "Master Planning", "Rhino", "Rhino API"]
 date: "2015-04-21"
 repo: https://github.com/ericanastas/distribute-land-use
 ---

@@ -2,7 +2,7 @@
 title: Revit Activity Log (MS SQL)
 summary: Tracking and visualizing user activity in Revit with MS SQL and Tableau
 coverImage: /images/som/activity-log-mssql/Revit-Activity-Log-3.png
-tags: ["Revit", "Revit API", "SQL", "MS SQL", "Tableau"]
+skills: ["Revit", "Revit API", "SQL", "MS SQL", "Tableau"]
 date: "2013-10-15"
 repo: https://github.com/ericanastas/activity-log
 ---

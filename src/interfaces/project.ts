@@ -1,4 +1,4 @@
-import type { Tag } from "./tag";
+import type { Skill } from "./skill";
 import { Category } from "./category";
 import type { Page } from "./page";
 
@@ -12,11 +12,8 @@ export interface Project extends Page {
   /**Short one or two sentence summary of project */
   summary: string;
 
-  /**Tags */
-  tags: Tag[];
-
-  /**Mark the project as featured to cause it to sort to the top */
-  featured?: boolean;
+  /**Skills */
+  skills: Skill[];
 
   /**Project category */
   category: Category;

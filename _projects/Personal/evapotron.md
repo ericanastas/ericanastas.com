@@ -2,7 +2,7 @@
 title: Evapotron Grey Water Evaporator
 summary: Grey water evaporator
 coverImage: /images/personal/evapotron/P1010721.jpg
-tags: ["Burning Man"]
+skills: ["Burning Man"]
 date: "2018-08-31"
 ---
 

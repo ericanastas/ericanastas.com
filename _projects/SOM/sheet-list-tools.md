@@ -2,7 +2,7 @@
 title: Sheet List Tools
 summary: Revit add-in that allow for managing sheet lists in Revit through an Excel file
 coverImage: /images/som/sheet-list-tools/Export-Sheet-List.png
-tags: ["C#", "Revit", "Revit API"]
+skills: ["C#", "Revit", "Revit API"]
 date: "2013-10-04"
 repo: https://github.com/ericanastas/sheet-list-tools
 ---

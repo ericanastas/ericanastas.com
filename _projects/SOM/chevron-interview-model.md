@@ -2,7 +2,7 @@
 title: Chevron Interview Model
 summary: Mock up model for business development
 coverImage: /images/som/chevron-interview-model/Perspective-Shaded.jpg
-tags:
+skills:
   [
     "Business Development",
     "Ecotect",

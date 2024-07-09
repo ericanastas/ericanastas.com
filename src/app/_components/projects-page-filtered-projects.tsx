@@ -3,7 +3,7 @@
 import { Category } from "@/interfaces/category";
 import { Project } from "@/interfaces/project";
 import { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
-import { TagGroup } from "@/interfaces/tagGroup";
+import { SkillGroup } from "@/interfaces/skillGroup";
 import FilteredProjectCollection from "../_components/filtered-project-collection";
 import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -14,7 +14,7 @@ type Props = {
   maxYear: number;
   projects: Project[];
   categories: Category[];
-  tagGroups: TagGroup[];
+  skillGroups: SkillGroup[];
 };
 
 function parseSearchParams(
@@ -23,7 +23,7 @@ function parseSearchParams(
   let newFilter: ProjectFilterOptions = {
     searchQuery: params.get("search") ?? "",
     selectedCategorySlugs: params.getAll("category"),
-    selectedTagSlugs: params.getAll("tag"),
+    selectedSkillSlugs: params.getAll("skill"),
   };
 
   return newFilter;
@@ -34,7 +34,7 @@ export default function ProjectsPageFilteredProjects({
   maxYear,
   projects,
   categories,
-  tagGroups,
+  skillGroups,
 }: Props) {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -53,7 +53,7 @@ export default function ProjectsPageFilteredProjects({
     <FilteredProjectCollection
       projects={projects}
       filter={filter}
-      tagGroups={tagGroups}
+      skillGroups={skillGroups}
       categories={categories}
       minYear={minYear}
       maxYear={maxYear}

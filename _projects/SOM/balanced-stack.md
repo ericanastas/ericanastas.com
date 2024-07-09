@@ -2,7 +2,7 @@
 title: Balanced Stack
 summary: Grasshopper definition that creates a balanced stack of blocks that follows a provided input curve
 coverImage: /images/som/balanced-stack/balanced-stack.png
-tags: ["Grasshopper", "Rhino"]
+skills: ["Grasshopper", "Rhino"]
 date: "2010-09-20"
 project: Christ Our Savior Cathedral
 ---

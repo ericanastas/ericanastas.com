@@ -2,7 +2,7 @@
 title: Revit to Unity 3D
 summary: placeholder summary
 coverImage: /images/som/revit-to-unity-3d/aviation-unity.png
-tags: ["Revit", "Unity 3D", "Visualization"]
+skills: ["Revit", "Unity 3D", "Visualization"]
 date: "2011-12-15"
 hide: true
 ---

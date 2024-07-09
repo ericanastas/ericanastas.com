@@ -2,7 +2,7 @@
 title: BFS Scoops
 summary: Canopy Grasshopper definition
 coverImage: /images/som/bfs-scoops/scoops.png
-tags: ["Grasshopper", "3D Modeling"]
+skills: ["Grasshopper", "3D Modeling"]
 date: "2013-06-11"
 ---
 

@@ -2,7 +2,7 @@
 title: MinLibLog
 summary: Minimal logging abstraction for .NET libraries that does not depend on any third party libraries or logging frameworks
 coverImage: /images/som/minliblog/minliblog.png
-tags: ["C#", "Logging"]
+skills: ["C#", "Logging"]
 date: "2020-07-22"
 repo: https://github.com/ericanastas/MinLibLog/
 ---

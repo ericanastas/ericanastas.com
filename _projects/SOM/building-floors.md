@@ -2,7 +2,7 @@
 title: Building Floors
 summary: Custom grasshopper components that simplify common tasks related to creating an analyzing building forms
 coverImage: /images/som/building-floors/Building-Floors.jpg
-tags:
+skills:
   [
     "C#",
     "Grasshopper",

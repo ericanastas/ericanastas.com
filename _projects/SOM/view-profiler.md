@@ -2,7 +2,7 @@
 title: View Profiler
 summary: Revit add-in that evaluates the performance of views in a Revit model
 coverImage: /images/som/view-profiler/Profile-View1.png
-tags: ["C#", "Revit", "Revit API"]
+skills: ["C#", "Revit", "Revit API"]
 date: "2013-10-06"
 repo: https://github.com/ericanastas/view-profiler
 ---

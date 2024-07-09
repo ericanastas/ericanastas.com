@@ -2,7 +2,7 @@
 title: China Shading Calculator
 summary: Rhino command that calculates the shading of existing residential units by new construction
 coverImage: /images/som/shading-calculator/China-Shading-1.png
-tags:
+skills:
   ["Design Analysis", "C#", "Grasshopper", "Rhino", "Rhino API", "3D Modeling"]
 date: "2010-03-15"
 ---

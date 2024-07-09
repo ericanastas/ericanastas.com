@@ -2,7 +2,7 @@
 title: Folded Canopy
 summary: Canopy structure grasshopper definition
 coverImage: /images/som/folded-canopy/folded-canopy.png
-tags: ["Grasshopper", "Rhino", "3D Modeling"]
+skills: ["Grasshopper", "Rhino", "3D Modeling"]
 date: "2011-01-11"
 project: Beijing Tiangqiao Performing arts Center
 ---

@@ -2,7 +2,7 @@
 title: Sustainability Data Hub
 summary: Application which tracks the goals and metrics related to the energy use and carbon footprint of SOM projects
 coverImage: /images/som/sustainability-data-hub/project-list.png
-tags:
+skills:
   [
     "JavaScript",
     "TypeScript",
@@ -19,7 +19,6 @@ tags:
   ]
 date: "2024-01-11"
 repo: https://github.com/ericanastas/sustainability-data-hub
-featured: true
 ---
 
 ![](/images/som/sustainability-data-hub/project-summary.png)

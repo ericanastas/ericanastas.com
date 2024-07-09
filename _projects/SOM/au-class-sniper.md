@@ -2,7 +2,7 @@
 title: AU Class Sniper
 summary: Utility script that automatically checks for open spots in Autodesk University classes
 coverImage: /images/som/au-class-sniper/au-class-sniper.png
-tags: ["JavaScript", "NodeJS", "Puppeteer"]
+skills: ["JavaScript", "NodeJS", "Puppeteer"]
 date: "2019-10-22"
 repo: https://github.com/ericanastas/AU-Class-Sniper/
 ---

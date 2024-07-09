@@ -2,7 +2,7 @@
 title: Collaboration Resource Manager
 summary: Application which automates the setup and maintenance of SaaS collaboration resources, such as project Google Drives and Groups
 coverImage: /images/som/collaboration-resource-manager/project-list.png
-tags:
+skills:
   [
     "Google Apps Script",
     "Open API",
@@ -19,7 +19,6 @@ tags:
   ]
 date: "2023-04-27"
 repo: https://github.com/ericanastas/collaboration-resource-manager
-featured: true
 ---
 
 ![](/images/som/collaboration-resource-manager/project-details.png)

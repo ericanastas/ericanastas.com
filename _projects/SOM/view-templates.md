@@ -2,7 +2,7 @@
 title: Revit View Types & Templates
 summary: A system of standard view types, view templates, and view filters
 coverImage:
-tags: ["Revit", "Revit Support"]
+skills: ["Revit", "Revit Support"]
 date: "2015-11-17"
 ---
 

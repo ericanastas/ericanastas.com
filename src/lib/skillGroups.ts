@@ -1,4 +1,4 @@
-export const TAG_GROUP_NAMES = [
+export const SKILL_GROUP_NAMES = [
   //Software Engineering
   "Code",
   "Frontend",
@@ -14,9 +14,9 @@ export const TAG_GROUP_NAMES = [
   "Hobbies",
 ] as const;
 
-export type TagGroupName = (typeof TAG_GROUP_NAMES)[number];
+export type SkillGroupName = (typeof SKILL_GROUP_NAMES)[number];
 
-export const TAG_GROUPS: { [key: string]: TagGroupName } = {
+export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   //Frontend
   React: "Frontend",
   Angular: "Frontend",
