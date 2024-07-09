@@ -39,7 +39,7 @@ export function ProjectGridItem({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="hover:ring-2 ring-blue-400 p-2 rounded-md"
+      className="hover:ring-2 ring-blue-400 p-2 rounded-md text-gray-600"
     >
       <CoverImage
         url={project.url}
