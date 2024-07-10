@@ -49,7 +49,7 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   "MS Access": "Backend",
   RDS: "Backend",
   "CI/CD": "Backend",
-  Testing: "Backend",
+  "Unit Testing": "Backend",
   "Github Actions": "Backend",
   Logging: "Backend",
   NuGet: "Backend",

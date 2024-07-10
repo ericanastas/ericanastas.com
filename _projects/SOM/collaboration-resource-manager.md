@@ -14,7 +14,7 @@ skills:
     "SQL",
     "Docker",
     "Elasticsearch",
-    "Testing",
+    "Unit Testing",
     "HTML & CSS",
   ]
 date: "2023-04-27"
