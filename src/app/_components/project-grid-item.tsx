@@ -39,7 +39,7 @@ export function ProjectGridItem({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="hover:ring-2 ring-blue-400 p-2 rounded-md"
+      className="hover:ring-2 ring-blue-400 p-2 rounded-md text-gray-600"
     >
       <CoverImage
         url={project.url}
@@ -47,7 +47,7 @@ export function ProjectGridItem({
         src={project.coverImage}
       />
 
-      <h3 className="text-xl mt-4 leading-snug">
+      <h3 className="text-xl mt-4 leading-snug font-semibold">
         <Link href={project.url} className="hover:underline">
           {project.title}
         </Link>
