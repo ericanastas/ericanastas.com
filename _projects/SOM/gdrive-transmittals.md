@@ -16,4 +16,6 @@ date: "2023-03-09"
 repo: https://github.com/ericanastas/gdrive-transmittals
 ---
 
+![](/images/som/gdrive-transmittals/sample-transmittal.png)
+
 [sample-transmittal.pdf](/images/som/gdrive-transmittals/sample-transmittal.pdf)
