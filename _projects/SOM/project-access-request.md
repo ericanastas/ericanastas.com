@@ -1,6 +1,6 @@
 ---
 title: Project Access Request Form
-summary: Automated workflow to used to request and approve access to project drives
+summary: Automated workflow used to request and approve access to project drives
 coverImage: /images/som/project-access-request/Approval-01Form.png
 skills:
   [
