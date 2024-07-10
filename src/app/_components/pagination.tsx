@@ -2,6 +2,8 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   EllipsisHorizontalIcon,
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
 } from "@heroicons/react/24/solid";
 
 export type Props = {
@@ -119,6 +121,19 @@ export default function Pagination({
       onPageButtonClicked(newPage);
     }
   }
+
+  function firstButtonClick() {
+    if (currentPage > 1) {
+      onPageButtonClicked(1);
+    }
+  }
+
+  function lastButtonClick() {
+    if (currentPage < pageCount) {
+      onPageButtonClicked(pageCount);
+    }
+  }
+
   function onPageNumberClick(event: any) {
     let pageNumber = parseInt(event.currentTarget.getAttribute("data-value"));
 
@@ -129,29 +144,48 @@ export default function Pagination({
 
   return (
     <div className="flex items-center justify-between py-3">
-      <div className="flex flex-1 justify-between lg:hidden">
+      <div className="flex flex-1 justify-between lg:hidden gap-1">
+        <a
+          onClick={firstButtonClick}
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-16 text-gray-900 ${
+            isFirstPage ? "invisible" : "cursor-pointer"
+          }`}
+        >
+          <ChevronDoubleLeftIcon className="size-4" />
+          First
+        </a>
         <a
           onClick={prevButtonClick}
-          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-24 text-gray-900 ${
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-20 text-gray-900 ${
             isFirstPage ? "invisible" : "cursor-pointer"
           }`}
         >
           <ChevronLeftIcon className="size-4" />
-          Previous
+          Prev
         </a>
 
-        <div className="font-medium">
+        <div className="grow font-medium flex justify-center items-center">
           Page {currentPage} of {pageCount}
         </div>
 
         <a
           onClick={nextButtonClick}
-          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-24 text-gray-900 ${
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-20 text-gray-900 ${
             isLastPage ? "invisible" : "cursor-pointer"
           }`}
         >
           Next
           <ChevronRightIcon className="size-4" />
+        </a>
+
+        <a
+          onClick={lastButtonClick}
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-16 text-gray-900 ${
+            isLastPage ? "invisible" : "cursor-pointer"
+          }`}
+        >
+          Last
+          <ChevronDoubleRightIcon className="size-4" />
         </a>
       </div>
 
@@ -162,19 +196,19 @@ export default function Pagination({
         >
           <a
             onClick={prevButtonClick}
-            className={`relative inline-flex items-center justify-center font-semibold rounded-l-md px-2 py-2 text-gray-900 ring-1 ring-inset ring-gray-400 w-24 ${
+            className={`relative inline-flex items-center justify-center font-semibold rounded-l-md px-2 py-2 text-gray-900 ring-1 ring-inset ring-gray-400 w-20 ${
               isFirstPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
             }`}
           >
             <ChevronLeftIcon className="size-4" />
-            Previous
+            Prev
           </a>
 
           {displayedPageNumbers.map((p) => renderPageButton(p))}
 
           <div
             onClick={nextButtonClick}
-            className={`relative inline-flex items-center justify-center rounded-r-md px-2 py-2 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 w-24 ${
+            className={`relative inline-flex items-center justify-center rounded-r-md px-2 py-2 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 w-20 ${
               isLastPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
             }`}
           >
