@@ -16,14 +16,6 @@ export default async function SkillsPage() {
       <main>
         <article className="mb-16 mx-auto">
           <PageTitle>Skills</PageTitle>
-          <div className="flex justify-end mb-8">
-            <Link
-              href={"/skills/timeline"}
-              className="button-light px-3.5 py-2.5"
-            >
-              View Skills Timeline ...
-            </Link>
-          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 gap-y-4">
             {allSkillGroups.map((skillGroup) => (
@@ -50,6 +42,14 @@ export default async function SkillsPage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="flex justify-end mb-2">
+            <Link
+              href={"/skills/timeline"}
+              className="button-dark px-3.5 py-2.5"
+            >
+              Open Skills Timeline...
+            </Link>
           </div>
         </article>
       </main>
