@@ -1,8 +1,8 @@
 import { getSkills } from "@/lib/projectsApi";
 
-import PageTitle from "../_components/page-title";
-import Header from "../_components/header";
-import Footer from "../_components/footer";
+import PageTitle from "../../_components/page-title";
+import Header from "../../_components/header";
+import Footer from "../../_components/footer";
 import { Metadata } from "next";
 import Link from "next/link";
 
