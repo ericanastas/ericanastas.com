@@ -40,7 +40,6 @@ export interface Position {
   name: string;
   timeSpan: TimeSpan;
   achievements: Achievement[];
-  positionType: "Full-time" | "Part-time";
 }
 
 export interface Achievement {

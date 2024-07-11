@@ -6,34 +6,33 @@ $section-gap: 10px;
 
 article.resume {
   font-size: 14px;
-
   display: flex;
   flex-direction: column;
   gap: $section-gap;
 
   section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
     h2 {
       font-size: 16px;
       font-weight: 600;
       text-transform: uppercase;
-      color: blue;
     }
-  }
 
-  h3 {
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    color: green;
-  }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
 
-  h4 {
-    font-size: 15px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    color: magenta;
+    h4 {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   a:hover {
@@ -55,43 +54,56 @@ article.resume {
 
     .header-title {
       flex-grow: 1;
-      font-weight: 700;
+      font-weight: 600;
       flex-direction: column;
       display: flex;
       justify-content: space-between;
+      padding-right: 20px;
 
       h1 {
         font-size: 32px;
       }
 
       h2 {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
 
     .header-details {
-      display: grid;
-      grid-auto-flow: column;
-      column-gap: 5px;
-      row-gap: 5px;
-      grid-template-columns: repeat(2, auto);
-      grid-template-rows: repeat(3, auto);
-    }
-
-    .header-detail-item {
       display: flex;
-      gap: 4px;
-      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      row-gap: 4px;
+
+      .header-details-col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+        .header-detail-item {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+        }
+      }
     }
   }
-}
 
-article.resume .skill-group-label {
-  font-weight: 600;
-}
+  .skills-section {
+    .skill-group-label {
+      font-weight: 600;
+    }
+    .skill-group {
+      display: flex;
+      flex-wrap: wrap;
 
-article.resume .skill-group-label::after {
-  content: ": ";
+      .skill {
+        display: inline;
+      }
+    }
+  }
+
+  .work-experience-section {
+  }
 }
 
 article.resume section.skills ul {
@@ -103,8 +115,4 @@ article.resume section.skills ul {
 article.resume .horz-comma-ul {
   display: flex;
   flex-wrap: wrap;
-}
-
-article.resume .horz-comma-ul li + li:before {
-  content: ", ";
 }

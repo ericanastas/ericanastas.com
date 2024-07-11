@@ -11,7 +11,6 @@ import {
 
 import "./resume-component.scss";
 import { parseISO, format } from "date-fns";
-
 import { Inter, Roboto, Roboto_Condensed, Inter_Tight } from "next/font/google";
 import IconEnvelopeFill from "./icons/IconEnvelopeFill";
 import IconTelephoneFill from "./icons/IconTelephoneFill";
@@ -47,38 +46,41 @@ function Header(contactInfo: ContactInfo) {
       </div>
 
       <div className="header-details">
-        <div className="header-detail-item">
-          <IconLocationDot />
-          {contactInfo.location}
+        <div className="header-details-col">
+          <div className="header-detail-item">
+            <IconLocationDot />
+            {contactInfo.location}
+          </div>
+          <div className="header-detail-item">
+            <IconTelephoneFill />
+            <a href={`tel:${contactInfo.phoneNumber}`}>
+              {contactInfo.phoneNumber}
+            </a>
+          </div>
+          <div className="header-detail-item">
+            <IconEnvelopeFill />
+            <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+          </div>
         </div>
-        <div className="header-detail-item">
-          <IconTelephoneFill />
-          <a href={`tel:${contactInfo.phoneNumber}`}>
-            {contactInfo.phoneNumber}
-          </a>
-        </div>
-        <div className="header-detail-item">
-          <IconEnvelopeFill />
-          <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-        </div>
-
-        <div className="header-detail-item">
-          <IconGlobe2 />
-          <a href={contactInfo.urls.website}>
-            {cleanURL(contactInfo.urls.website)}
-          </a>
-        </div>
-        <div className="header-detail-item">
-          <IconLinkedin />
-          <a href={contactInfo.urls.linkedin}>
-            {cleanURL(contactInfo.urls.linkedin)}
-          </a>
-        </div>
-        <div className="header-detail-item">
-          <IconGithub />
-          <a href={contactInfo.urls.github}>
-            {cleanURL(contactInfo.urls.github)}
-          </a>
+        <div className="header-details-col">
+          <div className="header-detail-item">
+            <IconGlobe2 />
+            <a href={contactInfo.urls.website}>
+              {cleanURL(contactInfo.urls.website)}
+            </a>
+          </div>
+          <div className="header-detail-item">
+            <IconLinkedin />
+            <a href={contactInfo.urls.linkedin}>
+              {cleanURL(contactInfo.urls.linkedin)}
+            </a>
+          </div>
+          <div className="header-detail-item">
+            <IconGithub />
+            <a href={contactInfo.urls.github}>
+              {cleanURL(contactInfo.urls.github)}
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -177,7 +179,6 @@ function PositionSection(position: Position, index: number) {
     <div className="position" key={index}>
       <h4>
         <div className="position-name">{position.name}</div>
-        <div className="position-type">{position.positionType}</div>
         <div className="position-dates">{TimeSpanLabel(position.timeSpan)}</div>
       </h4>
 
@@ -203,14 +204,16 @@ function SkillsSection(skillGroups: SkillGroup[]) {
 
       {skillGroups.map((sg, sgi) => (
         <div className="skill-group" key={sgi}>
-          <div className="skill-group-label">{sg.name}</div>
-          <ul className="horz-comma-ul">
-            {sg.skills.map((sk, ski) => (
-              <li className="skill" key={ski}>
-                {sk.url ? <a href={sk.url}>{sk.name}</a> : sk.name}
-              </li>
-            ))}
-          </ul>
+          <div className="skill-group-label">{`${sg.name}:`}&nbsp;</div>
+
+          {sg.skills.map((sk, ski) => {
+            return (
+              <div className="skill" key={ski}>
+                {sk.url ? <a href={sk.url}>{sk.name}</a> : <> {sk.name}</>}
+                {ski < sg.skills.length - 1 ? <>,&nbsp;</> : null}
+              </div>
+            );
+          })}
         </div>
       ))}
     </section>

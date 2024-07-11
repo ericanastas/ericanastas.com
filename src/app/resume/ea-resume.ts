@@ -65,9 +65,29 @@ export const EA_RESUME: Resume = {
           name: "Software Engineer",
           timeSpan: {
             start: "2021-05",
-            end: "2023-03",
+            end: "2024-03",
           },
-          positionType: "Full-time",
+          achievements: [
+            {
+              description: "Achievement 1 Description",
+              url: "https://www.google.com",
+            },
+            {
+              description: "Achievement 2 Description",
+              url: "https://www.google.com",
+            },
+            {
+              description: "Achievement 2 Description",
+              url: "https://www.google.com",
+            },
+          ],
+        },
+        {
+          name: "Digital Design Specialist",
+          timeSpan: {
+            start: "2008-02",
+            end: "2021-05",
+          },
           achievements: [
             {
               description: "Achievement 1 Description",
@@ -89,10 +109,52 @@ export const EA_RESUME: Resume = {
       name: "M. A. Mortenson Company",
       location: "Seattle, WA",
       url: "https://www.mortenson.com/",
-      positions: [],
+      positions: [
+        {
+          name: "Design Coordinator",
+          timeSpan: {
+            start: "2005-07",
+            end: "2008-02",
+          },
+          achievements: [
+            {
+              description: "Achievement 1 Description",
+              url: "https://www.google.com",
+            },
+            {
+              description: "Achievement 2 Description",
+              url: "https://www.google.com",
+            },
+            {
+              description: "Achievement 2 Description",
+              url: "https://www.google.com",
+            },
+          ],
+        },
+      ],
     },
   ],
   projects: [
+    {
+      name: "Project Name",
+      url: "/projects",
+      timeSpan: {
+        start: "1999-01",
+        end: "1999-04",
+      },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sed leo quis ultricies. Donec laoreet sed est id sagittis. Sed sed commodo sapien, auctor consectetur nisi. Praesent viverra massa ex. In lorem quam, vulputate quis sollicitudin sed, venenatis vel orci. Suspendisse diam ipsum, pharetra in volutpat quis, ornare vitae lectus. Etiam leo felis, dignissim non imperdiet vel, vehicula non nunc. Nulla bibendum blandit vehicula. Mauris vitae dui cursus, luctus lorem non, imperdiet odio. ",
+    },
+    {
+      name: "Project Name",
+      url: "/projects",
+      timeSpan: {
+        start: "1999-01",
+        end: "1999-04",
+      },
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sed leo quis ultricies. Donec laoreet sed est id sagittis. Sed sed commodo sapien, auctor consectetur nisi. Praesent viverra massa ex. In lorem quam, vulputate quis sollicitudin sed, venenatis vel orci. Suspendisse diam ipsum, pharetra in volutpat quis, ornare vitae lectus. Etiam leo felis, dignissim non imperdiet vel, vehicula non nunc. Nulla bibendum blandit vehicula. Mauris vitae dui cursus, luctus lorem non, imperdiet odio. ",
+    },
     {
       name: "Project Name",
       url: "/projects",
