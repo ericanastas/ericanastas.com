@@ -49,7 +49,6 @@ export const EA_RESUME: Resume = {
         { name: "Elasticsearch", url: "/projects?skill=elasticsearch" },
         { name: "MS SQL", url: "/projects?skill=ms-sql" },
         { name: "AWS", url: "/projects?skill=aws" },
-        { name: "GCP", url: "/projects?skill=gcp" },
         { name: "Unit Testing", url: "/projects?skill=unit-testing" },
         { name: "CI/CD", url: "/projects?skill=cicd" },
       ],
