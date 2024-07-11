@@ -1,23 +1,14 @@
 export interface Resume {
   contactInfo: ContactInfo;
-  introduction?: Introduction;
-
   skills: SkillGroup[];
   workExperience: Company[];
   projects: Project[];
   education: Education[];
 }
 
-export interface Introduction {
-  /**Target title (e.g Software Engineer) */
-  title?: string;
-
-  /** Professional summary */
-  summary?: string;
-}
-
 export interface ContactInfo {
   name: string;
+  title?: string;
   email: string;
   location: string;
   phoneNumber: string;

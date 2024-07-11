@@ -3,6 +3,7 @@ import { Resume } from "@/interfaces/resume";
 export const EA_RESUME: Resume = {
   contactInfo: {
     name: "Eric Anastas",
+    title: "Software Engineer",
     email: "aireq303@gmail.com",
     location: "San Francisco, CA",
     phoneNumber: "657-464-3742",
@@ -12,22 +13,45 @@ export const EA_RESUME: Resume = {
       github: "https://github.com/ericanastas",
     },
   },
-
   skills: [
     {
-      name: "Skill Group 1",
+      name: "Code",
       skills: [
-        { name: "Skill 1", url: "/skill/skill1" },
-        { name: "Skill 2", url: "/skill/skill2" },
-        { name: "Skill 3", url: "/skill/skill3" },
+        { name: "TypeScript", url: "/projects?skill=typescript" },
+        { name: "JavaScript", url: "/projects?skill=javascript" },
+        { name: "HTML & CSS", url: "/projects?skill=html-and-css" },
+        { name: "C#", url: "/projects?skill=csharp" },
+        { name: "SQL", url: "/projects?skill=sql" },
       ],
     },
     {
-      name: "Skill Group 2",
+      name: "Frontend",
       skills: [
-        { name: "Skill 4", url: "/skill/skill4" },
-        { name: "Skill 5", url: "/skill/skill5" },
-        { name: "Skill 6", url: "/skill/skill6" },
+        { name: "React", url: "/projects?skill=react" },
+        { name: "Angular", url: "/projects?skill=angular" },
+        { name: "Bootstrap", url: "/projects?skill=bootstrap" },
+        { name: "Tailwind", url: "/projects?skill=tailwind" },
+        { name: "Material Design", url: "/projects?skill=material-design" },
+        { name: "MUI", url: "/projects?skill=mui" },
+        { name: "NextJS", url: "/projects?skill=nextjs" },
+        { name: "NgRx", url: "/projects?skill=ngrx" },
+        { name: "RxJS", url: "/projects?skill=rxjs" },
+        { name: "WPF", url: "/projects?skill=wpf" },
+      ],
+    },
+    {
+      name: "Backend",
+      skills: [
+        { name: "NodeJS", url: "/projects?skill=nodejs" },
+        { name: "REST", url: "/projects?skill=rest" },
+        { name: "Open API", url: "/projects?skill=open-api" },
+        { name: "PostgreSQL", url: "/projects?skill=postgresql" },
+        { name: "Elasticsearch", url: "/projects?skill=elasticsearch" },
+        { name: "MS SQL", url: "/projects?skill=ms-sql" },
+        { name: "AWS", url: "/projects?skill=aws" },
+        { name: "GCP", url: "/projects?skill=gcp" },
+        { name: "Unit Testing", url: "/projects?skill=unit-testing" },
+        { name: "CI/CD", url: "/projects?skill=cicd" },
       ],
     },
   ],

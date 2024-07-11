@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$section-gap: 10px;
+
+article.resume {
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: $section-gap;
+
+  section {
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: blue;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    color: green;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    color: magenta;
+  }
+
+  a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  li {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: $section-gap;
+
+    .header-title {
+      flex-grow: 1;
+      font-weight: 700;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .header-details {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 5px;
+      row-gap: 5px;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+    }
+
+    .header-detail-item {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+  }
+}
+
+article.resume .skill-group-label {
+  font-weight: 600;
+}
+
+article.resume .skill-group-label::after {
+  content: ": ";
+}
+
+article.resume section.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+article.resume .horz-comma-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article.resume .horz-comma-ul li + li:before {
+  content: ", ";
+}

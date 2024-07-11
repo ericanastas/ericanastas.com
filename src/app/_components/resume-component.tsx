@@ -4,24 +4,32 @@ import {
   Education,
   Project,
   Company,
-  Introduction,
   SkillGroup,
   Position,
   TimeSpan,
 } from "@/interfaces/resume";
 
-import "./resume-component.css";
+import "./resume-component.scss";
 import { parseISO, format } from "date-fns";
+
+import { Inter, Roboto, Roboto_Condensed, Inter_Tight } from "next/font/google";
+import IconEnvelopeFill from "./icons/IconEnvelopeFill";
+import IconTelephoneFill from "./icons/IconTelephoneFill";
+import IconLocationDot from "./icons/IconLocationDot";
+import IconGlobe2 from "./icons/IconGlobe2";
+import IconLinkedin from "./icons/IconLinkedin";
+import IconGithub from "./icons/IconGithub";
+import BreakpointIndicator from "./breakpoint-indicator";
 
 interface Props {
   resume: Resume;
 }
+const font = Inter_Tight({ subsets: ["latin"] });
 
 export function ResumeComponent({ resume }: Props) {
   return (
-    <article className="resume">
+    <article className={`resume ${font.className}`}>
       {Header(resume.contactInfo)}
-      {IntroductionSection(resume.introduction)}
       {SkillsSection(resume.skills)}
       {WorkExperienceSection(resume.workExperience)}
       {ProjectsSection(resume.projects)}
@@ -32,36 +40,47 @@ export function ResumeComponent({ resume }: Props) {
 
 function Header(contactInfo: ContactInfo) {
   return (
-    <header className="header-section">
-      <h1>{contactInfo.name}</h1>
-      <ul>
-        <li>{contactInfo.location}</li>
-        <li>
+    <header>
+      <div className="header-title">
+        <h1>{contactInfo.name}</h1>
+        <h2>{contactInfo.title}</h2>
+      </div>
+
+      <div className="header-details">
+        <div className="header-detail-item">
+          <IconLocationDot />
+          {contactInfo.location}
+        </div>
+        <div className="header-detail-item">
+          <IconTelephoneFill />
           <a href={`tel:${contactInfo.phoneNumber}`}>
             {contactInfo.phoneNumber}
           </a>
-        </li>
-        <li>
+        </div>
+        <div className="header-detail-item">
+          <IconEnvelopeFill />
           <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
+        </div>
+
+        <div className="header-detail-item">
+          <IconGlobe2 />
           <a href={contactInfo.urls.website}>
             {cleanURL(contactInfo.urls.website)}
           </a>
-        </li>
-        <li>
+        </div>
+        <div className="header-detail-item">
+          <IconLinkedin />
           <a href={contactInfo.urls.linkedin}>
             {cleanURL(contactInfo.urls.linkedin)}
           </a>
-        </li>
-        <li>
+        </div>
+        <div className="header-detail-item">
+          <IconGithub />
           <a href={contactInfo.urls.github}>
             {cleanURL(contactInfo.urls.github)}
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </header>
   );
 }
@@ -70,15 +89,6 @@ function cleanURL(url: string) {
   const pattern = /^https?:\/\/(www\.)?(.*)/;
   const replace = "$2";
   return url.replace(pattern, replace);
-}
-
-function IntroductionSection(introduction?: Introduction) {
-  return introduction ? (
-    <section className="introduction-section">
-      <h2>{introduction?.title}</h2>
-      <p>{introduction?.summary}</p>
-    </section>
-  ) : null;
 }
 
 function EducationsSection(educations: Education[]) {
@@ -94,11 +104,11 @@ function EducationsSection(educations: Education[]) {
             <div className="education-location">{e.location}</div>
           </h4>
 
-          <div>
+          <div className="flex place-content-between bold">
             <div className="education-degree">
-              {`${e.degree} in ${e.field} `}
+              {`${e.degree} in ${e.field}`}
             </div>
-            <div className="education-completed">
+            <div className="">
               <time dateTime={e.completed}>{FormatIsoDate(e.completed)}</time>
             </div>
           </div>
@@ -146,7 +156,7 @@ function WorkExperienceSection(companies: Company[]) {
 function CompanySection(company: Company, index: number) {
   return (
     <div className="company" key={index}>
-      <h2>
+      <h3>
         <div className="company-name">
           {company.url ? (
             <a href={company.url}>{company.name}</a>
@@ -155,7 +165,7 @@ function CompanySection(company: Company, index: number) {
           )}
         </div>
         <div className="company-location">{company.location}</div>
-      </h2>
+      </h3>
 
       {company.positions.map((position, i) => PositionSection(position, i))}
     </div>
@@ -194,7 +204,7 @@ function SkillsSection(skillGroups: SkillGroup[]) {
       {skillGroups.map((sg, sgi) => (
         <div className="skill-group" key={sgi}>
           <div className="skill-group-label">{sg.name}</div>
-          <ul>
+          <ul className="horz-comma-ul">
             {sg.skills.map((sk, ski) => (
               <li className="skill" key={ski}>
                 {sk.url ? <a href={sk.url}>{sk.name}</a> : sk.name}
