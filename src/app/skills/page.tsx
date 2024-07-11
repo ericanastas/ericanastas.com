@@ -39,7 +39,7 @@ export default async function SkillsPage() {
                       >
                         <Link key={skill.slug} href={skill.url}>
                           <SkillChip
-                            textSize="lg"
+                            textSize="md"
                             badge={`${skill.projects?.length}`}
                             skill={skill}
                           />
