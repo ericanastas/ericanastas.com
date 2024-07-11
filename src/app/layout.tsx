@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import Container from "./_components/container";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import process from "process";
@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter_Tight({ subsets: ["latin"] });
 const description = "Personal portfolio site of Eric Anastas";
 const url = "https://ericanastas.com";
 
@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <Container>{children}</Container>
         {process.env.NODE_ENV === "production" && <Analytics />}
         {process.env.NODE_ENV === "production" && <SpeedInsights />}
