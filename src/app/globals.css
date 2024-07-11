@@ -2,33 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.button-dark {
+.button{
     @apply rounded-md;
-    @apply shadow-sm; 
-    @apply bg-black;
-    @apply hover:bg-gray-600;
-    @apply text-sm;
+    @apply text-base;
     @apply font-semibold;
+}
+
+.button-dark {
+    @apply button;
+    @apply bg-black;
     @apply text-white;
-    @apply focus-visible:outline;
-    @apply focus-visible:outline-2;
-    @apply focus-visible:outline-offset-2;
-    @apply focus-visible:outline-indigo-600;
+    @apply hover:bg-gray-700;
+    
 }
 
 
 .button-light {
-    @apply rounded-md;
+    @apply button;
     @apply bg-white;
     @apply hover:bg-gray-200;
     @apply ring-1;
     @apply ring-inset;
     @apply ring-gray-400;
-    @apply text-sm;
-    @apply font-semibold;
     @apply text-gray-500;
-    @apply focus-visible:outline;
-    @apply focus-visible:outline-2;
-    @apply focus-visible:outline-offset-2;
-    @apply focus-visible:outline-indigo-600;
 }
