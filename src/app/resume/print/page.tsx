@@ -1,28 +1,31 @@
-import { ResumeComponent } from "../../_components/resume-component";
-import Header from "../../_components/header";
-import Footer from "../../_components/footer";
-import { Metadata } from "next";
+"use client";
 
+import { ResumeComponent } from "../../_components/resume-component";
 import { EA_RESUME } from ".././ea-resume";
-import PageTitle from "../../_components/page-title";
+
+import IconPrinterFill from "@/app/_components/icons/IconPrinterFill";
+
+import "./print-styles.scss";
 
 export default async function ResumePage() {
+  function handlePrintClick() {
+    window.print();
+  }
+
   return (
     <>
-      <Header />
       <main>
-        <article>
-          <PageTitle>Resume</PageTitle>
-          <div className="mx-auto border border-gray-400 max-w-[815px] min-h-[1056px] shadow-sm p-8">
-            <ResumeComponent resume={EA_RESUME} />
+        <div className="print:hidden flex justify-end pb-10">
+          <div
+            onClick={handlePrintClick}
+            className="button-dark px-3.5 py-2.5 flex items-center gap-2 cursor-pointer"
+          >
+            <IconPrinterFill />
+            Print
           </div>
-        </article>
+        </div>
+        <ResumeComponent resume={EA_RESUME} />
       </main>
-      <Footer />
     </>
   );
 }
-
-export const metadata: Metadata = {
-  title: "Resume",
-};
