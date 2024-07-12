@@ -1,10 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 $section-gap: 10px;
 
-article.resume {
+.resume {
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -106,13 +102,13 @@ article.resume {
   }
 }
 
-article.resume section.skills ul {
+.resume section.skills ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-article.resume .horz-comma-ul {
+.resume .horz-comma-ul {
   display: flex;
   flex-wrap: wrap;
 }
