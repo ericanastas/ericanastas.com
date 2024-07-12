@@ -58,7 +58,7 @@ export const EA_RESUME: Resume = {
     {
       name: "Skidmore, Owings & Merrill",
       location: "San Francisco, CA",
-      url: "https://www.som.com/",
+      url: "/projects?group=som",
       positions: [
         {
           name: "Software Engineer",
@@ -107,7 +107,7 @@ export const EA_RESUME: Resume = {
     {
       name: "M. A. Mortenson Company",
       location: "Seattle, WA",
-      url: "https://www.mortenson.com/",
+      url: "/projects?group=mortenson",
       positions: [
         {
           name: "Design Coordinator",
