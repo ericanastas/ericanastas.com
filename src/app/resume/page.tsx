@@ -13,7 +13,7 @@ export default async function ResumePage() {
       <main>
         <article>
           <PageTitle>Resume</PageTitle>
-          <div className="mx-auto border border-gray-400 max-w-[815px] min-h-[1056px] shadow-sm p-8">
+          <div className="mx-auto border border-gray-400 max-w-[816px] min-h-[1056px] shadow-sm p-[48px]">
             <ResumeComponent resume={EA_RESUME} />
           </div>
         </article>
