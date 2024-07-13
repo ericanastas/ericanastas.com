@@ -160,7 +160,7 @@ function CompanySection(company: Company, index: number) {
     <div className="company" key={index}>
       <h3>
         <div className="company-name flex flex-col">
-            <a href={company.url}>{company.name}</a>
+          <a href={company.url}>{company.name}</a>
         </div>
         <div className="company-location">{company.location}</div>
       </h3>
@@ -198,20 +198,22 @@ function SkillsSection(skillGroups: SkillGroup[]) {
     <section className="skills-section">
       <h2>Skills</h2>
 
-      {skillGroups.map((sg, sgi) => (
-        <div className="skill-group" key={sgi}>
-          <div className="skill-group-label">{`${sg.name}:`}&nbsp;</div>
+      <div className="skill-groups">
+        {skillGroups.map((sg, sgi) => (
+          <div className="skill-group" key={sgi}>
+            <div className="skill-group-label">{`${sg.name}:`}&nbsp;</div>
 
-          {sg.skills.map((sk, ski) => {
-            return (
-              <div className="skill" key={ski}>
-                {sk.url ? <a href={sk.url}>{sk.name}</a> : <> {sk.name}</>}
-                {ski < sg.skills.length - 1 ? <>,&nbsp;</> : null}
-              </div>
-            );
-          })}
-        </div>
-      ))}
+            {sg.skills.map((sk, ski) => {
+              return (
+                <div className="skill" key={ski}>
+                  {sk.url ? <a href={sk.url}>{sk.name}</a> : <> {sk.name}</>}
+                  {ski < sg.skills.length - 1 ? <>,&nbsp;</> : null}
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
