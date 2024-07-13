@@ -3,7 +3,7 @@ import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 
-import { EA_RESUME } from "./ea-resume";
+import { AEC_RESUME } from "./aec-resume";
 import PageTitle from "../_components/page-title";
 
 export default async function ResumePage() {
@@ -14,7 +14,7 @@ export default async function ResumePage() {
         <article>
           <PageTitle>Resume</PageTitle>
           <div className="mx-auto border border-gray-400 max-w-[816px] min-h-[1056px] shadow-sm p-[48px]">
-            <ResumeComponent resume={EA_RESUME} />
+            <ResumeComponent resume={AEC_RESUME} />
           </div>
         </article>
       </main>

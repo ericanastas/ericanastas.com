@@ -1,6 +1,6 @@
 import { Resume } from "@/interfaces/resume";
 
-export const EA_RESUME: Resume = {
+export const SE_RESUME: Resume = {
   contactInfo: {
     name: "Eric Anastas",
     title: "Software Engineer",
@@ -49,8 +49,22 @@ export const EA_RESUME: Resume = {
         { name: "Elasticsearch", url: "/projects?skill=elasticsearch" },
         { name: "MS SQL", url: "/projects?skill=ms-sql" },
         { name: "AWS", url: "/projects?skill=aws" },
+        {
+          name: "Google Apps Script",
+          url: "/projects?skill=google-apps-script",
+        },
         { name: "Unit Testing", url: "/projects?skill=unit-testing" },
         { name: "CI/CD", url: "/projects?skill=cicd" },
+      ],
+    },
+    {
+      name: "APIs",
+      skills: [
+        { name: "Revit API", url: "/projects" },
+        { name: "Rhino API", url: "/projects" },
+        { name: "Grasshopper API", url: "/projects" },
+        { name: "NavisWorks API", url: "/projects" },
+        { name: "Google API", url: "/projects" },
       ],
     },
   ],
