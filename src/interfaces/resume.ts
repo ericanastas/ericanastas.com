@@ -31,7 +31,7 @@ export interface TimeSpan {
 
 export interface Company {
   name: string;
-  url?: string;
+  url: string;
   location: string;
   positions: Position[];
 }

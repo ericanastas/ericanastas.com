@@ -159,12 +159,8 @@ function CompanySection(company: Company, index: number) {
   return (
     <div className="company" key={index}>
       <h3>
-        <div className="company-name">
-          {company.url ? (
+        <div className="company-name flex flex-col">
             <a href={company.url}>{company.name}</a>
-          ) : (
-            company.name
-          )}
         </div>
         <div className="company-location">{company.location}</div>
       </h3>
