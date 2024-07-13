@@ -10,7 +10,7 @@ const Header = ({ hideTitle }: Props) => {
     <header>
       <div className="flex mb-2 mt-8 items-center">
         {!hideTitle && (
-          <h2 className="flex-none text-2xl md:text-4xl font-bold tracking-tighter">
+          <h2 className="flex-none text-2xl md:text-4xl font-bold">
             <Link href="/" className="hover:underline">
               Eric Anastas
             </Link>

@@ -10,7 +10,7 @@ import SkillChip from "../../_components/skill-chip";
 import { ProjectTimeLine } from "../../_components/project-timeline";
 import { getProjectsYearRange } from "@/lib/projectsApi";
 
-export default async function SkillsPage() {
+export default async function SkillsTimelinePage() {
   let yearRange = await getProjectsYearRange();
   let allSkillGroups = await getSkillGroups(true);
 
@@ -35,7 +35,7 @@ export default async function SkillsPage() {
                       <div className="flex lg:justify-end lg:mr-2 lg:w-48 lg:mt-0 mt-8 lg:mb-0 mb-2">
                         <Link key={skill.slug} href={skill.url}>
                           <SkillChip
-                            textSize="sm"
+                            textSize="md"
                             badge={`${skill.projects?.length}`}
                             skill={skill}
                           />

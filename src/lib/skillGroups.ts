@@ -53,6 +53,7 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   "Github Actions": "Backend",
   Logging: "Backend",
   NuGet: "Backend",
+  Vercel: "Backend",
 
   //AEC
   "3D Coordination": "AEC",

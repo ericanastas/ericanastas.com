@@ -1,0 +1,29 @@
+@media screen {
+  .container {
+    width: 100%;
+    max-width: 816px;
+    padding: 48px;
+  }
+}
+
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+
+@media print {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+  }
+}
+
+a {
+  color: #1d4ed8;
+}
+
+a::after {
+  //   content: "🔗";
+  //   content: "↗";
+}

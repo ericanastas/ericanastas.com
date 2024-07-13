@@ -7,10 +7,13 @@ skills:
     "React",
     "Tailwind",
     "HTML & CSS",
+    "SCSS",
     "NextJS",
     "JavaScript",
     "TypeScript",
     "UX Design",
+    "CI/CD",
+    "Vercel",
   ]
 date: "2024-04-20"
 repo: "https://github.com/ericanastas/ericanastas.com"
