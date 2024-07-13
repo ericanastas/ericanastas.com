@@ -31,9 +31,11 @@ $section-gap: 10px;
     }
   }
 
-  a:hover {
-    color: #2563eb;
-    text-decoration: underline;
+  a {
+    color: #1d4ed8;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   li {
@@ -96,9 +98,6 @@ $section-gap: 10px;
         display: inline;
       }
     }
-  }
-
-  .work-experience-section {
   }
 }
 
