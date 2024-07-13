@@ -99,21 +99,21 @@ function EducationsSection(educations: Education[]) {
       <h2>Education</h2>
       {educations.map((e, i) => (
         <div className="education" key={i}>
-          <h4>
+          <h3>
             <div className="education-name">
               {e.url ? <a href={e.url}>{e.name}</a> : e.name}
             </div>
             <div className="education-location">{e.location}</div>
-          </h4>
+          </h3>
 
-          <div className="flex place-content-between bold">
+          <h4>
             <div className="education-degree">
               {`${e.degree} in ${e.field}`}
             </div>
-            <div className="">
+            <div>
               <time dateTime={e.completed}>{FormatIsoDate(e.completed)}</time>
             </div>
-          </div>
+          </h4>
         </div>
       ))}
     </section>
