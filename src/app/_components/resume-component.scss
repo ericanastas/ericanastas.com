@@ -1,4 +1,5 @@
-$section-gap: 10px;
+$section-gap: 8px;
+$h-margin-top: 4px;
 
 .resume {
   font-size: 14px;
@@ -6,49 +7,11 @@ $section-gap: 10px;
   flex-direction: column;
   gap: $section-gap;
 
-  section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
-    h2 {
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    h3 {
-      font-size: 16px;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    h4 {
-      font-size: 15px;
-      font-weight: 600;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  a {
-    color: #1d4ed8;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  li {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-  }
-
   header {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: $section-gap;
+    gap: 4px;
 
     .header-title {
       flex-grow: 1;
@@ -60,10 +23,12 @@ $section-gap: 10px;
 
       h1 {
         font-size: 32px;
+        line-height: 40px;
       }
 
       h2 {
         font-size: 20px;
+        line-height: 25px;
       }
     }
 
@@ -71,18 +36,45 @@ $section-gap: 10px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 10px;
-      row-gap: 4px;
 
       .header-details-col {
         display: flex;
         flex-direction: column;
-        row-gap: 4px;
+        justify-content: space-between;
+
         .header-detail-item {
           display: flex;
           gap: 4px;
           align-items: center;
         }
       }
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      margin-top: $h-margin-top;
+    }
+
+    h4 {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      margin-top: $h-margin-top;
     }
   }
 
@@ -99,15 +91,23 @@ $section-gap: 10px;
       }
     }
   }
-}
 
-.resume section.skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
+  .work-experience-section {
+    .company {
+      .position {
+        .achievements {
+          list-style-type: disc;
+          list-style-position: outside;
+          padding-inline-start: 18px;
+        }
+      }
+    }
+  }
 
-.resume .horz-comma-ul {
-  display: flex;
-  flex-wrap: wrap;
+  a {
+    color: #1d4ed8;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
