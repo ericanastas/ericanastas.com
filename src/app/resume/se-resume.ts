@@ -99,31 +99,6 @@ export const SE_RESUME: Resume = {
         { name: "CI/CD", url: "https://ericanastas.com/projects?skill=cicd" },
       ],
     },
-    {
-      name: "APIs",
-      skills: [
-        {
-          name: "Revit API",
-          url: "https://ericanastas.com/projects?skill=revit-api",
-        },
-        {
-          name: "Rhino API",
-          url: "https://ericanastas.com/projects?skill=rhino-api",
-        },
-        {
-          name: "Grasshopper API",
-          url: "https://ericanastas.com/projects?skill=grasshopper-api",
-        },
-        {
-          name: "NavisWorks API",
-          url: "https://ericanastas.com/projects?skill=navisworks-api",
-        },
-        {
-          name: "Google API",
-          url: "https://ericanastas.com/projects?skill=google-api",
-        },
-      ],
-    },
   ],
   workExperience: [
     {
