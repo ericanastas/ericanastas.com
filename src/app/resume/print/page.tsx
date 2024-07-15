@@ -1,7 +1,7 @@
 "use client";
 
 import { ResumeComponent } from "../../_components/resume-component";
-import { AEC_SE_RESUME } from "../aec-se-resume";
+import { SE_RESUME } from "../se-resume";
 
 import IconPrinterFill from "@/app/_components/icons/IconPrinterFill";
 
@@ -24,7 +24,7 @@ export default async function ResumePage() {
             Print
           </div>
         </div>
-        <ResumeComponent resume={AEC_SE_RESUME} />
+        <ResumeComponent resume={SE_RESUME} />
       </main>
     </>
   );
