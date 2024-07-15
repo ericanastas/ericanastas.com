@@ -17,54 +17,111 @@ export const SE_RESUME: Resume = {
     {
       name: "Code",
       skills: [
-        { name: "TypeScript", url: "/projects?skill=typescript" },
-        { name: "JavaScript", url: "/projects?skill=javascript" },
-        { name: "HTML & CSS", url: "/projects?skill=html-and-css" },
-        { name: "C#", url: "/projects?skill=csharp" },
-        { name: "SQL", url: "/projects?skill=sql" },
+        {
+          name: "TypeScript",
+          url: "https://ericanastas.com/projects?skill=typescript",
+        },
+        {
+          name: "JavaScript",
+          url: "https://ericanastas.com/projects?skill=javascript",
+        },
+        {
+          name: "HTML & CSS",
+          url: "https://ericanastas.com/projects?skill=html-and-css",
+        },
+        { name: "C#", url: "https://ericanastas.com/projects?skill=csharp" },
+        { name: "SQL", url: "https://ericanastas.com/projects?skill=sql" },
       ],
     },
     {
       name: "Frontend",
       skills: [
-        { name: "React", url: "/projects?skill=react" },
-        { name: "NextJS", url: "/projects?skill=nextjs" },
-        { name: "Angular", url: "/projects?skill=angular" },
-        { name: "NgRx", url: "/projects?skill=ngrx" },
-        { name: "RxJS", url: "/projects?skill=rxjs" },
-        { name: "Bootstrap", url: "/projects?skill=bootstrap" },
-        { name: "Material Design", url: "/projects?skill=material-design" },
-        { name: "MUI", url: "/projects?skill=mui" },
-        { name: "Tailwind", url: "/projects?skill=tailwind" },
-        { name: "WPF", url: "/projects?skill=wpf" },
+        { name: "React", url: "https://ericanastas.com/projects?skill=react" },
+        {
+          name: "NextJS",
+          url: "https://ericanastas.com/projects?skill=nextjs",
+        },
+        {
+          name: "Angular",
+          url: "https://ericanastas.com/projects?skill=angular",
+        },
+        { name: "NgRx", url: "https://ericanastas.com/projects?skill=ngrx" },
+        { name: "RxJS", url: "https://ericanastas.com/projects?skill=rxjs" },
+        {
+          name: "Bootstrap",
+          url: "https://ericanastas.com/projects?skill=bootstrap",
+        },
+        {
+          name: "Material Design",
+          url: "https://ericanastas.com/projects?skill=material-design",
+        },
+        { name: "MUI", url: "https://ericanastas.com/projects?skill=mui" },
+        {
+          name: "Tailwind",
+          url: "https://ericanastas.com/projects?skill=tailwind",
+        },
+        { name: "WPF", url: "https://ericanastas.com/projects?skill=wpf" },
       ],
     },
     {
       name: "Backend",
       skills: [
-        { name: "NodeJS", url: "/projects?skill=nodejs" },
-        { name: "REST", url: "/projects?skill=rest" },
-        { name: "Open API", url: "/projects?skill=open-api" },
-        { name: "PostgreSQL", url: "/projects?skill=postgresql" },
-        { name: "Elasticsearch", url: "/projects?skill=elasticsearch" },
-        { name: "MS SQL", url: "/projects?skill=ms-sql" },
-        { name: "AWS", url: "/projects?skill=aws" },
+        {
+          name: "NodeJS",
+          url: "https://ericanastas.com/projects?skill=nodejs",
+        },
+        { name: "REST", url: "https://ericanastas.com/projects?skill=rest" },
+        {
+          name: "Open API",
+          url: "https://ericanastas.com/projects?skill=open-api",
+        },
+        {
+          name: "PostgreSQL",
+          url: "https://ericanastas.com/projects?skill=postgresql",
+        },
+        {
+          name: "Elasticsearch",
+          url: "https://ericanastas.com/projects?skill=elasticsearch",
+        },
+        {
+          name: "MS SQL",
+          url: "https://ericanastas.com/projects?skill=ms-sql",
+        },
+        { name: "AWS", url: "https://ericanastas.com/projects?skill=aws" },
         {
           name: "Google Apps Script",
-          url: "/projects?skill=google-apps-script",
+          url: "https://ericanastas.com/projects?skill=google-apps-script",
         },
-        { name: "Unit Testing", url: "/projects?skill=unit-testing" },
-        { name: "CI/CD", url: "/projects?skill=cicd" },
+        {
+          name: "Unit Testing",
+          url: "https://ericanastas.com/projects?skill=unit-testing",
+        },
+        { name: "CI/CD", url: "https://ericanastas.com/projects?skill=cicd" },
       ],
     },
     {
       name: "APIs",
       skills: [
-        { name: "Revit API", url: "/projects" },
-        { name: "Rhino API", url: "/projects" },
-        { name: "Grasshopper API", url: "/projects" },
-        { name: "NavisWorks API", url: "/projects" },
-        { name: "Google API", url: "/projects" },
+        {
+          name: "Revit API",
+          url: "https://ericanastas.com/projects?skill=revit-api",
+        },
+        {
+          name: "Rhino API",
+          url: "https://ericanastas.com/projects?skill=rhino-api",
+        },
+        {
+          name: "Grasshopper API",
+          url: "https://ericanastas.com/projects?skill=grasshopper-api",
+        },
+        {
+          name: "NavisWorks API",
+          url: "https://ericanastas.com/projects?skill=navisworks-api",
+        },
+        {
+          name: "Google API",
+          url: "https://ericanastas.com/projects?skill=google-api",
+        },
       ],
     },
   ],
@@ -72,7 +129,7 @@ export const SE_RESUME: Resume = {
     {
       name: "Skidmore, Owings & Merrill",
       location: "San Francisco, CA",
-      url: "/projects?group=som",
+      url: "https://ericanastas.com/projects?group=som",
       positions: [
         {
           name: "Software Engineer",
@@ -82,16 +139,24 @@ export const SE_RESUME: Resume = {
           },
           achievements: [
             {
-              description: "Achievement 1 Description",
-              url: "https://www.google.com",
+              description:
+                "Designed and developed frontend and full-stack applications on top of a firm-wide data warehouse API using React, Angular, and Material Design.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Built a general-purpose application to set up and audit resources on external SaaS collaboration platforms using Typescript, Node.js, and Express.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Developed a suite of utilities used to assist in the firms' adoption of Google Workplace using Typescript and Bootstrap on Google Apps Script.",
+            },
+            {
+              description:
+                "Assisted new senior engineers developing the firm-wide data warehouse API understand the business requirements, appropriate API structure, and data schemas.",
+            },
+            {
+              description:
+                "Mentored colleagues, with no prior programming experience, develop tools with both visual programming and add-in APIs following established software engineering principles and patterns.",
             },
           ],
         },
@@ -103,16 +168,32 @@ export const SE_RESUME: Resume = {
           },
           achievements: [
             {
-              description: "Achievement 1 Description",
-              url: "https://www.google.com",
+              description:
+                "Designed and developed over 40 custom tools using the .NET APIs of Revit, Rhino, Grasshopper, and Navisworks. This includes tools for generating 3D geometry, automating repetitive tasks, validating models, and design analysis.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Designed and implemented a Revit Add-In Library system with C#.NET to package, version, catalog, distribute, and update Revit add-ins across the firm.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Designed and implemented a system for tracking Revit usage across the firm built with C#.Net, Elasticsearch, and Kibana. These dashboards are used to identify and diagnose problems, and visualize usage metrics.",
+            },
+            {
+              description:
+                "Assisted architects in early concept design by creating Rhino Grasshopper definitions to solve complex 3D geometry problems and perform analysis of designs.",
+            },
+            {
+              description:
+                "Served as a key member of the team upgrading the firm to modern collaboration tools such as knowledge management platforms, and transitioning from local network drives to Google Drives. Worked with stakeholders to understand their needs, provided training, and developed utilities using third-party APIs.",
+            },
+            {
+              description:
+                "Supported a Research & Innovation subsidiary of the firm to systematize their research proposal review workflow by integrating it into a system of automated forms.",
+            },
+            {
+              description:
+                "Oversaw the adoption of BIM in the firm since 2008. Provided direct project support, training, and played a key role in the firm-wide groups responsible for developing and documenting the firm's standards and best practices.",
             },
           ],
         },
@@ -121,7 +202,7 @@ export const SE_RESUME: Resume = {
     {
       name: "M. A. Mortenson Company",
       location: "Seattle, WA",
-      url: "/projects?group=mortenson",
+      url: "https://ericanastas.com/projects?group=mortenson",
       positions: [
         {
           name: "Design Coordinator",
@@ -131,16 +212,30 @@ export const SE_RESUME: Resume = {
           },
           achievements: [
             {
-              description: "Achievement 1 Description",
-              url: "https://www.google.com",
+              description:
+                "Served as a primary technical expert on the Integrated Delivery Advancement Team (IDAT), playing a vital part in six out of nine R&D committees, including chairing the standards committee.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Produced and maintained up-to-date 3D structural and architectural Revit models from 2D design documents, ensuring alignment with the latest design iterations and RFIs. ",
+            },
+
+            {
+              description:
+                "Collaborated with architecture teams to address design issues found during the model creation process before causing problems in the field.",
+            },
+
+            {
+              description:
+                "Led regular 3D building system coordination meetings with subcontractors using Navisworks.",
             },
             {
-              description: "Achievement 2 Description",
-              url: "https://www.google.com",
+              description:
+                "Assisted project teams leverage 3D models on-site for planning, site logistics, and proactive problem-solving.",
+            },
+            {
+              description:
+                "Produced 2D integrated work plans directly from the coordinated 3D models for use by staff in the field during construction.",
             },
           ],
         },
@@ -149,34 +244,34 @@ export const SE_RESUME: Resume = {
   ],
   projects: [
     {
-      name: "Project Name",
-      url: "/projects",
+      name: "Sustainability Data Hub",
+      url: "https://ericanastas.com/projects/som/sustainability-data-hub",
       timeSpan: {
-        start: "1999-01",
-        end: "1999-04",
+        start: "2023-08",
+        end: "2024-02",
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sed leo quis ultricies. Donec laoreet sed est id sagittis. Sed sed commodo sapien, auctor consectetur nisi. Praesent viverra massa ex. In lorem quam, vulputate quis sollicitudin sed, venenatis vel orci. Suspendisse diam ipsum, pharetra in volutpat quis, ornare vitae lectus. Etiam leo felis, dignissim non imperdiet vel, vehicula non nunc. Nulla bibendum blandit vehicula. Mauris vitae dui cursus, luctus lorem non, imperdiet odio. ",
+        "The Sustainability Data Hub is used to track goals and metrics related to the energy use and carbon footprint of projects across SOM. It provides a platform for teams to enter data about their project and produces aggregate views of this information for management. I developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
     },
     {
-      name: "Project Name",
-      url: "/projects",
+      name: "Material Data Hub",
+      url: "https://ericanastas.com/projects/som/material-data-hub",
       timeSpan: {
-        start: "1999-01",
-        end: "1999-04",
+        start: "2022-07",
+        end: "2023-12",
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sed leo quis ultricies. Donec laoreet sed est id sagittis. Sed sed commodo sapien, auctor consectetur nisi. Praesent viverra massa ex. In lorem quam, vulputate quis sollicitudin sed, venenatis vel orci. Suspendisse diam ipsum, pharetra in volutpat quis, ornare vitae lectus. Etiam leo felis, dignissim non imperdiet vel, vehicula non nunc. Nulla bibendum blandit vehicula. Mauris vitae dui cursus, luctus lorem non, imperdiet odio. ",
+        "Material Data Hub is an in-house catalog of architectural materials that serves as a central hub for SOM designers researching potential products. I developed the frontend interface using React and Material Design (Mui).",
     },
     {
-      name: "Project Name",
-      url: "/projects",
+      name: "Collaboration Resource Manager",
+      url: "https://ericanastas.com/projects/som/collaboration-resource-manager",
       timeSpan: {
-        start: "1999-01",
-        end: "1999-04",
+        start: "2020-01",
+        end: "2023-09",
       },
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla sed leo quis ultricies. Donec laoreet sed est id sagittis. Sed sed commodo sapien, auctor consectetur nisi. Praesent viverra massa ex. In lorem quam, vulputate quis sollicitudin sed, venenatis vel orci. Suspendisse diam ipsum, pharetra in volutpat quis, ornare vitae lectus. Etiam leo felis, dignissim non imperdiet vel, vehicula non nunc. Nulla bibendum blandit vehicula. Mauris vitae dui cursus, luctus lorem non, imperdiet odio. ",
+        "This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction to ensure the tool's versatility across various business contexts and resource types.",
     },
   ],
   education: [
