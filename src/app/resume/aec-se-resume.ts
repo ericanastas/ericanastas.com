@@ -1,6 +1,6 @@
 import { Resume } from "@/interfaces/resume";
 
-export const AEC_RESUME: Resume = {
+export const AEC_SE_RESUME: Resume = {
   contactInfo: {
     name: "Eric Anastas",
     title: "AEC Software Engineer",

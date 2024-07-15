@@ -3,7 +3,7 @@ import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
 
-import { AEC_RESUME } from "./aec-resume";
+import { AEC_SE_RESUME } from "./aec-se-resume";
 import PageTitle from "../_components/page-title";
 import IconDownload from "../_components/icons/IconDownload";
 
@@ -25,7 +25,7 @@ export default async function ResumePage() {
             </a>
           </div>
           <div className="mx-auto border border-gray-400 max-w-[816px] min-h-[1056px] shadow-sm p-[48px]">
-            <ResumeComponent resume={AEC_RESUME} />
+            <ResumeComponent resume={AEC_SE_RESUME} />
           </div>
         </article>
       </main>
