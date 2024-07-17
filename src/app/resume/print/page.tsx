@@ -1,12 +1,10 @@
-"use client";
-
 import { ResumeComponent } from "../../_components/resume-component";
 import { SE_RESUME } from "../se-resume";
 
-import IconPrinterFill from "@/app/_components/icons/IconPrinterFill";
-
 import "./print-styles.scss";
 import { Company, Resume } from "@/interfaces/resume";
+import PrintPageButton from "@/app/_components/print-page-button";
+import { Metadata } from "next";
 
 const baseUrl = "https://ericanastas.com";
 
@@ -18,7 +16,7 @@ function absUrl(url?: string): string | undefined {
   return undefined;
 }
 
-export default async function ResumePage() {
+export default async function ResumePrintPage() {
   let absoluteUrlResume: Resume = {
     contactInfo: SE_RESUME.contactInfo,
     education: SE_RESUME.education.map((e) => ({ ...e, url: absUrl(e.url) })),
@@ -37,24 +35,20 @@ export default async function ResumePage() {
     })),
   };
 
-  function handlePrintClick() {
-    window.print();
-  }
-
   return (
     <>
       <main>
         <div className="print:hidden flex justify-end pb-10">
-          <div
-            onClick={handlePrintClick}
-            className="button-dark px-3.5 py-2.5 flex items-center gap-2 cursor-pointer"
-          >
-            <IconPrinterFill />
-            Print
-          </div>
+          <PrintPageButton />
         </div>
         <ResumeComponent resume={absoluteUrlResume} />
       </main>
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "eric-anastas-resume",
+  },
+};
