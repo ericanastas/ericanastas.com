@@ -1,14 +1,16 @@
 $section-gap: 4px;
 $h-margin-top: 2px;
-$link-blue: #1d4ed8;
+$link-color: #1d4ed8;
+$default-color: black;
 .resume {
   font-size: 13px;
   display: flex;
   flex-direction: column;
   gap: $section-gap;
+  color: $default-color;
 
   a {
-    color: $link-blue;
+    color: $link-color;
     &:hover {
       text-decoration: underline;
     }
@@ -109,10 +111,10 @@ $link-blue: #1d4ed8;
 
           .achievement {
             a {
-              color: black;
+              color: $default-color;
 
               &:hover {
-                color: $link-blue;
+                color: $link-color;
               }
             }
           }
