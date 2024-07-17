@@ -122,28 +122,20 @@ export const SE_RESUME: Resume = {
             },
 
             {
-              description: "<Material DB",
+              description: "<Material DB>",
             },
             {
-              description: "<Placeholder>",
+              description: "<placeholder>",
             },
             {
-              description: "<Placeholder>",
-            },
-            {
-              description: "<Placeholder>",
-            },
-            {
-              description: "<Placeholder>",
-            },
-            {
-              description: "<Placeholder>",
+              description: "<placeholder>",
             },
             {
               description:
                 "Built an extensible application to set up and audit resources on external SaaS collaboration platforms using Typescript, Node.js, and Express",
               url: "/projects/som/collaboration-resource-manager",
             },
+
             {
               description:
                 "Developed a suite of utilities to assist in the firms' adoption of Google Workplace using Typescript and Bootstrap on Google Apps Script",
@@ -159,10 +151,7 @@ export const SE_RESUME: Resume = {
                 "Assisted new senior engineers developing the firm-wide data warehouse API understand the business requirements, appropriate API structure, and database schemas",
               url: "/projects/som/som-data-warehouse",
             },
-            {
-              description:
-                "Mentored colleagues, with no prior programming experience, to develop tools with both visual programming and add-in APIs following established software engineering principles and patterns",
-            },
+
             {
               description:
                 "Served as a key member of the team upgrading the firm to modern collaboration tools such as knowledge management platforms, project management tools, and transitioning to Google Workplace. Worked with stakeholders to understand their needs, provided training, and developed migration utilities using third-party APIs",
@@ -179,8 +168,12 @@ export const SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Developed over 50 custom tools on the .NET APIs of Revit, Rhino, and other AEC software that are used for generating 3D geometry, automating repetitive tasks, validating models, and design analysis",
-              url: "http://localhost:3000/projects?skill=navisworks-api&skill=revit-api&skill=rhino-api&skill=grasshopper-api",
+                "Developed over 50 custom tools on the .NET APIs of Revit, Rhino, and other AEC software that are used for generating geometry, automating repetitive tasks, validating models, and design analysis",
+              url: "/projects?skill=navisworks-api&skill=revit-api&skill=rhino-api&skill=grasshopper-api",
+            },
+            {
+              description:
+                "Mentored colleagues without prior coding experience to develop tools with both visual programming and add-in APIs",
             },
             {
               description:
@@ -268,14 +261,7 @@ export const SE_RESUME: Resume = {
         end: "2023-09",
       },
       description:
-        "This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction an extensibility to ensure the tool's versatility across various business contexts and resource types.",
-    },
-    {
-      name: "Revit Add-In Library",
-      url: "/projects/som/revit-add-in-library",
-      timeSpan: { start: "1999-01", end: "1999-01" },
-      description:
-        "package file format, metadata, user facing installer, manager used, commaand line utlitiy",
+        "This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction and extensibility to ensure the tool's versatility across various business contexts and resource types.",
     },
   ],
   education: [
