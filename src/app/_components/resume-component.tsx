@@ -110,7 +110,7 @@ function EducationsSection(educations: Education[]) {
             <div className="education-degree">
               {`${e.degree} in ${e.field}`}
             </div>
-            <div>
+            <div className="education-dates">
               <time dateTime={e.completed}>{FormatIsoDate(e.completed)}</time>
             </div>
           </h4>
