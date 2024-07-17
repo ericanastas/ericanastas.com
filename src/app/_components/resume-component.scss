@@ -1,11 +1,18 @@
 $section-gap: 8px;
 $h-margin-top: 4px;
-
+$link-blue: #1d4ed8;
 .resume {
   font-size: 14px;
   display: flex;
   flex-direction: column;
   gap: $section-gap;
+
+  a {
+    color: $link-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   header {
     display: flex;
@@ -99,15 +106,18 @@ $h-margin-top: 4px;
           list-style-type: disc;
           list-style-position: outside;
           padding-inline-start: 18px;
+
+          .achievement {
+            a {
+              color: black;
+
+              &:hover {
+                color: $link-blue;
+              }
+            }
+          }
         }
       }
-    }
-  }
-
-  a {
-    color: #1d4ed8;
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
