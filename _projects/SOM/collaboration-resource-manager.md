@@ -34,3 +34,6 @@ repo: https://github.com/ericanastas/collaboration-resource-manager
 ![](/images/som/collaboration-resource-manager/db-schema.png)
 
 ![](/images/som/collaboration-resource-manager/openapi.png)
+
+![](/images/som/collaboration-resource-manager/code-coverage.png)
+
