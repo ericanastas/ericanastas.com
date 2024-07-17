@@ -107,7 +107,7 @@ export const SE_RESUME: Resume = {
     {
       name: "Skidmore, Owings & Merrill",
       location: "San Francisco, CA",
-      url: "/projects?group=som",
+      url: "https://www.som.com",
       positions: [
         {
           name: "Software Engineer",
@@ -198,7 +198,7 @@ export const SE_RESUME: Resume = {
     {
       name: "M. A. Mortenson Company",
       location: "Seattle, WA",
-      url: "/projects?group=mortenson",
+      url: "https://www.mortenson.com",
       positions: [
         {
           name: "Design Coordinator",
@@ -267,6 +267,7 @@ export const SE_RESUME: Resume = {
   education: [
     {
       name: "University of Washington",
+      url: "https://www.washington.edu",
       degree: "BS",
       field: "Civil Engineering",
       location: "Seattle, WA",
