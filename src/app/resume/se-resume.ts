@@ -92,10 +92,6 @@ export const SE_RESUME: Resume = {
           url: "/projects?skill=docker",
         },
         {
-          name: "Google Apps Script",
-          url: "/projects?skill=google-apps-script",
-        },
-        {
           name: "Unit Testing",
           url: "/projects?skill=unit-testing",
         },
@@ -107,7 +103,7 @@ export const SE_RESUME: Resume = {
     {
       name: "Skidmore, Owings & Merrill",
       location: "San Francisco, CA",
-      url: "https://www.som.com",
+      url: "/projects?group=som",
       positions: [
         {
           name: "Software Engineer",
@@ -118,45 +114,52 @@ export const SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Sustainability DB frontend Angular, NGRX,  Material Design ",
-            },
-
-            {
-              description: "<Material DB>",
-            },
-            {
-              description: "<placeholder>",
-            },
-            {
-              description: "<placeholder>",
+                "Developed full stack applications using Angular and React and NodeJs, Express and PostgreSQL..... ",
             },
             {
               description:
-                "Built an extensible application to set up and audit resources on external SaaS collaboration platforms using Typescript, Node.js, and Express",
-              url: "/projects/som/collaboration-resource-manager",
+                "Designed and implemented Rest API with Open API, Express, Jest unit tests",
             },
-
             {
               description:
-                "Developed a suite of utilities to assist in the firms' adoption of Google Workplace using Typescript and Bootstrap on Google Apps Script",
-              url: "/projects?skill=google-apps-script",
+                "deployed applications to AWS using Docker containers on EC2",
+            },
+            {
+              description: "<placeholder???>",
+            },
+            {
+              description: "<placeholder???>",
+            },
+            {
+              description:
+                "Developed a suite of tools to assist in the firms' adoption of Google using Typescript on Google Apps Script",
+              url: "/projects?skill=google-apps-script&skill=google-api",
             },
             {
               description:
                 "Developed a CI/CD workflow for deploying Google Apps Script projects automatically using Github Actions.",
               url: "/projects/som/deploy-google-app-script-action",
             },
+            // {
+            //   description:
+            //     "Assisted new senior engineers developing the firm-wide data warehouse API understand the business requirements, appropriate API structure, and database schemas",
+            //   url: "/projects/som/som-data-warehouse",
+            // },
+
             {
-              description:
-                "Assisted new senior engineers developing the firm-wide data warehouse API understand the business requirements, appropriate API structure, and database schemas",
-              url: "/projects/som/som-data-warehouse",
+              description: "<one line about datawarehouse",
             },
 
             {
               description:
-                "Served as a key member of the team upgrading the firm to modern collaboration tools such as knowledge management platforms, project management tools, and transitioning to Google Workplace. Worked with stakeholders to understand their needs, provided training, and developed migration utilities using third-party APIs",
-              url: "/projects?skill=jive&skill=lumapps&skill=google-api",
+                "<one line about technologiy iniative, focus on tools",
             },
+
+            // {
+            //   description:
+            //     "Served as a key member of the team upgrading the firm to modern collaboration tools such as knowledge management platforms, project management tools, and transitioning to Google Workplace. Worked with stakeholders to understand their needs, provided training, and developed migration utilities using third-party APIs",
+            //   url: "/projects?skill=jive&skill=lumapps&skill=google-api",
+            // },
           ],
         },
         {
@@ -168,7 +171,7 @@ export const SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Developed over 50 custom tools on the .NET APIs of Revit, Rhino, and other AEC software that are used for generating geometry, automating repetitive tasks, validating models, and design analysis",
+                "Developed over 50 custom tools using C# on the .NET APIs of Revit, Rhino, and other AEC software",
               url: "/projects?skill=navisworks-api&skill=revit-api&skill=rhino-api&skill=grasshopper-api",
             },
             {
@@ -188,7 +191,7 @@ export const SE_RESUME: Resume = {
 
             {
               description:
-                "Supported a new R&D subsidiary systematize their proposal review process into an automated forms base workflow",
+                "Supported a new R&D subsidiary systematize their proposal review process into an automated forms based workflow",
               url: "/projects/som/som-ri",
             },
           ],
@@ -198,7 +201,7 @@ export const SE_RESUME: Resume = {
     {
       name: "M. A. Mortenson Company",
       location: "Seattle, WA",
-      url: "https://www.mortenson.com",
+      url: "/projects?group=mortenson",
       positions: [
         {
           name: "Design Coordinator",
@@ -207,24 +210,24 @@ export const SE_RESUME: Resume = {
             end: "2008-02",
           },
           achievements: [
+            // {
+            //   description:
+            //     "Served as a primary technical expert in a company wide group championing the use of technology and 3D modeling",
+            // },
             {
               description:
-                "Served as a primary technical expert in a company wide group championing the use of technology and 3D modeling",
-            },
-            {
-              description:
-                "Produced and maintained 3D models from 2D documentation, ensuring alignment with the latest design iterations",
+                "Produced and maintained 3D BIM models from 2D documentation, ensuring alignment with the latest design iterations",
               url: "/projects?group=mortenson&skill=3d-modeling",
             },
 
-            {
-              description:
-                "Collaborated with architects to resolve design issues found during 3D modeling prior to causing problems in the field",
-            },
+            // {
+            //   description:
+            //     "Collaborated with architects to resolve design issues found during 3D modeling prior to causing problems in the field",
+            // },
 
             {
               description:
-                "Assisted teams leverage 3D models on-site for MEP coordination, site logistics, and proactive problem-solving",
+                "Assisted project teams leverage models on-site for MEP coordination, site logistics, layout, and proactive problem-solving",
               url: "/projects?group=mortenson&skill=3d-coordination&skill=4d-simulation&skill=bim-in-field&skill=integrated-work-plans&skill=site-logistics",
             },
           ],
@@ -241,7 +244,7 @@ export const SE_RESUME: Resume = {
         end: "2024-02",
       },
       description:
-        "The Sustainability Data Hub is used to track goals and metrics related to the energy use and carbon footprint of projects across SOM. It provides a platform for teams to enter data about their project and produces aggregate views of this information for management. I developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
+        "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects. Provides a platform for teams to enter data about their project and produces aggregate views of this information for management. Developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
     },
     {
       name: "Material Data Hub",
@@ -251,7 +254,7 @@ export const SE_RESUME: Resume = {
         end: "2023-12",
       },
       description:
-        "Material Data Hub is an in-house catalog of architectural materials that serves as a central hub for SOM designers researching potential products. I developed the frontend interface using React and Material Design (Mui).",
+        "An in-house catalog of architectural materials that serves as a central hub for SOM designers researching products. Developed the frontend interface using React and Material Design (Mui).",
     },
     {
       name: "Collaboration Resource Manager",
@@ -261,7 +264,7 @@ export const SE_RESUME: Resume = {
         end: "2023-09",
       },
       description:
-        "This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction and extensibility to ensure the tool's versatility across various business contexts and resource types.",
+        "A general-purpose system that automates the setup and maintenance of resources on external SaaS platforms. Implemented as a REST API built on Node.js, Express, and PostgreSQL. Applied layers of abstraction and extensibility to ensure the tool's versatility across various business contexts and resource types.",
     },
   ],
   education: [
