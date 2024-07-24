@@ -139,7 +139,6 @@ function ProjectsSection(projects: Project[]) {
               {TimeSpanLabel(project.timeSpan)}
             </div>
           </h4>
-          <p className="project-description">{project.description}</p>
           {achievementsList(project.achievements)}
         </div>
       ))}
