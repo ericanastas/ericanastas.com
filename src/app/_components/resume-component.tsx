@@ -7,6 +7,7 @@ import {
   SkillGroup,
   Position,
   TimeSpan,
+  Achievement,
 } from "@/interfaces/resume";
 
 import "./resume-component.scss";
@@ -138,8 +139,8 @@ function ProjectsSection(projects: Project[]) {
               {TimeSpanLabel(project.timeSpan)}
             </div>
           </h4>
-
           <p className="project-description">{project.description}</p>
+          {achievementsList(project.achievements)}
         </div>
       ))}
     </section>
@@ -178,18 +179,24 @@ function PositionSection(position: Position, index: number) {
         <div className="position-dates">{TimeSpanLabel(position.timeSpan)}</div>
       </h4>
 
-      <ul className="achievements">
-        {position.achievements.map((achievement, aIndex) => (
-          <li className="achievement" key={aIndex}>
-            {achievement.url ? (
-              <a href={achievement.url}>{achievement.description}</a>
-            ) : (
-              achievement.description
-            )}
-          </li>
-        ))}
-      </ul>
+      {achievementsList(position.achievements)}
     </div>
+  );
+}
+
+function achievementsList(achievements: Achievement[]) {
+  return (
+    <ul className="achievements">
+      {achievements.map((achievement, aIndex) => (
+        <li className="achievement" key={aIndex}>
+          {achievement.url ? (
+            <a href={achievement.url}>{achievement.description}</a>
+          ) : (
+            achievement.description
+          )}
+        </li>
+      ))}
+    </ul>
   );
 }
 

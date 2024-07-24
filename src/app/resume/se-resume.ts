@@ -243,6 +243,11 @@ export const SE_RESUME: Resume = {
         start: "2023-08",
         end: "2024-02",
       },
+      achievements: [
+        { description: "achievement 1" },
+        { description: "achievement 2" },
+        { description: "achievement 3" },
+      ],
       description:
         "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects. Provides a platform for teams to enter data about their project and produces aggregate views of this information for management. Developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
     },
@@ -253,6 +258,11 @@ export const SE_RESUME: Resume = {
         start: "2022-07",
         end: "2023-12",
       },
+      achievements: [
+        { description: "achievement 1" },
+        { description: "achievement 2" },
+        { description: "achievement 3" },
+      ],
       description:
         "An in-house catalog of architectural materials that serves as a central hub for SOM designers researching products. Developed the frontend interface using React and Material Design (Mui).",
     },
@@ -263,6 +273,11 @@ export const SE_RESUME: Resume = {
         start: "2020-01",
         end: "2023-09",
       },
+      achievements: [
+        { description: "achievement 1" },
+        { description: "achievement 2" },
+        { description: "achievement 3" },
+      ],
       description:
         "A general-purpose system that automates the setup and maintenance of resources on external SaaS platforms. Implemented as a REST API built on Node.js, Express, and PostgreSQL. Applied layers of abstraction and extensibility to ensure the tool's versatility across various business contexts and resource types.",
     },
