@@ -65,7 +65,7 @@ export const AEC_SE_RESUME: Resume = {
       ],
     },
     {
-      name: "Backend",
+      name: "Back End",
       skills: [
         {
           name: "NodeJS",
@@ -141,7 +141,7 @@ export const AEC_SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Designed and developed frontend and full-stack applications on top of a firm-wide data warehouse API using React, Angular, and Material Design.",
+                "Designed and developed front end and full-stack applications on top of a firm-wide data warehouse API using React, Angular, and Material Design.",
             },
             {
               description:

@@ -34,7 +34,7 @@ export const SE_RESUME: Resume = {
       ],
     },
     {
-      name: "Frontend",
+      name: "Front End",
       skills: [
         { name: "React", url: "/projects?skill=react" },
         {
@@ -63,7 +63,7 @@ export const SE_RESUME: Resume = {
       ],
     },
     {
-      name: "Backend",
+      name: "Back End",
       skills: [
         {
           name: "NodeJS",
