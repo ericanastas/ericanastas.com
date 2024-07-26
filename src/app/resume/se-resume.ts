@@ -114,30 +114,26 @@ export const SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Developed full stack applications using Angular and React and NodeJs, Express and PostgreSQL..... ",
+                "Developed front end single page applications using Angular, React, Material Design, and Bootstrap",
+              url: "/projects?skill=angular&skill=react",
             },
             {
               description:
-                "Designed and implemented Rest API with Open API, Express, Jest unit tests",
+                "Designed and developed backend APIs using NodeJS, Express, PostgresSQL, and Open API. Wrote endpoint tests using Jest.",
             },
             {
               description:
-                "deployed applications to AWS using Docker containers on EC2",
+                "Deployed applications to EC2 on AWS EC2 using Docker and systemd",
             },
-            {
-              description: "<placeholder???>",
-            },
-            {
-              description: "<placeholder???>",
-            },
+
             {
               description:
-                "Developed a suite of tools to assist in the firms' adoption of Google using Typescript on Google Apps Script",
+                "Developed tools to assist with the firms' adoption of Google Workplace using Typescript on Google Apps Script",
               url: "/projects?skill=google-apps-script&skill=google-api",
             },
             {
               description:
-                "Developed a CI/CD workflow for deploying Google Apps Script projects automatically using Github Actions.",
+                "Developed a CI/CD workflow for automatically deploying Google Apps Script projects using Github Actions.",
               url: "/projects/som/deploy-google-app-script-action",
             },
             // {
@@ -148,18 +144,14 @@ export const SE_RESUME: Resume = {
 
             {
               description: "<one line about datawarehouse",
+              url: "/projects/som/som-data-warehouse",
             },
 
             {
               description:
-                "<one line about technologiy iniative, focus on tools",
+                "Key member of the team upgrading the firms' collaboration tools such as knowledge management, and project management tools. Worked with stakeholders to understand their needs, provided training, and developed utilities using third-party APIs",
+              url: "/projects?skill=jive&skill=lumapps&skill=google-api",
             },
-
-            // {
-            //   description:
-            //     "Served as a key member of the team upgrading the firm to modern collaboration tools such as knowledge management platforms, project management tools, and transitioning to Google Workplace. Worked with stakeholders to understand their needs, provided training, and developed migration utilities using third-party APIs",
-            //   url: "/projects?skill=jive&skill=lumapps&skill=google-api",
-            // },
           ],
         },
         {
@@ -210,10 +202,10 @@ export const SE_RESUME: Resume = {
             end: "2008-02",
           },
           achievements: [
-            // {
-            //   description:
-            //     "Served as a primary technical expert in a company wide group championing the use of technology and 3D modeling",
-            // },
+            {
+              description:
+                "Served as a primary technical expert in a company wide group championing the use of technology and 3D BIM models",
+            },
             {
               description:
                 "Produced and maintained 3D BIM models from 2D documentation, ensuring alignment with the latest design iterations",
@@ -246,10 +238,19 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects. Provides a platform for teams to enter data about their project and produces aggregate views of this information for management. Developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
+            "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects.",
         },
-        { description: "achievement 2" },
-        { description: "achievement 3" },
+        {
+          description:
+            "Developed front end using Angular, and Material Design working closely with engineers on the design of the back end API",
+        },
+        {
+          description:
+            "Worked closely with other engineers on the design of the back end REST API.",
+        },
+        // {
+        //   description: "Deployed front end to EC2 on AWS",
+        // },
       ],
     },
     {
@@ -262,10 +263,12 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "An in-house catalog of architectural materials that serves as a central hub for SOM designers researching products. Developed the frontend interface using React and Material Design (Mui).",
+            "In-house catalog of architectural materials that serves as a central hub for designers researching potential products.",
         },
-        { description: "achievement 2" },
-        { description: "achievement 3" },
+        {
+          description:
+            "Developed the frontend user interface using React and Material Design (Mui)",
+        },
       ],
     },
     {
@@ -278,10 +281,16 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "A general-purpose system that automates the setup and maintenance of resources on external SaaS platforms. Implemented as a REST API built on Node.js, Express, and PostgreSQL. Applied layers of abstraction and extensibility to ensure the tool's versatility across various business contexts and resource types.",
+            "General-purpose system that automates the setup and maintenance of resources on external SaaS collaboration platforms.",
         },
-        { description: "achievement 2" },
-        { description: "achievement 3" },
+        {
+          description:
+            "Implemented back end REST API using NodeJS, Express, and PostgreSQL. Unit tested API endpoints with Jest.",
+        },
+        {
+          description:
+            "Applied layers of abstraction and extensibility to ensure versatility across various business contexts and resource types.",
+        },
       ],
     },
   ],
