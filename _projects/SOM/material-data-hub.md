@@ -3,7 +3,16 @@ title: Material Data Hub
 summary: Searchable catalog of architectural materials extracted from multiple 3rd party sites
 coverImage: /images/som/material-data-hub/front-page.png
 skills:
-  ["React", "HTML & CSS", "Material Design", "MUI", "UX Design", "JavaScript"]
+  [
+    "React",
+    "HTML & CSS",
+    "Material Design",
+    "MUI",
+    "UX Design",
+    "JavaScript",
+    "EC2",
+    "AWS",
+  ]
 date: "2022-12-14"
 repo: https://github.com/ericanastas/materials-data-hub
 ---
