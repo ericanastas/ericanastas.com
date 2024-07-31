@@ -60,7 +60,7 @@ export interface Project {
   name: string;
   url: string;
   timeSpan: TimeSpan;
-  description: string;
+  achievements: Achievement[];
 }
 
 export interface Skill {

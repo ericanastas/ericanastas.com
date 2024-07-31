@@ -1,11 +1,26 @@
-$section-gap: 8px;
-$h-margin-top: 4px;
-
+$section-gap: 2px;
+$h-margin-top: 2px;
+$link-color: #1d4ed8;
+$default-color: black;
 .resume {
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   gap: $section-gap;
+  color: $default-color;
+
+  a {
+    color: $link-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-inline-start: 16px;
+  }
 
   header {
     display: flex;
@@ -59,20 +74,25 @@ $h-margin-top: 4px;
       font-size: 16px;
       font-weight: 600;
       text-transform: uppercase;
+      border-top: 0.33px solid $default-color;
     }
 
     h3 {
       font-size: 16px;
       font-weight: 600;
       display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
       justify-content: space-between;
       margin-top: $h-margin-top;
     }
 
     h4 {
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 500;
       display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
       justify-content: space-between;
       margin-top: $h-margin-top;
     }
@@ -96,18 +116,17 @@ $h-margin-top: 4px;
     .company {
       .position {
         .achievements {
-          list-style-type: disc;
-          list-style-position: outside;
-          padding-inline-start: 18px;
+          .achievement {
+            a {
+              color: $default-color;
+
+              &:hover {
+                color: $link-color;
+              }
+            }
+          }
         }
       }
-    }
-  }
-
-  a {
-    color: #1d4ed8;
-    &:hover {
-      text-decoration: underline;
     }
   }
 }

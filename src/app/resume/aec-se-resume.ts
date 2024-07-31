@@ -1,6 +1,7 @@
 import { Resume } from "@/interfaces/resume";
+import { SE_RESUME } from "./se-resume";
 
-export const AEC_RESUME: Resume = {
+export const AEC_SE_RESUME: Resume = {
   contactInfo: {
     name: "Eric Anastas",
     title: "AEC Software Engineer",
@@ -64,7 +65,7 @@ export const AEC_RESUME: Resume = {
       ],
     },
     {
-      name: "Backend",
+      name: "Back End",
       skills: [
         {
           name: "NodeJS",
@@ -140,7 +141,7 @@ export const AEC_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Designed and developed frontend and full-stack applications on top of a firm-wide data warehouse API using React, Angular, and Material Design.",
+                "Designed and developed front end and full-stack applications on top of a firm-wide data warehouse API using React, Angular, and Material Design.",
             },
             {
               description:
@@ -242,45 +243,6 @@ export const AEC_RESUME: Resume = {
       ],
     },
   ],
-  projects: [
-    {
-      name: "Sustainability Data Hub",
-      url: "https://ericanastas.com/projects/som/sustainability-data-hub",
-      timeSpan: {
-        start: "2023-08",
-        end: "2024-02",
-      },
-      description:
-        "The Sustainability Data Hub is used to track goals and metrics related to the energy use and carbon footprint of projects across SOM. It provides a platform for teams to enter data about their project and produces aggregate views of this information for management. I developed the front end using Angular, NgRx, and Material Design, working closely with other engineers on the design of the backend REST API.",
-    },
-    {
-      name: "Material Data Hub",
-      url: "https://ericanastas.com/projects/som/material-data-hub",
-      timeSpan: {
-        start: "2022-07",
-        end: "2023-12",
-      },
-      description:
-        "Material Data Hub is an in-house catalog of architectural materials that serves as a central hub for SOM designers researching potential products. I developed the frontend interface using React and Material Design (Mui).",
-    },
-    {
-      name: "Collaboration Resource Manager",
-      url: "https://ericanastas.com/projects/som/collaboration-resource-manager",
-      timeSpan: {
-        start: "2020-01",
-        end: "2023-09",
-      },
-      description:
-        "This application is a general-purpose system to automate the setup and maintenance of SaaS collaboration resources, such as Google Drives and Groups. Initially built using TypeScript on Google Apps Script, I later ported this to a REST API built on Node.js, Express, and PostgreSQL. I implemented layers of abstraction to ensure the tool's versatility across various business contexts and resource types.",
-    },
-  ],
-  education: [
-    {
-      name: "University of Washington",
-      degree: "BS",
-      field: "Civil Engineering",
-      location: "Seattle, WA",
-      completed: "2005-06",
-    },
-  ],
+  projects: SE_RESUME.projects,
+  education: SE_RESUME.education,
 };
