@@ -1,0 +1,132 @@
+$section-gap: 2px;
+$h-margin-top: 2px;
+$link-color: #1d4ed8;
+$default-color: black;
+.resume {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: $section-gap;
+  color: $default-color;
+
+  a {
+    color: $link-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-inline-start: 16px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 4px;
+
+    .header-title {
+      flex-grow: 1;
+      font-weight: 600;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 20px;
+
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+
+    .header-details {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
+
+      .header-details-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .header-detail-item {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-top: 0.33px solid $default-color;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      justify-content: space-between;
+      margin-top: $h-margin-top;
+    }
+
+    h4 {
+      font-size: 15px;
+      font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      justify-content: space-between;
+      margin-top: $h-margin-top;
+    }
+  }
+
+  .skills-section {
+    .skill-group-label {
+      font-weight: 600;
+    }
+    .skill-group {
+      display: flex;
+      flex-wrap: wrap;
+
+      .skill {
+        display: inline;
+      }
+    }
+  }
+
+  .work-experience-section {
+    .company {
+      .position {
+        .achievements {
+          .achievement {
+            a {
+              color: $default-color;
+
+              &:hover {
+                color: $link-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

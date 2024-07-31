@@ -10,23 +10,25 @@ export default function Index() {
       <main>
         <div className="flex justify-center max-w-4xl mx-auto mt-10">
           <div className="flex flex-col">
-            <div className="flex flex-col md:flex-row md:gap-x-8">
+            <div className="flex flex-col md:flex-row md:gap-x-8 md:justify-between">
               <div className="flex flex-col">
-                <p className="">Hi there 👋 I'm...</p>
-                <h1 className="text-6xl lg:text-7xl font-black mb-4 tracking-tight">
+                <p className="text-xl">Hi there 👋 I'm…</p>
+                <h1 className="text-6xl lg:text-7xl font-black tracking-tight">
                   Eric Anastas
                 </h1>
-                <p>
-                  I'm a software engineer in San Francisco, CA with over 18
-                  years of experience driving the advancement of technology in
-                  the AEC industry.
+                <p className="text-xl">
+                  …a full-stack software engineer based in San Francisco, CA
+                  actively seeking new career opportunities.
                 </p>
                 <div className="flex items-center justify-center md:justify-start gap-x-4 grow my-8">
+                  <Link href={"/resume"} className="button-dark px-3.5 py-2.5">
+                    View Resume...
+                  </Link>
                   <Link
                     href={"/projects"}
                     className="button-dark px-3.5 py-2.5"
                   >
-                    Browse Projects...
+                    Browse Projects....
                   </Link>
                 </div>
               </div>

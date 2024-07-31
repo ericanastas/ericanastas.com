@@ -46,7 +46,7 @@
  }
 
  .markdown a {
-    color: rgb(14,165,233);
+    @apply text-blue-700;
     @apply hover:underline;
  }
 
