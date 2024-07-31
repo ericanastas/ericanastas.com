@@ -25,11 +25,11 @@ export const SE_RESUME: Resume = {
           name: "JavaScript",
           url: "/projects?skill=javascript",
         },
+        { name: "C#", url: "/projects?skill=csharp" },
         {
           name: "HTML & CSS",
           url: "/projects?skill=html-and-css",
         },
-        { name: "C#", url: "/projects?skill=csharp" },
         { name: "SQL", url: "/projects?skill=sql" },
       ],
     },
@@ -115,41 +115,38 @@ export const SE_RESUME: Resume = {
             {
               description:
                 "Developed front end single page applications using Angular, React, Material Design, and Bootstrap",
-              url: "/projects?skill=angular&skill=react",
+              url: "/projects?skill=angular&skill=bootstrap&skill=react&skill=material-design",
             },
             {
               description:
-                "Designed and developed backend APIs using NodeJS, Express, PostgresSQL, and Open API. Wrote endpoint tests using Jest.",
+                "Designed and developed backend APIs using NodeJS, Express, PostgresSQL, and Open API",
+              url: "/projects?skill=nodejs&skill=postgresql&skill=open-api",
             },
             {
               description:
-                "Deployed applications to EC2 on AWS EC2 using Docker and systemd",
+                "Deployed applications to EC2 on AWS using Docker and systemd",
+              url: "/projects?skill=aws&skill=ec2&skill=docker",
             },
 
             {
               description:
-                "Developed tools to assist with the firms' adoption of Google Workplace using Typescript on Google Apps Script",
+                "Developed tools to assist with the firms' adoption of Google Workplace using JavaScript and Typescript on Google Apps Script",
               url: "/projects?skill=google-apps-script&skill=google-api",
             },
             {
               description:
-                "Developed a CI/CD workflow for automatically deploying Google Apps Script projects using Github Actions.",
+                "Developed a CI/CD workflow for automatically deploying Google Apps Script projects using Github Actions",
               url: "/projects/som/deploy-google-app-script-action",
             },
-            // {
-            //   description:
-            //     "Assisted new senior engineers developing the firm-wide data warehouse API understand the business requirements, appropriate API structure, and database schemas",
-            //   url: "/projects/som/som-data-warehouse",
-            // },
-
             {
-              description: "<one line about datawarehouse",
+              description:
+                "Assisted engineers developing the data warehouse API understand the business requirements and appropriate data schemas",
               url: "/projects/som/som-data-warehouse",
             },
 
             {
               description:
-                "Key member of the team upgrading the firms' collaboration tools such as knowledge management, and project management tools. Worked with stakeholders to understand their needs, provided training, and developed utilities using third-party APIs",
+                "Served as a key member of the team upgrading the firms' collaboration and  knowledge management tools, worked with stakeholders to understand their needs, provided training, and developed utilities using third-party APIs",
               url: "/projects?skill=jive&skill=lumapps&skill=google-api",
             },
           ],
@@ -163,13 +160,10 @@ export const SE_RESUME: Resume = {
           achievements: [
             {
               description:
-                "Developed over 50 custom tools using C# on the .NET APIs of Revit, Rhino, and other AEC software",
+                "Developed over 50 custom tools with C# and WPF on the .NET APIs of Revit, Rhino, and other AEC software",
               url: "/projects?skill=navisworks-api&skill=revit-api&skill=rhino-api&skill=grasshopper-api",
             },
-            {
-              description:
-                "Mentored colleagues without prior coding experience to develop tools with both visual programming and add-in APIs",
-            },
+
             {
               description:
                 "Implemented a system to package, version, catalog, and distribute Revit add-ins using C#.NET and WPF",
@@ -177,7 +171,7 @@ export const SE_RESUME: Resume = {
             },
             {
               description:
-                "Developed a system for tracking a visualizing Revit usage across the firm using C#, Elasticsearch, and Kibana ",
+                "Developed a system for tracking and visualizing Revit usage across the firm using C#, Elasticsearch, and Kibana ",
               url: "/projects/som/activity-log-elk",
             },
 
@@ -185,6 +179,10 @@ export const SE_RESUME: Resume = {
               description:
                 "Supported a new R&D subsidiary systematize their proposal review process into an automated forms based workflow",
               url: "/projects/som/som-ri",
+            },
+            {
+              description:
+                "Mentored colleagues without prior coding experience to develop tools with both visual programming and add-in APIs",
             },
           ],
         },
@@ -238,15 +236,15 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects.",
+            "Application used to track goals and metrics related to the energy use and carbon footprint of SOM projects",
         },
         {
           description:
-            "Developed front end using Angular, and Material Design working closely with engineers on the design of the back end API",
+            "Designed and developed front end user interface using Angular, NgRx, and Material Design",
         },
         {
           description:
-            "Worked closely with other engineers on the design of the back end REST API.",
+            "Worked closely with other engineers on the design of the back end REST API",
         },
         // {
         //   description: "Deployed front end to EC2 on AWS",
@@ -263,7 +261,7 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "In-house catalog of architectural materials that serves as a central hub for designers researching potential products.",
+            "In-house catalog of architectural materials that serves as a central hub for designers researching potential products",
         },
         {
           description:
@@ -281,15 +279,15 @@ export const SE_RESUME: Resume = {
       achievements: [
         {
           description:
-            "General-purpose system that automates the setup and maintenance of resources on external SaaS collaboration platforms.",
+            "General-purpose system that automates the setup and maintenance of resources on external SaaS collaboration platforms",
         },
         {
           description:
-            "Implemented back end REST API using NodeJS, Express, and PostgreSQL. Unit tested API endpoints with Jest.",
+            "Developed front end using Bootstrap, and back end REST API using NodeJS, Express, and PostgreSQL",
         },
         {
           description:
-            "Applied layers of abstraction and extensibility to ensure versatility across various business contexts and resource types.",
+            "Applied layers of abstraction and extensibility to ensure versatility across various business contexts and resource types",
         },
       ],
     },
