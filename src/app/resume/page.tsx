@@ -24,7 +24,7 @@ export default async function ResumePage() {
               </div>
             </a>
           </div>
-          <div className="mx-auto border border-gray-400 max-w-[816px] min-h-[1056px] shadow-sm p-[48px]">
+          <div className="mx-auto border border-gray-400 max-w-[816px] min-h-[1056px] shadow-sm md:p-[48px] p-6">
             <ResumeComponent resume={SE_RESUME} />
           </div>
         </article>
