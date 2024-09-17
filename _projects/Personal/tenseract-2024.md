@@ -1,5 +1,5 @@
 ---
-title:
+title: Tenseract 2024
 summary: Burning Man 2024 tensegrity art installation
 coverImage: /images/personal/tenseract-2024/P2257856-Enhanced-NR.jpg
 skills:
