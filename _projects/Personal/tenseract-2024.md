@@ -33,4 +33,6 @@ date: "2024-08-25"
 
 ![](/images/personal/tenseract-2024/PXL_20240816_130127152.jpg)
 
-![](/images/personal/tenseract-2024/PXL_20240905_223210094.jpg)
+![](/images/personal/tenseract-2024/2024-09-17_150537.png)
+
+![](/images/personal/tenseract-2024/2024-09-17_150656.png)
