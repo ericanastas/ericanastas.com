@@ -139,4 +139,5 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   LEDs: "Hobbies",
   Arduino: "Hobbies",
   Electronics: "Hobbies",
+  Microcontrollers: "Hobbies",
 };
