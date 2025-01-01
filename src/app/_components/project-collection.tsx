@@ -95,7 +95,7 @@ export default function ProjectCollection({
 
   return (
     <>
-      <div ref={containerRef} className="h-1" />
+      <div ref={containerRef} className="h-0" />
 
       <div
         className={`sticky top-2 transition-all ${
