@@ -57,7 +57,7 @@ export function ProjectTimeLine({
                 key={year}
                 className="grow relative border-l border-t-2 border-gray-300"
               >
-                <div className="absolute lg:rotate-0 lg:bottom-0 lg:left-1 -rotate-90 bottom-2 -left-1">
+                <div className="absolute lg:rotate-0 lg:bottom-0 lg:left-0.5 -rotate-90 bottom-2 -left-1">
                   <p className="text-xs text-gray-600 ">{year}</p>
                 </div>
               </div>
