@@ -22,7 +22,7 @@ export default async function SkillsTimelinePage() {
           <PageTitle>Skills Timeline</PageTitle>
 
           {allSkillGroups.map((skillGroup) => (
-            <>
+            <div key={skillGroup.name}>
               <h2 className="text-2xl font-bold mt-8">{skillGroup.name}</h2>
 
               <div className="flex flex-col gap-5">
@@ -49,7 +49,7 @@ export default async function SkillsTimelinePage() {
                   );
                 })}
               </div>
-            </>
+            </div>
           ))}
         </article>
       </main>
