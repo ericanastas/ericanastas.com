@@ -74,7 +74,7 @@ export default function Pagination({
           <a
             key={pageNumber}
             className={
-              "relative inline-flex items-center justify-center px-4 py-2 min-w-12 text-sm font-semibold bg-gray-600 text-white"
+              "relative inline-flex items-center justify-center py-2 min-w-9 text-sm font-semibold bg-gray-600 text-white"
             }
           >
             {pageNumber}
@@ -87,7 +87,7 @@ export default function Pagination({
             data-value={pageNumber}
             onClick={onPageNumberClick}
             className={
-              "relative inline-flex items-center px-4 py-2 justify-center text-sm min-w-12 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 hover:bg-gray-100 cursor-pointer"
+              "relative inline-flex items-center py-2 justify-center text-sm min-w-9 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 hover:bg-gray-100 cursor-pointer"
             }
           >
             {pageNumber}
@@ -99,7 +99,7 @@ export default function Pagination({
         <a
           key={pageNumber}
           className={
-            "relative inline-flex items-center px-4 py-2 justify-center min-w-12 text-sm font-semibold ring-1 ring-inset ring-gray-400 text-gray-900"
+            "relative inline-flex items-center py-2 justify-center min-w-9 text-sm font-semibold ring-1 ring-inset ring-gray-400 text-gray-900"
           }
         >
           <EllipsisHorizontalIcon className="size-4" />
