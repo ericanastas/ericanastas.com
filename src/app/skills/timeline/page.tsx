@@ -25,7 +25,7 @@ export default async function SkillsTimelinePage() {
             <>
               <h2 className="text-2xl font-bold mt-8">{skillGroup.name}</h2>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-5">
                 {skillGroup.skills.map((skill) => {
                   return (
                     <div
@@ -38,7 +38,7 @@ export default async function SkillsTimelinePage() {
                         </Link>
                       </div>
 
-                      <div className="grow lg:mt-6">
+                      <div className="grow">
                         <ProjectTimeLine
                           projects={skill.projects!}
                           minYear={yearRange.minYear}
