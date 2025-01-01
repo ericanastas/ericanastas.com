@@ -156,7 +156,7 @@ export default function Pagination({
         </a>
         <a
           onClick={prevButtonClick}
-          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-20 text-gray-900 ${
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-16 text-gray-900 ${
             isFirstPage ? "invisible" : "cursor-pointer"
           }`}
         >
@@ -170,7 +170,7 @@ export default function Pagination({
 
         <a
           onClick={nextButtonClick}
-          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-20 text-gray-900 ${
+          className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-16 text-gray-900 ${
             isLastPage ? "invisible" : "cursor-pointer"
           }`}
         >
@@ -196,7 +196,7 @@ export default function Pagination({
         >
           <a
             onClick={prevButtonClick}
-            className={`relative inline-flex items-center justify-center font-semibold rounded-l-md px-2 py-2 text-gray-900 ring-1 ring-inset ring-gray-400 w-20 ${
+            className={`relative inline-flex items-center justify-center font-semibold rounded-l-md px-2 py-2 text-gray-900 ring-1 ring-inset ring-gray-400 w-16 ${
               isFirstPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
             }`}
           >
@@ -208,7 +208,7 @@ export default function Pagination({
 
           <div
             onClick={nextButtonClick}
-            className={`relative inline-flex items-center justify-center rounded-r-md px-2 py-2 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 w-20 ${
+            className={`relative inline-flex items-center justify-center rounded-r-md px-2 py-2 font-semibold text-gray-900 ring-1 ring-inset ring-gray-400 w-16 ${
               isLastPage ? "text-gray-300" : "cursor-pointer hover:bg-gray-100"
             }`}
           >
