@@ -46,6 +46,9 @@ export function ProjectTimeLine({
 
   return (
     <>
+      <div className="text-end text-gray-600 mb-1">
+        {projects.length} {projects.length == 1 ? "Project" : "Projects"}
+      </div>
       <div className="relative pt-2">
         <div className="relative lg:h-8 h-12">
           <div className="absolute inset-0 flex flex-row flex-no-wrap items-stretch">
