@@ -100,7 +100,7 @@ export default function ProjectCollection({
       <div
         className={`sticky top-2 transition-all ${
           isTimelineStuck
-            ? "border border-gray-400 border-2 bg-white py-4 px-4 drop-shadow-lg rounded-md z-50"
+            ? "border border-gray-400 border-2 bg-white py-2 px-3 drop-shadow-lg rounded-md z-50"
             : ""
         }`}
       >
