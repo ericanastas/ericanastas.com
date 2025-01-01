@@ -34,11 +34,7 @@ export default async function SkillsTimelinePage() {
                     >
                       <div className="flex lg:justify-end lg:mr-2 lg:w-48 lg:mt-0 mt-8 lg:mb-0 mb-2">
                         <Link key={skill.slug} href={skill.url}>
-                          <SkillChip
-                            textSize="md"
-                            badge={`${skill.projects?.length}`}
-                            skill={skill}
-                          />
+                          <SkillChip textSize="md" skill={skill} />
                         </Link>
                       </div>
 
