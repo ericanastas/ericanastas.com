@@ -10,10 +10,12 @@ import type { Skill } from "@/interfaces/skill";
 export type Props = {
   projects: Project[];
   selectedSkillSlugs?: string[];
+  page: number;
   minYear?: number;
   maxYear?: number;
   onAddSkill: (skill: Skill) => void;
   onRemoveSkill: (skill: Skill) => void;
+  onPageChanged: (page: number) => void;
 };
 
 const pageSize = 12;
@@ -32,12 +34,19 @@ function getProjectsByPage(
 export default function ProjectCollection({
   projects,
   selectedSkillSlugs,
+  page,
   minYear,
   maxYear,
   onAddSkill,
   onRemoveSkill,
+  onPageChanged,
 }: Props) {
-  const [currentPage, setCurrentPage] = useState(1);
+  const pageCount = Math.ceil(projects.length / pageSize);
+
+  page = Math.max(1, page);
+  page = Math.min(pageCount, page);
+
+  const [currentPage, setCurrentPage] = useState(page);
 
   const [hoverProjectUrl, setHoverProjectUrl] = useState<string>("");
 
@@ -84,6 +93,7 @@ export default function ProjectCollection({
 
   function handlePageButtonClicked(newPage: number) {
     setCurrentPage(newPage);
+    onPageChanged(newPage);
   }
 
   function handleProjectHoverStart(project: Project) {
@@ -122,7 +132,7 @@ export default function ProjectCollection({
       />
       <Pagination
         currentPage={currentPage}
-        pageCount={Math.ceil(projects.length / pageSize)}
+        pageCount={pageCount}
         onPageButtonClicked={handlePageButtonClicked}
       />
     </>

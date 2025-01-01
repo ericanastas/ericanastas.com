@@ -120,6 +120,12 @@ export default function FilteredProjectCollection({
     }));
   }
 
+  function handlePageChanged(newPage: number) {
+    console.log(
+      `FilteredProjectCollection.handlePageChanged(newPage = ${newPage})`
+    );
+  }
+
   return (
     <div>
       <ProjectFilter
@@ -131,6 +137,8 @@ export default function FilteredProjectCollection({
 
       {filteredProjects.length > 0 ? (
         <ProjectCollection
+          page={1}
+          onPageChanged={handlePageChanged}
           onAddSkill={handleAddSkill}
           onRemoveSkill={handleRemoveSkill}
           projects={filteredProjects}
