@@ -144,7 +144,7 @@ export default function Pagination({
 
   return (
     <div className="flex items-center justify-between py-3">
-      <div className="flex flex-1 justify-between lg:hidden gap-1">
+      <div className="flex flex-1 justify-between sm:hidden gap-1">
         <a
           onClick={firstButtonClick}
           className={`relative inline-flex items-center justify-center rounded-md ring-1 ring-inset ring-gray-400 hover:bg-gray-100 py-2 text-sm font-semibold w-16 text-gray-900 ${
@@ -189,7 +189,7 @@ export default function Pagination({
         </a>
       </div>
 
-      <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end">
+      <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-end">
         <nav
           className="isolate inline-flex -space-x-px rounded-md "
           aria-label="Pagination"
