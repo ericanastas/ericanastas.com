@@ -49,14 +49,27 @@ export default function ProjectsPageFilteredProjects({
     router.refresh();
   }, [searchParams]);
 
+  function handlePageChanged(newPage: number) {
+    console.log(
+      `ProjectsPageFilteredProjects.handlePageChanged(newPage = ${newPage})`
+    );
+  }
+
+  function handleFilterChanged(newFilter: ProjectFilterOptions) {
+    console.log(`ProjectsPageFilteredProjects.handleFilterChanged()`);
+  }
+
   return (
     <FilteredProjectCollection
+      page={1}
       projects={projects}
       filter={filter}
       skillGroups={skillGroups}
       groups={groups}
       minYear={minYear}
       maxYear={maxYear}
+      onPageChanged={handlePageChanged}
+      onFilterChanged={handleFilterChanged}
     />
   );
 }

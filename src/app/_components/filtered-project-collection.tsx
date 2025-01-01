@@ -16,6 +16,9 @@ export type Props = {
   filter: ProjectFilterOptions;
   minYear: number;
   maxYear: number;
+  page: number;
+  onPageChanged: (page: number) => void;
+  onFilterChanged: (filter: ProjectFilterOptions) => void;
 };
 
 function projectFilterPredicate(
@@ -82,6 +85,9 @@ export default function FilteredProjectCollection({
   filter,
   minYear,
   maxYear,
+  page,
+  onPageChanged,
+  onFilterChanged,
 }: Props) {
   let [filteredProjects, setFilteredProjects] = useState(
     projects.filter((p) => projectFilterPredicate(p, filter))
@@ -89,10 +95,6 @@ export default function FilteredProjectCollection({
 
   let [projectFilter, setProjectFilter] =
     useState<ProjectFilterOptions>(filter);
-
-  useEffect(() => {
-    setProjectFilter(filter);
-  }, [filter]);
 
   useEffect(() => {
     setFilteredProjects(() =>
@@ -103,6 +105,7 @@ export default function FilteredProjectCollection({
 
   function handleFilterOptionsChanged(f: ProjectFilterOptions) {
     setProjectFilter(f);
+    onFilterChanged(f);
   }
 
   function handleAddSkill(skill: Skill) {
@@ -124,6 +127,7 @@ export default function FilteredProjectCollection({
     console.log(
       `FilteredProjectCollection.handlePageChanged(newPage = ${newPage})`
     );
+    onPageChanged(newPage);
   }
 
   return (
@@ -137,7 +141,7 @@ export default function FilteredProjectCollection({
 
       {filteredProjects.length > 0 ? (
         <ProjectCollection
-          page={1}
+          page={page}
           onPageChanged={handlePageChanged}
           onAddSkill={handleAddSkill}
           onRemoveSkill={handleRemoveSkill}
