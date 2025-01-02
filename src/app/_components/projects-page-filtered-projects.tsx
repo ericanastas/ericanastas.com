@@ -57,6 +57,26 @@ export default function ProjectsPageFilteredProjects({
 
   function handleFilterChanged(newFilter: ProjectFilterOptions) {
     console.log(`ProjectsPageFilteredProjects.handleFilterChanged()`);
+
+    updateUrl(newFilter);
+  }
+
+  function updateUrl(f: ProjectFilterOptions) {
+    const params = new URLSearchParams();
+
+    if (f.searchQuery && f.searchQuery.length > 0) {
+      params.append("search", f.searchQuery);
+    }
+
+    for (let catSlug of f.selectedGroupSlugs) {
+      params.append("group", catSlug);
+    }
+
+    for (let skillSlug of f.selectedSkillSlugs) {
+      params.append("skill", skillSlug);
+    }
+
+    window.history.replaceState(null, "", `?${params.toString()}`);
   }
 
   return (

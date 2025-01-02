@@ -60,24 +60,6 @@ function projectFilterPredicate(
   return true;
 }
 
-function updateUrl(f: ProjectFilterOptions) {
-  const params = new URLSearchParams();
-
-  if (f.searchQuery && f.searchQuery.length > 0) {
-    params.append("search", f.searchQuery);
-  }
-
-  for (let catSlug of f.selectedGroupSlugs) {
-    params.append("group", catSlug);
-  }
-
-  for (let skillSlug of f.selectedSkillSlugs) {
-    params.append("skill", skillSlug);
-  }
-
-  window.history.replaceState(null, "", `?${params.toString()}`);
-}
-
 export default function FilteredProjectCollection({
   projects,
   groups,
@@ -100,12 +82,14 @@ export default function FilteredProjectCollection({
     setFilteredProjects(() =>
       projects.filter((proj) => projectFilterPredicate(proj, projectFilter))
     );
-    updateUrl(projectFilter);
+    console.log("FilteredProjectCollection projectFilter effect");
+
+    onFilterChanged(projectFilter);
   }, [projectFilter]);
 
   function handleFilterOptionsChanged(f: ProjectFilterOptions) {
+    console.log("FilteredProjectCollection.handleFilterOptionsChanged(");
     setProjectFilter(f);
-    onFilterChanged(f);
   }
 
   function handleAddSkill(skill: Skill) {
