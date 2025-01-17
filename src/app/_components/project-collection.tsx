@@ -18,7 +18,7 @@ export type Props = {
   onPageChanged: (page: number) => void;
 };
 
-const pageSize = 12;
+const PAGE_SIZE = 12;
 
 function getProjectsByPage(
   projects: Project[],
@@ -41,7 +41,7 @@ export default function ProjectCollection({
   onRemoveSkill,
   onPageChanged,
 }: Props) {
-  const pageCount = Math.ceil(projects.length / pageSize);
+  const pageCount = Math.ceil(projects.length / PAGE_SIZE);
 
   page = Math.max(1, page);
   page = Math.min(pageCount, page);
@@ -84,7 +84,7 @@ export default function ProjectCollection({
   }, [containerRef, options]);
 
   useEffect(() => {
-    setPagedProjects(getProjectsByPage(projects, currentPage, pageSize));
+    setPagedProjects(getProjectsByPage(projects, currentPage, PAGE_SIZE));
   }, [currentPage, projects]);
 
   useEffect(() => {
