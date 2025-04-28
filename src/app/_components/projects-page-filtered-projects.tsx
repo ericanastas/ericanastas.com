@@ -139,22 +139,24 @@ export default function ProjectsPageFilteredProjects({
   }, [containerRef]);
 
   function handleAddSkill(skill: Skill) {
-    setProjectFilter((f) => ({
-      ...f,
-      selectedSkillSlugs: [...f.selectedSkillSlugs, skill.slug],
-    }));
+    handleFilterOptionsChanged({
+      ...projectFilter,
+      selectedSkillSlugs: [...projectFilter.selectedSkillSlugs, skill.slug],
+    });
   }
 
   function handleRemoveSkill(skill: Skill) {
-    setProjectFilter((f) => ({
-      ...f,
-      selectedSkillSlugs: f.selectedSkillSlugs.filter(
+    handleFilterOptionsChanged({
+      ...projectFilter,
+      selectedSkillSlugs: projectFilter.selectedSkillSlugs.filter(
         (ts) => ts !== skill.slug
       ),
-    }));
+    });
   }
 
-  function handlePageChanged(newPage: number) {
+  function handlePageButtonClicked(newPage: number) {
+    setCurrentPage(newPage);
+
     const params = new URLSearchParams(window.location.search);
 
     if (newPage > 1) {
@@ -166,10 +168,6 @@ export default function ProjectsPageFilteredProjects({
     window.history.replaceState(null, "", `?${params.toString()}`);
   }
 
-  function handlePageButtonClicked(newPage: number) {
-    setCurrentPage(newPage);
-  }
-
   function handleProjectHover(project: Project | null) {
     if (project) {
       setHoverProjectUrl(project.url);
@@ -179,6 +177,8 @@ export default function ProjectsPageFilteredProjects({
   }
 
   function handleFilterOptionsChanged(newFilter: ProjectFilterOptions) {
+    handlePageButtonClicked(1);
+
     setProjectFilter(newFilter);
 
     const params = new URLSearchParams(window.location.search);
