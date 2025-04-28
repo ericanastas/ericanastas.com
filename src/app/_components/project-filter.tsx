@@ -4,7 +4,7 @@ import type { MultiValue } from "react-select";
 import type { SkillGroup } from "../../interfaces/skillGroup";
 import type { Group } from "../../interfaces/group";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
-import { useId, useState, useEffect } from "react";
+import { useId } from "react";
 import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export type Props = {
@@ -37,40 +37,26 @@ export default function ProjectFilter({
     { label: string; value: string }[]
   >((prev, curr) => [...prev, ...curr.options], []);
 
-  let [filterState, setFilterState] = useState(filter);
-
-  useEffect(() => {
-    setFilterState(filter);
-  }, [filter]);
-
   const selectedGroupOptions = groupOptions.filter((go) =>
-    filterState.selectedGroupSlugs.some((s) => s == go.value)
+    filter.selectedGroupSlugs.some((s) => s == go.value)
   );
 
   const selectedSkillOptions = allSkillOptions.filter((to) =>
-    filterState.selectedSkillSlugs.some((slug) => slug === to.value)
+    filter.selectedSkillSlugs.some((slug) => slug === to.value)
   );
 
-  const [showClearButton, setShowClearButton] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (
-      filterState.searchQuery.length > 0 ||
-      filterState.selectedSkillSlugs.length > 0 ||
-      filterState.selectedGroupSlugs.length > 0
-    ) {
-      setShowClearButton(true);
-    } else setShowClearButton(false);
-  }, [filterState]);
+  const showClearButton =
+    filter.searchQuery.length > 0 ||
+    filter.selectedSkillSlugs.length > 0 ||
+    filter.selectedGroupSlugs.length > 0;
 
   function onGroupSelectionChanged(
     newValue: MultiValue<{ label: string; value: string }>
   ) {
     let newFilter: ProjectFilterOptions = {
-      ...filterState,
+      ...filter,
       selectedGroupSlugs: newValue.map((v) => v.value),
     };
-    setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
   }
 
@@ -78,19 +64,17 @@ export default function ProjectFilter({
     newValue: MultiValue<{ label: string; value: string }>
   ) {
     let newFilter: ProjectFilterOptions = {
-      ...filterState,
+      ...filter,
       selectedSkillSlugs: newValue.map((v) => v.value),
     };
-    setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
   }
 
   function onSearchQueryChanged(event: any) {
     let newFilter: ProjectFilterOptions = {
-      ...filterState,
+      ...filter,
       searchQuery: event.target.value,
     };
-    setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
   }
 
@@ -100,7 +84,6 @@ export default function ProjectFilter({
       selectedGroupSlugs: [],
       selectedSkillSlugs: [],
     };
-    setFilterState(newFilter);
     onFilterOptionsChanged(newFilter);
   }
 
@@ -180,7 +163,7 @@ export default function ProjectFilter({
             className="block w-full rounded border-0 py-1.5 pl-9 pr-4 text-gray-900 ring-1 ring-neutral-400 placeholder:text-gray-400"
             placeholder="Search..."
             onChange={onSearchQueryChanged}
-            value={filterState.searchQuery}
+            value={filter.searchQuery}
           />
         </div>
       </div>
