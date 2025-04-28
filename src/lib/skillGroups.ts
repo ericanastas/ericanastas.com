@@ -29,6 +29,7 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   RxJS: "Front End",
   NextJS: "Front End",
   NgRx: "Front End",
+  jQuery: "Front End",
   WPF: "Front End",
   WinForms: "Front End",
 
@@ -84,7 +85,6 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   "Google API": "APIs",
   "Photoshop Scripting": "APIs",
   Puppeteer: "APIs",
-  jQuery: "APIs",
   VSIX: "APIs",
 
   //3D Modeling
