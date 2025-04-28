@@ -1,12 +1,13 @@
 "use client";
-
-import ProjectCollection from "./project-collection";
+import { ProjectGrid } from "./project-grid";
+import { ProjectTimeLine } from "./project-timeline";
+import Pagination from "./pagination";
 import { Project } from "../../interfaces/project";
 import { Group } from "../../interfaces/group";
 import { SkillGroup } from "../../interfaces/skillGroup";
 import type { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import ProjectFilter from "./project-filter";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import type { Skill } from "@/interfaces/skill";
 
 export type Props = {
@@ -60,6 +61,19 @@ function projectFilterPredicate(
   return true;
 }
 
+const PAGE_SIZE = 12;
+
+function getProjectsByPage(
+  projects: Project[],
+  page: number,
+  pageSize: number
+) {
+  return projects.slice(
+    (page - 1) * pageSize,
+    (page - 1) * pageSize + pageSize
+  );
+}
+
 export default function FilteredProjectCollection({
   projects,
   groups,
@@ -75,8 +89,54 @@ export default function FilteredProjectCollection({
     projects.filter((p) => projectFilterPredicate(p, filter))
   );
 
+  const pageCount = Math.ceil(projects.length / PAGE_SIZE);
+
+  page = Math.max(1, page);
+  page = Math.min(pageCount, page);
+
   let [projectFilter, setProjectFilter] =
     useState<ProjectFilterOptions>(filter);
+
+  const [currentPage, setCurrentPage] = useState(page);
+
+  const [hoverProjectUrl, setHoverProjectUrl] = useState<string>("");
+
+  const [pagedProjects, setPagedProjects] = useState<Project[]>([]);
+
+  const [isTimelineStuck, setIsTimeLineStuck] = useState<boolean>(false);
+  const containerRef = useRef(null);
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+
+  let intersectionCallBack: IntersectionObserverCallback = (
+    entries: IntersectionObserverEntry[],
+    observer: IntersectionObserver
+  ) => {
+    const [entry] = entries;
+
+    setIsTimeLineStuck(!entry.isIntersecting);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(intersectionCallBack, options);
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, [containerRef, options]);
+
+  useEffect(() => {
+    setPagedProjects(getProjectsByPage(projects, currentPage, PAGE_SIZE));
+  }, [currentPage, projects]);
 
   useEffect(() => {
     setFilteredProjects(() =>
@@ -107,11 +167,16 @@ export default function FilteredProjectCollection({
     }));
   }
 
-  function handlePageChanged(newPage: number) {
-    console.log(
-      `FilteredProjectCollection.handlePageChanged(newPage = ${newPage})`
-    );
+  function handlePageButtonClicked(newPage: number) {
+    setCurrentPage(newPage);
     onPageChanged(newPage);
+  }
+
+  function handleProjectHoverStart(project: Project) {
+    setHoverProjectUrl(project.url);
+  }
+  function handleProjectHoverEnd(project: Project) {
+    setHoverProjectUrl("");
   }
 
   return (
@@ -124,16 +189,38 @@ export default function FilteredProjectCollection({
       />
 
       {filteredProjects.length > 0 ? (
-        <ProjectCollection
-          page={page}
-          onPageChanged={handlePageChanged}
-          onAddSkill={handleAddSkill}
-          onRemoveSkill={handleRemoveSkill}
-          projects={filteredProjects}
-          minYear={minYear}
-          maxYear={maxYear}
-          selectedSkillSlugs={projectFilter.selectedSkillSlugs}
-        />
+        <>
+          <div ref={containerRef} className="h-0" />
+
+          <div
+            className={`sticky top-2 transition-all ${
+              isTimelineStuck
+                ? "border border-gray-400 border-2 bg-white py-2 px-3 drop-shadow-lg rounded-md z-50"
+                : ""
+            }`}
+          >
+            <ProjectTimeLine
+              selectedProjectUrl={hoverProjectUrl}
+              projects={projects}
+              minYear={minYear}
+              maxYear={maxYear}
+            />
+          </div>
+
+          <ProjectGrid
+            onMouseEnter={handleProjectHoverStart}
+            onMouseLeave={handleProjectHoverEnd}
+            onAddSkill={handleAddSkill}
+            onRemoveSkill={handleRemoveSkill}
+            projects={pagedProjects}
+            selectedSkillSlugs={projectFilter.selectedSkillSlugs}
+          />
+          <Pagination
+            currentPage={currentPage}
+            pageCount={pageCount}
+            onPageButtonClicked={handlePageButtonClicked}
+          />
+        </>
       ) : (
         <div className="flex justify-center items-center py-20">
           <p className="text-gray-500 text-lg">
