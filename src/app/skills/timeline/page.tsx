@@ -22,10 +22,10 @@ export default async function SkillsTimelinePage() {
           <PageTitle>Skills Timeline</PageTitle>
 
           {allSkillGroups.map((skillGroup) => (
-            <>
+            <div key={skillGroup.name}>
               <h2 className="text-2xl font-bold mt-8">{skillGroup.name}</h2>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col gap-5">
                 {skillGroup.skills.map((skill) => {
                   return (
                     <div
@@ -34,15 +34,11 @@ export default async function SkillsTimelinePage() {
                     >
                       <div className="flex lg:justify-end lg:mr-2 lg:w-48 lg:mt-0 mt-8 lg:mb-0 mb-2">
                         <Link key={skill.slug} href={skill.url}>
-                          <SkillChip
-                            textSize="md"
-                            badge={`${skill.projects?.length}`}
-                            skill={skill}
-                          />
+                          <SkillChip textSize="md" skill={skill} />
                         </Link>
                       </div>
 
-                      <div className="grow lg:mt-6">
+                      <div className="grow">
                         <ProjectTimeLine
                           projects={skill.projects!}
                           minYear={yearRange.minYear}
@@ -53,7 +49,7 @@ export default async function SkillsTimelinePage() {
                   );
                 })}
               </div>
-            </>
+            </div>
           ))}
         </article>
       </main>

@@ -152,7 +152,7 @@ export const SE_RESUME: Resume = {
           ],
         },
         {
-          name: "Digital Design Specialist",
+          name: "Digital Design Specialist / AEC Software Engineer",
           timeSpan: {
             start: "2008-02",
             end: "2021-05",

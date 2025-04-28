@@ -2,7 +2,7 @@
 title: NavisWorks Clash Report Template
 summary: Custom XLST template for navisworks clash reports
 coverImage: /images/som/clash-report-template/group-detail.jpg
-skills: ["HTML & CSS", "Navisworks", "XLST", "XML"]
+skills: ["HTML & CSS", "Navisworks", "XLST", "XML", "NavisWorks API"]
 date: "2009-10-20"
 ---
 

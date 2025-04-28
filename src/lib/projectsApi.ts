@@ -179,11 +179,11 @@ export async function getProjectsYearRange(): Promise<{
   let projects = await getProjects();
 
   let minYear: number = Math.min(
-    ...projects.map((p) => new Date(p.date).getFullYear())
+    ...projects.map((p) => new Date(p.date).getUTCFullYear())
   );
 
   let maxYear: number = Math.max(
-    ...projects.map((p) => new Date(p.date).getFullYear())
+    ...projects.map((p) => new Date(p.date).getUTCFullYear())
   );
 
   return { minYear, maxYear };
