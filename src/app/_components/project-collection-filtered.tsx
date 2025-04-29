@@ -3,7 +3,7 @@ import { Group } from "@/interfaces/group";
 import { Project } from "@/interfaces/project";
 import { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { SkillGroup } from "@/interfaces/skillGroup";
-import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { ProjectGrid } from "./project-grid";
 import { ProjectTimeLine } from "./project-timeline";
 import Pagination from "./pagination";
@@ -15,6 +15,7 @@ const SEARCH_PARAM_NAME = "search";
 const GROUP_PARAM_NAME = "group";
 const SKILL_PARAM_NAME = "skill";
 const PAGE_PARAM_NAME = "page";
+const COVER_IMAGE_PARAM_NAME = "cover-image";
 const PAGE_SIZE = 12;
 
 function projectFilterPredicate(
@@ -53,6 +54,14 @@ function projectFilterPredicate(
     }
   }
 
+  if (filter.hasOwnProperty("coverImage")) {
+    if (filter.coverImage === true && !project.coverImage) {
+      return false;
+    } else if (filter.coverImage === false && project.coverImage) {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -64,7 +73,7 @@ type Props = {
   skillGroups: SkillGroup[];
 };
 
-export default function ProjectsPageFilteredProjects({
+export default function ProjectCollectionFiltered({
   minYear,
   maxYear,
   projects,
@@ -76,6 +85,9 @@ export default function ProjectsPageFilteredProjects({
   //Filter state
   let initalFilter: ProjectFilterOptions = {
     searchQuery: searchParams.get(SEARCH_PARAM_NAME) ?? "",
+    coverImage: searchParams.has(COVER_IMAGE_PARAM_NAME)
+      ? searchParams.get(COVER_IMAGE_PARAM_NAME) === "true"
+      : undefined,
     selectedGroupSlugs: searchParams.getAll(GROUP_PARAM_NAME),
     selectedSkillSlugs: searchParams.getAll(SKILL_PARAM_NAME),
   };

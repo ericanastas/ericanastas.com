@@ -8,7 +8,6 @@ skills:
     "C#",
     "Rhino",
     "Rhino API",
-    "Visual Studio",
     "WinForms",
     "SQL",
     "Master Planning",

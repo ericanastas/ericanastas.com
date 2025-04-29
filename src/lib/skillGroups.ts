@@ -85,7 +85,6 @@ export const SKILL_GROUPS: { [key: string]: SkillGroupName } = {
   "Google API": "APIs",
   "Photoshop Scripting": "APIs",
   Puppeteer: "APIs",
-  VSIX: "APIs",
 
   //3D Modeling
   Grasshopper: "3D Modeling",
