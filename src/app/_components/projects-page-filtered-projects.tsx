@@ -15,6 +15,7 @@ const SEARCH_PARAM_NAME = "search";
 const GROUP_PARAM_NAME = "group";
 const SKILL_PARAM_NAME = "skill";
 const PAGE_PARAM_NAME = "page";
+const COVER_IMAGE_PARAM_NAME = "cover-image";
 const PAGE_SIZE = 12;
 
 function projectFilterPredicate(
@@ -53,6 +54,14 @@ function projectFilterPredicate(
     }
   }
 
+  if (filter.hasOwnProperty("coverImage")) {
+    if (filter.coverImage === true && !project.coverImage) {
+      return false;
+    } else if (filter.coverImage === false && project.coverImage) {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -76,6 +85,9 @@ export default function ProjectsPageFilteredProjects({
   //Filter state
   let initalFilter: ProjectFilterOptions = {
     searchQuery: searchParams.get(SEARCH_PARAM_NAME) ?? "",
+    coverImage: searchParams.has(COVER_IMAGE_PARAM_NAME)
+      ? searchParams.get(COVER_IMAGE_PARAM_NAME) === "true"
+      : undefined,
     selectedGroupSlugs: searchParams.getAll(GROUP_PARAM_NAME),
     selectedSkillSlugs: searchParams.getAll(SKILL_PARAM_NAME),
   };
