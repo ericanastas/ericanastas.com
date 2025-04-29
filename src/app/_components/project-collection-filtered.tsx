@@ -3,7 +3,7 @@ import { Group } from "@/interfaces/group";
 import { Project } from "@/interfaces/project";
 import { ProjectFilterOptions } from "@/interfaces/projectFilterOptions";
 import { SkillGroup } from "@/interfaces/skillGroup";
-import { ReadonlyURLSearchParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { ProjectGrid } from "./project-grid";
 import { ProjectTimeLine } from "./project-timeline";
 import Pagination from "./pagination";
@@ -73,7 +73,7 @@ type Props = {
   skillGroups: SkillGroup[];
 };
 
-export default function ProjectsPageFilteredProjects({
+export default function ProjectCollectionFiltered({
   minYear,
   maxYear,
   projects,

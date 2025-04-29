@@ -8,7 +8,7 @@ import PageTitle from "../_components/page-title";
 import Header from "../_components/header";
 import Footer from "../_components/footer";
 import { Metadata } from "next";
-import ProjectsPageFilteredProjects from "../_components/projects-page-filtered-projects";
+import ProjectCollectionFiltered from "../_components/project-collection-filtered";
 import { Suspense } from "react";
 
 export default async function ProjectsPage() {
@@ -24,7 +24,7 @@ export default async function ProjectsPage() {
         <PageTitle>Projects</PageTitle>
 
         <Suspense>
-          <ProjectsPageFilteredProjects
+          <ProjectCollectionFiltered
             groups={groups}
             maxYear={yearRange.maxYear}
             minYear={yearRange.minYear}
